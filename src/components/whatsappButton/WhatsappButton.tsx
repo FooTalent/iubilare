@@ -1,4 +1,3 @@
-import React from 'react';
 
 const WhatsappButton = () => {
   const containerStyle = 'fixed bottom-4 right-4'; // Adjust as needed
