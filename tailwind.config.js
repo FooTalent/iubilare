@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'button-green': '#439373',
+        'background-green': '#A4BEB3',
       },
     },
   },
