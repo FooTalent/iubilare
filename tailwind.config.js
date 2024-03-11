@@ -9,6 +9,7 @@ export default {
       colors: {
         'button-green': '#439373',
         'background-green': '#A4BEB3',
+        'active-green': '#29ca8a'
       },
     },
   },
