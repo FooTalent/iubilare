@@ -6,7 +6,7 @@
         const [isOpen, setIsOpen] = useState(false);
         return (
             <>
-                <div className="flex flex-wrap justify-between w-full h-[64px] shadow-md md:h-[112px] items-center md:shadow-md">
+                <div className="flex flex-wrap justify-between w-full h-[64px] shadow-md md:h-[112px] items-center mb-[10px] md:shadow-md">
                     <div className="flex flex-start w-1/2  text-center items-center md:w-[40%]">
                         <img src="./iubilare_logo.png" alt="" className="w-[107px] text-base md:w-[186px]" />
                     </div>
