@@ -30,11 +30,11 @@
                         </div>
                     </div>
                     <div
-                        className={`mt-[10px] w-full md:overflow-visible md:w-[60%] z-10 ${
+                        className={`mt-[10px] w-full md:mt-0 md:overflow-visible md:w-[60%] z-10 ${
                             isOpen ? "transition-height duration-2000 h-auto" : "transition-height duration-2000 h-0 overflow-hidden"
                         }`}
                         >
-                    <ul className="bg-white h-full md:flex md:space-x-0.5 md:justify-around items-center">
+                    <ul className="flex flex-col justify-around bg-white items-start pl-5 shadow-md h-[178px] md:flex md:flex-row md:h-auto md:shadow-none md:space-x-0.5 md:justify-around   ">
                         <li>
                             <span>
                                 {/* se agregaron las clases active:text-active-green para el color cuando activas el link en version mobile*/}
@@ -50,6 +50,12 @@
                             <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                             </a>
                         </li>
+                        <li>
+                            <a className="group active:text-active-green hover:text-inherit" href="#">Trámites
+                            <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
+                            </a>
+                        </li>
+
                         <li>
                             <a className="group active:text-active-green hover:text-inherit" href="#">Ayuda
                             <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>

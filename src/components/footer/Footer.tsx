@@ -32,7 +32,7 @@ const Footer:React.FC = () => {
     ];
 
     return (
-        <div className="fixed inset-x-0 bottom-0 flex flex-col bg-background-green p-4 max-w-[425px] mx-auto">
+        <div className="inset-x-0 bottom-0 flex flex-col bg-background-green p-4 max-w-[425px] mx-auto">
             <div className='flex flex-row justify-between items-center'>
                 <img src="./iubilare_logo.png" alt="" className="w-[200px] text-base md:w-[186px]" />
                 <div className="flex space-x-4 mb-4">
