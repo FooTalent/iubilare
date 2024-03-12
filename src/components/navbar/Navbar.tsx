@@ -6,11 +6,11 @@
         const [isOpen, setIsOpen] = useState(false);
         return (
             <>
-                <div className="flex flex-wrap justify-between w-full h-[64px] md:h-[112px] items-center">
+                <div className="flex flex-wrap justify-between w-full h-[64px] shadow-md md:h-[112px] items-center md:shadow-md">
                     <div className="flex flex-start w-1/2  text-center items-center md:w-[40%]">
                         <img src="./iubilare_logo.png" alt="" className="w-[107px] text-base md:w-[186px]" />
                     </div>
-                    <div className="w-1/2 flex justify-end md:hidden">
+                    <div className="w-1/2 flex justify-end pr-[15px]  md:hidden">
                         <div
                             className={`w-[24px] h-[24px] cursor-pointer transition-transform duration-300 transform ${
                                 isOpen ? "rotate-90" : "-rotate-0"
@@ -62,7 +62,7 @@
                             </a>
                         </li>
                         <li>
-                            <a className="active:text-active-green hover:text-inherit md:inline-block md:py-2 md:px-4 md:bg-button-green md:text-white md:rounded" href="#">Contacto</a>
+                            <a className="active:text-active-green hover:text-inherit md:inline-block md:py-2 md:px-4 md:bg-button-green md:text-white md:rounded md:hover:bg-button-hover-green md:hover:text-white md:active:bg-active-green" href="#">Contacto</a>
                         </li>
                     </ul>
                     </div>
