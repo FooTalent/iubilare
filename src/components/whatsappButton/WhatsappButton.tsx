@@ -1,6 +1,6 @@
 
 const WhatsappButton = () => {
-  const containerStyle = 'fixed bottom-4 right-4'; // Adjust as needed
+  const containerStyle = 'fixed bottom-4 right-4 z-10'; // Adjust as needed
   const buttonStyle = 'p-2 bg-green-500 rounded-full cursor-pointer';
   const imageStyle = 'w-6 h-6';
   const handleButtonClick = () => {
