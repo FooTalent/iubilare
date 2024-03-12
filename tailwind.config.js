@@ -12,6 +12,9 @@ export default {
         'active-green': '#29ca8a',
         'background-green': '#A4BEB3',
       },
+      borderRadius: {
+        'sm': '3.23px',
+      }
     },
   },
   plugins: [],

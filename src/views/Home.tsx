@@ -1,5 +1,8 @@
+import Form from "../components/form/Form"
+
 
 export default function Home() {
+
     return (
         <>
             <div className="text-center mb-40" >
@@ -7,7 +10,6 @@ export default function Home() {
             Soluciones previsionales confiables en todo el país.
                 <img src="/Youtubeplayer.png" alt="Hero" className="mx-auto" />
                 <img src="/botoncontactodefault.png" alt="Hero" className="mx-auto" />
-
             </div>
             <div className="mb-50">
                 Que hacemos
@@ -17,7 +19,7 @@ export default function Home() {
             </div>
             <div>
                 Testomonios
-                Formulario
+                <Form></Form>
             </div>
             <footer className="text-center py-4">
             </footer>
