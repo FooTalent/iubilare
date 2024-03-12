@@ -8,6 +8,8 @@ export default {
     extend: {
       colors: {
         'button-green': '#439373',
+        'button-hover-green': '#2db27d',
+        'active-green': '#29ca8a',
         'background-green': '#A4BEB3',
       },
     },
