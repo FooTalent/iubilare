@@ -12,7 +12,7 @@ const Footer = (): JSX.Element => {
 
     return (
         /* w-[360px]  */
-        <div className="flex flex-wrap h-[548px] items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3]">
+        <div className="flex flex-wrap h-[548px] items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3] md:h-full md:w-full">
 
         <div className='md:flex md:flex-col '>
         <div className='flex flex-row  md:flex-col'>
@@ -81,8 +81,9 @@ const Footer = (): JSX.Element => {
 
 
             
-            <div className="Footer flex flex-col justify-start">
-            <div className='mb-4'>
+            <div className="Footer flex flex-col justify-start md:w-2/3">
+            <div className="md:flex md:w-full">
+            <div className='flex flex-col mb-4 w-1/2'>
                     <h2 className='text-left font-bold cursor-pointer' onClick={()=> {setContacto(!contacto)} }>Contacto</h2>
                     <ul className={`text-left md:block ${contacto ? 'block' : 'hidden'}`}>
                         <li>Formulario</li>
@@ -90,7 +91,7 @@ const Footer = (): JSX.Element => {
                         <li>Números de contacto</li>
                     </ul>
             </div>
-            <div className='mb-4'>
+            <div className='mb-4 w-1/2'>
                     <h2 className='text-left font-bold cursor-pointer' onClick={() => setNosotros(!nosotros)}>Nosotros</h2>
                     <ul className={`text-left md:block ${nosotros ? 'block' : 'hidden'}`}>
                         <li>Misión y visión</li>
@@ -98,19 +99,23 @@ const Footer = (): JSX.Element => {
                         <li>Casos de éxito en todo el país</li>
                     </ul>
             </div>
-            <div className='mb-4'>
+            </div>
+
+            <div className="md:flex md:w-full">
+            <div className='mb-4 flex flex-col w-1/2'>
                     <h2 className='text-left font-bold cursor-pointer' onClick={() => setTramites(!tramites)}>Trámites</h2>
                     <ul className={`text-left md:block ${tramites ? 'block' : 'hidden'}`}>
                         <li>Tipos de trámite</li>
                         <li>Testimonios</li>
                     </ul>
             </div>
-            <div className='mb-4'>
+            <div className='mb-4 flex flex-col w-1/2'>
                     <h2 className='text-left font-bold cursor-pointer' onClick={() => {setAyuda(!ayuda)}}>Ayuda</h2>
                     <ul className={`text-left md:block ${ayuda ? 'block' : 'hidden'}`}>
                         <li>Guía de trámites paso a paso</li>
                         <li>Preguntas frecuentes</li>
                     </ul>
+            </div>
             </div>
             </div>
 
