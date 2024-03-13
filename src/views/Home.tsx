@@ -58,14 +58,9 @@ export default function Home() {
                     <div className="2xl:min-h-[63px]"></div>
             </div>
 
-
-
-
             <div className="min-h-[106.08px]"></div>
             <Form></Form>
 
-            <footer className="text-center py-4">
-            </footer>
         </div>
     )
 };
