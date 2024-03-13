@@ -32,13 +32,16 @@ const Footer = (): JSX.Element => {
     return (
         /* w-[360px]  */
         <div className="flex flex-wrap h-[548px] items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3]">
-            <div className="relative w-[194px] h-[88px]">
+
+        <div className='flex flex-row'>
+        <div className="relative w-[194px] h-[88px]">
                 <div className="relative w-[174px] h-[78px] -top-px">
                     <div className="absolute w-[174px] h-[78px] top-0 left-0">
                         <img src="./iubilare_logo.png" alt="Logo" />
                     </div>
                 </div>
             </div>
+            <div className='flex flex-row'>
             <div className="inline-flex items-start gap-[20px] relative flex-[0_0_auto]">
                 <div className="relative w-[33px] h-[33px] bg-x1-secundario rounded-[16.5px]" />
                 <div className="inline-flex items-start gap-[10px] px-[5px] py-[2px] absolute top-[7px] left-[7px]">
@@ -52,26 +55,48 @@ const Footer = (): JSX.Element => {
                     src="icomoon-free-instagram.png"
                 />
             </div>
-            <div className="flex flex-col w-[300px] items-start gap-[12px] relative">
-                <div className="flex w-[178px] h-[24px] items-end gap-[8px] relative">
-                    
-                    <div className="flex flex-row w-[320px] relative [font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[15px] text-center tracking-[0] leading-[normal]">
-                       <img className="w-[24px] h-[24px] mr-3" src="./call.png" alt="Telefono" /> (011) 4342-1817/4783
-                       <p></p>
+            </div>
+        </div>
+            
+
+
+
+            <div className="flex flex-col w-[300px]">
+                <div className='flex flex-row'>
+                    <div className='w-[24px] h-[24px] flex justify-center'>
+                        <img className="" src="./call.png" alt="Telefono" />                        
+                    </div>
+                    <div className='pl-[8px] flex self-end'>
+                        <p className='text-sm'>(011) 4342-1817/4783</p>
                     </div>
                 </div>
-                <div className="inline-flex items-end gap-[8px] relative flex-[0_0_auto]">
-                    
-                    <div className="flex flex-row relative w-fit [font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[16px] tracking-[0] leading-[normal]">
-                       <img className="w-[24px] h-[24px] mr-3" src="./email.png" alt="Email" /> info@iubilare.com
+                <div className='flex flex-row'>
+                <div className='w-[24px] h-[24px] flex justify-center'>
+                        <img className="" src="./email.png" alt="Email" /> 
+                    </div>
+                    <div className='pl-[8px] flex self-end'>
+                        <p className='text-sm'>info@iubilare.com</p>
                     </div>
                 </div>
+                <div className='flex flex-row'>
+                    <div className='w-[24px] h-[24px] flex justify-center'>
+                        <img className="" src="location.png" alt="Ubicacion" />
+                    </div>
+                    <div className='pl-[8px] flex self-end'>
+                        <p className='text-sm'>Av. de Mayo 881 - 4to D - CABA - CP:1084</p>
+                    </div>
+                </div>
+
+
                 <div className="flex w-[320px] items-end gap-[8px] relative flex-[0_0_auto]">
                     <div className="flex flex-row relative w-fit mt-[-1.00px] [font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[15px] tracking-[0] leading-[normal]">
-                       <img className="w-[14px] h-[20px] mr-3" src="location.png" alt="Ubicacion" /> Av. de Mayo 881 - 4to D - CABA - CP:1084
+
                     </div>
                 </div>
             </div>
+
+
+            
             <div className="Footer flex flex-col justify-start">
             {lists.map((list, index) => (
                 <div key={index} className='mb-4'>
