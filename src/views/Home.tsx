@@ -32,8 +32,6 @@ export default function Home() {
                 Testomonios
                 Formulario
             </div>
-            <footer className="text-center py-4">
-            </footer>
         </div>
     )
 };
