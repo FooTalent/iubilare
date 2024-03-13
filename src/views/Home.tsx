@@ -1,9 +1,9 @@
-import React from 'react';
-
 export default function Home() {
   return (
-    <>
-      <div className="flex flex-col lg:flex-row">
+
+    <div className="px-[16px] md:px-[40px] 2xl:px[120px]">
+
+<div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/2 lg:pr-8 hidden sm:block">
           <img src="/Youtubeplayer.png" alt="Hero" className="mx-auto mb-5 mt-5" />
           <div className="w-[328px] px-[17px] py-2 rounded-[5px] justify-center items-center gap-2.5 inline-flex lg:hidden">
@@ -53,6 +53,27 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
-  );
-}
+
+
+            <div>
+                <h2 className='font-bold text-xl text-center mb-10'>¿Quienes somos?</h2>
+                <div className='flex flex-col items-center'>
+                    <div>
+                        <img src="/quienesSomos1.jpg" className='w-[195px] h-[195px] rounded-full mx-auto mb-5 shadow-xl' alt="Marcelo Visceglie" />
+                        <h3 className='font-bold text-lg text-center'>Marcelo Visceglie</h3>
+                        <h4 className='text-lg text-center mb-10'>Fundador de Iubilare</h4>
+                    </div>
+                    <div>
+                        <img src="/quienesSomos2.jpg" className='w-[195px] h-[195px] rounded-full mx-auto mb-5 shadow-xl' alt="Cristian Pavlovsky" />
+                        <h3 className='font-bold text-lg text-center'>Cristian Pavlovsky</h3>
+                        <h4 className='text-lg text-center mb-10'>Fundador de Iubilare</h4>
+                    </div>
+                    <button className='w-11/12 bg-button-green text-white font-bold text-xl mx-auto max-h-[50px]'>Ver al equipo</button>
+                </div>
+            </div>
+
+
+        </div>
+    )
+};
+
