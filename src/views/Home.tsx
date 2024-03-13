@@ -1,7 +1,8 @@
 export default function Home() {
 
     return (
-        <>
+        <div className="px-[16px] md:px-[40px] 2xl:px[120px]">
+
             <div className="text-center mb-40" >
             27 años de experiencia. Asesoramiento personalizado. 
             Soluciones previsionales confiables en todo el país.
@@ -33,6 +34,6 @@ export default function Home() {
             </div>
             <footer className="text-center py-4">
             </footer>
-        </>
+        </div>
     )
 };
