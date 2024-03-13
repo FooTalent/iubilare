@@ -27,7 +27,7 @@ const Card: React.FC<CardProps> = ({ name, age, city, description, imageUrl }) =
           <p className="text-xs line-clamp-4">{description}</p>
         </div>
       </div>
-      <div>stars</div>
+      <div className="md:hidden">stars</div>
     </div>
   );
 };

@@ -16,6 +16,7 @@ export default function Home() {
     return (
         <div className="">
 
+        {/* Seccion Inicio */}
         <div className="flex flex-col lg:flex-row px-[16px] md:px-[40px] 2xl:px-[120px]">
         <div className="lg:w-1/2 lg:pr-8 hidden sm:block">
           <img src="/Youtubeplayer.png" alt="Hero" className="mx-auto mb-5 mt-5" />
@@ -66,10 +67,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+
+
+            {/* Separador */}
+            <div className="min-h-[110px]"></div>
 
             {/* Seccion Quienes somos */}
-            <div className="px-[16px] md:px-[40px] 2xl:px-[120px]">
+            <div className="px-[16px] md:px-[40px] 2xl:px-[120px] md:hidden">
                 <h2 className='font-bold text-xl text-center mb-10'>¿Quienes somos?</h2>
                 <div className='flex flex-col items-center'>
                     <div>
@@ -82,7 +87,7 @@ export default function Home() {
                         <h3 className='font-bold text-lg text-center'>Cristian Pavlovsky</h3>
                         <h4 className='text-lg text-center mb-10'>Fundador de Iubilare</h4>
                     </div>
-                    <button className='w-11/12 bg-button-green text-white font-bold text-xl mx-auto max-h-[50px]'>Ver al equipo</button>
+                        <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px]">Ver al equipo</button>
                 </div>
             </div>
 
