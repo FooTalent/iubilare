@@ -1,6 +1,7 @@
     import MenuIcon from "@mui/icons-material/Menu";
     import CloseIcon from "@mui/icons-material/Close";
     import { useState } from "react";
+    import { Link } from "react-router-dom";
     
 
     
@@ -51,6 +52,7 @@ export default function Navbar() {
                     </li>
                     <li>
                         <a className="group active:text-active-green hover:text-inherit" href="/nosotros">Nosotros
+                                <Link to={"/nosotros"}></Link>
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </a>
                     </li>
