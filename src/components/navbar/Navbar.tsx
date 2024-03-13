@@ -1,9 +1,13 @@
     import MenuIcon from "@mui/icons-material/Menu";
     import CloseIcon from "@mui/icons-material/Close";
     import { useState } from "react";
+    
 
+    
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    
+
     return (
         <>
             <div className="flex flex-wrap justify-between w-full h-[64px] shadow-md md:h-[112px] items-center mb-[10px] pl-[17px] pt-[7px] pb-[8px] md:shadow-md">
@@ -39,25 +43,25 @@ export default function Navbar() {
                         <span>
                             {/* se agregaron las clases active:text-active-green para el color cuando activas el link en version mobile*/}
                             {/* se agregaron las clases hover:text-inherit para eliminar el violet como color por defecto de los tags a*/}
-                        <a  className="group active:text-active-green hover:text-inherit" href="#">Inicio
+                        <a  className="group active:text-active-green hover:text-inherit" href="/">Inicio
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </a>
                         </span>
 
                     </li>
                     <li>
-                        <a className="group active:text-active-green hover:text-inherit" href="#">Nosotros
+                        <a className="group active:text-active-green hover:text-inherit" href="/nosotros">Nosotros
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </a>
                     </li>
                     <li>
-                        <a className="group active:text-active-green hover:text-inherit" href="#">Trámites
+                        <a className="group active:text-active-green hover:text-inherit" href="/tramites">Trámites
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </a>
                     </li>
 
                     <li>
-                        <a className="group active:text-active-green hover:text-inherit" href="#">Ayuda
+                        <a className="group active:text-active-green hover:text-inherit" href="/ayuda">Ayuda
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </a>
                     </li>
