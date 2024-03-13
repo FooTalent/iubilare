@@ -51,10 +51,11 @@ export default function Navbar() {
 
                     </li>
                     <li>
-                        <a className="group active:text-active-green hover:text-inherit" href="/nosotros">Nosotros
-                                <Link to={"/nosotros"}></Link>
+                        <Link to={"/nosotros"} className="group active:text-active-green hover:text-inherit">Nosotros
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
-                        </a>
+                        </Link>
+                        
+
                     </li>
                     <li>
                         <a className="group active:text-active-green hover:text-inherit" href="/tramites">Trámites
