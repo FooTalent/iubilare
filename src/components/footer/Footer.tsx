@@ -74,7 +74,7 @@ const Footer = (): JSX.Element => {
             <div className="Footer flex flex-col justify-start">
             {lists.map((list, index) => (
                 <div key={index} className='mb-4'>
-                    <h2 className='font-bold cursor-pointer' onClick={() => handleClic(index)}>
+                    <h2 className='text-left font-bold cursor-pointer' onClick={() => handleClic(index)}>
                         {list.title}
                     </h2>
                     {open[index] && (
