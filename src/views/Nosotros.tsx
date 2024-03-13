@@ -16,9 +16,10 @@ export default function Nosotros () {
                     <h1 className="font-semibold text-[25px]" >Equipo de Trabajo</h1>
                 </div>
 
-                    {/* Separador 16px Para Seccion Tablet*/}
+                    {/* Separador 16px Para Seccion Tablet min height 768px*/}
                     <div className="md:min-h-[16px]"></div>
-                    <div className="hidden md:flex md:flex-row md:justify-center md:gap-3">
+                    {/* Seccion Equipo de Tabajo para Tablet min height 768px */}
+                    <div className="hidden md:flex md:flex-row md:justify-center md:gap-3 md:px-[41px]">
                         <CardNosotros name={"Marcelo Visceglie"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet shadow-avatar-shadow" />
                         <CardNosotros name={"Cristian Pavlovsky"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet shadow-avatar-shadow"/>
                         <CardNosotros name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} className="bg-white shadow-avatar-shadow text-black" />
@@ -128,7 +129,7 @@ export default function Nosotros () {
                     {/* Separador 15px */}
                     <div className="min-h-[15px]"></div>
                     <div>
-                        <CardInfo info={vision} url="./nosotros/vision.png" />
+                        <CardInfo info={vision} url="./nosotros/vision.png" classOptions="md:flex-row-reverse" />
                     </div>
                 </div>
 
@@ -141,7 +142,8 @@ export default function Nosotros () {
                         {/* Separador 15px */}
                         <div className="min-h-[15px]"></div>
                     <div className="min-w-[328px] min-h-[318px]">
-                        <img src="./nosotros/map.png" alt="" />
+                        <img className="hidden md:block" src="./nosotros/map-tablet.png" alt="" />
+                        <img className="md:hidden" src="./nosotros/map.png" alt="" />
                     </div>
                     {/* Separador 15px */}
                     <div className="min-h-[15px]"></div>
