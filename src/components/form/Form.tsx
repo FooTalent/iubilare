@@ -2,7 +2,7 @@ export default function Form (){
 
     return (
         <>
-            <div className="w-[319px] m-auto md:w-[546px] 2xl:w-full">
+            <div className="px-[16px] md:px-[40px] 2xl:px-[120px] w-[319px] m-auto md:w-[546px] 2xl:w-full">
                 <h3 className="text-[20px] font-semibold md:text-[25px] 2xl:hidden">¿Tenés alguna duda o consulta?</h3>
                 <h3 className="text-[20px] font-semibold md:text-[25px] 2xl:hidden">Contactanos, estamos para ayudarte.</h3>
 

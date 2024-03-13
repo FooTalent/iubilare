@@ -11,12 +11,12 @@ export default function Home() {
         { id: 3, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "./testimonios/test03.png" },
         ];
 
-        const data = [... cards];
+    const data = [... cards];
 
     return (
-        <div className="px-[16px] md:px-[40px] 2xl:px-[120px]">
+        <div className="">
 
-<div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row px-[16px] md:px-[40px] 2xl:px-[120px]">
         <div className="lg:w-1/2 lg:pr-8 hidden sm:block">
           <img src="/Youtubeplayer.png" alt="Hero" className="mx-auto mb-5 mt-5" />
           <div className="w-[328px] px-[17px] py-2 rounded-[5px] justify-center items-center gap-2.5 inline-flex lg:hidden">
@@ -68,8 +68,8 @@ export default function Home() {
         </div>
       </div>
 
-
-            <div>
+            {/* Seccion Quienes somos */}
+            <div className="px-[16px] md:px-[40px] 2xl:px-[120px]">
                 <h2 className='font-bold text-xl text-center mb-10'>¿Quienes somos?</h2>
                 <div className='flex flex-col items-center'>
                     <div>
@@ -86,17 +86,18 @@ export default function Home() {
                 </div>
             </div>
 
-
+            {/* Separador */}
             <div className="min-h-[108px]"></div>
 
-            <div className="2xl:bg-background-violet">
+            {/* Seccion Testimonios */}
+            <div className="2xl:bg-background-violet px-[16px] md:px-[40px] 2xl:px-[120px]">
                 <div className="min-h-[62px]"></div>
                 <div><h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 2xl:text-white">Testimonios</h2></div>
                 <div className="hidden md:block"><h3 className="text-xl 2xl:font-semibold md:text-[21px] 2xl:text-[31px] 2xl:text-white">Estos son algunos de nuestros clientes</h3></div>
                 <div className="min-h-[48px]"></div>
 
                     <div className='overflow-hidden w-full h-full 2xl:flex 2xl:justify-center'>
-                        <div className='flex whitespace-nowrap animate-scroll gap-5 md:gap-[100px] 2xl:gap-[150px]'>
+                        <div className='flex whitespace-nowrap animate-scroll gap-5 md:gap-[100px] md:justify-center 2xl:gap-[150px]'>
                         {data.map((card, index) => (
                             <Card key={index} name={card.name} age={card.age} city={card.city} description={card.description} imageUrl={card.imageUrl} />
                         ))}
@@ -105,8 +106,13 @@ export default function Home() {
                     <div className="2xl:min-h-[63px]"></div>
             </div>
 
+            {/* Separador */}
             <div className="min-h-[106.08px]"></div>
+
+            {/* Seccion Formulario */}
             <Form></Form>
+            {/* Separador */}
+            <div className="min-h-[106.08px]"></div>
 
         </div>
     )
