@@ -1,4 +1,3 @@
-import CardAbogados from "../components/cardNosotros/CardAbogados"
 import CardNosotros from "../components/cardNosotros/CardNosotros"
 
 
@@ -24,8 +23,8 @@ export default function Nosotros () {
                     {/* Separador 15px */}
                     <div className="min-h-[15px]"></div>
                     <div className="flex flex-row justify-center gap-3">
-                        <CardNosotros name={"Marcelo Visceglie"} status={"Fundador"} image={"./nosotros/image-1.png"} />
-                        <CardNosotros name={"Cristian Pavlovsky"} status={"Fundador"} image={"./nosotros/image-1.png"}/>
+                        <CardNosotros name={"Marcelo Visceglie"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet" />
+                        <CardNosotros name={"Cristian Pavlovsky"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet"/>
                     </div>
                 </div>
 
@@ -45,34 +44,67 @@ export default function Nosotros () {
                     {/* Separador 15px */}
                     <div className="min-h-[15px]"></div>
                     <div className=" flex justify-center gap-3">
-                        <CardAbogados name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} />
-                        <CardAbogados name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} />
+                        <CardNosotros name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} className="bg-white shadow-avatar-shadow text-black" />
+                        <CardNosotros name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} className="bg-white shadow-avatar-shadow text-black" />
                     </div>
                     <div>
 
                     </div>
                 </div>
-                <div>
+
+                {/* Separador 48px */}
+                <div className="min-h-[48px]"></div>
+
+                <div className="px-[16px]">
                     <h3 className="text-[20px]">Secretarias</h3>
-                    <div>Cards</div>
-                </div>
-                <div>
-                    <h3 className="text-[20px]">Ejecutivos en Gestión Previsional</h3>
-                    <div></div>
-                </div>
-                <div>
-                    <h3  className="text-[20px]">Asistentes legales</h3>
-                    <div></div>
+                    {/* Separador 15px */}
+                    <div className="min-h-[15px]"></div>
+                    <div className="flex justify-center gap-3">
+                        <CardNosotros name={"Mariana Ruiz Perovsky"} status={"Secretaria"} image={"./nosotros/image-2.png"} className="bg-white shadow-avatar-shadow text-black" />
+                        <CardNosotros name={"Mariana Ruiz Perovsky"} status={"Secretaria"} image={"./nosotros/image-2.png"} className="bg-white shadow-avatar-shadow text-black" />                        
+                    </div>
                 </div>
 
+                {/* Separador 48px */}
+                <div className="min-h-[48px]"></div>
+                <div>
+                    <h3 className="text-[20px]">Ejecutivos en Gestión Previsional</h3>
+                    {/* Separador 15px */}
+                    <div className="min-h-[15px]"></div>
+                    <div className="flex justify-center gap-3">
+                    <CardNosotros name={"Susan Guaragna"} status={"Ejecutivo"} image={"./nosotros/image-3.png"} className="bg-white shadow-avatar-shadow text-black" />
+                    <CardNosotros name={"Susan Guaragna"} status={"Ejecutivo"} image={"./nosotros/image-3.png"} className="bg-white shadow-avatar-shadow text-black" />
+                    </div>
+                </div>
+
+                {/* Separador 48px */}
+                <div className="min-h-[48px]"></div>
+                <div>
+                    <h3  className="text-[20px]">Asistentes legales</h3>
+                    {/* Separador 15px */}
+                    <div className="min-h-[15px]"></div>
+                    <div className="flex justify-center gap-3">
+                    <CardNosotros name={"Susan Guaragna"} status={"Asistente legal"} image={"./nosotros/image-3.png"} className="bg-white shadow-avatar-shadow text-black" />
+                    <CardNosotros name={"Susan Guaragna"} status={"Asistente legal"} image={"./nosotros/image-3.png"} className="bg-white shadow-avatar-shadow text-black" />
+                    </div>
+                </div>
+
+                {/* Separador 48px */}
+                <div className="min-h-[48px]"></div>
                 <div>
                     <h1 className="font-semibold text-[25px]" >Misión</h1>
                     <div>Card Mision</div>
                 </div>
+
+                {/* Separador 48px */}
+                <div className="min-h-[48px]"></div>
                 <div>
                     <h1 className="font-semibold text-[25px]" >Visión</h1>
                     <div>Card Visión</div>
                 </div>
+
+                {/* Separador 48px */}
+                <div className="min-h-[48px]"></div>
                 <div>
                     <h1 className="font-semibold text-[25px]" >Donde encontrarnos</h1>
                     <div className="min-w-[328px] min-h-[318px]">Mapa</div>
