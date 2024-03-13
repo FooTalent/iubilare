@@ -5,9 +5,13 @@ export default function Form (){
     return (
 
         <>
-            <div className="w-[319px] m-auto">
-                <h3 className="text-[20px] font-semibold">¿Tenés alguna duda o consulta?</h3>
-                <h3 className="text-[20px] font-semibold">Contactanos, estamos para ayudarte.</h3>
+            <div className="w-[319px] m-auto md:w-[546px] 2xl:w-full">
+                <h3 className="text-[20px] font-semibold md:text-[25px] 2xl:hidden">¿Tenés alguna duda o consulta?</h3>
+                <h3 className="text-[20px] font-semibold md:text-[25px] 2xl:hidden">Contactanos, estamos para ayudarte.</h3>
+
+                <h3 className="hidden font-semibold 2xl:block 2xl:text-[39px]">Si tiene alguna duda o consulta, no deude en contactarnos</h3>
+                <h3 className="hidden font-semibold 2xl:block 2xl:text-[39px]">Estamos para ayudarlo.</h3>
+
             </div>
             <div className="min-h-[53px]"></div>
             <div className="flex flex-row md:bg-slate-100 md:justify-center md:w-[686px] md:h-[438px] md:m-auto md:pt-[20px] 2xl:w-[1057px] 2xl:h-[675px] 2xl:pt-[48px] 2xl:pb-[48px] 2xl:pl-[60px] 2xl:pr-[60px]">
