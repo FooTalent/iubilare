@@ -7,9 +7,9 @@ interface CardInfoProps {
 
 const CardInfo: React.FC<CardInfoProps> = ({ info, url }) => {
   return (
-    <div>
+    <div className="w-[328px] border border-inherit rounded p-[7px]">
         <img src={url} alt="" />
-      <p>{info}</p>
+      <p className="text-justify">{info}</p>
     </div>
   );
 };

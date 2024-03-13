@@ -92,18 +92,21 @@ export default function Nosotros () {
 
                 {/* Separador 48px */}
                 <div className="min-h-[48px]"></div>
-                <div>
+
+
+                <div className="px-[16px]">
                     <h1 className="font-semibold text-[25px]" >Misión</h1>
                     {/* Separador 15px */}
                     <div className="min-h-[15px]"></div>
                     <div>
-                        <CardInfo info={vision} url="./nosotros/mision.png"/>
+                        <CardInfo info={mision} url="./nosotros/mision.png"/>
                     </div>
                 </div>
 
                 {/* Separador 48px */}
                 <div className="min-h-[48px]"></div>
-                <div>
+
+                <div className="px-[16px]">
                     <h1 className="font-semibold text-[25px]" >Visión</h1>
                     {/* Separador 15px */}
                     <div className="min-h-[15px]"></div>
@@ -114,9 +117,16 @@ export default function Nosotros () {
 
                 {/* Separador 48px */}
                 <div className="min-h-[48px]"></div>
-                <div>
+
+                <div className="px-[16px]">
                     <h1 className="font-semibold text-[25px]" >Donde encontrarnos</h1>
-                    <div className="min-w-[328px] min-h-[318px]">Mapa</div>
+                        {/* Separador 15px */}
+                        <div className="min-h-[15px]"></div>
+                    <div className="min-w-[328px] min-h-[318px]">
+                        <img src="./nosotros/map.png" alt="" />
+                    </div>
+                    {/* Separador 15px */}
+                    <div className="min-h-[15px]"></div>
                 </div>
                 
             </div>
