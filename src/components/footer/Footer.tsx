@@ -30,7 +30,8 @@ const Footer = (): JSX.Element => {
 
 
     return (
-        <div className="flex flex-wrap w-[360px] h-[548px] items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3]">
+        /* w-[360px]  */
+        <div className="flex flex-wrap h-[548px] items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3]">
             <div className="relative w-[194px] h-[88px]">
                 <div className="relative w-[174px] h-[78px] -top-px">
                     <div className="absolute w-[174px] h-[78px] top-0 left-0">
