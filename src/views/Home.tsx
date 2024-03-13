@@ -13,9 +13,7 @@ export default function Home() {
         const data = [... cards, ... cards];
 
     return (
-
-        
-        <>
+        <div className="px-[16px] md:px-[40px] 2xl:px[120px]">
             <div className="text-center mb-40" >
             27 años de experiencia. Asesoramiento personalizado. 
             Soluciones previsionales confiables en todo el país.
@@ -62,6 +60,6 @@ export default function Home() {
 
             <footer className="text-center py-4">
             </footer>
-        </>
+        </div>
     )
 };
