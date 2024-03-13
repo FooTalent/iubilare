@@ -9,7 +9,7 @@ interface CardNosotrosProps {
 }
 
 const CardNosotros: React.FC<CardNosotrosProps> = ({ name, status, image, className, textClassName }) => {
-  const combinedClassName = `w-[160px] h-[200px] rounded-md shadow-2xl pt-[16px] px-[16px] ${className}`;
+  const combinedClassName = `w-[160px] h-[200px] rounded-md pt-[16px] px-[16px] ${className}`;
   const combinedTextClassName = `${textClassName}`;
 
   return (
