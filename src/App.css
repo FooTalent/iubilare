@@ -2,13 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
 #root {
   min-height: 100vh;
   min-width: 100%;
   width: 100%;
   margin: 0;
   text-align: center;
+  --accioneserror: rgba(236, 71, 62, 1);
+--accionessuccess: rgba(95, 194, 111, 1);
+--accioneswarning: rgba(243, 200, 71, 1);
+--avatar-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+--azulesblue: rgba(116, 125, 214, 1);
+--black: rgba(18, 18, 18, 1);
+--button-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+--card-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.25);
+--inactivo: rgba(163, 163, 163, 1);
+--nav-bar-font-family: "Source Sans Pro", Helvetica;
+--nav-bar-font-size: 25px;
+--nav-bar-font-style: normal;
+--nav-bar-font-weight: 600;
+--nav-bar-letter-spacing: 0px;
+--nav-bar-line-height: normal;
+--p-rrafo-font-family: "Source Sans Pro", Helvetica;
+--p-rrafo-font-size: 13px;
+--p-rrafo-font-style: normal;
+--p-rrafo-font-weight: 400;
+--p-rrafo-letter-spacing: 0px;
+--p-rrafo-line-height: normal;
+--parrafos-p-rrafo-font-family: "Source Sans Pro", Helvetica;
+--parrafos-p-rrafo-font-size: 20px;
+--parrafos-p-rrafo-font-style: normal;
+--parrafos-p-rrafo-font-weight: 400;
+--parrafos-p-rrafo-letter-spacing: 0px;
+--parrafos-p-rrafo-line-height: normal;
+--variable-collection-white: rgba(255, 255, 255, 1);
+--verdesgreen: rgba(67, 147, 115, 1);
+--verdesgreen-active: rgba(41, 202, 138, 1);
+--white: rgba(255, 255, 255, 1);
+--x1-secundario: rgba(252, 247, 236, 1);
 }
+
 body {
   margin: 0;
   min-height: 100vh;
