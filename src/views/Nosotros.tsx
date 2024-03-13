@@ -1,9 +1,10 @@
+import CardInfo from "../components/cardNosotros/CardInfo"
 import CardNosotros from "../components/cardNosotros/CardNosotros"
-
 
 export default function Nosotros () {
 
-
+    const vision = "Ser reconocidos como líderes en el ámbito de las Rentas Vitalicias  Previsionales, siendo la opción preferida de las personas y familias que buscan seguridad y tranquilidad en el reclamo a realizar. Buscamos ser pioneros en defender sus derechos, ofreciendo soluciones integrales y personalizadas, que superen las expectativas de nuestros clientes.";
+    const mision = "En IUBILARE, nos comprometemos a brindar un asesoramiento experto y personalizado en todo lo referente a su Renta Vitalicia Previsional, respaldado por más de 29 años de experiencia y trayectoria en el mercado. Nuestro objetivo es proporcionar tranquilidad y confianza a cada uno de nuestros más de 4500 clientes distribuidos por todo el país, resolviendo sus problemáticas previsionales de manera eficiente y efectiva. Nos esforzamos por garantizar que cada cliente reciba el pago de su Renta Vitalicia Previsional con todos los derechos constitucionales que la amparan, satisfaciendo sus necesidades y expectativas.";
 
     return (
         <>
@@ -93,14 +94,22 @@ export default function Nosotros () {
                 <div className="min-h-[48px]"></div>
                 <div>
                     <h1 className="font-semibold text-[25px]" >Misión</h1>
-                    <div>Card Mision</div>
+                    {/* Separador 15px */}
+                    <div className="min-h-[15px]"></div>
+                    <div>
+                        <CardInfo info={vision} url="./nosotros/mision.png"/>
+                    </div>
                 </div>
 
                 {/* Separador 48px */}
                 <div className="min-h-[48px]"></div>
                 <div>
                     <h1 className="font-semibold text-[25px]" >Visión</h1>
-                    <div>Card Visión</div>
+                    {/* Separador 15px */}
+                    <div className="min-h-[15px]"></div>
+                    <div>
+                        <CardInfo info={vision} url="./nosotros/vision.png" />
+                    </div>
                 </div>
 
                 {/* Separador 48px */}
