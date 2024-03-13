@@ -11,6 +11,13 @@ export default {
         'button-hover-green': '#2db27d',
         'active-green': '#29ca8a',
         'background-green': '#A4BEB3',
+        'background-grey': '#f5f5f5',
+        'background-violet': '#747dd6',
+        '747DD6': '#747DD6',
+      },
+      borderRadius: {
+        'sm': '3.23px',
+      }
         accioneserror: "var(--accioneserror)",
         accionessuccess: "var(--accionessuccess)",
         accioneswarning: "var(--accioneswarning)",
@@ -33,6 +40,7 @@ export default {
         "button-shadow": "var(--button-shadow)",
         "card-shadow": "var(--card-shadow)",
         },
+
     },
   },
   plugins: [],

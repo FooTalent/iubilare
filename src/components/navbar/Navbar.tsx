@@ -1,6 +1,6 @@
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
-import { useState } from "react";
+    import MenuIcon from "@mui/icons-material/Menu";
+    import CloseIcon from "@mui/icons-material/Close";
+    import { useState } from "react";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
