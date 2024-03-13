@@ -1,39 +1,21 @@
-import {useState} from 'react';
+import { useState } from "react";
+
 
 const Footer = (): JSX.Element => {
-    const [open, setOpen] = useState([false, false, false, false]);
 
-  const handleClic = (index: number) => {
-    const newState = [...open];
-    newState[index] = !newState[index];
-    setOpen(newState);
-  };
+    const [contacto, setContacto] = useState(false);
+    const [nosotros, setNosotros] = useState(false);
+    const [tramites, setTramites] = useState(false);
+    const [ayuda, setAyuda] = useState(false);
 
-  const lists = [
-    {
-      title: "Contacto",
-      elements: ["Formulario", "Dónde encontrarnos", "Números de contacto"]
-    },
-    {
-      title: "Nosotros",
-      elements: ["Misión y visión", "Equipo", "Casos de éxito en todo el país"]
-    },
-    {
-      title: "Trámites",
-      elements: ["Tipos de trámite", "Testimonios"]
-    },
-    {
-      title: "Ayuda",
-      elements: ["Guía de trámites paso a paso", "Preguntas frecuentes"]
-    }
-  ];
 
 
     return (
         /* w-[360px]  */
         <div className="flex flex-wrap h-[548px] items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3]">
 
-        <div className='flex flex-row'>
+        <div className='md:flex md:flex-col '>
+        <div className='flex flex-row  md:flex-col'>
         <div className="relative w-[194px] h-[88px]">
                 <div className="relative w-[174px] h-[78px] -top-px">
                     <div className="absolute w-[174px] h-[78px] top-0 left-0">
@@ -94,28 +76,46 @@ const Footer = (): JSX.Element => {
                     </div>
                 </div>
             </div>
+        </div>
+
 
 
             
             <div className="Footer flex flex-col justify-start">
-            {lists.map((list, index) => (
-                <div key={index} className='mb-4'>
-                    <h2 className='text-left font-bold cursor-pointer' onClick={() => handleClic(index)}>
-                        {list.title}
-                    </h2>
-                    {open[index] && (
-                <ul>
-                    {list.elements.map((element, i) => (
-                    <li key={i} className='list-none pl-0 flex'>
-                        {element}
-                    </li>
-                            ))}
-                        </ul>
-                    )}
-                </div>
-                ))}
+            <div className='mb-4'>
+                    <h2 className='text-left font-bold cursor-pointer' onClick={()=> {setContacto(!contacto)} }>Contacto</h2>
+                    <ul className={`text-left md:block ${contacto ? 'block' : 'hidden'}`}>
+                        <li>Formulario</li>
+                        <li>Donde encontrarnos</li>
+                        <li>Números de contacto</li>
+                    </ul>
             </div>
-            <div className="inline-flex flex-col items-start gap-[4px] relative flex-[0_0_auto]">
+            <div className='mb-4'>
+                    <h2 className='text-left font-bold cursor-pointer' onClick={() => setNosotros(!nosotros)}>Nosotros</h2>
+                    <ul className={`text-left md:block ${nosotros ? 'block' : 'hidden'}`}>
+                        <li>Misión y visión</li>
+                        <li>Equipo</li>
+                        <li>Casos de éxito en todo el país</li>
+                    </ul>
+            </div>
+            <div className='mb-4'>
+                    <h2 className='text-left font-bold cursor-pointer' onClick={() => setTramites(!tramites)}>Trámites</h2>
+                    <ul className={`text-left md:block ${tramites ? 'block' : 'hidden'}`}>
+                        <li>Tipos de trámite</li>
+                        <li>Testimonios</li>
+                    </ul>
+            </div>
+            <div className='mb-4'>
+                    <h2 className='text-left font-bold cursor-pointer' onClick={() => {setAyuda(!ayuda)}}>Ayuda</h2>
+                    <ul className={`text-left md:block ${ayuda ? 'block' : 'hidden'}`}>
+                        <li>Guía de trámites paso a paso</li>
+                        <li>Preguntas frecuentes</li>
+                    </ul>
+            </div>
+            </div>
+
+
+            <div className="flex w-full flex-col items-start gap-[4px] relative flex-[0_0_auto]">
                 <p className="relative w-[270px] mt-[-1.00px] [font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px] tracking-[0] leading-[normal]">
                     Política de Privacidad&nbsp;&nbsp;&nbsp;&nbsp;Términos del Servicio.
                 </p>
