@@ -18,6 +18,29 @@ export default {
       borderRadius: {
         'sm': '3.23px',
       }
+        accioneserror: "var(--accioneserror)",
+        accionessuccess: "var(--accionessuccess)",
+        accioneswarning: "var(--accioneswarning)",
+        azulesblue: "var(--azulesblue)",
+        black: "var(--black)",
+        inactivo: "var(--inactivo)",
+        "variable-collection-white": "var(--variable-collection-white)",
+        verdesgreen: "var(--verdesgreen)",
+        "verdesgreen-active": "var(--verdesgreen-active)",
+        white: "var(--white)",
+        "x1-secundario": "var(--x1-secundario)",
+      },
+      fontFamily: {
+        "nav-bar": "var(--nav-bar-font-family)",
+        "p-rrafo": "var(--p-rrafo-font-family)",
+        "parrafos-p-rrafo": "var(--parrafos-p-rrafo-font-family)",
+      },
+      boxShadow: {
+        "avatar-shadow": "var(--avatar-shadow)",
+        "button-shadow": "var(--button-shadow)",
+        "card-shadow": "var(--card-shadow)",
+        },
+
     },
   },
   plugins: [],
