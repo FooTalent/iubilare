@@ -6,7 +6,7 @@ export default function Form (){
                 <h3 className="text-[20px] font-semibold md:text-[25px] 2xl:hidden">¿Tenés alguna duda o consulta?</h3>
                 <h3 className="text-[20px] font-semibold md:text-[25px] 2xl:hidden">Contactanos, estamos para ayudarte.</h3>
 
-                <h3 className="hidden font-semibold 2xl:block 2xl:text-[39px]">Si tiene alguna duda o consulta, no deude en contactarnos</h3>
+                <h3 className="hidden font-semibold 2xl:block 2xl:text-[39px]">Si tiene alguna duda o consulta, no dude en contactarnos</h3>
                 <h3 className="hidden font-semibold 2xl:block 2xl:text-[39px]">Estamos para ayudarlo.</h3>
 
             </div>
