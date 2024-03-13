@@ -17,7 +17,7 @@ export default {
       },
       borderRadius: {
         'sm': '3.23px',
-      }
+      },
         accioneserror: "var(--accioneserror)",
         accionessuccess: "var(--accionessuccess)",
         accioneswarning: "var(--accioneswarning)",
@@ -40,8 +40,6 @@ export default {
         "button-shadow": "var(--button-shadow)",
         "card-shadow": "var(--card-shadow)",
         },
-
     },
-  },
   plugins: [],
 }
