@@ -17,15 +17,18 @@ body {
   flex-direction: column;
 }
 
-@keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(calc(-233.92px * 3));
-	}
-}
+@media (max-width: 767px) {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-233.92px * 3));
+    }
+  }
 
-.animate-scroll {
-	animation: scroll 25s linear infinite;
+  .animate-scroll {
+    animation: scroll 25s linear infinite;
+  }
+  
 }

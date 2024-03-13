@@ -5,9 +5,9 @@ import Form from "../components/form/Form";
 export default function Home() {
  
     const cards = [
-        { id: 1, name: "Lorena Ontivero", age: "53 años",description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "https://via.placeholder.com/300" },
-        { id: 2, name: "Lorena Ontivero", age: "53 años",description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "https://via.placeholder.com/300" },
-        { id: 3, name: "Lorena Ontivero", age: "53 años",description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "https://via.placeholder.com/300" },
+        { id: 1, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "https://via.placeholder.com/300" },
+        { id: 2, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "https://via.placeholder.com/300" },
+        { id: 3, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "https://via.placeholder.com/300" },
         ];
 
         const data = [... cards, ... cards];
@@ -43,13 +43,14 @@ export default function Home() {
             </div>
 
             <div className="min-h-[108px]"></div>
-            <div><h2 className="text-xl font-semibold">Testimonios</h2></div>
+            <div><h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8">Testimonios</h2></div>
+            <div className="hidden md:block"><h3 className="text-xl 2xl:font-semibold md:text-[21px] 2xl:text-[31px]">Estos son algunos de nuestros clientes</h3></div>
             <div className="min-h-[48px]"></div>
 
 				<div className='overflow-hidden w-full h-full'>
-					<div className='flex whitespace-nowrap animate-scroll gap-5'>
+					<div className='flex whitespace-nowrap animate-scroll gap-5 md:gap-[100px]'>
                     {data.map((card, index) => (
-                        <Card key={index} name={card.name} age={card.age} description={card.description} imageUrl={card.imageUrl} />
+                        <Card key={index} name={card.name} age={card.age} city={card.city} description={card.description} imageUrl={card.imageUrl} />
                     ))}
 					</div>
 				</div>
