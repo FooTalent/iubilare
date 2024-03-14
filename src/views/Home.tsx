@@ -110,7 +110,7 @@ export default function Home() {
         <div className="h-[84px] md:h-[172px]"></div>
 
         {/* Seccion tipo de Trámites */}
-        <div className="px-[16px] flex flex-col justify-center 2xl:p-[36px]">
+        <div className="px-[16px] flex flex-col justify-center 2xl:px-[120px] 2xl:p-[36px]">
         <div>
             <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 ">Tipos de trámites</h2>
         </div>
@@ -153,7 +153,7 @@ export default function Home() {
             </div>
           </div>
           <div className="h-[40px] md:hidden"></div>
-          <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
+          <div className="flex flex-col justify-start items-center h-[235px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
             <div className="flex h-[111px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full  2xl:justify-end">
               <div>
               <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center 2xl:h-auto 2xl:mb-[10px]">
