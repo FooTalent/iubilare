@@ -11,10 +11,13 @@ const Footer = (): JSX.Element => {
 
 
     return (
-        /* w-[360px]  */
-        <div className="flex flex-wrap items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3] md:h-full md:w-full">
+        <div>
 
-        <div className='w-full md:flex md:flex-col'>
+        {/* Contenedor Secciones Logo/Redes/Datos/Servicios */}
+        <div className="flex flex-wrap items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3] md:h-full md:w-full md:px-[121px] ">
+
+        {/* Seccion Logo y Redes / Datos y Logos */}
+        <div className='w-full md:flex md:flex-col md:w-1/4'>
         <div className='w-full flex flex-row  md:flex-col justify-between'>
             <div className="relative w-[194px] h-[88px]">
                 <div className="relative w-[174px] h-[78px] -top-px">
@@ -41,9 +44,9 @@ const Footer = (): JSX.Element => {
         </div>
             
 
-
-
-            <div className="flex flex-col w-[300px]">
+            <div className="hidden md:block md:min-h-[46px]"></div>
+            {/* Seccion Datos y Logos */}
+            <div className="flex flex-col w-[300px] md:w-auto">
                 <div className='flex flex-row'>
                     <div className='w-[24px] h-[24px] flex justify-center'>
                         <img className="" src="./call.png" alt="Telefono" />                        
@@ -80,10 +83,10 @@ const Footer = (): JSX.Element => {
 
 
 
-            
-            <div className="Footer flex flex-col justify-start md:w-2/3">
-            <div className="md:flex md:w-full">
-            <div className='flex flex-col mb-4 w-1/2'>
+        {/* Seccion Desplegables Servicios */}
+            <div className="w-full flex flex-col justify-start md:w-2/3 md:mt-[65px]">
+            <div className="w-full md:flex md:w-full">
+            <div className='w-full flex flex-col mb-4 md:w-1/2'>
                     <div className="flex">
                     <h2 className='text-left font-bold cursor-pointer' onClick={()=> {setContacto(!contacto)} }>Contacto</h2>
                     <KeyboardArrowRightIcon/>
@@ -95,7 +98,7 @@ const Footer = (): JSX.Element => {
                         <li>Números de contacto</li>
                     </ul>
             </div>
-            <div className='mb-4 w-1/2'>
+                <div className='w-full flex flex-col mb-4 md:w-1/2'>
                     <div className="flex">
                     <h2 className='text-left font-bold cursor-pointer' onClick={() => setNosotros(!nosotros)}>Nosotros</h2>
                     <KeyboardArrowRightIcon/>
@@ -110,7 +113,7 @@ const Footer = (): JSX.Element => {
             </div>
 
             <div className="md:flex md:w-full">
-            <div className='mb-4 flex flex-col w-1/2'>
+            <div className='w-full flex flex-col mb-4 md:w-1/2'>
                     <div className="flex">
                     <h2 className='text-left font-bold cursor-pointer' onClick={() => setTramites(!tramites)}>Trámites</h2>
                     <KeyboardArrowRightIcon/>
@@ -120,7 +123,7 @@ const Footer = (): JSX.Element => {
                         <li>Testimonios</li>
                     </ul>
             </div>
-            <div className='mb-4 flex flex-col w-1/2'>
+            <div className='w-full flex flex-col mb-4 md:w-1/2'>
                     <div className="flex">
                     <h2 className='text-left font-bold cursor-pointer' onClick={() => {setAyuda(!ayuda)}}>Ayuda</h2>
                     <KeyboardArrowRightIcon/>
@@ -133,13 +136,21 @@ const Footer = (): JSX.Element => {
             </div>
             </div>
 
-            <div className="flex w-full flex-col items-start gap-[4px] relative flex-[0_0_auto]">
+        </div>
+
+        {/* Contendero Seccion Politicas */}
+        {/* Seccion  Politicas  */}
+            <div className="flex w-full flex-col items-start gap-[4px] relative flex-[0_0_auto] bg-[#a3bdb3] md:bg-white md:flex-row md:items-center md:justify-center md:h-[65px] 2xl:[74px]">
+                <div>
                 <p className="[font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px]">
                     Política de Privacidad&nbsp;&nbsp;&nbsp;&nbsp;Términos del Servicio.
                 </p>
+                </div>
+                <div>
                 <p className="[font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px]">
                     Copyright 2023 - Todos los derechos reservados
                 </p>
+                </div>
             </div>
         </div>
     );
