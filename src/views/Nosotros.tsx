@@ -172,6 +172,7 @@ export default function Nosotros () {
                         <img className="hidden 2xl:block" src="./nosotros/map-desktop.png" alt="" />
                         <img className="hidden md:block 2xl:hidden" src="./nosotros/map-tablet.png" alt="" />
                         <img className="md:hidden" src="./nosotros/map.png" alt="" />
+                        {/* <GoogleMapWrapper  coordinates={{ latitude: -34.59964997287337, longitude: -58.384776132694014}} ></GoogleMapWrapper> */}
                     </div>
                     {/* Separador 15px */}
                     <div className="min-h-[15px] 2xl:h-[105px]"></div>

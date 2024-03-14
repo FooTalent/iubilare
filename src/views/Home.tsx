@@ -7,7 +7,7 @@ export default function Home() {
   const buttonImage = isHovered
     ? "/botoncontactohover.png"
     : "/botoncontactodefault.png";
- 
+
     const cards = [
         { id: 1, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "./testimonios/test01.png", numberStars: 5 },
         { id: 2, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "./testimonios/test02.png", numberStars: 4 },
