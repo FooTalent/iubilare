@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const Footer = (): JSX.Element => {
 
@@ -12,11 +12,11 @@ const Footer = (): JSX.Element => {
 
     return (
         /* w-[360px]  */
-        <div className="flex flex-wrap h-[548px] items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3] md:h-full md:w-full">
+        <div className="flex flex-wrap items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3] md:h-full md:w-full">
 
-        <div className='md:flex md:flex-col '>
-        <div className='flex flex-row  md:flex-col'>
-        <div className="relative w-[194px] h-[88px]">
+        <div className='w-full md:flex md:flex-col'>
+        <div className='w-full flex flex-row  md:flex-col justify-between'>
+            <div className="relative w-[194px] h-[88px]">
                 <div className="relative w-[174px] h-[78px] -top-px">
                     <div className="absolute w-[174px] h-[78px] top-0 left-0">
                         <img src="./iubilare_logo.png" alt="Logo" />
@@ -84,7 +84,11 @@ const Footer = (): JSX.Element => {
             <div className="Footer flex flex-col justify-start md:w-2/3">
             <div className="md:flex md:w-full">
             <div className='flex flex-col mb-4 w-1/2'>
+                    <div className="flex">
                     <h2 className='text-left font-bold cursor-pointer' onClick={()=> {setContacto(!contacto)} }>Contacto</h2>
+                    <KeyboardArrowRightIcon/>
+                    </div>
+
                     <ul className={`text-left md:block ${contacto ? 'block' : 'hidden'}`}>
                         <li>Formulario</li>
                         <li>Donde encontrarnos</li>
@@ -92,7 +96,11 @@ const Footer = (): JSX.Element => {
                     </ul>
             </div>
             <div className='mb-4 w-1/2'>
+                    <div className="flex">
                     <h2 className='text-left font-bold cursor-pointer' onClick={() => setNosotros(!nosotros)}>Nosotros</h2>
+                    <KeyboardArrowRightIcon/>
+                    </div>
+
                     <ul className={`text-left md:block ${nosotros ? 'block' : 'hidden'}`}>
                         <li>Misión y visión</li>
                         <li>Equipo</li>
@@ -103,14 +111,20 @@ const Footer = (): JSX.Element => {
 
             <div className="md:flex md:w-full">
             <div className='mb-4 flex flex-col w-1/2'>
+                    <div className="flex">
                     <h2 className='text-left font-bold cursor-pointer' onClick={() => setTramites(!tramites)}>Trámites</h2>
+                    <KeyboardArrowRightIcon/>
+                    </div>
                     <ul className={`text-left md:block ${tramites ? 'block' : 'hidden'}`}>
                         <li>Tipos de trámite</li>
                         <li>Testimonios</li>
                     </ul>
             </div>
             <div className='mb-4 flex flex-col w-1/2'>
+                    <div className="flex">
                     <h2 className='text-left font-bold cursor-pointer' onClick={() => {setAyuda(!ayuda)}}>Ayuda</h2>
+                    <KeyboardArrowRightIcon/>
+                    </div>
                     <ul className={`text-left md:block ${ayuda ? 'block' : 'hidden'}`}>
                         <li>Guía de trámites paso a paso</li>
                         <li>Preguntas frecuentes</li>
@@ -119,12 +133,11 @@ const Footer = (): JSX.Element => {
             </div>
             </div>
 
-
             <div className="flex w-full flex-col items-start gap-[4px] relative flex-[0_0_auto]">
-                <p className="relative w-[270px] mt-[-1.00px] [font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px] tracking-[0] leading-[normal]">
+                <p className="[font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px]">
                     Política de Privacidad&nbsp;&nbsp;&nbsp;&nbsp;Términos del Servicio.
                 </p>
-                <p className="relative w-[280px] [font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px] tracking-[0] leading-[normal]">
+                <p className="[font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px]">
                     Copyright 2023 - Todos los derechos reservados
                 </p>
             </div>

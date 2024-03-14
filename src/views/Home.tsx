@@ -6,9 +6,9 @@ export default function Home() {
 
  
     const cards = [
-        { id: 1, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "./testimonios/test01.png" },
-        { id: 2, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "./testimonios/test02.png" },
-        { id: 3, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "./testimonios/test03.png" },
+        { id: 1, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "./testimonios/test01.png", numberStars: 5 },
+        { id: 2, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "./testimonios/test02.png", numberStars: 4 },
+        { id: 3, name: "Lorena Ontivero", age: "53 años",city: "San Juan", description: "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general", imageUrl: "./testimonios/test03.png", numberStars: 5 },
         ];
 
     const data = [... cards];
@@ -104,7 +104,7 @@ export default function Home() {
                     <div className='overflow-hidden w-full h-full 2xl:flex 2xl:justify-center'>
                         <div className='flex whitespace-nowrap animate-scroll gap-5 md:gap-[100px] md:justify-center 2xl:gap-[150px]'>
                         {data.map((card, index) => (
-                            <Card key={index} name={card.name} age={card.age} city={card.city} description={card.description} imageUrl={card.imageUrl} />
+                            <Card key={index} name={card.name} age={card.age} city={card.city} description={card.description} imageUrl={card.imageUrl} numberStars={card.numberStars} />
                         ))}
                         </div>
                     </div>

@@ -1,14 +1,16 @@
+import { StarSharp } from "@mui/icons-material";
 import React from "react";
-
 interface CardProps {
   name: string;
   age: string;
   city: string;
   description: string;
   imageUrl: string;
+  numberStars?: number;
 }
 
-const Card: React.FC<CardProps> = ({ name, age, city, description, imageUrl }) => {
+const Card: React.FC<CardProps> = ({ name, age, city, description, imageUrl, numberStars }) => {
+  const starsArray = Array.from({ length: numberStars || 0 });
   return (
     <div className="flex flex-col justify-center items-center bg-[#e8e8e8] w-[208px] h-[233.92px] pt-[18px] pb-[20px] px-[8px] rounded-md md:h-[364px] md:bg-transparent md:w-[163px] 2xl:min-w-[338.94px] 2xl:min-h[409.83px] 2xl:bg-white 2xl:rounded-lg">
       <div className="flex flex-col justify-center items-center w-[192px] h-[171.73px] md:h-[298px] overflow-hidden">
@@ -27,7 +29,11 @@ const Card: React.FC<CardProps> = ({ name, age, city, description, imageUrl }) =
           <p className="text-xs line-clamp-4">{description}</p>
         </div>
       </div>
-      <div className="md:hidden">stars</div>
+      <div className="md:hidden">
+      {starsArray.map((_, index) => (
+        <StarSharp key={index} />
+      ))}
+      </div>
     </div>
   );
 };
