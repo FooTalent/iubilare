@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "../components/card/Card";
 import Form from "../components/form/Form";
+import CardQueHacemos from "../components/cardQueHacemos/cardQueHacemos";
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -105,6 +106,27 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Que hacemos (Mobile) */}
+      <h2 className="mt-5 text-xl font-bold">¿Qué hacemos?</h2>
+      <p className="mt-5 ml-10 mr-10 text-justify">Gestionamos todos los trámites relacionados con su renta vitalicia previsional o jubilación sin que sea necesario que visite nuestras oficinas.</p>
+      <CardQueHacemos 
+        src="./QueHacemos1.jpeg" 
+        title="No queremos que pierda su tiempo ni dinero" 
+        description="Ofrecemos un primer diagnóstico previsional completamente gratuito que incluye un análisis detallado de sus años de servicio y contribuciones tanto como dependiente, autónomo o monotributista. De esta manera podemos determinar los pasos a seguir y evaluar si está en condiciones de iniciar su trámite."
+      />
+      <CardQueHacemos 
+        src="./QueHacemos2.jpeg" 
+        title="Seguimiento del beneficio previsional" 
+        description="En una segunda etapa, realizamos la gestión del beneficio previsional y hacemos el seguimiento del caso desde que el expediente es caratulado hasta el momento del primer cobro de haberes."
+      />
+      <CardQueHacemos 
+        src="./QueHacemos3.jpeg" 
+        title="Amplia experiencia" 
+        description="Contamos con una amplia experiencia y las mejores herramientas para brindarle un servicio de calidad que garantice que su Beneficio Previsional sea otorgado en el menor tiempo posible."
+      />
+
+
+
       {/* Content for small screens (mobile view) */}
       <div className="lg:hidden">
         {/* Adjusted margin-bottom here */}
@@ -170,9 +192,6 @@ export default function Home() {
           />
         </div>
       </div>
-
-
-
 
 
 

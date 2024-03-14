@@ -22,7 +22,7 @@ export default {
         accioneserror: "var(--accioneserror)",
         accionessuccess: "var(--accionessuccess)",
         accioneswarning: "var(--accioneswarning)",
-        azulesblue: "var(--azulesblue)",
+        "azulesblue": "var(--azulesblue)",
         black: "var(--black)",
         inactivo: "var(--inactivo)",
         "variable-collection-white": "var(--variable-collection-white)",
