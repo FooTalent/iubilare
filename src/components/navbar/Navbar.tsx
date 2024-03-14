@@ -11,7 +11,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="flex flex-wrap justify-between w-full h-[64px] shadow-md md:h-[112px] items-center mb-[10px] pl-[17px] pt-[7px] pb-[8px] md:shadow-md">
+            <div className="flex flex-wrap justify-between w-full h-[64px] shadow-md md:h-[112px] items-center mb-[10px] pl-[17px] pt-[7px] pb-[8px] md:shadow-md 2xl:px-[120px]">
                 <div className="flex flex-start w-1/2  text-center items-center md:w-[40%]">
                     <img src="./iubilare_logo.png" alt="" className="w-[107px] text-base md:w-[186px]" />
                 </div>
