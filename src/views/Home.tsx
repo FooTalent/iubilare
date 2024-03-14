@@ -135,63 +135,79 @@ export default function Home() {
       </div>
 
 
+        {/* Separador */}
+        <div className="h-[84px] md:h-[172px]"></div>
 
         {/* Seccion tipo de Trámites */}
-      <div className="lg:hidden px-[16px]">
-        {/* Adjusted margin-bottom here */}
-        <div className="text-neutral-900 text-2xl font-semibold font-['Source Sans Pro'] mt-20 md:text-[32px]">Tipos de trámites</div>
-        <div className="text-left w-[328px] h-[708px] flex-col justify-start items-start gap-10 inline-flex mt-8">
-        <div className="h-[198px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides flex-col justify-start items-center gap-[22px] flex">
-            <div className=" h-[91px] flex-col justify-start items-start gap-[3px] flex">
-              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']">
+        <div className="lg:hidden px-[16px] flex flex-col justify-center">
+        <div>
+            <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 2xl:text-white">
+              Tipos de trámites
+            </h2>
+        </div>
+
+        <div className="text-left w-[328px] h-[708px] flex-col justify-start self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full ">
+
+        <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full">
+            <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse md:h-full">
+              <div className="">
+              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-black md:h-full  md:text-center">
                 Renta Vitalicia Previsional en Dólares
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']">
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center">
                 Le ofrecemos realizar una entrevista o conversación telefónica
                 para brindarle un diagnóstico completo.
               </div>
-              <img
-                src="/actualizacionIcono.png"
-                alt="Hero"
-                className="mx-auto mt-3"
-              />
+              </div>
+              <div className="flex justify-center w-full">
+                <img className="md:hidden" src="/actualizacionIcono.png" alt="Hero" />
+                <img className="hidden md:block" src="./tramites/actualizacionFill.png" alt="Hero" />
+              </div>
             </div>
-            <div className="w-[55px] h-[53px] relative" />
           </div>
-          <div className="h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides flex-col justify-start items-center gap-[22px] flex">
-            <div className="h-[91px] flex-col justify-start items-start gap-[3px] flex">
-              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']">
+
+          <div className="h-[40px] md:hidden"></div>
+
+          <div className="flex h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides flex-col justify-start items-center gap-[22px] md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full">
+            <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full">
+              <div>
+              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center">
                 Complemento al Haber Mínimo
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']">
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center">
                 Es un pago que realiza ANSES a quienes reciben una Renta
                 Vitalicia y no alcanzan el Haber Mínimo Garantizado.
               </div>
-              <img
-                src="/complenebtoIcono.png"
-                alt="Hero"
-                className="mx-auto mt-3"
-              />
+              </div>
+              <div className="flex justify-center w-full">
+              <img  className="md:hidden" src="/complenebtoIcono.png" alt="Hero"/>
+              <img  className="hidden md:block" src="./tramites/complementoFill.png" alt="Hero"/>
+              </div>
             </div>
-            <div className="w-[60px] h-[60px] relative" />
           </div>
-          <div className="h-[225px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides flex-col justify-start items-center gap-[22px] flex">
-            <div className="h-[111px] flex-col justify-start items-start gap-[3px] flex">
-              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']">
+
+          <div className="h-[40px] md:hidden"></div>
+
+          <div className=" flex h-[240px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides flex-col justify-start items-center gap-[22px] md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full">
+            <div className="flex h-[111px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full">
+              <div>
+              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center">
                 Actualización de su Renta Previsional
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']">
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-center">
                 La Compañía de Seguros de Retiro otorga aumentos menores a su
                 Renta. Sin embargo, debería recibir los aumentos que ANSES ha
                 otorgado desde enero de 2002.
               </div>
+              </div>
+              <div className="flex justify-center w-full">
+              <img className="md:hidden" src="/rentaIcono.png" alt="Hero"  />
+              <img className="hidden md:block" src="./tramites/rentasFill.png" alt="Hero"  />
             </div>
-            <div className="w-[60px] h-[60px] justify-center items-center inline-flex">
-              <div className="w-[60px] h-[60px] relative" />
-              <img src="/rentaIcono.png" alt="Hero" className="mx-auto mt-3" />
             </div>
           </div>
         </div>
+        {/* Separador */}
         <div className="h-[36px]"></div>
         <div className="lg:w-1/2 lg:pr-8">
             <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px]">Más info</button>
@@ -203,8 +219,10 @@ export default function Home() {
       {/* Separador */}
       <div className="min-h-[110px]"></div>
 
+
+
       {/* Seccion Testimonios */}
-      <div className="2xl:bg-background-violet px-[16px] md:px-[40px] 2xl:px-[120px]">
+      <div className="2xl:bg-background-violet px-[16px] md:px-[40px] 2xl:px-[120px] md:pt-[54px]">
         <div>
           <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 2xl:text-white">
             Testimonios
