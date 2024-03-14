@@ -108,8 +108,9 @@ export default function Home() {
       {/* Content for small screens (mobile view) */}
       <div className="lg:hidden">
         {/* Adjusted margin-bottom here */}
+        <div className="text-neutral-900 text-2xl font-semibold font-['Source Sans Pro'] mt-20">Tipos de trámites</div>
         <div className="text-left w-[328px] h-[708px] flex-col justify-start items-start gap-10 inline-flex mt-8">
-          <div className="h-[198px] p-4 bg-gray-200 rounded-[5px] shadow flex-col justify-start items-center gap-[22px] flex">
+        <div className="h-[198px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides flex-col justify-start items-center gap-[22px] flex">
             <div className=" h-[91px] flex-col justify-start items-start gap-[3px] flex">
               <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']">
                 Renta Vitalicia Previsional en Dólares
@@ -118,10 +119,15 @@ export default function Home() {
                 Le ofrecemos realizar una entrevista o conversación telefónica
                 para brindarle un diagnóstico completo.
               </div>
+              <img
+                src="/actualizacionIcono.png"
+                alt="Hero"
+                className="mx-auto mt-3"
+              />
             </div>
             <div className="w-[55px] h-[53px] relative" />
           </div>
-          <div className="h-[205px] p-4 bg-gray-200 rounded-[5px] shadow flex-col justify-start items-center gap-[22px] flex">
+          <div className="h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides flex-col justify-start items-center gap-[22px] flex">
             <div className="h-[91px] flex-col justify-start items-start gap-[3px] flex">
               <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']">
                 Complemento al Haber Mínimo
@@ -138,7 +144,7 @@ export default function Home() {
             </div>
             <div className="w-[60px] h-[60px] relative" />
           </div>
-          <div className="h-[225px] p-4 bg-gray-200 rounded-[5px] shadow flex-col justify-start items-center gap-[22px] flex">
+          <div className="h-[225px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides flex-col justify-start items-center gap-[22px] flex">
             <div className="h-[111px] flex-col justify-start items-start gap-[3px] flex">
               <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']">
                 Actualización de su Renta Previsional
@@ -155,9 +161,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
+        <div className="lg:w-1/2 lg:pr-8 ml-7 mt-12">
+          <img
+            src="/masopcionesbotone.png"
+            alt="boton mas informacion"
+            className=""
+          />
+        </div>
       </div>
-
-
 
 
 
