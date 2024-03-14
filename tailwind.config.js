@@ -41,6 +41,17 @@ export default {
         "button-shadow": "var(--button-shadow)",
         "card-shadow": "var(--card-shadow)",
         },
+        typography: {
+          DEFAULT: {
+            css: {
+              // Define your typography styles here
+              'text-black': {
+                color: 'var(--black)',
+              },
+              // Add other styles as needed
+            }
+          }
+        }
     },
   plugins: [],
 }
