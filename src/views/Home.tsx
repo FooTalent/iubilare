@@ -60,11 +60,7 @@ export default function Home() {
         {/* Text and Button */}
         <div className="lg:w-1/2 lg:pl-8 flex flex-col justify-center">
           {/* Desktop Message */}
-          <div className="text-left text-2xl mb-10 lg:block hidden w-[452px]">
-            Somos un equipo de abogados y ejecutivos en gestión previsional con
-            27+ años de experiencia. Más de 4500 clientes en todo el país.
-            Asesoramiento personalizado para tranquilidad y solución de
-            problemas previsionales.
+          <div className="text-left text-2xl mb-10 lg:block hidden w-[452px]">Somos un equipo de abogados y ejecutivos en gestión previsional con 27+ años de experiencia. Más de 4500 clientes en todo el país. Asesoramiento personalizado para tranquilidad y solución de problemas previsionales.
           </div>
 
           {/* Button for desktop view */}
@@ -106,30 +102,44 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Que hacemos (Mobile) */}
-      <h2 className="mt-5 text-xl font-bold">¿Qué hacemos?</h2>
-      <p className="mt-5 ml-10 mr-10 text-justify">Gestionamos todos los trámites relacionados con su renta vitalicia previsional o jubilación sin que sea necesario que visite nuestras oficinas.</p>
-      <CardQueHacemos 
-        src="./QueHacemos1.jpeg" 
-        title="No queremos que pierda su tiempo ni dinero" 
-        description="Ofrecemos un primer diagnóstico previsional completamente gratuito que incluye un análisis detallado de sus años de servicio y contribuciones tanto como dependiente, autónomo o monotributista. De esta manera podemos determinar los pasos a seguir y evaluar si está en condiciones de iniciar su trámite."
-      />
-      <CardQueHacemos 
-        src="./QueHacemos2.jpeg" 
-        title="Seguimiento del beneficio previsional" 
-        description="En una segunda etapa, realizamos la gestión del beneficio previsional y hacemos el seguimiento del caso desde que el expediente es caratulado hasta el momento del primer cobro de haberes."
-      />
-      <CardQueHacemos 
-        src="./QueHacemos3.jpeg" 
-        title="Amplia experiencia" 
-        description="Contamos con una amplia experiencia y las mejores herramientas para brindarle un servicio de calidad que garantice que su Beneficio Previsional sea otorgado en el menor tiempo posible."
-      />
+
+      {/* Separador */}
+      <div className="h-[78px]"></div>
+      {/* Seccion Que Hacemos */}
+      <div className="flex flex-col justify-center px-[16px]">
+        <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 2xl:text-white">¿Qué hacemos?</h2>
+          <p className="mt-5 ml-10 mr-10 text-justify md:text-center">Gestionamos todos los trámites relacionados con su renta vitalicia previsional o jubilación sin que sea necesario que visite nuestras oficinas.</p>
+        <div className="h-[32px]"></div>
+        <div className="flex flex-col justify-center items-center">
+          <CardQueHacemos 
+            src="./QueHacemos1.jpeg" 
+            title="No queremos que pierda su tiempo ni dinero" 
+            description="Ofrecemos un primer diagnóstico previsional completamente gratuito que incluye un análisis detallado de sus años de servicio y contribuciones tanto como dependiente, autónomo o monotributista. De esta manera podemos determinar los pasos a seguir y evaluar si está en condiciones de iniciar su trámite."
+          />
+          <div className="h-[32px] md:[63px]"></div>
+          <CardQueHacemos 
+            src="./QueHacemos2.jpeg" 
+            title="Seguimiento del beneficio previsional" 
+            description="En una segunda etapa, realizamos la gestión del beneficio previsional y hacemos el seguimiento del caso desde que el expediente es caratulado hasta el momento del primer cobro de haberes."
+            classStyle="md:flex-row-reverse"
+
+          />
+          <div className="h-[32px] md:[63px]"></div>
+          <CardQueHacemos 
+            src="./QueHacemos3.jpeg" 
+            title="Amplia experiencia" 
+            description="Contamos con una amplia experiencia y las mejores herramientas para brindarle un servicio de calidad que garantice que su Beneficio Previsional sea otorgado en el menor tiempo posible."
+          />
+        </div>
+
+      </div>
 
 
-      {/* Content for small screens (mobile view) */}
-      <div className="lg:hidden">
+
+        {/* Seccion tipo de Trámites */}
+      <div className="lg:hidden px-[16px]">
         {/* Adjusted margin-bottom here */}
-        <div className="text-neutral-900 text-2xl font-semibold font-['Source Sans Pro'] mt-20">Tipos de trámites</div>
+        <div className="text-neutral-900 text-2xl font-semibold font-['Source Sans Pro'] mt-20 md:text-[32px]">Tipos de trámites</div>
         <div className="text-left w-[328px] h-[708px] flex-col justify-start items-start gap-10 inline-flex mt-8">
         <div className="h-[198px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides flex-col justify-start items-center gap-[22px] flex">
             <div className=" h-[91px] flex-col justify-start items-start gap-[3px] flex">
@@ -182,13 +192,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
-        <div className="lg:w-1/2 lg:pr-8 ml-7 mt-12">
-          <img
-            src="/masopcionesbotone.png"
-            alt="boton mas informacion"
-            className=""
-          />
+        <div className="h-[36px]"></div>
+        <div className="lg:w-1/2 lg:pr-8">
+            <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px]">Más info</button>
         </div>
       </div>
 
