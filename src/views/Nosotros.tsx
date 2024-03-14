@@ -15,8 +15,9 @@ export default function Nosotros () {
             {/* Seccion Clientes Satisfechos */}
             <div className="hidden 2xl:block 2xl:justify-center">
             <div className="2xl:flex 2xl:justify-center 2xl:px-[115px] 2xl:flex-row 2xl:gap-[92px]">
-                <div className="w-[526px] h-[600px] bg-slate-500 rounded-lg">
+                <div className="w-[526px] h-[600px] bg-background-violet-light rounded-lg px-[111px] py-[44px]">
                     {/* mapa Argentina */}
+                    <img className="" src="./nosotros/map-arg.png" alt="" />
                 </div>
                 <div className="flex flex-col w-[454px]">
                     <h1 className="text-[30px] font-semibold text-left">Nuestros Clientes Satisfechos</h1>

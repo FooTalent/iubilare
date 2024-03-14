@@ -13,6 +13,7 @@ export default {
         'background-green': '#A4BEB3',
         'background-grey': '#f5f5f5',
         'background-violet': '#747dd6',
+        'background-violet-light': '#DADEFF',
         '747DD6': '#747DD6',
       },
       borderRadius: {
