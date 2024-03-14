@@ -22,7 +22,7 @@ export default {
         accioneserror: "var(--accioneserror)",
         accionessuccess: "var(--accionessuccess)",
         accioneswarning: "var(--accioneswarning)",
-        azulesblue: "var(--azulesblue)",
+        "azulesblue": "var(--azulesblue)",
         black: "var(--black)",
         inactivo: "var(--inactivo)",
         "variable-collection-white": "var(--variable-collection-white)",
@@ -40,7 +40,20 @@ export default {
         "avatar-shadow": "var(--avatar-shadow)",
         "button-shadow": "var(--button-shadow)",
         "card-shadow": "var(--card-shadow)",
+        'light-top-heavy-bottom-light-sides': '0px 1px 1px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25)',
         },
+        typography: {
+          DEFAULT: {
+            css: {
+              // Define your typography styles here
+              'text-black': {
+                color: 'var(--black)',
+              },
+              
+              // Add other styles as needed
+            }
+          }
+        }
     },
   plugins: [],
 }
