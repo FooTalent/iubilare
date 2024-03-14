@@ -5,6 +5,7 @@ export default function Nosotros () {
 
     const vision = "Ser reconocidos como líderes en el ámbito de las Rentas Vitalicias  Previsionales, siendo la opción preferida de las personas y familias que buscan seguridad y tranquilidad en el reclamo a realizar. Buscamos ser pioneros en defender sus derechos, ofreciendo soluciones integrales y personalizadas, que superen las expectativas de nuestros clientes.";
     const mision = "En IUBILARE, nos comprometemos a brindar un asesoramiento experto y personalizado en todo lo referente a su Renta Vitalicia Previsional, respaldado por más de 29 años de experiencia y trayectoria en el mercado. Nuestro objetivo es proporcionar tranquilidad y confianza a cada uno de nuestros más de 4500 clientes distribuidos por todo el país, resolviendo sus problemáticas previsionales de manera eficiente y efectiva. Nos esforzamos por garantizar que cada cliente reciba el pago de su Renta Vitalicia Previsional con todos los derechos constitucionales que la amparan, satisfaciendo sus necesidades y expectativas.";
+    const clientes = "En este mapa se puede apreciar el éxito alcanzados por nuestra empresa a lo largo y ancho del país. Cada punto en el mapa representa un lugar donde hemos trabajado con clientes, logrando resultados excepcionales y construyendo relaciones duraderas. Desde las bulliciosas calles de las grandes ciudades hasta los pintorescos rincones rurales, hemos dejado nuestra huella logrando la satisfacción del cliente. Además, para obtener más información sobre nuestros proyectos exitosos y posiblemente establecer una conexión, desde Iubilare le concedemos la posibilidad de poder contactarse si lo desea, con alguno de nuestros clientes que haya logrado finalizar el trámite con éxito.";
 
     return (
         <>
@@ -12,16 +13,34 @@ export default function Nosotros () {
             <div className="min-h-[48px]"></div>
 
             {/* Seccion Clientes Satisfechos */}
+            <div className="hidden 2xl:block 2xl:justify-center">
+            <div className="2xl:flex 2xl:justify-center 2xl:px-[115px] 2xl:flex-row 2xl:gap-[92px]">
+                <div className="w-[526px] h-[600px] bg-slate-500 rounded-lg">
+                    {/* mapa Argentina */}
+                </div>
+                <div className="flex flex-col w-[454px]">
+                    <h1 className="text-[30px] font-semibold text-left">Nuestros Clientes Satisfechos</h1>
+                    <div className="h-[100px]"></div>
+                    <p className="text-justify">{clientes}</p>
+                    <div className="h-[55px]"></div>
+                    <div>
+                        <button className="md:active:text-background-violet md:hover:text-current md:inline-block md:py-2 md:px-4 md:bg-background-violet md:text-white rounded md:hover:bg-background-violet md:hover:text-white md:active:bg-background-violet md:outline-none md:focus:border md:focus:outline-none md:text-[14.14px]">Contactarme con un cliente</button>
+                    </div>
 
-            
+                </div>
+            </div>
+            </div>
+
+            {/* Separador 48px */}
+            <div className="min-h-[48px]"></div>
 
             <div className="px-[16px] 2xl:px-[115px]">
                 <div>
-                    <h1 className="font-semibold text-[25px]" >Equipo de Trabajo</h1>
+                    <h1 className="font-semibold text-[25px] 2xl:text-[35px]" >Equipo de Trabajo</h1>
                 </div>
 
                     {/* Separador 16px Para Seccion Tablet min height 768px*/}
-                    <div className="md:min-h-[16px]"></div>
+                    <div className="md:min-h-[16px] 2xl:min-h-[72px]"></div>
                     {/* Seccion Equipo de Tabajo para Tablet min height 768px */}
                     <div className="hidden md:flex md:flex-row md:justify-center md:gap-3 md:px-[41px] 2xl:gap-5">
                         <CardNosotros name={"Marcelo Visceglie"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet shadow-avatar-shadow" textClassName="text-white" />
