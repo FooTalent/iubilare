@@ -3,7 +3,6 @@
 export default function SectionQuienesSomos (){
 
     return (
-              {/* Seccion Quienes somos */}
               <div>
                    <div className="px-[16px] md:px-[40px] 2xl:px-[120px] md:hidden">
                 <h2 className="font-bold text-xl text-center mb-10">¿Quienes somos?</h2>

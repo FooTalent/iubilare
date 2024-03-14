@@ -126,7 +126,6 @@ export default function Home() {
       />
 
 
-
       {/* Content for small screens (mobile view) */}
       <div className="lg:hidden">
         {/* Adjusted margin-bottom here */}
@@ -198,13 +197,8 @@ export default function Home() {
       {/* Separador */}
       <div className="min-h-[110px]"></div>
 
-
-      {/* Separador */}
-      <div className="min-h-[108px]"></div>
-
       {/* Seccion Testimonios */}
       <div className="2xl:bg-background-violet px-[16px] md:px-[40px] 2xl:px-[120px]">
-        <div className="min-h-[62px]"></div>
         <div>
           <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 2xl:text-white">
             Testimonios
