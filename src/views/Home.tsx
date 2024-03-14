@@ -52,14 +52,14 @@ export default function Home() {
           <img
             src="/Youtubeplayer.png"
             alt="Hero"
-            className="mx-auto mb-5 mt-5  w-auto h-[200px]"
+            className="mx-auto mb-5 mt-5  w-[637px] h-auto"
           />
         </div>
 
         {/* Text and Button */}
         <div className="lg:w-1/2 lg:pl-8 flex flex-col justify-center">
           {/* Desktop Message */}
-          <div className="text-left text-2xl mb-10 lg:block hidden">
+          <div className="text-left text-2xl mb-10 lg:block hidden w-[452px]">
             Somos un equipo de abogados y ejecutivos en gestión previsional con
             27+ años de experiencia. Más de 4500 clientes en todo el país.
             Asesoramiento personalizado para tranquilidad y solución de
@@ -71,7 +71,7 @@ export default function Home() {
             <img
               src={buttonImage}
               alt="Hero"
-              className="mx-auto mb-5 "
+              className="mx-auto mb-5 ml-1 "
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             />
