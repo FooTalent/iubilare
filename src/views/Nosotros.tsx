@@ -11,7 +11,11 @@ export default function Nosotros () {
             {/* Separador 48px */}
             <div className="min-h-[48px]"></div>
 
-            <div className="px-[16px]">
+            {/* Seccion Clientes Satisfechos */}
+
+            
+
+            <div className="px-[16px] 2xl:px-[115px]">
                 <div>
                     <h1 className="font-semibold text-[25px]" >Equipo de Trabajo</h1>
                 </div>
@@ -19,12 +23,15 @@ export default function Nosotros () {
                     {/* Separador 16px Para Seccion Tablet min height 768px*/}
                     <div className="md:min-h-[16px]"></div>
                     {/* Seccion Equipo de Tabajo para Tablet min height 768px */}
-                    <div className="hidden md:flex md:flex-row md:justify-center md:gap-3 md:px-[41px]">
-                        <CardNosotros name={"Marcelo Visceglie"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet shadow-avatar-shadow" />
-                        <CardNosotros name={"Cristian Pavlovsky"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet shadow-avatar-shadow"/>
-                        <CardNosotros name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} className="bg-white shadow-avatar-shadow text-black" />
-                        <CardNosotros name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} className="bg-white shadow-avatar-shadow text-black" />
+                    <div className="hidden md:flex md:flex-row md:justify-center md:gap-3 md:px-[41px] 2xl:gap-5">
+                        <CardNosotros name={"Marcelo Visceglie"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet shadow-avatar-shadow" textClassName="text-white" />
+                        <CardNosotros name={"Cristian Pavlovsky"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet shadow-avatar-shadow" textClassName="text-white"/>
+                        <CardNosotros name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} className="bg-white shadow-avatar-shadow text-black" textClassTitle="text-background-violet" />
+                        <CardNosotros name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} className="bg-white shadow-avatar-shadow text-black" textClassTitle="text-background-violet" />
                     </div>
+                    {/* Separador 16px */}
+                    <div className="hidden md:block md:min-h-[16px]"></div>
+                    <button className="hidden  md:active:text-background-violet md:hover:text-current md:inline-block md:py-2 md:px-4 md:bg-background-violet md:text-white rounded md:hover:bg-background-violet md:hover:text-white md:active:bg-background-violet md:outline-none md:focus:border md:focus:outline-none md:w-[140.13px] md:text-[14.14px]">Ver al equipo</button>
 
 
             {/* Separador 16px */}
@@ -141,12 +148,14 @@ export default function Nosotros () {
                     <h1 className="font-semibold text-[25px]" >Donde encontrarnos</h1>
                         {/* Separador 15px */}
                         <div className="min-h-[15px]"></div>
-                    <div className="min-w-[328px] min-h-[318px]">
-                        <img className="hidden md:block" src="./nosotros/map-tablet.png" alt="" />
+                    <div className="min-w-[328px] min-h-[318px] md:flex md:justify-center">
+                        <img className="hidden 2xl:block" src="./nosotros/map-desktop.png" alt="" />
+                        <img className="hidden md:block 2xl:hidden" src="./nosotros/map-tablet.png" alt="" />
                         <img className="md:hidden" src="./nosotros/map.png" alt="" />
                     </div>
                     {/* Separador 15px */}
-                    <div className="min-h-[15px]"></div>
+                    <div className="min-h-[15px] 2xl:h-[105px]"></div>
+
                 </div>
                 
             </div>
