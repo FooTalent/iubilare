@@ -1,13 +1,8 @@
-import { useState } from "react";
 import Card from "../components/card/Card";
 import Form from "../components/form/Form";
 import CardQueHacemos from "../components/cardQueHacemos/cardQueHacemos";
 
 export default function Home() {
-  const [isHovered, setIsHovered] = useState(false);
-  const buttonImage = isHovered
-    ? "/botoncontactohover.png"
-    : "/botoncontactodefault.png";
 
   const cards = [
     {
@@ -46,69 +41,45 @@ export default function Home() {
 
   return (
     <div>
+      {/* Separador */}
+      <div className="min-h-[69px] md:hidden"></div>
+
       {/* Seccion Inicio */}
-      <div className="flex flex-col lg:flex-row">
-        {/* Image */}
-        <div className="lg:w-1/2 lg:pr-8 lg:block hidden">
-          <img
-            src="/Youtubeplayer.png"
-            alt="Hero"
-            className="mx-auto mb-5 mt-5  w-[637px] h-auto"
-          />
+      <div className="flex flex-col px-[16px] md:px-[40px] 2xl:px-[120px]">
+        <div className="flex flex-col md:flex-col-reverse 2xl:flex-row- 2xl:flex-row-reverse 2xl:gap-[132px]">
+        <div className="2xl:w-[50%] 2xl:flex">
+        <div className="hidden md:block text-left 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:w-[70%]">
+            <h1 className="md:text-[20px] md:font-semibold">Iubilare consultora previsional</h1>
+            <p className="">Somos un equipo de abogados y ejecutivos en gestión previsional con 27+ años de experiencia. Más de 4500 clientes en todo el país. Asesoramiento personalizado para tranquilidad y solución de problemas previsionales.</p>
+            <div className="hidden 2xl:block 2xl:mt-5">
+              <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px]">Contactate</button>
+            </div>
         </div>
 
-        {/* Text and Button */}
-        <div className="lg:w-1/2 lg:pl-8 flex flex-col justify-center">
-          {/* Desktop Message */}
-          <div className="text-left text-2xl mb-10 lg:block hidden w-[452px]">Somos un equipo de abogados y ejecutivos en gestión previsional con 27+ años de experiencia. Más de 4500 clientes en todo el país. Asesoramiento personalizado para tranquilidad y solución de problemas previsionales.
-          </div>
-
-          {/* Button for desktop view */}
-          <div className="lg:block hidden">
-            <img
-              src={buttonImage}
-              alt="Hero"
-              className="mx-auto mb-5 ml-1 "
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            />
-          </div>
-
-          {/* Mobile Message */}
-          <div className="text-left text-xl mb-5 lg:hidden ml-4">
-            27 años de experiencia. Asesoramiento personalizado. Soluciones
-            previsionales confiables en todo el país.
-          </div>
-
-          {/* Image */}
-          <div className="lg:w-1/2 lg:pr-8">
-            <img
-              src="/Youtubeplayer.png"
-              alt="Hero"
-              className="mx-auto mb-5 mt-5 lg:hidden w-auto h-[200px]"
-            />
-          </div>
-
-          {/* Button for mobile view */}
-          <div className="lg:hidden">
-            <img
-              src={buttonImage}
-              alt="Hero"
-              className="mx-auto mb-5"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            />
+          <div className="text-[20px] md:hidden">
+            <p>27 años de experiencia. Asesoramiento personalizado. Soluciones previsionales confiables en todo el país.</p>
           </div>
         </div>
+          <div className="">
+            <img className="mx-auto mb-5 mt-5 w-auto h-[200px] md:w-[688px] md:h-auto" src="/Youtubeplayer.png" alt="Hero"/>
+          </div>
+        </div>
+        <div className="2xl:hidden mt-8 flex justify-start">
+        <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px]">Contactate</button>
+        </div>
+
       </div>
 
 
       {/* Separador */}
-      <div className="h-[78px]"></div>
+      <div className="h-[78px] 2xl:h-[285px]"></div>
       {/* Seccion Que Hacemos */}
-      <div className="flex flex-col justify-center px-[16px]">
-        <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 2xl:text-white">¿Qué hacemos?</h2>
-          <p className="mt-5 ml-10 mr-10 text-justify md:text-center">Gestionamos todos los trámites relacionados con su renta vitalicia previsional o jubilación sin que sea necesario que visite nuestras oficinas.</p>
+      <div className="flex flex-col justify-center px-[16px] 2xl:p-[36px] 2xl:">
+          <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8">¿Qué hacemos?</h2>
+          <div className="2xl:flex 2xl:justify-center"> 
+          <p className="mt-5 ml-10 mr-10 text-justify md:text-center 2xl:text-[23px] 2xl:w-[860px]">Gestionamos todos los trámites relacionados con su renta vitalicia previsional o jubilación sin que sea necesario que visite nuestras oficinas.</p>
+          </div>
+
         <div className="h-[32px]"></div>
         <div className="flex flex-col justify-center items-center">
           <CardQueHacemos 
@@ -139,19 +110,16 @@ export default function Home() {
         <div className="h-[84px] md:h-[172px]"></div>
 
         {/* Seccion tipo de Trámites */}
-        <div className="lg:hidden px-[16px] flex flex-col justify-center">
+        <div className="px-[16px] flex flex-col justify-center 2xl:p-[36px]">
         <div>
-            <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 2xl:text-white">
-              Tipos de trámites
-            </h2>
+            <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 ">Tipos de trámites</h2>
         </div>
+        <div className="text-left w-[328px] h-[708px] flex-col justify-start self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full 2xl:w-[1115px] 2xl:h-[500px] ">
 
-        <div className="text-left w-[328px] h-[708px] flex-col justify-start self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full ">
-
-        <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full">
-            <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse md:h-full">
+        <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
+            <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse md:h-full  2xl:justify-end">
               <div className="">
-              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-black md:h-full  md:text-center">
+              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-black md:h-full  md:text-center 2xl:h-auto  2xl:mb-[10px]">
                 Renta Vitalicia Previsional en Dólares
               </div>
               <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center">
@@ -161,17 +129,16 @@ export default function Home() {
               </div>
               <div className="flex justify-center w-full">
                 <img className="md:hidden" src="/actualizacionIcono.png" alt="Hero" />
-                <img className="hidden md:block" src="./tramites/actualizacionFill.png" alt="Hero" />
+                <img className="hidden md:block 2xl:w-[197px]" src="./tramites/actualizacionFill.png" alt="Hero" />
               </div>
             </div>
           </div>
 
           <div className="h-[40px] md:hidden"></div>
-
-          <div className="flex h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides flex-col justify-start items-center gap-[22px] md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full">
-            <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full">
+          <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
+            <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full 2xl:justify-end">
               <div>
-              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center">
+              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center  2xl:h-auto 2xl:mb-[10px]">
                 Complemento al Haber Mínimo
               </div>
               <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center">
@@ -181,17 +148,15 @@ export default function Home() {
               </div>
               <div className="flex justify-center w-full">
               <img  className="md:hidden" src="/complenebtoIcono.png" alt="Hero"/>
-              <img  className="hidden md:block" src="./tramites/complementoFill.png" alt="Hero"/>
+              <img  className="hidden md:block 2xl:w-[197px]" src="./tramites/complementoFill.png" alt="Hero"/>
               </div>
             </div>
           </div>
-
           <div className="h-[40px] md:hidden"></div>
-
-          <div className=" flex h-[240px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides flex-col justify-start items-center gap-[22px] md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full">
-            <div className="flex h-[111px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full">
+          <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
+            <div className="flex h-[111px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full  2xl:justify-end">
               <div>
-              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center">
+              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center 2xl:h-auto 2xl:mb-[10px]">
                 Actualización de su Renta Previsional
               </div>
               <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-center">
@@ -202,14 +167,16 @@ export default function Home() {
               </div>
               <div className="flex justify-center w-full">
               <img className="md:hidden" src="/rentaIcono.png" alt="Hero"  />
-              <img className="hidden md:block" src="./tramites/rentasFill.png" alt="Hero"  />
+              <img className="hidden md:block 2xl:w-[197px]" src="./tramites/rentasFill.png" alt="Hero"  />
             </div>
             </div>
           </div>
         </div>
+
         {/* Separador */}
         <div className="h-[36px]"></div>
-        <div className="lg:w-1/2 lg:pr-8">
+
+        <div className="2xl:hidden">
             <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px]">Más info</button>
         </div>
       </div>
