@@ -72,7 +72,7 @@ export default function Home() {
 
 
       {/* Separador */}
-      <div className="h-[78px] 2xl:h-[285px]"></div>
+      <div className="h-[78px] 2xl:h-[100px]"></div>
       {/* Seccion Que Hacemos */}
       <div className="flex flex-col justify-center px-[16px] 2xl:p-[36px] 2xl:">
           <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8">¿Qué hacemos?</h2>
