@@ -45,7 +45,7 @@ export default function Form (){
                     </div>
                     <div className="h-[36px] min-h-[36px]"></div>
                     <div className="w-full pl-[7.5px] pr-[7.5px]">
-                        <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px]">Enviar consulta</button>
+                        <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[145.13px] md:text-[14.14px] font-bold  2xl:w-[160px] ">Enviar consulta</button>
                     </div>
                 </div>
             </div>

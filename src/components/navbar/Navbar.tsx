@@ -44,32 +44,32 @@ export default function Navbar() {
                         <span>
                             {/* se agregaron las clases active:text-active-green para el color cuando activas el link en version mobile*/}
                             {/* se agregaron las clases hover:text-inherit para eliminar el violet como color por defecto de los tags a*/}
-                        <Link to={"/"} className="group active:text-active-green hover:text-inherit">Inicio
+                        <Link to={"/"} className="group active:text-active-green hover:text-inherit font-bold">Inicio
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </Link>
                         </span>
 
                     </li>
                     <li>
-                        <Link to={"/nosotros"} className="group active:text-active-green hover:text-inherit">Nosotros
+                        <Link to={"/nosotros"} className="group active:text-active-green hover:text-inherit font-bold">Nosotros
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </Link>
                         
 
                     </li>
                     <li>
-                    <Link to={"/tramites"} className="group active:text-active-green hover:text-inherit">Trámites
+                    <Link to={"/tramites"} className="group active:text-active-green hover:text-inherit font-bold">Trámites
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </Link>
                     </li>
 
                     <li>
-                    <Link to={"/ayuda"} className="group active:text-active-green hover:text-inherit">Ayuda
+                    <Link to={"/ayuda"} className="group active:text-active-green hover:text-inherit font-bold">Ayuda
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </Link>
                     </li>
                     <li>
-                        <a className="active:text-active-green hover:text-inherit md:inline-block md:py-2 md:px-4 md:bg-button-green md:text-white md:rounded md:hover:bg-button-hover-green md:hover:text-white md:active:bg-active-green" href="#">Contacto</a>
+                        <a className="active:text-active-green hover:text-inherit md:inline-block md:py-2 md:px-4 md:bg-button-green md:text-white md:rounded md:hover:bg-button-hover-green md:hover:text-white md:active:bg-active-green font-bold" href="#">Contacto</a>
                     </li>
                 </ul>
                 </div>
