@@ -1,5 +1,6 @@
 import { useState } from "react";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import { KeyboardArrowDown } from "@mui/icons-material";
 
 const Footer = (): JSX.Element => {
 
@@ -87,9 +88,15 @@ const Footer = (): JSX.Element => {
             <div className="w-full flex flex-col justify-start md:w-2/3 md:mt-[65px]">
             <div className="w-full md:flex md:w-full">
             <div className='w-full flex flex-col mb-4 md:w-1/2'>
-                    <div className="flex">
-                    <h2 className='text-left font-bold cursor-pointer' onClick={()=> {setContacto(!contacto)} }>Contacto</h2>
+                    <div className="flex" onClick={()=> {setContacto(!contacto)} }>
+                    <h2 className='text-left font-bold cursor-pointer'>Contacto</h2>
+                    <div className="md:hidden">
+                    {contacto ?
+                    <KeyboardArrowDown/>:
                     <KeyboardArrowRightIcon/>
+                    }
+
+                    </div>
                     </div>
 
                     <ul className={`text-left md:block ${contacto ? 'block' : 'hidden'}`}>
@@ -99,9 +106,15 @@ const Footer = (): JSX.Element => {
                     </ul>
             </div>
                 <div className='w-full flex flex-col mb-4 md:w-1/2'>
-                    <div className="flex">
-                    <h2 className='text-left font-bold cursor-pointer' onClick={() => setNosotros(!nosotros)}>Nosotros</h2>
+                    <div className="flex" onClick={() => setNosotros(!nosotros)}>
+                    <h2 className='text-left font-bold cursor-pointer'>Nosotros</h2>
+                    <div className="md:hidden">
+                    {nosotros ?
+                    <KeyboardArrowDown/>:
                     <KeyboardArrowRightIcon/>
+                    }
+                    </div>
+
                     </div>
 
                     <ul className={`text-left md:block ${nosotros ? 'block' : 'hidden'}`}>
@@ -114,9 +127,14 @@ const Footer = (): JSX.Element => {
 
             <div className="md:flex md:w-full">
             <div className='w-full flex flex-col mb-4 md:w-1/2'>
-                    <div className="flex">
-                    <h2 className='text-left font-bold cursor-pointer' onClick={() => setTramites(!tramites)}>Trámites</h2>
+                    <div className="flex" onClick={() => setTramites(!tramites)}>
+                    <h2 className='text-left font-bold cursor-pointer'>Trámites</h2>
+                    <div className="md:hidden">
+                    {tramites ?
+                    <KeyboardArrowDown/>:
                     <KeyboardArrowRightIcon/>
+                    }
+                    </div>
                     </div>
                     <ul className={`text-left md:block ${tramites ? 'block' : 'hidden'}`}>
                         <li>Tipos de trámite</li>
@@ -124,9 +142,17 @@ const Footer = (): JSX.Element => {
                     </ul>
             </div>
             <div className='w-full flex flex-col mb-4 md:w-1/2'>
-                    <div className="flex">
-                    <h2 className='text-left font-bold cursor-pointer' onClick={() => {setAyuda(!ayuda)}}>Ayuda</h2>
+                    <div className="flex"  onClick={() => {setAyuda(!ayuda)}}>
+                    <h2 className='text-left font-bold cursor-pointer'>Ayuda</h2>
+                    <div className="md:hidden">
+                    {ayuda ?
+                    <KeyboardArrowDown/>:
                     <KeyboardArrowRightIcon/>
+                    }
+                    </div>
+
+                    
+                    
                     </div>
                     <ul className={`text-left md:block ${ayuda ? 'block' : 'hidden'}`}>
                         <li>Guía de trámites paso a paso</li>
