@@ -27,20 +27,14 @@ const Footer = (): JSX.Element => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-row'>
-            <div className="inline-flex items-start gap-[20px] relative flex-[0_0_auto]">
-                <div className="relative w-[33px] h-[33px] bg-x1-secundario rounded-[16.5px]" />
-                <div className="inline-flex items-start gap-[10px] px-[5px] py-[2px] absolute top-[7px] left-[7px]">
-                    <img className="relative w-[8.23px] h-[15.04px]" alt="Vector" src="vector.png" />
+            <div className='flex flex-row mr-12 md:mr-0'>
+                <div className="w-[33px] h-[33px] rounded-[16px/16.5px]">
+                    <img className="" alt="Vector" src="./footer/facebook.png" />
                 </div>
-            </div>
-            <div className="relative w-[32px] h-[33px] bg-x1-secundario rounded-[16px/16.5px]">
-                <img
-                    className="absolute w-[14px] h-[15px] top-[9px] left-[9px]"
-                    alt="Icomoon free"
-                    src="icomoon-free-instagram.png"
-                />
-            </div>
+                <div className="min-w-[30px]"></div>
+                <div className="w-[33px] h-[33px] rounded-[16px/16.5px]">
+                    <img className="" alt="Icomoon free"src="./footer/instagram.png"/>
+                </div>
             </div>
         </div>
             
@@ -166,7 +160,7 @@ const Footer = (): JSX.Element => {
 
         {/* Contendero Seccion Politicas */}
         {/* Seccion  Politicas  */}
-            <div className="flex w-full flex-col items-start gap-[4px] relative flex-[0_0_auto] bg-[#a3bdb3] md:bg-white md:flex-row md:items-center md:justify-center md:h-[65px] 2xl:[74px]">
+            <div className="flex w-full flex-col items-start gap-[4px] relative flex-[0_0_auto] bg-[#a3bdb3] md:bg-white md:flex-row md:items-center md:justify-center md:h-[65px] 2xl:[74px] px-[16px]">
                 <div>
                 <p className="[font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px]">
                     Política de Privacidad&nbsp;&nbsp;&nbsp;&nbsp;Términos del Servicio.
