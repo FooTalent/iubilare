@@ -39,7 +39,7 @@ export default function Navbar() {
                         isOpen ? "transition-height duration-2000 h-auto" : "transition-height duration-2000 h-0 overflow-hidden"
                     }`}
                     >
-                <ul className="flex flex-col justify-around bg-white items-start pl-5 shadow-md h-[178px] md:flex md:flex-row md:h-auto md:shadow-none md:space-x-0.5 md:justify-around   ">
+                <ul className="flex flex-col justify-around bg-white items-start pl-5 shadow-md h-[178px] md:flex md:flex-row md:h-auto md:shadow-none md:space-x-0.5 md:justify-around  md:items-center ">
                     <li>
                         <span>
                             {/* se agregaron las clases active:text-active-green para el color cuando activas el link en version mobile*/}
