@@ -50,13 +50,13 @@ export default function Home() {
         <div className="2xl:w-[50%] 2xl:flex">
         <div className="hidden md:block text-left md:m-[10px] 2xl:flex 2xl:flex-col 2xl:justify-around 2xl:w-[70%]">
             <h1 className="md:text-[20px] md:font-semibold 2xl:text-[40px]">Iubilare consultora previsional</h1>
-            <p className="hidden 2xl:block 2xl:text-[28px]">27 años de experiencia. Asesoramiento personalizado. Soluciones previsionales confiables en <span className="2xl:font-bold">todo el país.</span></p>
+            <p className="text-left hidden 2xl:block 2xl:text-[28px]">27 años de experiencia. Asesoramiento personalizado. Soluciones previsionales confiables en <span className="2xl:font-bold">todo el país.</span></p>
             <p className="md:w-2/3 2xl:hidden">Somos un equipo de abogados y ejecutivos en gestión previsional con 27+ años de experiencia. Más de 4500 clientes en todo el país. Asesoramiento personalizado para tranquilidad y solución de problemas previsionales.</p>
             <div className="hidden 2xl:block 2xl:mt-5">
               <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] 2xl:w-[100%] font-bold">Contactate</button>
             </div>
         </div>
-          <div className="text-[20px] md:hidden">
+          <div className="text-left text-[20px] md:hidden">
             <p>27 años de experiencia. Asesoramiento personalizado. Soluciones previsionales confiables en todo el país.</p>
           </div>
         </div>
