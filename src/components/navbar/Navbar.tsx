@@ -11,7 +11,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="flex flex-wrap justify-between w-full h-[64px] shadow-md md:h-[112px] items-center mb-[10px] pt-[7px] pb-[8px] md:shadow-md 2xl:px-[120px]">
+            <div className="flex flex-wrap justify-between w-full h-[64px] shadow-md md:h-[112px] items-center mb-[10px] pt-[7px] pb-[8px] md:shadow-md 2xl:px-[120px] fixed bg-white border z-10">
                 <div className="flex flex-start w-1/2  text-center items-center md:w-[40%]">
                     <img src="./iubilare_logo.png" alt="" className="w-[107px] text-base md:w-[186px] ml-[17px]" />
                 </div>
@@ -39,7 +39,7 @@ export default function Navbar() {
                         isOpen ? "transition-height duration-2000 h-auto" : "transition-height duration-2000 h-0 overflow-hidden"
                     }`}
                     >
-                <ul className="flex flex-col justify-around bg-white items-start pl-5 shadow-md h-[178px] md:flex md:flex-row md:h-auto md:shadow-none md:space-x-0.5 md:justify-around   ">
+                <ul className="flex flex-col justify-around bg-white items-start pl-5 shadow-md h-[178px] md:flex md:flex-row md:h-auto md:shadow-none md:space-x-0.5 md:justify-around  md:items-center ">
                     <li>
                         <span>
                             {/* se agregaron las clases active:text-active-green para el color cuando activas el link en version mobile*/}

@@ -168,12 +168,13 @@ export default function Nosotros () {
                     <h1 className="font-semibold text-[25px]" >Donde encontrarnos</h1>
                         {/* Separador 15px */}
                         <div className="min-h-[15px]"></div>
-                    <div className="min-w-[328px] min-h-[318px] md:flex md:justify-center">
-                        <img className="hidden 2xl:block" src="./nosotros/map-desktop.png" alt="" />
-                        <img className="hidden md:block 2xl:hidden" src="./nosotros/map-tablet.png" alt="" />
-                        <img className="md:hidden" src="./nosotros/map.png" alt="" />
-                        {/* <GoogleMapWrapper  coordinates={{ latitude: -34.59964997287337, longitude: -58.384776132694014}} ></GoogleMapWrapper> */}
-                    </div>
+                        <div className="min-w-[328px] min-h-[318px] flex justify-center items-center">
+                            <button className=" w-1/2 active:text-active-green hover:text-inherit md:w-1/4 md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:text-[14.14px] 2xl:w-1/12 font-bold z-10">Ver Mapa</button>
+                            <img className="hidden 2xl:block brightness-75 absolute" src="./nosotros/map-desktop.png" alt="" />
+                            <img className="hidden md:block 2xl:hidden brightness-75 absolute" src="./nosotros/map-tablet.png" alt="" />
+                            <img className="md:hidden brightness-75 absolute" src="./nosotros/map.png" alt="" />
+                            {/* <GoogleMapWrapper  coordinates={{ latitude: -34.59964997287337, longitude: -58.384776132694014}} ></GoogleMapWrapper> */}
+                        </div>
                     {/* Separador 15px */}
                     <div className="min-h-[15px] 2xl:h-[105px]"></div>
 

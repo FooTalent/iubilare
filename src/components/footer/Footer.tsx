@@ -1,5 +1,6 @@
 import { useState } from "react";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import { KeyboardArrowDown } from "@mui/icons-material";
 
 const Footer = (): JSX.Element => {
 
@@ -26,20 +27,14 @@ const Footer = (): JSX.Element => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-row'>
-            <div className="inline-flex items-start gap-[20px] relative flex-[0_0_auto]">
-                <div className="relative w-[33px] h-[33px] bg-x1-secundario rounded-[16.5px]" />
-                <div className="inline-flex items-start gap-[10px] px-[5px] py-[2px] absolute top-[7px] left-[7px]">
-                    <img className="relative w-[8.23px] h-[15.04px]" alt="Vector" src="vector.png" />
+            <div className='flex flex-row mr-12 md:mr-0'>
+                <div className="w-[33px] h-[33px] rounded-[16px/16.5px]">
+                    <img className="" alt="Vector" src="./footer/facebook.png" />
                 </div>
-            </div>
-            <div className="relative w-[32px] h-[33px] bg-x1-secundario rounded-[16px/16.5px]">
-                <img
-                    className="absolute w-[14px] h-[15px] top-[9px] left-[9px]"
-                    alt="Icomoon free"
-                    src="icomoon-free-instagram.png"
-                />
-            </div>
+                <div className="min-w-[30px]"></div>
+                <div className="w-[33px] h-[33px] rounded-[16px/16.5px]">
+                    <img className="" alt="Icomoon free"src="./footer/instagram.png"/>
+                </div>
             </div>
         </div>
             
@@ -87,9 +82,15 @@ const Footer = (): JSX.Element => {
             <div className="w-full flex flex-col justify-start md:w-2/3 md:mt-[65px]">
             <div className="w-full md:flex md:w-full">
             <div className='w-full flex flex-col mb-4 md:w-1/2'>
-                    <div className="flex">
-                    <h2 className='text-left font-bold cursor-pointer' onClick={()=> {setContacto(!contacto)} }>Contacto</h2>
+                    <div className="flex" onClick={()=> {setContacto(!contacto)} }>
+                    <h2 className='text-left font-bold cursor-pointer'>Contacto</h2>
+                    <div className="md:hidden">
+                    {contacto ?
+                    <KeyboardArrowDown/>:
                     <KeyboardArrowRightIcon/>
+                    }
+
+                    </div>
                     </div>
 
                     <ul className={`text-left md:block ${contacto ? 'block' : 'hidden'}`}>
@@ -99,9 +100,15 @@ const Footer = (): JSX.Element => {
                     </ul>
             </div>
                 <div className='w-full flex flex-col mb-4 md:w-1/2'>
-                    <div className="flex">
-                    <h2 className='text-left font-bold cursor-pointer' onClick={() => setNosotros(!nosotros)}>Nosotros</h2>
+                    <div className="flex" onClick={() => setNosotros(!nosotros)}>
+                    <h2 className='text-left font-bold cursor-pointer'>Nosotros</h2>
+                    <div className="md:hidden">
+                    {nosotros ?
+                    <KeyboardArrowDown/>:
                     <KeyboardArrowRightIcon/>
+                    }
+                    </div>
+
                     </div>
 
                     <ul className={`text-left md:block ${nosotros ? 'block' : 'hidden'}`}>
@@ -114,9 +121,14 @@ const Footer = (): JSX.Element => {
 
             <div className="md:flex md:w-full">
             <div className='w-full flex flex-col mb-4 md:w-1/2'>
-                    <div className="flex">
-                    <h2 className='text-left font-bold cursor-pointer' onClick={() => setTramites(!tramites)}>Trámites</h2>
+                    <div className="flex" onClick={() => setTramites(!tramites)}>
+                    <h2 className='text-left font-bold cursor-pointer'>Trámites</h2>
+                    <div className="md:hidden">
+                    {tramites ?
+                    <KeyboardArrowDown/>:
                     <KeyboardArrowRightIcon/>
+                    }
+                    </div>
                     </div>
                     <ul className={`text-left md:block ${tramites ? 'block' : 'hidden'}`}>
                         <li>Tipos de trámite</li>
@@ -124,9 +136,17 @@ const Footer = (): JSX.Element => {
                     </ul>
             </div>
             <div className='w-full flex flex-col mb-4 md:w-1/2'>
-                    <div className="flex">
-                    <h2 className='text-left font-bold cursor-pointer' onClick={() => {setAyuda(!ayuda)}}>Ayuda</h2>
+                    <div className="flex"  onClick={() => {setAyuda(!ayuda)}}>
+                    <h2 className='text-left font-bold cursor-pointer'>Ayuda</h2>
+                    <div className="md:hidden">
+                    {ayuda ?
+                    <KeyboardArrowDown/>:
                     <KeyboardArrowRightIcon/>
+                    }
+                    </div>
+
+                    
+                    
                     </div>
                     <ul className={`text-left md:block ${ayuda ? 'block' : 'hidden'}`}>
                         <li>Guía de trámites paso a paso</li>
@@ -140,7 +160,7 @@ const Footer = (): JSX.Element => {
 
         {/* Contendero Seccion Politicas */}
         {/* Seccion  Politicas  */}
-            <div className="flex w-full flex-col items-start gap-[4px] relative flex-[0_0_auto] bg-[#a3bdb3] md:bg-white md:flex-row md:items-center md:justify-center md:h-[65px] 2xl:[74px]">
+            <div className="flex w-full flex-col items-start gap-[4px] relative flex-[0_0_auto] bg-[#a3bdb3] md:bg-white md:flex-row md:items-center md:justify-center md:h-[65px] 2xl:[74px] px-[16px]">
                 <div>
                 <p className="[font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px]">
                     Política de Privacidad&nbsp;&nbsp;&nbsp;&nbsp;Términos del Servicio.
