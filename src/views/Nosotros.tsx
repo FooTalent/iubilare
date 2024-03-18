@@ -165,10 +165,11 @@ export default function Nosotros () {
 
                 {/* Seccion Mapa */}
                 <div className="px-[16px] md:px-[41px]">
-                    <h1 className="font-semibold text-[25px]" >Donde encontrarnos</h1>
+                    <h1 className="font-semibold text-[25px]">Donde encontrarnos</h1>
                         {/* Separador 15px */}
                         <div className="min-h-[15px]"></div>
                         <div className="min-w-[328px] min-h-[318px] flex justify-center items-center">
+                            
                             <button className=" w-1/2 active:text-active-green hover:text-inherit md:w-1/4 md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:text-[14.14px] 2xl:w-1/12 font-bold z-10">Ver Mapa</button>
                             <img className="hidden 2xl:block brightness-75 absolute" src="./nosotros/map-desktop.png" alt="" />
                             <img className="hidden md:block 2xl:hidden brightness-75 absolute" src="./nosotros/map-tablet.png" alt="" />
