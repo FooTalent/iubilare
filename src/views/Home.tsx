@@ -57,7 +57,7 @@ export default function Home() {
             </div>
         </div>
           <div className="text-left text-[20px] md:hidden">
-            <p>27 años de experiencia. Asesoramiento personalizado. Soluciones previsionales confiables en todo el país.</p>
+            <p>27 años de experiencia. Asesoramiento personalizado. Soluciones previsionales confiables en <span className="2xl:font-bold">todo el país.</span></p>
           </div>
         </div>
           <div className="">
