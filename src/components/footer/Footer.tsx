@@ -77,7 +77,7 @@ const Footer = (): JSX.Element => {
         </div>
 
 
-
+        <div className="hidden 2xl:block min-w-[10px]"></div>
         {/* Seccion Desplegables Servicios */}
             <div className="w-full flex flex-col justify-start md:w-2/3 md:mt-[65px]">
             <div className="w-full md:flex md:w-full">
