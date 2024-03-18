@@ -33,7 +33,7 @@ export default function Nosotros () {
             </div>
 
             {/* Separador 48px */}
-            <div className="min-h-[48px] md:hidden"></div>
+            <div className="min-h-[48px] md:hidden 2xl:block"></div>
 
             <div className="px-[16px] 2xl:px-[115px]">
                 <div>
