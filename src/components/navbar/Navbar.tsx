@@ -40,7 +40,7 @@ export default function Navbar() {
                     }`}
                     >
                 <ul className="flex flex-col justify-around bg-white items-start pl-5 shadow-md h-[178px] md:flex md:flex-row md:h-auto md:shadow-none md:space-x-0.5 md:justify-around  md:items-center ">
-                    <li>
+                    <li className="md:pt-[3px]">
                         <span>
                             {/* se agregaron las clases active:text-active-green para el color cuando activas el link en version mobile*/}
                             {/* se agregaron las clases hover:text-inherit para eliminar el violet como color por defecto de los tags a*/}
@@ -50,20 +50,20 @@ export default function Navbar() {
                         </span>
 
                     </li>
-                    <li>
+                    <li className="md:pt-[3px]">
                         <Link to={"/nosotros"} className="group active:text-active-green hover:text-inherit font-bold">Nosotros
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </Link>
                         
 
                     </li>
-                    <li>
+                    <li className="md:pt-[3px]">
                     <Link to={"/tramites"} className="group active:text-active-green hover:text-inherit font-bold">Trámites
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </Link>
                     </li>
 
-                    <li>
+                    <li className="md:pt-[3px]">
                     <Link to={"/ayuda"} className="group active:text-active-green hover:text-inherit font-bold">Ayuda
                         <div className="md:bg-active-green md:h-[2.3px] md:w-0 md:group-hover:w-full md:transition-all md:duration-500"></div>
                         </Link>
