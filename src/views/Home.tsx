@@ -40,7 +40,7 @@ export default function Home() {
   const data = [...cards];
 
   return (
-    <div>
+    <div className="md:mt-[140px]">
       {/* Separador */}
       <div className="min-h-[69px] md:hidden"></div>
 

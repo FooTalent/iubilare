@@ -8,7 +8,7 @@ export default function Nosotros () {
     const clientes = "En este mapa se puede apreciar el éxito alcanzados por nuestra empresa a lo largo y ancho del país. Cada punto en el mapa representa un lugar donde hemos trabajado con clientes, logrando resultados excepcionales y construyendo relaciones duraderas. Desde las bulliciosas calles de las grandes ciudades hasta los pintorescos rincones rurales, hemos dejado nuestra huella logrando la satisfacción del cliente. Además, para obtener más información sobre nuestros proyectos exitosos y posiblemente establecer una conexión, desde Iubilare le concedemos la posibilidad de poder contactarse si lo desea, con alguno de nuestros clientes que haya logrado finalizar el trámite con éxito.";
 
     return (
-        <>
+        <div className="md:mt-[140px]">
             {/* Separador 48px */}
             <div className="min-h-[48px]"></div>
 
@@ -33,7 +33,7 @@ export default function Nosotros () {
             </div>
 
             {/* Separador 48px */}
-            <div className="min-h-[48px]"></div>
+            <div className="min-h-[48px] md:hidden"></div>
 
             <div className="px-[16px] 2xl:px-[115px]">
                 <div>
@@ -181,7 +181,7 @@ export default function Nosotros () {
                 </div>
                 
             </div>
-        </>
+        </div>
     )
 
 };
