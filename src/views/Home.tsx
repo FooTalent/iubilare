@@ -77,7 +77,7 @@ export default function Home() {
       <div className="flex flex-col justify-center px-[16px] 2xl:p-[36px] 2xl:">
           <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8">¿Qué hacemos?</h2>
           <div className="2xl:flex 2xl:justify-center"> 
-          <p className="mt-5 text-justify md:text-center 2xl:text-[23px] 2xl:w-[860px]">Gestionamos todos los trámites relacionados con su renta vitalicia previsional o jubilación sin que sea necesario que visite nuestras oficinas.</p>
+          <p className="mt-5 text-justify leading-tight md:text-center 2xl:text-[23px] 2xl:w-[860px]">Gestionamos todos los trámites relacionados con su renta vitalicia previsional o jubilación sin que sea necesario que visite nuestras oficinas.</p>
           </div>
 
         <div className="h-[32px]"></div>
