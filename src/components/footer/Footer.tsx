@@ -15,7 +15,7 @@ const Footer = (): JSX.Element => {
         <div>
 
         {/* Contenedor Secciones Logo/Redes/Datos/Servicios */}
-        <div className="flex flex-wrap items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3] md:h-full md:w-full md:px-[121px] ">
+        <div className="flex flex-wrap items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3] md:h-full md:w-full md:px-[121px] 2xl:justify-between">
 
         {/* Seccion Logo y Redes / Datos y Logos */}
         <div className='w-full md:flex md:flex-col md:w-1/4'>
