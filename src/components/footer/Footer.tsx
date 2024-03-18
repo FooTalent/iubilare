@@ -43,15 +43,15 @@ const Footer = (): JSX.Element => {
             {/* Seccion Datos y Logos */}
             <div className="flex flex-col w-[300px] md:w-auto">
                 <div className='flex flex-row'>
-                    <div className='w-[24px] h-[24px] flex justify-center'>
+                    <div className='min-w-[24px] w-[24px] h-[24px] flex justify-center'>
                         <img className="" src="./call.png" alt="Telefono" />                        
                     </div>
                     <div className='pl-[8px] flex self-end'>
-                        <p className='text-sm'>(011) 4342-1817/4783</p>
+                        <p className='text-sm  text-left'>(011) 4342-1817/4783</p>
                     </div>
                 </div>
                 <div className='flex flex-row'>
-                <div className='w-[24px] h-[24px] flex justify-center'>
+                <div className='min-w-[24px] w-[24px] h-[24px] flex justify-center'>
                         <img className="" src="./email.png" alt="Email" /> 
                     </div>
                     <div className='pl-[8px] flex self-end'>
@@ -59,11 +59,11 @@ const Footer = (): JSX.Element => {
                     </div>
                 </div>
                 <div className='flex flex-row'>
-                    <div className='w-[24px] h-[24px] flex justify-center'>
+                    <div className='min-w-[24px] w-[24px] h-[24px] flex justify-center'>
                         <img className="" src="location.png" alt="Ubicacion" />
                     </div>
                     <div className='pl-[8px] flex self-end'>
-                        <p className='text-sm'>Av. de Mayo 881 - 4to D - CABA - CP:1084</p>
+                        <p className='text-sm text-left'>Av. de Mayo 881 - 4to D - CABA - CP:1084</p>
                     </div>
                 </div>
 
