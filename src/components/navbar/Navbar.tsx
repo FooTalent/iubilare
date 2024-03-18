@@ -9,7 +9,9 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const handleCloseMenu = () => {
         setIsOpen(false);
+        window.scrollTo(0, 0);
     };
+
 
     return (
         <>

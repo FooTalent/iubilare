@@ -1,8 +1,14 @@
 import Card from "../components/card/Card";
 import Form from "../components/form/Form";
 import CardQueHacemos from "../components/cardQueHacemos/cardQueHacemos";
+import { useEffect } from "react";
+
 
 export default function Home() {
+  // Desplazar la página hacia arriba cuando el componente se monta
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const cards = [
     {
