@@ -160,7 +160,7 @@ const Footer = (): JSX.Element => {
 
         {/* Contendero Seccion Politicas */}
         {/* Seccion  Politicas  */}
-            <div className="flex w-full flex-col items-start gap-[4px] relative flex-[0_0_auto] bg-[#a3bdb3] md:bg-white md:flex-row md:items-center md:justify-center md:h-[65px] 2xl:[74px] px-[16px]">
+            <div className="flex w-full flex-col items-center gap-[4px] relative flex-[0_0_auto] bg-[#a3bdb3] md:bg-white md:flex-row md:items-center md:justify-center md:h-[65px] 2xl:[74px] px-[16px]">
                 <div>
                 <p className="[font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px]">
                     Política de Privacidad&nbsp;&nbsp;&nbsp;&nbsp;Términos del Servicio.
