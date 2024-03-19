@@ -4,7 +4,7 @@ import CardQueHacemos from "../components/cardQueHacemos/cardQueHacemos";
 import { useEffect, useRef } from "react";
 
 
-export default function Home() {
+export default function Home(  ) {
   const formSection:any = useRef(null);
 
   const scrollToSection = (ref: any) => {

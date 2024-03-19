@@ -169,7 +169,7 @@ export default function Nosotros () {
 
                 {/* Seccion Mapa */}
                 <div className="px-[16px] md:px-[41px]">
-                    <h1 className="font-semibold text-[25px]">Donde encontrarnos</h1>
+                    <h1 className="font-semibold text-[25px]">Dónde encontrarnos</h1>
                         {/* Separador 15px */}
                         <div className="min-h-[15px]"></div>
                         <div className="min-w-[328px] min-h-[318px] flex justify-center items-center">

@@ -19,7 +19,7 @@ function App() {
         <Navbar ></Navbar>
         <WhatsappButton/>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
+          <Route path="/" element={<Home  />}></Route>
           <Route path='/nosotros' element={<Nosotros/>}></Route>
           <Route path="/tramites" element={<Tramites/>}></Route>
           <Route path="/ayuda" element={<Ayuda/>}></Route>
