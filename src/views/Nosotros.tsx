@@ -143,11 +143,11 @@ export default function Nosotros () {
 
                 {/* Seccion Mision */}
                 <div className="px-[16px] md:px-[41px]">
-                    <h1 className="font-semibold text-[25px]" >Misión</h1>
+                    <h1 className="font-semibold text-[25px] md:hidden">Misión</h1>
                     {/* Separador 15px */}
                     <div className="min-h-[15px]"></div>
                     <div>
-                        <CardInfo info={mision} url="./nosotros/mision.png"/>
+                        <CardInfo info={mision} classTitle="Misión" url="./nosotros/mision.png"/>
                     </div>
                 </div>
 
@@ -156,11 +156,11 @@ export default function Nosotros () {
 
                 {/* Seccion Vision */}
                 <div className="px-[16px] md:px-[41px]">
-                    <h1 className="font-semibold text-[25px]" >Visión</h1>
+                    <h1 className="font-semibold text-[25px] md:hidden" >Visión</h1>
                     {/* Separador 15px */}
                     <div className="min-h-[15px]"></div>
                     <div>
-                        <CardInfo info={vision} url="./nosotros/vision.png" classOptions="md:flex-row-reverse" />
+                        <CardInfo info={vision} classTitle="Visión" url="./nosotros/vision.png" classOptions="md:flex-row-reverse" />
                     </div>
                 </div>
 
