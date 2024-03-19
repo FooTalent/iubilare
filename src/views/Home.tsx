@@ -40,7 +40,7 @@ export default function Home(    ) {
         <div className="flex flex-col md:flex-col-reverse 2xl:flex-row- 2xl:flex-row-reverse 2xl:gap-[132px]  2xl:mt-[100px]">
         <div className="2xl:w-[50%] 2xl:flex">
         <div className="hidden md:block text-left md:m-[10px] 2xl:flex 2xl:flex-col 2xl:justify-around 2xl:w-[70%]">
-            <h1 className="md:text-[20px] md:font-semibold 2xl:text-[40px]">Iubilare consultora previsional</h1>
+            <h1 className="md:text-[20px] md:mb-[9px] md:font-semibold 2xl:text-[40px]">Iubilare consultora previsional</h1>
             <p className="text-left hidden 2xl:block 2xl:text-[28px]">27 años de experiencia. Asesoramiento personalizado. Soluciones previsionales confiables en <span className="2xl:font-bold">todo el país.</span></p>
             <p className="md:w-2/3 2xl:hidden">Somos un equipo de abogados y ejecutivos en gestión previsional con 27+ años de experiencia. Más de 4500 clientes en todo el país. Asesoramiento personalizado para tranquilidad y solución de problemas previsionales.</p>
             <div className="hidden 2xl:block 2xl:mt-5">

@@ -50,7 +50,7 @@ export default function Form (){
                     <div className="h-[16px] 2xl:min-h-[16px]"></div>
                     <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px]">
                         <label className="pl-3 text-sm" htmlFor="phone">Consulta</label>
-                        <textarea className="w-full h-[160px] rounded-md border-solid border-slate-300 border focus:outline-none focus:border-active-green pl-4 pt-4 md:w-[265.4px] md:h-[103.32px] md:rounded-sm 2xl:h-[160px] 2xl:w-full bg-background-grey" placeholder="Dejanos aquí tus comentarios" name="" id=""></textarea>
+                        <textarea style={{"resize": "none"}} className="w-full h-[160px] rounded-md border-solid border-slate-300 border focus:outline-none focus:border-active-green pl-4 pt-4 md:w-[265.4px] md:h-[103.32px] md:rounded-sm 2xl:h-[160px] 2xl:w-full bg-background-grey" placeholder="Dejanos aquí tus comentarios" name="" id=""></textarea>
                     </div>
                     <div className="h-[16px] 2xl:min-h-[16px]"></div>
                     <div className="flex items-start w-full pl-[8.5px] pr-[8.5px]">
