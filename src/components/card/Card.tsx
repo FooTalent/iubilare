@@ -12,24 +12,24 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ name, age, city, description, imageUrl, numberStars }) => {
   const starsArray = Array.from({ length: numberStars || 0 });
   return (
-    <div className="flex flex-col justify-center items-center bg-[#e8e8e8] w-[208px] h-[233.92px] pt-[13px] pb-[13px] px-[8px] rounded-md md:h-[415px] md:bg-transparent md:w-[163px] 2xl:min-w-[338.94px] 2xl:min-h[410.83px] 2xl:bg-white 2xl:rounded-lg">
+    <div className="flex flex-col justify-between items-center bg-transparent scroll-none shadow-light-top-heavy-bottom-light-sides w-[169px] h-[223px] pt-[8px] pb-[8px] px-[8px] rounded-md md:shadow-none md:w-[172px] md:h-[230px] md:bg-white  2xl:min-w-[338.94px] 2xl:min-h[410.83px] 2xl:bg-white 2xl:rounded-lg">
       <div className="flex flex-col justify-center items-center w-[192px] h-full md:h-[360px] overflow-hidden"> 
-        <div className="flex flex-col justify-center items-center w-[95px] h-[84.73px] mb-[13px] md:h-[200px]">
-          <div className="w-[48.73px] h-[48.73px] mb-[10px]  md:w-[163px] md:h-[163px]">
+        <div className="flex flex-col justify-center items-center w-[95px] mb-[13px] md:h-[100px] ">
+          <div className="w-[60.73px] h-[60.73px] mb-[10px] md:mb-3 md:w-[78px] md:h-[65px]  2xl:w-[163px] 2xl:h-[163px]">
             <img className="rounded-full" src={imageUrl} alt="" />
           </div>
           <div>
-            <p className="text-xs md:text-lg">{name}</p>
-            <p className="text-xs">{age}</p>
-            <p className="hidden md:block">{city}</p>
+            <p className="text-base text-[#747DD6] md:text-lg">{name}</p>
+            <p className="text-xs text-[#747DD6]">{age}</p>
+            <p className="text-xs text-[#747DD6]">{city}</p>
           </div>
         </div>
 
-        <div className="w-[192px] h-auto md:mt-[24px]">
-          <p className="text-xs whitespace-normal">{description}</p>
+        <div className=" w-[147px] h-auto md:mt-[5px]">
+          <p className="text-[0.6rem] truncate leading-3 font-light italic whitespace-normal">{description}</p>
         </div>
       </div>
-      <div className="md:hidden">
+      <div className="hidden">
       {starsArray.map((_, index) => (
         <StarSharp key={index} />
       ))}
