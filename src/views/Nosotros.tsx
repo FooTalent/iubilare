@@ -173,12 +173,15 @@ export default function Nosotros () {
                         {/* Separador 15px */}
                         <div className="min-h-[15px]"></div>
                         <div className="min-w-[328px] min-h-[318px] flex justify-center items-center">
-                            
-                            <button className=" w-1/2 active:text-active-green hover:text-inherit md:w-1/4 md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:text-[14.14px] 2xl:w-1/12 font-bold z-10">Ver Mapa</button>
-                            <img className="hidden 2xl:block brightness-75 absolute" src="./nosotros/map-desktop.png" alt="" />
-                            <img className="hidden md:block 2xl:hidden brightness-75 absolute" src="./nosotros/map-tablet.png" alt="" />
-                            <img className="md:hidden brightness-75 absolute" src="./nosotros/map.png" alt="" />
-                            {/* <GoogleMapWrapper  coordinates={{ latitude: -34.59964997287337, longitude: -58.384776132694014}} ></GoogleMapWrapper> */}
+                        <div className="relative overflow-hidden w-full max-w-[329px] h-[318px] sm:max-w-[686px] sm:h-[263px] lg:max-w-[1292px] lg:h-[477px]">
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4177.3877059145425!2d-58.38277614342871!3d-34.60849481901064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad1a260b5a3%3A0x8a1f9dd9f8b9d3ef!2sAv.%20de%20Mayo%20881%2C%20C1084AAD%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2sco!4v1710770247526!5m2!1sen!2sco"
+                            style={{ border: 0, width: '100%', height: '100%' }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
                         </div>
                     {/* Separador 15px */}
                     <div className="min-h-[15px] 2xl:h-[105px]"></div>

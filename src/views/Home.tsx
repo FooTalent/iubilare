@@ -2,9 +2,10 @@ import Card from "../components/card/Card";
 import Form from "../components/form/Form";
 import CardQueHacemos from "../components/cardQueHacemos/cardQueHacemos";
 import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 
-export default function Home(  ) {
+export default function Home(    ) {
   const formSection:any = useRef(null);
 
   const scrollToSection = (ref: any) => {
@@ -14,9 +15,19 @@ export default function Home(  ) {
     }
   };
 
+  const location = useLocation();
+  const state = location.state;
+  
   useEffect(() => {
+    if (state){
+      console.log(true, state)
+      console.log(formSection)
+      
+    }else{
+      console.log(false)
       window.scrollTo(0, 0);
-  }, []);
+    }
+  }, [state]);
 
   const cards = [
     {
