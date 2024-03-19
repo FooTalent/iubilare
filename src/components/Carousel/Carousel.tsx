@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 interface CarouselProps {
   slides: string[];
@@ -6,6 +6,18 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   const [current, setCurrent] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000); // Cambio de imagen cada 5 segundos
+
+    return () => clearInterval(interval);
+  }, [current]); // El efecto se ejecuta cuando current cambia
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
 
   return (
     <div className="overflow-hidden relative">
