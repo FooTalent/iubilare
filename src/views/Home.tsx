@@ -82,12 +82,15 @@ export default function Home(    ) {
             <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse md:h-full  2xl:justify-end">
               <div className="">
               <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-black md:h-full  md:text-center 2xl:h-auto  2xl:mb-[10px] md:font-bold">
-                Renta Vitalicia Previsional en Dólares
+                Renta Vitalicia Previsional <span className="hidden 2xl:block">pactada</span> en Dólares
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px]">
-                Le ofrecemos realizar una entrevista o conversación telefónica
-                para brindarle un diagnóstico completo.
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] 2xl:hidden">
+                Le ofrecemos realizar una entrevista o conversación telefónica para brindarle un diagnóstico completo.
               </div>
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] hidden 2xl:block">
+              Luego de una entrevista o charla telefónica podemos brindarle un diagnóstico completo.
+              </div>
+
               </div>
               <div className="flex justify-center w-full">
                 <img className="md:hidden" src="/actualizacionIcono.png" alt="Hero" />
@@ -101,11 +104,14 @@ export default function Home(    ) {
             <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full 2xl:justify-end">
               <div>
               <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center  2xl:h-auto 2xl:mb-[10px] md:font-bold">
-                Complemento al Haber Mínimo
+                Complemento al Haber Mínimo <span className="hidden 2xl:block">Garantizado</span>
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px]">
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] 2xl:hidden">
                 Es un pago que realiza ANSES a quienes reciben una Renta
                 Vitalicia y no alcanzan el Haber Mínimo Garantizado.
+              </div>
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] hidden 2xl:block">
+              Es un pago que abona ANSES a aquellas personas que cobran una Renta Vitalicia y no llegan al Haber Mínimo Garantizado. Este monto, que se obtiene luego de la Sentencia Judicial.
               </div>
               </div>
               <div className="flex justify-center w-full">
@@ -123,7 +129,7 @@ export default function Home(    ) {
               </div>
               <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-center md:pt-[16px]">
                 La Compañía de Seguros de Retiro otorga aumentos menores a su
-                Renta. Sin embargo, debería recibir los aumentos que ANSES ha
+                Renta. <span className="2xl:hidden">Sin embargo,</span><span className="hidden 2xl:inline">Usted</span> debería recibir los aumentos que ANSES ha
                 otorgado desde enero de 2002.
               </div>
               </div>
