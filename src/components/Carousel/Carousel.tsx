@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from "react-icons/bs";
 
 interface CarouselProps {
   slides: string[];
