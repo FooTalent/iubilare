@@ -72,7 +72,7 @@ export default function Navbar( ) {
                         </Link>
                     </li>
                     <li>
-                        <a className="active:text-active-green hover:text-inherit md:inline-block md:py-2 md:px-4 md:bg-button-green md:text-white md:rounded md:hover:bg-button-hover-green md:hover:text-white md:active:bg-active-green font-bold" href="/"  onClick={ function () { handleCloseMenu} }>Contacto</a>
+                        <Link  to={"/"} state={{from: 'contact'}} className="active:text-active-green hover:text-inherit md:inline-block md:py-2 md:px-4 md:bg-button-green md:text-white md:rounded md:hover:bg-button-hover-green md:hover:text-white md:active:bg-active-green font-bold" onClick={  handleCloseMenu }>Contacto</Link>
                     </li>
                 </ul>
                 </div>

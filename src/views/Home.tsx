@@ -2,9 +2,10 @@ import Card from "../components/card/Card";
 import Form from "../components/form/Form";
 import CardQueHacemos from "../components/cardQueHacemos/cardQueHacemos";
 import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 
-export default function Home(  ) {
+export default function Home(    ) {
   const formSection:any = useRef(null);
 
   const scrollToSection = (ref: any) => {
@@ -14,9 +15,19 @@ export default function Home(  ) {
     }
   };
 
+  const location = useLocation();
+  const state = location.state;
+  
   useEffect(() => {
+    if (state){
+      console.log(true, state)
+      console.log(formSection)
+      
+    }else{
+      console.log(false)
       window.scrollTo(0, 0);
-  }, []);
+    }
+  }, [state]);
 
   const cards = [
     {
@@ -133,10 +144,10 @@ export default function Home(  ) {
         <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
             <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse md:h-full  2xl:justify-end">
               <div className="">
-              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-black md:h-full  md:text-center 2xl:h-auto  2xl:mb-[10px]">
+              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-black md:h-full  md:text-center 2xl:h-auto  2xl:mb-[10px] md:font-bold">
                 Renta Vitalicia Previsional en Dólares
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center">
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px]">
                 Le ofrecemos realizar una entrevista o conversación telefónica
                 para brindarle un diagnóstico completo.
               </div>
@@ -152,10 +163,10 @@ export default function Home(  ) {
           <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
             <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full 2xl:justify-end">
               <div>
-              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center  2xl:h-auto 2xl:mb-[10px]">
+              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center  2xl:h-auto 2xl:mb-[10px] md:font-bold">
                 Complemento al Haber Mínimo
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center">
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px]">
                 Es un pago que realiza ANSES a quienes reciben una Renta
                 Vitalicia y no alcanzan el Haber Mínimo Garantizado.
               </div>
@@ -170,10 +181,10 @@ export default function Home(  ) {
           <div className="flex flex-col justify-start items-center h-[235px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
             <div className="flex h-[111px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full  2xl:justify-end">
               <div>
-              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center 2xl:h-auto 2xl:mb-[10px]">
+              <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center 2xl:h-auto 2xl:mb-[10px] md:font-bold">
                 Actualización de su Renta Previsional
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-center">
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-center md:pt-[16px]">
                 La Compañía de Seguros de Retiro otorga aumentos menores a su
                 Renta. Sin embargo, debería recibir los aumentos que ANSES ha
                 otorgado desde enero de 2002.
@@ -217,7 +228,7 @@ export default function Home(  ) {
         <div className="min-h-[48px]"></div>
 
         <div className="overflow-auto w-full h-full 2xl:flex 2xl:justify-center">
-          <div className="flex whitespace-nowrap gap-5 md:gap-[100px] md:justify-center 2xl:gap-[150px]">
+          <div className="flex whitespace-nowrap gap-5 md:gap-[100px] md:justify-center md:overflow-hidden 2xl:gap-[150px]">
             {data.map((card, index) => (
               <Card
                 key={index}
