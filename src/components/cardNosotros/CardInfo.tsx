@@ -14,7 +14,7 @@ const CardInfo: React.FC<CardInfoProps> = ({ info, url, classOptions, classTitle
         <img src={url} alt="" className=" md:min-w-[309px] md:h-[248px] 2xl:w-[482px] 2xl:h-[387px]" />
         <div>
           <h1 className="hidden font-semibold text-[25px] text-left leading-10 md:block">{classTitle}</h1>
-          <p className="text-justify md:text-[14px] 2xl:text-[23px] 2xl:w-[751px]">{info} </p>
+          <p className="text-left md:text-[14px] 2xl:text-[23px] 2xl:w-[751px]">{info} </p>
         </div>
 
     </div>
