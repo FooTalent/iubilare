@@ -147,7 +147,7 @@ export default function Home(    ) {
               <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-black md:h-full  md:text-center 2xl:h-auto  2xl:mb-[10px]">
                 Renta Vitalicia Previsional en Dólares
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center">
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px]">
                 Le ofrecemos realizar una entrevista o conversación telefónica
                 para brindarle un diagnóstico completo.
               </div>
@@ -166,7 +166,7 @@ export default function Home(    ) {
               <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center  2xl:h-auto 2xl:mb-[10px]">
                 Complemento al Haber Mínimo
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center">
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px]">
                 Es un pago que realiza ANSES a quienes reciben una Renta
                 Vitalicia y no alcanzan el Haber Mínimo Garantizado.
               </div>
@@ -184,7 +184,7 @@ export default function Home(    ) {
               <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center 2xl:h-auto 2xl:mb-[10px]">
                 Actualización de su Renta Previsional
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-center">
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-center md:pt-[16px]">
                 La Compañía de Seguros de Retiro otorga aumentos menores a su
                 Renta. Sin embargo, debería recibir los aumentos que ANSES ha
                 otorgado desde enero de 2002.
