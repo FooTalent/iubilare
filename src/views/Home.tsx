@@ -1,13 +1,21 @@
 import Card from "../components/card/Card";
 import Form from "../components/form/Form";
 import CardQueHacemos from "../components/cardQueHacemos/cardQueHacemos";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 
 export default function Home() {
-  // Desplazar la página hacia arriba cuando el componente se monta
+  const formSection:any = useRef(null);
+
+  const scrollToSection = (ref: any) => {
+    console.log(ref.current)
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
-    window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
   }, []);
 
   const cards = [
@@ -59,7 +67,7 @@ export default function Home() {
             <p className="text-left hidden 2xl:block 2xl:text-[28px]">27 años de experiencia. Asesoramiento personalizado. Soluciones previsionales confiables en <span className="2xl:font-bold">todo el país.</span></p>
             <p className="md:w-2/3 2xl:hidden">Somos un equipo de abogados y ejecutivos en gestión previsional con 27+ años de experiencia. Más de 4500 clientes en todo el país. Asesoramiento personalizado para tranquilidad y solución de problemas previsionales.</p>
             <div className="hidden 2xl:block 2xl:mt-5">
-              <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] 2xl:w-[100%] font-bold">Contactate</button>
+              <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] 2xl:w-[100%] font-bold" onClick={() => scrollToSection(formSection)}>Contactate</button>
             </div>
         </div>
           <div className="text-left text-[20px] md:hidden">
@@ -71,7 +79,7 @@ export default function Home() {
           </div>
         </div>
         <div className="2xl:hidden mt-8 md:mx-[10px] flex justify-start">
-        <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] font-bold">Contactate</button>
+        <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] font-bold"  onClick={() => scrollToSection(formSection)}>Contactate</button>
         </div>
 
       </div>
@@ -230,7 +238,10 @@ export default function Home() {
       <div className="min-h-[106.08px]"></div>
 
       {/* Seccion Formulario */}
-      <Form></Form>
+      <div ref={formSection}>
+        <Form ></Form>
+      </div>
+      
       {/* Separador */}
       <div className="min-h-[106.08px]"></div>
     </div>

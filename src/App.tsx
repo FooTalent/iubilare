@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-        <Navbar></Navbar>
+        <Navbar ></Navbar>
         <WhatsappButton/>
         <Routes>
           <Route path="/" element={<Home/>}></Route>

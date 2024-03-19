@@ -1,9 +1,11 @@
 import { useState } from "react";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { KeyboardArrowDown } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
+
 
 const Footer = (): JSX.Element => {
-
+    const navigate = useNavigate()
     const [contacto, setContacto] = useState(false);
     const [nosotros, setNosotros] = useState(false);
     const [tramites, setTramites] = useState(false);
@@ -94,9 +96,9 @@ const Footer = (): JSX.Element => {
                     </div>
 
                     <ul className={`text-left md:block ${contacto ? 'block' : 'hidden'}`}>
-                        <li>Formulario</li>
-                        <li>Donde encontrarnos</li>
-                        <li>Números de contacto</li>
+                        <li  className="cursor-pointer"  onClick={ () => navigate('/')}>Formulario</li>
+                        <li className="cursor-pointer">Donde encontrarnos</li>
+                        <li  className="cursor-pointer">Números de contacto</li>
                     </ul>
             </div>
                 <div className='w-full flex flex-col mb-4 md:w-1/2'>
@@ -112,9 +114,9 @@ const Footer = (): JSX.Element => {
                     </div>
 
                     <ul className={`text-left md:block ${nosotros ? 'block' : 'hidden'}`}>
-                        <li>Misión y visión</li>
-                        <li>Equipo</li>
-                        <li>Casos de éxito en todo el país</li>
+                        <li  className="cursor-pointer" onClick={ () => navigate('/nosotros')}>Misión y visión</li>
+                        <li  className="cursor-pointer" onClick={ () => navigate('/nosotros')}>Equipo</li>
+                        <li  className="cursor-pointer" onClick={ () => navigate('/nosotros')}>Casos de éxito en todo el país</li>
                     </ul>
             </div>
             </div>
@@ -131,8 +133,8 @@ const Footer = (): JSX.Element => {
                     </div>
                     </div>
                     <ul className={`text-left md:block ${tramites ? 'block' : 'hidden'}`}>
-                        <li>Tipos de trámite</li>
-                        <li>Testimonios</li>
+                        <li className="cursor-pointer">Tipos de trámite</li>
+                        <li className="cursor-pointer">Testimonios</li>
                     </ul>
             </div>
             <div className='w-full flex flex-col mb-4 md:w-1/2'>
@@ -149,8 +151,8 @@ const Footer = (): JSX.Element => {
                     
                     </div>
                     <ul className={`text-left md:block ${ayuda ? 'block' : 'hidden'}`}>
-                        <li>Guía de trámites paso a paso</li>
-                        <li>Preguntas frecuentes</li>
+                        <li className="cursor-pointer">Guía de trámites paso a paso</li>
+                        <li className="cursor-pointer">Preguntas frecuentes</li>
                     </ul>
             </div>
             </div>
