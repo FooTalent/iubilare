@@ -1,5 +1,15 @@
-export default function Form (){
+import Carousel from "../Carousel/Carousel"
 
+export default function Form (){
+    let slides = [
+        "./form/formCarousel_1.png",
+        "./form/formCarousel_2.png",
+        "./form/formCarousel_3.png",
+        "./form/formCarousel_4.png",
+        "./form/formCarousel_5.png",
+        "./form/formCarousel_6.png",
+      ];
+    
     return (
         <>
             <div className="px-[16px] md:px-[40px] 2xl:px-[120px] w-[319px] m-auto md:w-[546px] 2xl:w-full">
@@ -14,7 +24,11 @@ export default function Form (){
             <div className="flex flex-row md:bg-background-grey md:justify-center md:w-[686px] md:h-[438px] md:m-auto md:pt-[20px] 2xl:w-[1057px] 2xl:h-[675px] 2xl:pt-[48px] 2xl:pb-[48px] 2xl:pl-[60px] 2xl:pr-[60px]">
                 <div className="hidden  md:block md:h-full ">
                         <div className="md:h-[373.89px] md:w-[265.4px] bg-white 2xl:w-[411px] 2xl:h-[576px]">
+                                <Carousel slides={slides} />
+
+{/*                             <img src="./form/Rectangle 88.png" alt="image"/>
                             <img src="./form/Rectangle 88.png" alt="image"/>
+                            <img src="./form/Rectangle 88.png" alt="image"/> */}
                         </div>
                 </div>
                 <div className="hidden md:block md:w-[15.5px] 2xl:w-[42px]"></div>
