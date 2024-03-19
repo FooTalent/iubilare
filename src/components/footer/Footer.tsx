@@ -1,7 +1,7 @@
 import { useState } from "react";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { KeyboardArrowDown } from "@mui/icons-material";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Footer = (): JSX.Element => {
@@ -11,11 +11,8 @@ const Footer = (): JSX.Element => {
     const [tramites, setTramites] = useState(false);
     const [ayuda, setAyuda] = useState(false);
 
-
-
     return (
         <div>
-
         {/* Contenedor Secciones Logo/Redes/Datos/Servicios */}
         <div className="flex flex-wrap items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3] md:h-full md:w-full md:px-[40px] 2xl:px-[121px] 2xl:justify-between">
 
@@ -96,9 +93,13 @@ const Footer = (): JSX.Element => {
                     </div>
 
                     <ul className={`text-left md:block ${contacto ? 'block' : 'hidden'}`}>
-                        <li  className="cursor-pointer"  onClick={ () => navigate('/')}>Formulario</li>
-                        <li className="cursor-pointer">Donde encontrarnos</li>
-                        <li  className="cursor-pointer">Números de contacto</li>
+                        <li  className="cursor-pointer" > <Link to={'/'} state={{from: 'contact'}}>Formulario</Link></li>
+                        <li className="cursor-pointer">
+                            <Link to={'/'}>Donde encontrarnos</Link>
+                        </li>
+                        <li  className="cursor-pointer">
+                            <Link to={'/'}>Números de contacto</Link>
+                        </li>
                     </ul>
             </div>
                 <div className='w-full flex flex-col mb-4 md:w-1/2'>
@@ -114,9 +115,15 @@ const Footer = (): JSX.Element => {
                     </div>
 
                     <ul className={`text-left md:block ${nosotros ? 'block' : 'hidden'}`}>
-                        <li  className="cursor-pointer" onClick={ () => navigate('/nosotros')}>Misión y visión</li>
-                        <li  className="cursor-pointer" onClick={ () => navigate('/nosotros')}>Equipo</li>
-                        <li  className="cursor-pointer" onClick={ () => navigate('/nosotros')}>Casos de éxito en todo el país</li>
+                        <li  className="cursor-pointer" onClick={ () => navigate('/nosotros')}> 
+                            <Link to={'/nosotros'}>Misión y visión</Link>
+                        </li>
+                        <li  className="cursor-pointer">
+                            <Link to={'/nosotros'}>Equipo</Link>
+                        </li>
+                        <li  className="cursor-pointer" >
+                            <Link to={'/nosotros'}>Casos de éxito en todo el país</Link>
+                        </li>
                     </ul>
             </div>
             </div>
@@ -133,8 +140,12 @@ const Footer = (): JSX.Element => {
                     </div>
                     </div>
                     <ul className={`text-left md:block ${tramites ? 'block' : 'hidden'}`}>
-                        <li className="cursor-pointer">Tipos de trámite</li>
-                        <li className="cursor-pointer">Testimonios</li>
+                        <li className="cursor-pointer">
+                            <Link to={'/tramites'}>Tipos de trámite</Link>
+                        </li>
+                        <li className="cursor-pointer">
+                            <Link to={'/tramites'}>Testimonios</Link>
+                        </li>
                     </ul>
             </div>
             <div className='w-full flex flex-col mb-4 md:w-1/2'>
@@ -146,13 +157,14 @@ const Footer = (): JSX.Element => {
                     <KeyboardArrowRightIcon/>
                     }
                     </div>
-
-                    
-                    
                     </div>
                     <ul className={`text-left md:block ${ayuda ? 'block' : 'hidden'}`}>
-                        <li className="cursor-pointer">Guía de trámites paso a paso</li>
-                        <li className="cursor-pointer">Preguntas frecuentes</li>
+                        <li className="cursor-pointer">
+                            <Link to={'/ayuda'}>Guía de trámites paso a paso</Link>
+                        </li>
+                        <li className="cursor-pointer">
+                            <Link to={'/ayuda'}>Preguntas frecuentes</Link>
+                        </li>
                     </ul>
             </div>
             </div>

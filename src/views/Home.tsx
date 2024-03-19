@@ -9,7 +9,6 @@ export default function Home(    ) {
   const formSection:any = useRef(null);
 
   const scrollToSection = (ref: any) => {
-    console.log(ref.current)
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
@@ -20,9 +19,9 @@ export default function Home(    ) {
   
   useEffect(() => {
     if (state){
-      console.log(true, state)
-      console.log(formSection)
-      
+      if (state.from === 'contact'){
+        formSection.current.scrollIntoView({ behavior: 'smooth' })
+      }
     }else{
       console.log(false)
       window.scrollTo(0, 0);
