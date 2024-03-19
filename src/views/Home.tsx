@@ -228,7 +228,7 @@ export default function Home(    ) {
         <div className="min-h-[48px]"></div>
 
         <div className="overflow-auto w-full h-full 2xl:flex 2xl:justify-center">
-          <div className="flex whitespace-nowrap gap-5 md:gap-[100px] md:justify-center 2xl:gap-[150px]">
+          <div className="flex whitespace-nowrap gap-5 md:gap-[100px] md:justify-center md:overflow-hidden 2xl:gap-[150px]">
             {data.map((card, index) => (
               <Card
                 key={index}
