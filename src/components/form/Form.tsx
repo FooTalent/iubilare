@@ -21,22 +21,22 @@ export default function Form (){
                 <div className="w-[328px] h-[560px] bg-background-grey flex flex-col items-center m-auto pb-[8px] md:m-0 md:h-[413px]  2xl:w-[484px] 2xl:h[572px]">
                     <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px] pt-[8px]">
                         <label className="pl-3 text-sm" htmlFor="name">Nombre y Apellido</label>
-                        <input className="w-full h-[48px] rounded-md border-solid border-current border focus:outline-none focus:border-active-green pl-4 md:h-[31px] md:w-[265.4px] md:rounded-sm 2xl:h-[48px] 2xl:w-full bg-background-grey" placeholder="Juan Pérez" type="text" name="name" id="name" />
+                        <input className="w-full h-[48px] rounded-md border-solid border-slate-300 border focus:outline-none focus:border-active-green pl-4 md:h-[31px] md:w-[265.4px] md:rounded-sm 2xl:h-[48px] 2xl:w-full bg-background-grey" placeholder="Juan Pérez" type="text" name="name" id="name" />
                     </div>
                     <div className="h-[16px] 2xl:min-h-[16px]"></div>
                     <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px]">
                         <label className="pl-3 text-sm" htmlFor="phone">Teléfono</label>
-                        <input className="w-full h-[48px] rounded-md border-solid border-current border focus:outline-none focus:border-active-green pl-4 md:h-[31px] md:w-[265.4px] md:rounded-sm 2xl:h-[48px] 2xl:w-full bg-background-grey" placeholder="3515972515" type="text" name="phone" id="phone" />
+                        <input className="w-full h-[48px] rounded-md border-solid border-slate-300 border focus:outline-none focus:border-active-green pl-4 md:h-[31px] md:w-[265.4px] md:rounded-sm 2xl:h-[48px] 2xl:w-full bg-background-grey" placeholder="3515972515" type="text" name="phone" id="phone" />
                     </div>
                     <div className="h-[16px] 2xl:min-h-[16px]"></div>
                     <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px]">
                         <label className="pl-3 text-sm" htmlFor="phone">Email</label>
-                        <input className="w-full h-[48px] rounded-md border-solid border-current border focus:outline-none focus:border-active-green pl-4 md:h-[31px] md:w-[265.4px] md:rounded-sm 2xl:h-[48px] 2xl:w-full bg-background-grey" placeholder="juanperez@gmail.com" type="text" name="phone" id="phone" />
+                        <input className="w-full h-[48px] rounded-md border-solid border-slate-300 border focus:outline-none focus:border-active-green pl-4 md:h-[31px] md:w-[265.4px] md:rounded-sm 2xl:h-[48px] 2xl:w-full bg-background-grey" placeholder="juanperez@gmail.com" type="text" name="phone" id="phone" />
                     </div>
                     <div className="h-[16px] 2xl:min-h-[16px]"></div>
                     <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px]">
                         <label className="pl-3 text-sm" htmlFor="phone">Consulta</label>
-                        <textarea className="w-full h-[160px] rounded-md border-solid border-current border focus:outline-none focus:border-active-green pl-4 pt-4 md:w-[265.4px] md:h-[103.32px] md:rounded-sm 2xl:h-[160px] 2xl:w-full bg-background-grey" placeholder="Dejanos aquí tus comentarios" name="" id=""></textarea>
+                        <textarea className="w-full h-[160px] rounded-md border-solid border-slate-300 border focus:outline-none focus:border-active-green pl-4 pt-4 md:w-[265.4px] md:h-[103.32px] md:rounded-sm 2xl:h-[160px] 2xl:w-full bg-background-grey" placeholder="Dejanos aquí tus comentarios" name="" id=""></textarea>
                     </div>
                     <div className="h-[16px] 2xl:min-h-[16px]"></div>
                     <div className="flex items-start w-full pl-[8.5px] pr-[8.5px]">
