@@ -138,9 +138,6 @@ export default function Home(    ) {
         {/* Separador */}
         <div className="h-[36px]"></div>
 
-        <div className="2xl:hidden">
-            <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px]  font-bold">Más info</button>
-        </div>
       </div>
 
 
