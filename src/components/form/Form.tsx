@@ -1,5 +1,15 @@
-export default function Form (){
+import Carousel from "../carousel/Carousel"
 
+export default function Form (){
+    let slides = [
+        "./form/formCarousel_1.png",
+        "./form/formCarousel_2.png",
+        "./form/formCarousel_3.png",
+        "./form/formCarousel_4.png",
+        "./form/formCarousel_5.png",
+        "./form/formCarousel_6.png",
+      ];
+    
     return (
         <>
             <div className="px-[16px] md:px-[40px] 2xl:px-[120px] w-[319px] m-auto md:w-[546px] 2xl:w-full">
@@ -14,7 +24,7 @@ export default function Form (){
             <div className="flex flex-row md:bg-background-grey md:justify-center md:w-[686px] md:h-[438px] md:m-auto md:pt-[20px] 2xl:w-[1057px] 2xl:h-[675px] 2xl:pt-[48px] 2xl:pb-[48px] 2xl:pl-[60px] 2xl:pr-[60px]">
                 <div className="hidden  md:block md:h-full ">
                         <div className="md:h-[373.89px] md:w-[265.4px] bg-white 2xl:w-[411px] 2xl:h-[576px]">
-                            <img src="./form/Rectangle 88.png" alt="image"/>
+                                <Carousel slides={slides} />
                         </div>
                 </div>
                 <div className="hidden md:block md:w-[15.5px] 2xl:w-[42px]"></div>
@@ -36,7 +46,7 @@ export default function Form (){
                     <div className="h-[16px] 2xl:min-h-[16px]"></div>
                     <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px]">
                         <label className="pl-3 text-sm" htmlFor="phone">Consulta</label>
-                        <textarea className="w-full h-[160px] rounded-md border-solid border-slate-300 border focus:outline-none focus:border-active-green pl-4 pt-4 md:w-[265.4px] md:h-[103.32px] md:rounded-sm 2xl:h-[160px] 2xl:w-full bg-background-grey" placeholder="Dejanos aquí tus comentarios" name="" id=""></textarea>
+                        <textarea style={{"resize": "none"}} className="w-full h-[160px] rounded-md border-solid border-slate-300 border focus:outline-none focus:border-active-green pl-4 pt-4 md:w-[265.4px] md:h-[103.32px] md:rounded-sm 2xl:h-[160px] 2xl:w-full bg-background-grey" placeholder="Dejanos aquí tus comentarios" name="" id=""></textarea>
                     </div>
                     <div className="h-[16px] 2xl:min-h-[16px]"></div>
                     <div className="flex items-start w-full pl-[8.5px] pr-[8.5px]">

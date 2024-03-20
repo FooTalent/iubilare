@@ -16,7 +16,7 @@ const CardNosotros: React.FC<CardNosotrosProps> = ({ name, status, image, classN
   return (
     <div className={combinedClassName}>
       <img src={image} alt="" className="2xl:w-[227px]" />
-      <p className={`${combinedTextClassName} ${textClassTitle} text-[13px] 2xl:text-[24px]`}>{name}</p>
+      <p className={`${textClassTitle} text-[13px] 2xl:text-[24px]`}>{name}</p>
       <p className={`${combinedTextClassName} text-[11px] 2xl:text-[18px]`}>{status}</p>
     </div>
   );
