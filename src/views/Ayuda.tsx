@@ -6,7 +6,7 @@ export default function Ayuda (){
     return (
         <>
         {/* Separador */}
-        <div className="md:mt-[140px]"></div>
+        <div className="mt-[70px] md:mt-[140px]"></div>
 
         {/* Sección Guía */}
         <div>
