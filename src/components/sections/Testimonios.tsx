@@ -64,10 +64,15 @@ export default function Testimonios (){
                 numberStars={card.numberStars}
                 cardClass="flex flex-col justify-between items-center scroll-none shadow-light-top-heavy-bottom-light-sides w-[169px] h-[223px] pt-[8px] pb-[8px] px-[8px] rounded-md md:shadow-none md:w-[172px] md:h-[230px] md:bg-white  2xl:min-w-[338.94px] 2xl:h-[410.83px] 2xl:bg-white 2xl:rounded-lg"
                 cardElementsClass="flex flex-col justify-center items-center w-[192px] h-full md:h-[360px] overflow-hidden"
+
                 cardTextImageWrapper="flex flex-col justify-center items-center w-[95px] mb-[13px] md:h-[100px] 2xl:h-full"
                 cardImageWrapper="w-[60.73px] h-[60.73px] mb-[10px] md:mb-3 md:w-[78px] md:h-[65px]  2xl:w-[163px] 2xl:h-[163px]"
                 cardImageClass="rounded-full"
                 cardTextWrapper="w-[147px] h-auto md:mt-[5px] 2xl:w-full"
+
+                textTitle="md:text-lg font-medium"
+                textAge="text-xs text-[#747DD6]"
+                textCity="text-xs text-[#747DD6]"
 
                 className="bg-transparent"
                 textColor="text-base text-[#747DD6]"

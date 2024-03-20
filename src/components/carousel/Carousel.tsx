@@ -28,7 +28,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
         }}
       >
         {slides.map((s, index) => (
-          <img key={index} src={s} alt={`slide-${index}`} />
+          <img key={index} src={s} alt={`slide-${index}`}/>
         ))}
       </div>
 

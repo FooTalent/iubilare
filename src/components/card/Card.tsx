@@ -15,30 +15,58 @@ interface CardProps {
   cardImageClass?: string;
   cardTextWrapper?: string;
 
+  textTitle?: string,
+  textAge?: string,
+  textCity?: string,
+  textSemi?: string,
+  spanClassFirst?: string,
+  spanClassEnd?: string,
+
+  icon?: string,
   className?: string;
   textColor?: string;
   textDescription?: string;
 }
 
-const Card: React.FC<CardProps> = ({ name, age, city, description, imageUrl, numberStars, cardClass, cardElementsClass, cardTextImageWrapper, cardImageWrapper, cardImageClass, cardTextWrapper, className, textColor, textDescription }) => {
+const Card: React.FC<CardProps> = ({ name, age, city, description, imageUrl, numberStars, cardClass, cardElementsClass, cardTextImageWrapper, cardImageWrapper, cardImageClass, cardTextWrapper, 
+  textTitle,
+  textAge,
+  textCity,
+  textSemi,
+  spanClassFirst,
+  spanClassEnd,
+  icon,
+  className, textColor, textDescription }) => {
   const starsArray = Array.from({ length: numberStars || 0 });
   //
   return (
     <div className={`${cardClass} ${className}`} >
       <div className={`${cardElementsClass}`}> 
+
         <div className={`${cardTextImageWrapper}`}>
           <div className={`${cardImageWrapper}`}>
             <img className={`${cardImageClass}`} src={imageUrl} alt="" />
           </div>
           <div>
-            <p className={`md:text-lg font-medium ${textColor}`}>{name}</p>
-            <p className={`text-xs text-[#747DD6] ${textColor}`}>{age}</p>
-            <p className={`text-xs text-[#747DD6] ${textColor}`}>{city}</p>
+            <p className={`${textTitle} ${textColor}`}>{name}</p>
+            <p className={`${textAge} ${textColor}`}>{age}</p>
+            <div className="flex flex-row justify-center items-center">
+              <span className={`hidden ${icon}`}><img src="./tramites/location.png" alt="" /></span>
+              <p className={`${textCity} ${textColor}`}>{city}</p>
+            </div>
           </div>
         </div>
+
         <div className={`${cardTextWrapper}`}>
+          <div className={`${spanClassFirst}`}>
+            <img className={`hidden ${textSemi}`} src="./tramites/comOpen.png" />
+          </div>
           <p className={`${textDescription} `}>{description}</p>
+          <div className={`${spanClassEnd}`}>
+            <img className={`hidden ${textSemi}`} src="./tramites/comClose.png" />
+          </div>
         </div>
+
       </div>
       <div className="hidden">
       {starsArray.map((_, index) => (
