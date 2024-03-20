@@ -67,8 +67,6 @@ export default function Tramites() {
         </div>
       </div>
 
-
-
       {/* Tercera Sección */}
       <div className="flex justify-center items-center bg-blue-200 h-24">
         <p>Segunda Sección</p>
