@@ -1,3 +1,7 @@
+import TestimoniosTramites from "../components/sections/TestimoniosTramites";
+
+
+
 export default function Tramites() {
   return (
     <div className="flex flex-col min-h-screen pt-24">
@@ -70,8 +74,8 @@ export default function Tramites() {
 
 
       {/* Tercera Sección */}
-      <div className="flex justify-center items-center bg-blue-200 h-24">
-        <p>Segunda Sección</p>
+      <div className="flex flex-col justify-center bg-transparent">
+          <TestimoniosTramites></TestimoniosTramites>
       </div>
 
       {/* Cuarta Sección */}
