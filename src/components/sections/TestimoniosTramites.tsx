@@ -85,7 +85,7 @@ export default function TestimoniosTramites () {
                                 cardImageWrapper="w-[60.73px] h-[60.73px] mb-[10px] md:mb-0 md:mb-3 md:w-[141px] md:h-[141px] md:mb-[32px]"
                                 cardImageClass="rounded-full"
 
-                            cardTextWrapper="w-[147px] h-auto md:flex md:h-[195px] md:items-center md:justify-center md:w-2/3 md:h-full "
+                            cardTextWrapper="w-[147px] h-auto md:flex md:h-[195px] md:items-center md:justify-center md:w-2/3 overflow-hidden"
                               textTitle="md:text-lg font-medium md:text-[24px] md:font-semibold md:leading-8 md:mb-[12px]"
                               textAge="text-xs text-[#747DD6] md:text-[20px] md:mb-[12px]"
                               textCity="text-xs text-[#747DD6] md:text-[20px]"

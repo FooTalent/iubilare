@@ -84,9 +84,18 @@ export default function Tramites() {
       <div className="min-h-[72px] md:min-h-[90px]"></div>
 
       {/* Cuarta Sección */}
-      <div className="flex-1 flex justify-center items-center bg-blue-400">
-        <p>Cuarta Sección</p>
+      <div className="flex flex-col justify-center bg-transparent">
+          <div>
+            <h3 className="text-[20px] font-semibold md:text-[25px] 2xl:text-[49px]">Si tiene alguna duda o consulta, no dude en contactarnos.</h3>
+            <p className="md:hidden 2xl:font-semibold  2xl:block 2xl:text-[49px]">Estamos para ayudarlo.</p>
+          </div>
+          <div>
+            
+          </div>
       </div>
+
+            {/* Separador */}
+            <div className="min-h-[72px] md:min-h-[90px]"></div>
     </div>
   );
 }

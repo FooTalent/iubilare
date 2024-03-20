@@ -93,7 +93,7 @@ export default function Nosotros () {
                     }
                     {/* Separador 16px */}
                     <div className="hidden md:block md:min-h-[16px]"></div>
-                    <button className="hidden  md:active:text-background-violet md:hover:text-current md:inline-block md:py-2 md:px-4 md:bg-background-violet md:text-white rounded md:hover:bg-background-violet md:hover:text-white md:active:bg-background-violet md:outline-none md:focus:border md:focus:outline-none md:w-[140.13px] md:text-[14.14px]" onClick={ () => setView(!view) }>{ !view ? "Ver al equipo" : "Ver menos"}</button>
+                    <button className="hidden  md:active:text-background-violet md:hover:text-current md:inline-block md:py-2 md:px-4 md:bg-background-violet md:text-white rounded md:hover:bg-background-violet md:hover:text-white md:active:bg-background-violet md:outline-none md:focus:border md:focus:outline-none md:w-auto md:text-[14.14px] 2xl:w-[351px]" onClick={ () => setView(!view) }>{ !view ? "Quiero conocer al resto del equipo" : "Ver menos"}</button>
 
 
             {/* Separador 16px */}
