@@ -7,11 +7,7 @@ export default function Tramites() {
       </div>
 
       {/* Segunda Sección */}
-      <div className="flex justify-center items-center bg-blue-200 h-24">
-        <p>Segunda Sección</p>
-      </div>
 
-      {/* Tercera Sección */}
       <div className="flex-1 flex justify-center items-center overflow-auto">
         {/* Seccion tipo de Trámites */}
         <div className="px-[16px] flex flex-col justify-center 2xl:px-[120px] 2xl:p-[36px]">
@@ -69,6 +65,13 @@ export default function Tramites() {
             </div>
           </div>
         </div>
+      </div>
+
+
+
+      {/* Tercera Sección */}
+      <div className="flex justify-center items-center bg-blue-200 h-24">
+        <p>Segunda Sección</p>
       </div>
 
       {/* Cuarta Sección */}
