@@ -321,7 +321,7 @@ export default function Nosotros() {
                     {/* Separador 15px */}
                     <div className="min-h-[15px] 2xl:h-[105px]"></div>
 
-                </d
+                </div>
             </div>
           </div>
         </div>
@@ -562,6 +562,7 @@ export default function Nosotros() {
           <div className="min-h-[15px] 2xl:h-[105px]"></div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
