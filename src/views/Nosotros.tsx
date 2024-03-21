@@ -10,7 +10,6 @@ export default function Nosotros () {
     window.scrollTo(0, 0);
   }, []);
     const [view, setView] = useState(false);
-    console.log(view)
     const vision = "Ser reconocidos como líderes en el ámbito de las Rentas Vitalicias  Previsionales, siendo la opción preferida de las personas y familias que buscan seguridad y tranquilidad en el reclamo a realizar. Buscamos ser pioneros en defender sus derechos, ofreciendo soluciones integrales y personalizadas, que superen las expectativas de nuestros clientes.";
     const mision = "En IUBILARE, nos comprometemos a brindar un asesoramiento experto y personalizado en todo lo referente a su Renta Vitalicia Previsional, respaldado por más de 29 años de experiencia y trayectoria en el mercado. Nuestro objetivo es proporcionar tranquilidad y confianza a cada uno de nuestros más de 4500 clientes distribuidos por todo el país, resolviendo sus problemáticas previsionales de manera eficiente y efectiva. Nos esforzamos por garantizar que cada cliente reciba el pago de su Renta Vitalicia Previsional con todos los derechos constitucionales que la amparan, satisfaciendo sus necesidades y expectativas.";
     const clientes = "En este mapa se puede apreciar el éxito alcanzados por nuestra empresa a lo largo y ancho del país. Cada punto en el mapa representa un lugar donde hemos trabajado con clientes, logrando resultados excepcionales y construyendo relaciones duraderas. Desde las bulliciosas calles de las grandes ciudades hasta los pintorescos rincones rurales, hemos dejado nuestra huella logrando la satisfacción del cliente. Además, para obtener más información sobre nuestros proyectos exitosos y posiblemente establecer una conexión, desde Iubilare le concedemos la posibilidad de poder contactarse si lo desea, con alguno de nuestros clientes que haya logrado finalizar el trámite con éxito.";
@@ -38,7 +37,7 @@ export default function Nosotros () {
             {/* Separador 48px */}
             <div className="min-h-[48px]"></div>
 
-            {/* Seccion Clientes Satisfechos */}
+          {/* Seccion Clientes Satisfechos */}
           <div className="hidden 2xl:block 2xl:justify-center">
           <div className="2xl:flex 2xl:justify-center 2xl:px-[115px] 2xl:flex-row 2xl:gap-[92px]">
           <div className="w-[526px] h-[600px] rounded-lg px-[70px] py-[40px]">
@@ -142,7 +141,7 @@ export default function Nosotros () {
             </div>
           </div>
         </div>
-      </div>
+        </div>
 
             {/* Separador 48px */}
             <div className="min-h-[48px] md:hidden 2xl:block"></div>
