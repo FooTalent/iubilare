@@ -7,31 +7,31 @@ export default function TestimoniosTramites () {
     const data = [
         {
           id: 1,
-          name: "Lorena Ontivero",
-          age: "53 años",
-          city: "San Juan",
+          name: "Walter Albornoz",
+          age: "62 años",
+          city: "La Matanza",
           description:
-            "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general",
+            "Lorem ipsum dolor sit amet consectetur. Tortor pulvinar justo nulla scelerisque diam. Nunc velit porta commodo a massa purus. Pretium porttitor risus nisi malesuada. Varius lorem tincidunt amet dis aenean lacinia mi tortor ornare. Cursus eu consectetur sed sed tempor risus amet.",
           imageUrl: "./testimonios/test01.png",
           numberStars: 5,
         },
         {
           id: 2,
-          name: "Lorena Ontivero",
+          name: "Hortencia Campos",
           age: "53 años",
-          city: "San Juan",
+          city: "Río Negro",
           description:
-            "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general",
+            "Lorem ipsum dolor sit amet consectetur. Tortor pulvinar justo nulla scelerisque diam. Nunc velit porta commodo a massa purus. Pretium porttitor risus nisi malesuada. Varius lorem tincidunt amet dis aenean lacinia mi tortor ornare. Cursus eu consectetur sed sed tempor risus amet.",
           imageUrl: "./testimonios/test02.png",
           numberStars: 4,
         },
         {
           id: 3,
           name: "Lorena Ontivero",
-          age: "53 años",
+          age: "47 años",
           city: "San Juan",
           description:
-            "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general",
+          "Lorem ipsum dolor sit amet consectetur. Tortor pulvinar justo nulla scelerisque diam. Nunc velit porta commodo a massa purus. Pretium porttitor risus nisi malesuada. Varius lorem tincidunt amet dis aenean lacinia mi tortor ornare. Cursus eu consectetur sed sed tempor risus amet.",
           imageUrl: "./testimonios/test03.png",
           numberStars: 5,
         },
@@ -72,15 +72,19 @@ export default function TestimoniosTramites () {
                 {/* Separador */}
                 <div className="hidden md:block md:min-h-[26px] 2xl:min-h-[56px]"></div>
 
-                <div className="flex whitespace-nowrap gap-5 md:gap-0 md:justify-start"
-                  style={{
-                    transform: `translateX(-${current * 100}%)`,
-                  }}
-                
-                >
+                <div
+                    className="flex whitespace-nowrap gap-5 md:gap-0 md:justify-start"
+                    style={{
+                      transform: `translateX(-${current * 100}%)`,
+                      opacity: 1, // Establecer la opacidad inicial a 1
+
+                    }}
+                  >
 
                     {data.map((card, index) => (
                     <Card
+                        current={current}
+                        index={index}
                         key={index}
                         name={card.name}
                         age={card.age}

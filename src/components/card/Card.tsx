@@ -1,6 +1,8 @@
 import { StarSharp } from "@mui/icons-material";
 import React from "react";
 interface CardProps {
+  current: number;
+  index: number;
   name: string;
   age: string;
   city: string;
@@ -28,7 +30,7 @@ interface CardProps {
   textDescription?: string;
 }
 
-const Card: React.FC<CardProps> = ({ name, age, city, description, imageUrl, numberStars, cardClass, cardElementsClass, cardTextImageWrapper, cardImageWrapper, cardImageClass, cardTextWrapper, 
+const Card: React.FC<CardProps> = ({ index, current, name, age, city, description, imageUrl, numberStars, cardClass, cardElementsClass, cardTextImageWrapper, cardImageWrapper, cardImageClass, cardTextWrapper, 
   textTitle,
   textAge,
   textCity,
@@ -40,9 +42,8 @@ const Card: React.FC<CardProps> = ({ name, age, city, description, imageUrl, num
   const starsArray = Array.from({ length: numberStars || 0 });
   //
   return (
-    <div className={`${cardClass} ${className}`} >
+<div className={`${cardClass} ${className} ${index === current ? 'opacity-1' : 'opacity-0'} transition-opacity ease-in-out delay-150 duration-1000`} > 
       <div className={`${cardElementsClass}`}> 
-
         <div className={`${cardTextImageWrapper}`}>
           <div className={`${cardImageWrapper}`}>
             <img className={`${cardImageClass}`} src={imageUrl} alt="" />
