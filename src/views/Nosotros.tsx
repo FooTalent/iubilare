@@ -25,7 +25,12 @@ export default function Nosotros () {
         {name: "Susan Guaragna", status:"Asistente legal", className: "bg-white shadow-avatar-shadow text-black", textClassName:"text-black",  textClassTitle: "text-background-violet", image: "./nosotros/image-3.png"},
     ]
 
-
+    const customRedPinIcon = new L.Icon({
+      iconUrl: '/red-pin.png',
+      iconSize: [25, 41], 
+      iconAnchor: [12, 41], 
+      popupAnchor: [1, -34], 
+    });
     
     
 
