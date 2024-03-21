@@ -17,8 +17,8 @@ export default function Tramites() {
         <p>Primera Sección</p>
       </div>
 
-
       {/* Segunda Sección */}
+
       <div className="flex-1 flex justify-center items-center overflow-auto">
         {/* Seccion tipo de Trámites */}
         <div className="px-[16px] flex flex-col justify-center 2xl:px-[120px] 2xl:p-[36px]">
@@ -78,8 +78,6 @@ export default function Tramites() {
         </div>
       </div>
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -87,10 +85,9 @@ export default function Tramites() {
       <div className="min-h-[72px] md:min-h-[90px]"></div>
 
 
->>>>>>> 184938c70dc96bdc92c197a4c4859da05ce3d861
       {/* Tercera Sección */}
-      <div className="flex justify-center items-center bg-blue-200 h-24">
-        <p>Tercera Sección</p>
+      <div className="flex flex-col justify-center bg-transparent">
+          <TestimoniosTramites></TestimoniosTramites>
       </div>
 
       {/* Separador */}
@@ -115,4 +112,3 @@ export default function Tramites() {
     </div>
   );
 }
-
