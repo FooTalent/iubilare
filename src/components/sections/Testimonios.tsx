@@ -52,7 +52,7 @@ export default function Testimonios (){
         <div className="min-h-[48px]"></div>
 
         <div className="overflow-auto w-full h-full 2xl:flex 2xl:justify-center">
-          <div className="flex whitespace-nowrap gap-5 md:gap-[57px] md:justify-center overflow-hidden 2xl:gap-[150px]  py-5">
+          <div className="flex whitespace-nowrap gap-5 md:gap-[57px] md:justify-center md:overflow-hidden 2xl:gap-[150px]  py-5">
             {data.map((card, index) => (
               <Card
                 key={index}
