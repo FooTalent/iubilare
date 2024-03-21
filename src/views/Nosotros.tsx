@@ -5,6 +5,7 @@ import "leaflet/dist/leaflet.css"; // Make sure to import Leaflet's CSS
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from 'leaflet';
 
+
 export default function Nosotros () {
   useEffect(() => {
     window.scrollTo(0, 0);
