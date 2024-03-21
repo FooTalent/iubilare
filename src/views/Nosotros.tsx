@@ -22,11 +22,12 @@ export default function Nosotros() {
   }, []);
   
   const customRedPinIcon = new L.Icon({
-    iconUrl: '/red-pin.png', // The leading slash means it will look for the file in the root of the public folder
-    iconSize: [25, 41], // Adjust the size as needed
-    iconAnchor: [12, 41], // Adjust the anchor point as needed
-    popupAnchor: [1, -34], // Adjust the popup anchor point as needed
+    iconUrl: '/red-pin.png',
+    iconSize: [25, 41], 
+    iconAnchor: [12, 41], 
+    popupAnchor: [1, -34], 
   });
+   
   return (
     <div className="md:mt-[140px]">
       {/* Separador 48px */}
