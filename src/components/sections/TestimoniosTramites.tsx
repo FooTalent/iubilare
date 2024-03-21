@@ -37,12 +37,13 @@ export default function TestimoniosTramites () {
         },
       ];
 
+
       const cambiarCardAutomaticamente = () => {
         const siguienteCard = (current + 1) % data.length;
         setCurrent(siguienteCard);
     };
 
-    useEffect(() => {
+     useEffect(() => {
         const intervalId = setInterval(cambiarCardAutomaticamente, 5000);
         return () => clearInterval(intervalId);
     }, [current]); // Solo se ejecutará el useEffect cuando 'current' cambie
@@ -68,11 +69,12 @@ export default function TestimoniosTramites () {
                 <div className="min-h-[46px] md:min-h-[35px] 2xl:min-h-[55px]"></div>
 
                 {/* Contenedor de Cards */}
-                <div className="overflow-auto w-full h-full 2xl:flex 2xl:justify-center md:bg-background-violet md:overflow-hidden md:relative ">
+                <div className="overflow-auto min-w-full h-full 2xl:flex md:bg-background-violet md:overflow-hidden md:relative 2xl:gap-[80px]">
                 {/* Separador */}
                 <div className="hidden md:block md:min-h-[26px] 2xl:min-h-[56px]"></div>
 
-                <div className="hidden md:flex md:whitespace-nowrap md:gap-0 md:justify-start"
+                {/* Mapeo para vista Tablet y Desktop */}
+                <div className="hidden md:flex md:whitespace-nowrap md:gap-0 md:margin-auto"
                     style={{
                       transform: `translateX(-${current * 100}%)`,
                     }}
@@ -109,6 +111,7 @@ export default function TestimoniosTramites () {
                     ))}
 
                 </div>
+                {/* Mapeo para vista Mobile */}
                 <div className="overflow-auto w-full h-full 2xl:flex 2xl:justify-center md:bg-background-violet md:overflow-hidden md:relative ">
                 <div className="flex whitespace-nowrap gap-5 md:hidden">
                 {data.map((card, index) => (
