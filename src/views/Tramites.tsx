@@ -78,6 +78,16 @@ export default function Tramites() {
         </div>
       </div>
 
+<<<<<<< HEAD
+=======
+
+
+
+      {/* Separador */}
+      <div className="min-h-[72px] md:min-h-[90px]"></div>
+
+
+>>>>>>> 184938c70dc96bdc92c197a4c4859da05ce3d861
       {/* Tercera Sección */}
       <div className="flex justify-center items-center bg-blue-200 h-24">
         <p>Tercera Sección</p>
