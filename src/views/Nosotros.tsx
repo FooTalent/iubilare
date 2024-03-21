@@ -33,7 +33,6 @@ export default function Nosotros () {
         <div className="md:mt-[140px]">
             {/* Separador 48px */}
             <div className="min-h-[48px]"></div>
-
             {/* Seccion Clientes Satisfechos */}
             <div className="hidden 2xl:block 2xl:justify-center">
             <div className="2xl:flex 2xl:justify-center 2xl:px-[115px] 2xl:flex-row 2xl:gap-[92px]">
@@ -49,7 +48,6 @@ export default function Nosotros () {
                     <div>
                         <button className="md:active:text-background-violet md:hover:text-current md:inline-block md:py-2 md:px-4 md:bg-background-violet md:text-white rounded md:hover:bg-background-violet md:hover:text-white md:active:bg-background-violet md:outline-none md:focus:border md:focus:outline-none md:text-[14.14px]">Contactarme con un cliente</button>
                     </div>
-
                 </div>
             </div>
             </div>
