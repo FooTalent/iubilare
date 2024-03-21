@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import TestimoniosTramites from "../components/sections/TestimoniosTramites";
+import Casos from "../components/sections/Casos";
 import { useEffect } from "react";
-
 
 
 export default function Tramites() {
@@ -11,30 +11,22 @@ export default function Tramites() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen pt-24">
+    <div className="md:mt-[140px]">
+
       {/* Primera Sección */}
-      <div className="flex justify-center items-center bg-blue-100 h-24">
-        <p>Primera Sección</p>
+      <div className="">
+          <Casos></Casos>
       </div>
 
       {/* Segunda Sección */}
-
       <div className="flex-1 flex justify-center items-center overflow-auto">
         {/* Seccion tipo de Trámites */}
         <div className="px-[16px] flex flex-col justify-center 2xl:px-[120px] 2xl:p-[36px]">
           <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full 2xl:w-[1115px] 2xl:h-[500px] ">
             <div className="flex flex-col justify-start items-center h-[235px] p-4 bg-white rounded-[5px]  gap-[22px] md:mr-24 md:w-[217px] md:h-full 2xl:h-full 2xl:w-full mr-">
               <div className="flex justify-center w-full">
-                <img
-                  className="md:hidden"
-                  src="/checkpluswhite.png"
-                  alt="Hero"
-                />
-                <img
-                  className="hidden md:block 2xl:w-[197px]"
-                  src="./checkplus.png"
-                  alt="check con signo de mas"
-                />
+                <img className="md:hidden" src="/checkpluswhite.png" alt="Hero" />
+                <img className="hidden md:block 2xl:w-[197px]" src="./checkplus.png" alt="check con signo de mas" />
               </div>
               <div className="flex flex-col justify-center items-center gap-[3px] w-full">
                 <div className="text-center text-neutral-900 text-lg font-bold font-source-sans-pro md:w-[329px] md:text-black md:h-full md:text-center 2xl:h-auto 2xl:mb-[10px]">
@@ -77,8 +69,6 @@ export default function Tramites() {
           </div>
         </div>
       </div>
-
-
 
 
       {/* Separador */}
