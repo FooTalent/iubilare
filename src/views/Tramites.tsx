@@ -1,4 +1,15 @@
+import { Link } from "react-router-dom";
+import TestimoniosTramites from "../components/sections/TestimoniosTramites";
+import { useEffect } from "react";
+
+
+
 export default function Tramites() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen pt-24">
       {/* Primera Sección */}
@@ -67,15 +78,37 @@ export default function Tramites() {
         </div>
       </div>
 
+
+
+
+      {/* Separador */}
+      <div className="min-h-[72px] md:min-h-[90px]"></div>
+
+
       {/* Tercera Sección */}
-      <div className="flex justify-center items-center bg-blue-200 h-24">
-        <p>Segunda Sección</p>
+      <div className="flex flex-col justify-center bg-transparent">
+          <TestimoniosTramites></TestimoniosTramites>
       </div>
 
+      {/* Separador */}
+      <div className="min-h-[72px] md:min-h-[90px]"></div>
+
       {/* Cuarta Sección */}
-      <div className="flex-1 flex justify-center items-center bg-blue-400">
-        <p>Cuarta Sección</p>
+      <div className="flex flex-col justify-center bg-transparent px-[16px]">
+          <div>
+            <h3 className="text-[20px] font-semibold md:text-[25px] 2xl:text-[49px]">Si tiene alguna duda o consulta, no dude en contactarnos.</h3>
+            <p className="md:hidden 2xl:font-semibold  2xl:block 2xl:text-[49px]">Estamos para ayudarlo.</p>
+          </div>
+          <div className="min-h-[30px]"></div>
+          <div className="flex justify-center">
+              <Link to={'/'} state={{from: 'contact'}}  className="w-full h-[46px] md:h-[60px] active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[286px] md:text-[32px] font-semibold cursor-pointer">
+                Contactate
+              </Link>
+          </div>
       </div>
+
+            {/* Separador */}
+            <div className="min-h-[72px] md:min-h-[90px]"></div>
     </div>
   );
 }

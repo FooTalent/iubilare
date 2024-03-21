@@ -1,15 +1,14 @@
-import Card from "../components/card/Card";
 import Form from "../components/form/Form";
-import CardQueHacemos from "../components/cardQueHacemos/cardQueHacemos";
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+import QueHacemos from "../components/sections/QueHacemos";
+import Testimonios from "../components/sections/Testimonios";
 
 
 export default function Home(    ) {
   const formSection:any = useRef(null);
 
   const scrollToSection = (ref: any) => {
-    console.log(ref.current)
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
@@ -20,49 +19,14 @@ export default function Home(    ) {
   
   useEffect(() => {
     if (state){
-      console.log(true, state)
-      console.log(formSection)
-      
+      if (state.from === 'contact'){
+        formSection.current.scrollIntoView({ behavior: 'smooth' })
+      }
     }else{
-      console.log(false)
       window.scrollTo(0, 0);
     }
   }, [state]);
 
-  const cards = [
-    {
-      id: 1,
-      name: "Lorena Ontivero",
-      age: "53 años",
-      city: "San Juan",
-      description:
-        "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general",
-      imageUrl: "./testimonios/test01.png",
-      numberStars: 5,
-    },
-    {
-      id: 2,
-      name: "Lorena Ontivero",
-      age: "53 años",
-      city: "San Juan",
-      description:
-        "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general",
-      imageUrl: "./testimonios/test02.png",
-      numberStars: 4,
-    },
-    {
-      id: 3,
-      name: "Lorena Ontivero",
-      age: "53 años",
-      city: "San Juan",
-      description:
-        "Valoré mucho el asesoramiento y  permanente contacto con Cristian, y agradezco nuevamente tu trabajo eficiente y el de todo tu equipo en general",
-      imageUrl: "./testimonios/test03.png",
-      numberStars: 5,
-    },
-  ];
-
-  const data = [...cards];
 
   return (
     <div className="md:mt-[140px]">
@@ -74,7 +38,7 @@ export default function Home(    ) {
         <div className="flex flex-col md:flex-col-reverse 2xl:flex-row- 2xl:flex-row-reverse 2xl:gap-[132px]  2xl:mt-[100px]">
         <div className="2xl:w-[50%] 2xl:flex">
         <div className="hidden md:block text-left md:m-[10px] 2xl:flex 2xl:flex-col 2xl:justify-around 2xl:w-[70%]">
-            <h1 className="md:text-[20px] md:font-semibold 2xl:text-[40px]">Iubilare consultora previsional</h1>
+            <h1 className="md:text-[20px] md:mb-[9px] md:font-semibold 2xl:text-[40px]">Iubilare consultora previsional</h1>
             <p className="text-left hidden 2xl:block 2xl:text-[28px]">27 años de experiencia. Asesoramiento personalizado. Soluciones previsionales confiables en <span className="2xl:font-bold">todo el país.</span></p>
             <p className="md:w-2/3 2xl:hidden">Somos un equipo de abogados y ejecutivos en gestión previsional con 27+ años de experiencia. Más de 4500 clientes en todo el país. Asesoramiento personalizado para tranquilidad y solución de problemas previsionales.</p>
             <div className="hidden 2xl:block 2xl:mt-5">
@@ -99,36 +63,7 @@ export default function Home(    ) {
       {/* Separador */}
       <div className="h-[78px] 2xl:h-[100px]"></div>
       {/* Seccion Que Hacemos */}
-      <div className="flex flex-col justify-center px-[16px] 2xl:p-[36px] 2xl:">
-          <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8">¿Qué hacemos?</h2>
-          <div className="2xl:flex 2xl:justify-center"> 
-          <p className="mt-5 text-justify leading-tight md:text-center 2xl:text-[23px] 2xl:w-[860px]">Gestionamos todos los trámites relacionados con su renta vitalicia previsional o jubilación sin que sea necesario que visite nuestras oficinas.</p>
-          </div>
-
-        <div className="h-[32px]"></div>
-        <div className="flex flex-col justify-center items-center">
-          <CardQueHacemos 
-            src="./QueHacemos1.jpeg" 
-            title="No queremos que pierda su tiempo ni dinero" 
-            description="Ofrecemos un primer diagnóstico previsional completamente gratuito que incluye un análisis detallado de sus años de servicio y contribuciones tanto como dependiente, autónomo o monotributista. De esta manera podemos determinar los pasos a seguir y evaluar si está en condiciones de iniciar su trámite."
-          />
-          <div className="h-[32px] md:[63px]"></div>
-          <CardQueHacemos 
-            src="./QueHacemos2.jpeg" 
-            title="Seguimiento del beneficio previsional" 
-            description="En una segunda etapa, realizamos la gestión del beneficio previsional y hacemos el seguimiento del caso desde que el expediente es caratulado hasta el momento del primer cobro de haberes."
-            classStyle="md:flex-row-reverse"
-
-          />
-          <div className="h-[32px] md:[63px]"></div>
-          <CardQueHacemos 
-            src="./QueHacemos3.jpeg" 
-            title="Amplia experiencia" 
-            description="Contamos con una amplia experiencia y las mejores herramientas para brindarle un servicio de calidad que garantice que su Beneficio Previsional sea otorgado en el menor tiempo posible."
-          />
-        </div>
-
-      </div>
+      <QueHacemos></QueHacemos>
 
 
         {/* Separador */}
@@ -145,12 +80,15 @@ export default function Home(    ) {
             <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse md:h-full  2xl:justify-end">
               <div className="">
               <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-black md:h-full  md:text-center 2xl:h-auto  2xl:mb-[10px] md:font-bold">
-                Renta Vitalicia Previsional en Dólares
+                Renta Vitalicia Previsional <span className="hidden 2xl:block">pactada</span> en Dólares
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px]">
-                Le ofrecemos realizar una entrevista o conversación telefónica
-                para brindarle un diagnóstico completo.
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] 2xl:hidden">
+                Le ofrecemos realizar una entrevista o conversación telefónica para brindarle un diagnóstico completo.
               </div>
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] hidden 2xl:block">
+              Luego de una entrevista o charla telefónica podemos brindarle un diagnóstico completo.
+              </div>
+
               </div>
               <div className="flex justify-center w-full">
                 <img className="md:hidden" src="/actualizacionIcono.png" alt="Hero" />
@@ -164,11 +102,14 @@ export default function Home(    ) {
             <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full 2xl:justify-end">
               <div>
               <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center  2xl:h-auto 2xl:mb-[10px] md:font-bold">
-                Complemento al Haber Mínimo
+                Complemento al Haber Mínimo <span className="hidden 2xl:block">Garantizado</span>
               </div>
-              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px]">
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] 2xl:hidden">
                 Es un pago que realiza ANSES a quienes reciben una Renta
                 Vitalicia y no alcanzan el Haber Mínimo Garantizado.
+              </div>
+              <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] hidden 2xl:block">
+              Es un pago que abona ANSES a aquellas personas que cobran una Renta Vitalicia y no llegan al Haber Mínimo Garantizado. Este monto, que se obtiene luego de la Sentencia Judicial.
               </div>
               </div>
               <div className="flex justify-center w-full">
@@ -186,7 +127,7 @@ export default function Home(    ) {
               </div>
               <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-center md:pt-[16px]">
                 La Compañía de Seguros de Retiro otorga aumentos menores a su
-                Renta. Sin embargo, debería recibir los aumentos que ANSES ha
+                Renta. <span className="2xl:hidden">Sin embargo,</span><span className="hidden 2xl:inline">Usted</span> debería recibir los aumentos que ANSES ha
                 otorgado desde enero de 2002.
               </div>
               </div>
@@ -201,9 +142,6 @@ export default function Home(    ) {
         {/* Separador */}
         <div className="h-[36px]"></div>
 
-        <div className="2xl:hidden">
-            <button className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px]  font-bold">Más info</button>
-        </div>
       </div>
 
 
@@ -214,36 +152,7 @@ export default function Home(    ) {
 
 
       {/* Seccion Testimonios */}
-      <div className="2xl:bg-background-violet px-[16px] md:px-[40px] 2xl:px-[120px] md:pt-[54px]">
-        <div>
-          <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 2xl:text-white">
-            Testimonios
-          </h2>
-        </div>
-        <div className="hidden md:block">
-          <h3 className="text-xl 2xl:font-semibold md:text-[21px] 2xl:text-[31px] 2xl:text-white">
-            Estos son algunos de nuestros clientes
-          </h3>
-        </div>
-        <div className="min-h-[48px]"></div>
-
-        <div className="overflow-auto w-full h-full 2xl:flex 2xl:justify-center">
-          <div className="flex whitespace-nowrap gap-5 md:gap-[100px] md:justify-center md:overflow-hidden 2xl:gap-[150px]">
-            {data.map((card, index) => (
-              <Card
-                key={index}
-                name={card.name}
-                age={card.age}
-                city={card.city}
-                description={card.description}
-                imageUrl={card.imageUrl}
-                numberStars={card.numberStars}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="2xl:min-h-[63px]"></div>
-      </div>
+      <Testimonios/>
 
       {/* Separador */}
       <div className="min-h-[106.08px]"></div>

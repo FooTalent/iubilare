@@ -7,29 +7,68 @@ interface CardProps {
   description: string;
   imageUrl: string;
   numberStars?: number;
+
+  cardClass?: string;
+  cardElementsClass?: string;
+  cardTextImageWrapper?: string;
+  cardImageWrapper?: string;
+  cardImageClass?: string;
+  cardTextWrapper?: string;
+
+  textTitle?: string,
+  textAge?: string,
+  textCity?: string,
+  textSemi?: string,
+  spanClassFirst?: string,
+  spanClassEnd?: string,
+
+  icon?: string,
+  className?: string;
+  textColor?: string;
+  textDescription?: string;
 }
 
-const Card: React.FC<CardProps> = ({ name, age, city, description, imageUrl, numberStars }) => {
+const Card: React.FC<CardProps> = ({ name, age, city, description, imageUrl, numberStars, cardClass, cardElementsClass, cardTextImageWrapper, cardImageWrapper, cardImageClass, cardTextWrapper, 
+  textTitle,
+  textAge,
+  textCity,
+  textSemi,
+  spanClassFirst,
+  spanClassEnd,
+  icon,
+  className, textColor, textDescription }) => {
   const starsArray = Array.from({ length: numberStars || 0 });
+  //
   return (
-    <div className="flex flex-col justify-center items-center bg-[#e8e8e8] w-[208px] h-[233.92px] pt-[13px] pb-[13px] px-[8px] rounded-md md:h-[415px] md:bg-transparent md:w-[163px] 2xl:min-w-[338.94px] 2xl:min-h[410.83px] 2xl:bg-white 2xl:rounded-lg">
-      <div className="flex flex-col justify-center items-center w-[192px] h-full md:h-[360px] overflow-hidden"> 
-        <div className="flex flex-col justify-center items-center w-[95px] h-[84.73px] mb-[13px] md:h-[200px]">
-          <div className="w-[48.73px] h-[48.73px] mb-[10px]  md:w-[163px] md:h-[163px]">
-            <img className="rounded-full" src={imageUrl} alt="" />
+    <div className={`${cardClass} ${className}`} >
+      <div className={`${cardElementsClass}`}> 
+
+        <div className={`${cardTextImageWrapper}`}>
+          <div className={`${cardImageWrapper}`}>
+            <img className={`${cardImageClass}`} src={imageUrl} alt="" />
           </div>
           <div>
-            <p className="text-xs md:text-lg">{name}</p>
-            <p className="text-xs">{age}</p>
-            <p className="hidden md:block">{city}</p>
+            <p className={`${textTitle} ${textColor}`}>{name}</p>
+            <p className={`${textAge} ${textColor}`}>{age}</p>
+            <div className="flex flex-row justify-center items-center">
+              <span className={`hidden ${icon}`}><img src="./tramites/location.png" alt="" /></span>
+              <p className={`${textCity} ${textColor}`}>{city}</p>
+            </div>
           </div>
         </div>
 
-        <div className="w-[192px] h-auto md:mt-[24px]">
-          <p className="text-xs whitespace-normal">{description}</p>
+        <div className={`${cardTextWrapper}`}>
+          <div className={`${spanClassFirst}`}>
+            <img className={`hidden ${textSemi}`} src="./tramites/comOpen.png" />
+          </div>
+          <p className={`${textDescription} `}>{description}</p>
+          <div className={`${spanClassEnd}`}>
+            <img className={`hidden ${textSemi}`} src="./tramites/comClose.png" />
+          </div>
         </div>
+
       </div>
-      <div className="md:hidden">
+      <div className="hidden">
       {starsArray.map((_, index) => (
         <StarSharp key={index} />
       ))}
