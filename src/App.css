@@ -8,6 +8,16 @@
   }
 }
 
+.after {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.expanded {
+  max-height: 500px;
+}
+
 #root {
   min-height: 100vh;
   min-width: 100%;
