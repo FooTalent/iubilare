@@ -1,12 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "../card/Card";
 
 
-
 export default function TestimoniosTramites () {
-
     const [current, setCurrent] = useState(0);
-
     const data = [
         {
           id: 1,
@@ -39,6 +36,18 @@ export default function TestimoniosTramites () {
           numberStars: 5,
         },
       ];
+
+      const cambiarCardAutomaticamente = () => {
+        const siguienteCard = (current + 1) % data.length;
+        setCurrent(siguienteCard);
+    };
+
+    useEffect(() => {
+        const intervalId = setInterval(cambiarCardAutomaticamente, 5000);
+        return () => clearInterval(intervalId);
+    }, [current]); // Solo se ejecutará el useEffect cuando 'current' cambie
+
+
 
     return (
         <>
