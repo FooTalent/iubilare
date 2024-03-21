@@ -23,7 +23,6 @@ export default function Home(    ) {
         formSection.current.scrollIntoView({ behavior: 'smooth' })
       }
     }else{
-      console.log(false)
       window.scrollTo(0, 0);
     }
   }, [state]);
