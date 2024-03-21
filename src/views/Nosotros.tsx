@@ -6,8 +6,7 @@ import React, { useRef, useEffect } from "react";
 import L from 'leaflet';
 
 
-export default function Nosotros() {
-  // Desplazar la página hacia arriba cuando el componente se monta
+export default function Nosotros () {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
