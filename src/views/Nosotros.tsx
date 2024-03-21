@@ -1,35 +1,20 @@
-import CardInfo from "../components/cardNosotros/CardInfo";
-import CardNosotros from "../components/cardNosotros/CardNosotros";
+import { useEffect, useState } from "react";
+import CardInfo from "../components/cardNosotros/CardInfo"
+import CardNosotros from "../components/cardNosotros/CardNosotros"
 import "leaflet/dist/leaflet.css"; // Make sure to import Leaflet's CSS
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import React, { useRef, useEffect } from "react";
 import L from 'leaflet';
-import { useState } from "react";
 
-
-export default function Nosotros() {
-  // Desplazar la página hacia arriba cuando el componente se monta
+export default function Nosotros () {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const vision =
-    "Ser reconocidos como líderes en el ámbito de las Rentas Vitalicias  Previsionales, siendo la opción preferida de las personas y familias que buscan seguridad y tranquilidad en el reclamo a realizar. Buscamos ser pioneros en defender sus derechos, ofreciendo soluciones integrales y personalizadas, que superen las expectativas de nuestros clientes.";
-  const mision =
-    "En IUBILARE, nos comprometemos a brindar un asesoramiento experto y personalizado en todo lo referente a su Renta Vitalicia Previsional, respaldado por más de 29 años de experiencia y trayectoria en el mercado. Nuestro objetivo es proporcionar tranquilidad y confianza a cada uno de nuestros más de 4500 clientes distribuidos por todo el país, resolviendo sus problemáticas previsionales de manera eficiente y efectiva. Nos esforzamos por garantizar que cada cliente reciba el pago de su Renta Vitalicia Previsional con todos los derechos constitucionales que la amparan, satisfaciendo sus necesidades y expectativas.";
-  const clientes =
-    "En este mapa se puede apreciar el éxito alcanzados por nuestra empresa a lo largo y ancho del país. Cada punto en el mapa representa un lugar donde hemos trabajado con clientes, logrando resultados excepcionales y construyendo relaciones duraderas. Desde las bulliciosas calles de las grandes ciudades hasta los pintorescos rincones rurales, hemos dejado nuestra huella logrando la satisfacción del cliente. Además, para obtener más información sobre nuestros proyectos exitosos y posiblemente establecer una conexión, desde Iubilare le concedemos la posibilidad de poder contactarse si lo desea, con alguno de nuestros clientes que haya logrado finalizar el trámite con éxito.";
-  
-  const customRedPinIcon = new L.Icon({
-    iconUrl: '/red-pin.png',
-    iconSize: [25, 41], 
-    iconAnchor: [12, 41], 
-    popupAnchor: [1, -34], 
-  });
-  
-  const [view, setView] = useState(false);
+    const [view, setView] = useState(false);
     console.log(view)
-    
+    const vision = "Ser reconocidos como líderes en el ámbito de las Rentas Vitalicias  Previsionales, siendo la opción preferida de las personas y familias que buscan seguridad y tranquilidad en el reclamo a realizar. Buscamos ser pioneros en defender sus derechos, ofreciendo soluciones integrales y personalizadas, que superen las expectativas de nuestros clientes.";
+    const mision = "En IUBILARE, nos comprometemos a brindar un asesoramiento experto y personalizado en todo lo referente a su Renta Vitalicia Previsional, respaldado por más de 29 años de experiencia y trayectoria en el mercado. Nuestro objetivo es proporcionar tranquilidad y confianza a cada uno de nuestros más de 4500 clientes distribuidos por todo el país, resolviendo sus problemáticas previsionales de manera eficiente y efectiva. Nos esforzamos por garantizar que cada cliente reciba el pago de su Renta Vitalicia Previsional con todos los derechos constitucionales que la amparan, satisfaciendo sus necesidades y expectativas.";
+    const clientes = "En este mapa se puede apreciar el éxito alcanzados por nuestra empresa a lo largo y ancho del país. Cada punto en el mapa representa un lugar donde hemos trabajado con clientes, logrando resultados excepcionales y construyendo relaciones duraderas. Desde las bulliciosas calles de las grandes ciudades hasta los pintorescos rincones rurales, hemos dejado nuestra huella logrando la satisfacción del cliente. Además, para obtener más información sobre nuestros proyectos exitosos y posiblemente establecer una conexión, desde Iubilare le concedemos la posibilidad de poder contactarse si lo desea, con alguno de nuestros clientes que haya logrado finalizar el trámite con éxito.";
+
     const personal = [  {name: "Mariana Ruiz Perovsky", status:"Secretaria", className: "bg-white shadow-avatar-shadow text-black", textClassName:"text-black", textClassTitle: "text-background-violet", image:"./nosotros/image-2.png"}, 
                         {name: "Mariana Ruiz Perovsky", status:"Secretaria", className: "bg-white shadow-avatar-shadow text-black", textClassName:"text-black",  textClassTitle: "text-background-violet", image: "./nosotros/image-2.png"},
                         {name: "Mariana Ruiz Perovsky", status:"Secretaria", className: "bg-white shadow-avatar-shadow text-black", textClassName:"text-black",  textClassTitle: "text-background-violet", image: "./nosotros/image-2.png"}, 
@@ -41,15 +26,21 @@ export default function Nosotros() {
         {name: "Susan Guaragna", status:"Asistente legal", className: "bg-white shadow-avatar-shadow text-black", textClassName:"text-black",  textClassTitle: "text-background-violet", image: "./nosotros/image-3.png"},
         {name: "Susan Guaragna", status:"Asistente legal", className: "bg-white shadow-avatar-shadow text-black", textClassName:"text-black",  textClassTitle: "text-background-violet", image: "./nosotros/image-3.png"},
     ]
-   
-  return (
-    <div className="md:mt-[140px]">
-      {/* Separador 48px */}
-      <div className="min-h-[48px]"></div>
+    const customRedPinIcon = new L.Icon({
+      iconUrl: '/red-pin.png',
+      iconSize: [25, 41], 
+      iconAnchor: [12, 41], 
+      popupAnchor: [1, -34], 
+    });
 
-      {/* Seccion Clientes Satisfechos */}
-      <div className="hidden 2xl:block 2xl:justify-center">
-        <div className="2xl:flex 2xl:justify-center 2xl:px-[115px] 2xl:flex-row 2xl:gap-[92px]">
+    return (
+        <div className="md:mt-[140px]">
+            {/* Separador 48px */}
+            <div className="min-h-[48px]"></div>
+
+            {/* Seccion Clientes Satisfechos */}
+          <div className="hidden 2xl:block 2xl:justify-center">
+          <div className="2xl:flex 2xl:justify-center 2xl:px-[115px] 2xl:flex-row 2xl:gap-[92px]">
           <div className="w-[526px] h-[600px] rounded-lg px-[70px] py-[40px]">
             {/* Leaflet Map */}
             <MapContainer
@@ -148,8 +139,10 @@ export default function Nosotros() {
               <button className="md:active:text-background-violet md:hover:text-current md:inline-block md:py-2 md:px-4 md:bg-background-violet md:text-white rounded md:hover:bg-background-violet md:hover:text-white md:active:bg-background-violet md:outline-none md:focus:border md:focus:outline-none md:text-[14.14px]">
                 Contactarme con un cliente
               </button>
-
-    
+            </div>
+          </div>
+        </div>
+      </div>
 
             {/* Separador 48px */}
             <div className="min-h-[48px] md:hidden 2xl:block"></div>
@@ -320,13 +313,18 @@ export default function Nosotros() {
                         </div>
                     {/* Separador 15px */}
                     <div className="min-h-[15px] 2xl:h-[105px]"></div>
+<<<<<<< HEAD
 
                 </div>
+=======
+                </div>
+                
+>>>>>>> 53fc72cc067a0411bbb3bd767d9f924b30489e5b
             </div>
-          </div>
         </div>
-      </div>
+    )
 
+<<<<<<< HEAD
       {/* Separador 48px */}
       <div className="min-h-[48px] md:hidden 2xl:block"></div>
 
@@ -566,3 +564,6 @@ export default function Nosotros() {
     </div>
   );
 }
+=======
+};
+>>>>>>> 53fc72cc067a0411bbb3bd767d9f924b30489e5b
