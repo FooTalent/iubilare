@@ -33,7 +33,10 @@ export default function Nosotros () {
         <div className="md:mt-[140px]">
             {/* Separador 48px */}
             <div className="min-h-[48px]"></div>
+
             {/* Seccion Clientes Satisfechos */}
+            
+            
             <div className="hidden 2xl:block 2xl:justify-center">
             <div className="2xl:flex 2xl:justify-center 2xl:px-[115px] 2xl:flex-row 2xl:gap-[92px]">
                 <div className="w-[526px] h-[600px] bg-background-violet-light rounded-lg px-[111px] py-[44px]">
