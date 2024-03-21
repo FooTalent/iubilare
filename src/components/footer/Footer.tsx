@@ -28,13 +28,13 @@ const Footer = (): JSX.Element => {
             </div>
             <div className='flex flex-row mr-12 md:mr-0'>
                 <div className="w-[33px] h-[33px] rounded-[16px/16.5px]">
-                    <a href="https://www.facebook.com/profile.php?id=100063465785183">
+                    <a href="https://www.facebook.com/profile.php?id=100063465785183"  target="_blank">
                     <img className="" alt="Vector" src="./footer/facebook.png" />
                     </a>
                 </div>
                 <div className="min-w-[30px]"></div>
                 <div className="w-[33px] h-[33px] rounded-[16px/16.5px]">
-                    <a href="https://www.instagram.com/">
+                    <a href="https://www.instagram.com/" target="_blank">
                     <img className="" alt="Icomoon free"src="./footer/instagram.png"/>
                     </a>
 

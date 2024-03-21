@@ -73,13 +73,13 @@ export default function Nosotros() {
               <Marker position={[-31.5375, -68.5364]}>
                 <Popup>Quier hablar con un cliente de San Juan</Popup>
               </Marker>
-              <Marker position={[-28.4696, -65.7852 ]}>
+              <Marker position={[-28.4696, -65.7852]}>
                 <Popup>Quier hablar con un cliente de Catamarca</Popup>
               </Marker>
-              <Marker position={[-26.3333, -60.5000]}>
+              <Marker position={[-26.3333, -60.5]}>
                 <Popup>Quier hablar con un cliente de Chaco</Popup>
               </Marker>
-              <Marker position={[-43.6846 , -69.2746]}>
+              <Marker position={[-43.6846, -69.2746]}>
                 <Popup>Quier hablar con un cliente de Chubut</Popup>
               </Marker>
               <Marker position={[-27.4684, -58.8344]}>
@@ -94,7 +94,7 @@ export default function Nosotros() {
               <Marker position={[-24.1858, -65.2995]}>
                 <Popup>Quier hablar con un cliente de Jujuy</Popup>
               </Marker>
-              <Marker position={[-36.61475730, -64.28392090]}>
+              <Marker position={[-36.6147573, -64.2839209]}>
                 <Popup>Quier hablar con un cliente de La Pampa</Popup>
               </Marker>
               <Marker position={[-29.4135, -66.8558]}>
@@ -115,7 +115,7 @@ export default function Nosotros() {
               <Marker position={[-24.7859, -65.4117]}>
                 <Popup>Quier hablar con un cliente de Salta</Popup>
               </Marker>
-              <Marker position={[-33.2950, -66.3356]}>
+              <Marker position={[-33.295, -66.3356]}>
                 <Popup>Quier hablar con un cliente de San Luis </Popup>
               </Marker>
               <Marker position={[-48.7514, -69.2493]}>
@@ -125,7 +125,9 @@ export default function Nosotros() {
                 <Popup>Quier hablar con un cliente de Santa Fe </Popup>
               </Marker>
               <Marker position={[-27.7951, -64.2615]}>
-                <Popup>Quier hablar con un cliente de Santiago del Estero </Popup>
+                <Popup>
+                  Quier hablar con un cliente de Santiago del Estero{" "}
+                </Popup>
               </Marker>
               <Marker position={[-54.3084, -67.7452]}>
                 <Popup>Quier hablar con un cliente de Tierra del Fuego </Popup>
@@ -150,67 +152,122 @@ export default function Nosotros() {
 
     
 
-            {/* Separador 48px */}
-            <div className="min-h-[48px] md:hidden 2xl:block"></div>
+              {/* Separador 48px */}
+              <div className="min-h-[48px] md:hidden 2xl:block"></div>
 
-            <div className="px-[16px] 2xl:px-[115px]">
+              <div className="px-[16px] 2xl:px-[115px]">
                 <div>
-                    <h1 className="font-semibold text-[25px] 2xl:text-[35px]" >Equipo de Trabajo</h1>
+                  <h1 className="font-semibold text-[25px] 2xl:text-[35px]">
+                    Equipo de Trabajo
+                  </h1>
                 </div>
 
-                    {/* Separador 16px Para Seccion Tablet min height 768px*/}
-                    <div className="md:min-h-[16px] 2xl:min-h-[72px]"></div>
-                    {/* Seccion Equipo de Tabajo para Tablet min height 768px */}
+                {/* Separador 16px Para Seccion Tablet min height 768px*/}
+                <div className="md:min-h-[16px] 2xl:min-h-[72px]"></div>
+                {/* Seccion Equipo de Tabajo para Tablet min height 768px */}
+                <div className="hidden md:flex md:flex-row md:justify-center md:gap-3 md:px-[41px] 2xl:gap-5">
+                  <CardNosotros
+                    name={"Marcelo Visceglie"}
+                    status={"Fundador"}
+                    image={"./nosotros/image-1.png"}
+                    className="bg-background-violet shadow-avatar-shadow"
+                    textClassName="text-white"
+                    textClassTitle="text-white"
+                  />
+                  <CardNosotros
+                    name={"Cristian Pavlovsky"}
+                    status={"Fundador"}
+                    image={"./nosotros/image-1.png"}
+                    className="bg-background-violet shadow-avatar-shadow"
+                    textClassName="text-white"
+                    textClassTitle="text-white"
+                  />
+                  <CardNosotros
+                    name={"Dr. Federico Sallustio"}
+                    status={"Abogado"}
+                    image={"./nosotros/image-1.png"}
+                    className="bg-white shadow-avatar-shadow text-black"
+                    textClassTitle="text-background-violet"
+                  />
+                  <CardNosotros
+                    name={"Dr. Federico Sallustio"}
+                    status={"Abogado"}
+                    image={"./nosotros/image-1.png"}
+                    className="bg-white shadow-avatar-shadow text-black"
+                    textClassTitle="text-background-violet"
+                  />
+                </div>
+
+                {view && (
+                  <div>
+                    <div className="min-h-[20px]"></div>
                     <div className="hidden md:flex md:flex-row md:justify-center md:gap-3 md:px-[41px] 2xl:gap-5">
-                        <CardNosotros name={"Marcelo Visceglie"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet shadow-avatar-shadow" textClassName="text-white" textClassTitle="text-white" />
-                        <CardNosotros name={"Cristian Pavlovsky"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet shadow-avatar-shadow" textClassName="text-white"  textClassTitle ="text-white"/>
-                        <CardNosotros name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} className="bg-white shadow-avatar-shadow text-black" textClassTitle="text-background-violet" />
-                        <CardNosotros name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} className="bg-white shadow-avatar-shadow text-black" textClassTitle="text-background-violet" />
+                      {personal.map((ele, index) => (
+                        <CardNosotros
+                          key={index}
+                          name={ele.name}
+                          status={ele.status}
+                          className={ele.className}
+                          image={ele.image}
+                          textClassName={ele.textClassName}
+                          textClassTitle={ele.textClassTitle}
+                        ></CardNosotros>
+                      ))}
                     </div>
+                    <div className="min-h-[20px]"></div>
+                    <div className="hidden md:flex md:flex-row md:justify-center md:gap-3 md:px-[41px] 2xl:gap-5">
+                      {asistentes.map((ele, index) => (
+                        <CardNosotros
+                          key={index}
+                          name={ele.name}
+                          status={ele.status}
+                          className={ele.className}
+                          image={ele.image}
+                          textClassName={ele.textClassName}
+                          textClassTitle={ele.textClassTitle}
+                        ></CardNosotros>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {/* Separador 16px */}
+                <div className="hidden md:block md:min-h-[16px]"></div>
+                <button
+                  className="hidden  md:active:text-background-violet md:hover:text-current md:inline-block md:py-2 md:px-4 md:bg-background-violet md:text-white rounded md:hover:bg-background-violet md:hover:text-white md:active:bg-background-violet md:outline-none md:focus:border md:focus:outline-none md:w-auto md:text-[14.14px] 2xl:w-[351px]"
+                  onClick={() => setView(!view)}
+                >
+                  {!view ? "Quiero conocer al resto del equipo" : "Ver menos"}
+                </button>
 
-                    {
-                        view && (
-                            <div>
-                            <div className="min-h-[20px]"></div>
-                            <div className="hidden md:flex md:flex-row md:justify-center md:gap-3 md:px-[41px] 2xl:gap-5">
-                                {personal.map((ele, index) => (
-                                    <CardNosotros key={index} name={ele.name} status={ele.status} className={ele.className} image={ele.image} textClassName={ele.textClassName} textClassTitle={ele.textClassTitle}></CardNosotros>
-                                ))}
-                            </div>
-                                <div className="min-h-[20px]"></div>
-                            <div className="hidden md:flex md:flex-row md:justify-center md:gap-3 md:px-[41px] 2xl:gap-5">
-                                {asistentes.map((ele, index) => (
-                                    <CardNosotros key={index} name={ele.name} status={ele.status} className={ele.className} image={ele.image} textClassName={ele.textClassName} textClassTitle={ele.textClassTitle}></CardNosotros>
-                                                        ))}
-                            </div>
-                            </div>
-                        )
-
-                    }
-                    {/* Separador 16px */}
-                    <div className="hidden md:block md:min-h-[16px]"></div>
-                    <button className="hidden  md:active:text-background-violet md:hover:text-current md:inline-block md:py-2 md:px-4 md:bg-background-violet md:text-white rounded md:hover:bg-background-violet md:hover:text-white md:active:bg-background-violet md:outline-none md:focus:border md:focus:outline-none md:w-auto md:text-[14.14px] 2xl:w-[351px]" onClick={ () => setView(!view) }>{ !view ? "Quiero conocer al resto del equipo" : "Ver menos"}</button>
-
-
-            {/* Separador 16px */}
-            <div className="min-h-[16px]"></div>
+                {/* Separador 16px */}
+                <div className="min-h-[16px]"></div>
 
                 <div className="px-[16px] md:hidden">
-                    <h3 className="text-[20px]">Fundadores</h3>
-                    {/* Separador 15px */}
-                    <div className="min-h-[15px]"></div>
-                    <div className="flex flex-row justify-center gap-3">
-                        <CardNosotros name={"Marcelo Visceglie"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet shadow-avatar-shadow" />
-                        <CardNosotros name={"Cristian Pavlovsky"} status={"Fundador"} image={"./nosotros/image-1.png"} className="bg-background-violet shadow-avatar-shadow"/>
-                    </div>
+                  <h3 className="text-[20px]">Fundadores</h3>
+                  {/* Separador 15px */}
+                  <div className="min-h-[15px]"></div>
+                  <div className="flex flex-row justify-center gap-3">
+                    <CardNosotros
+                      name={"Marcelo Visceglie"}
+                      status={"Fundador"}
+                      image={"./nosotros/image-1.png"}
+                      className="bg-background-violet shadow-avatar-shadow"
+                    />
+                    <CardNosotros
+                      name={"Cristian Pavlovsky"}
+                      status={"Fundador"}
+                      image={"./nosotros/image-1.png"}
+                      className="bg-background-violet shadow-avatar-shadow"
+                    />
+                  </div>
                 </div>
 
                 {/* Separador 48px */}
                 <div className="min-h-[48px]"></div>
 
                 {/* Imagen separador */}
-                <div className="px-[16px] flex justify-center md:hidden" >
-                    <img src="./divider.png" alt="" />
+                <div className="px-[16px] flex justify-center md:hidden">
+                  <img src="./divider.png" alt="" />
                 </div>
 
                 {/* Separador 48px */}
@@ -218,16 +275,24 @@ export default function Nosotros() {
 
                 {/* Seccion Abogados */}
                 <div className="px-[16px] md:hidden">
-                    <h3 className="text-[20px]">Abogados</h3>
-                    {/* Separador 15px */}
-                    <div className="min-h-[15px]"></div>
-                    <div className=" flex justify-center gap-3">
-                        <CardNosotros name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} className="bg-white shadow-avatar-shadow text-black" />
-                        <CardNosotros name={"Dr. Federico Sallustio"} status={"Abogado"} image={"./nosotros/image-1.png"} className="bg-white shadow-avatar-shadow text-black" />
-                    </div>
-                    <div>
-
-                    </div>
+                  <h3 className="text-[20px]">Abogados</h3>
+                  {/* Separador 15px */}
+                  <div className="min-h-[15px]"></div>
+                  <div className=" flex justify-center gap-3">
+                    <CardNosotros
+                      name={"Dr. Federico Sallustio"}
+                      status={"Abogado"}
+                      image={"./nosotros/image-1.png"}
+                      className="bg-white shadow-avatar-shadow text-black"
+                    />
+                    <CardNosotros
+                      name={"Dr. Federico Sallustio"}
+                      status={"Abogado"}
+                      image={"./nosotros/image-1.png"}
+                      className="bg-white shadow-avatar-shadow text-black"
+                    />
+                  </div>
+                  <div></div>
                 </div>
 
                 {/* Separador 48px */}
@@ -235,13 +300,23 @@ export default function Nosotros() {
 
                 {/* Seccion Secretarias */}
                 <div className="px-[16px]  md:hidden">
-                    <h3 className="text-[20px]">Secretarias</h3>
-                    {/* Separador 15px */}
-                    <div className="min-h-[15px]"></div>
-                    <div className="flex justify-center gap-3">
-                        <CardNosotros name={"Mariana Ruiz Perovsky"} status={"Secretaria"} image={"./nosotros/image-2.png"} className="bg-white shadow-avatar-shadow text-black" />
-                        <CardNosotros name={"Mariana Ruiz Perovsky"} status={"Secretaria"} image={"./nosotros/image-2.png"} className="bg-white shadow-avatar-shadow text-black" />                        
-                    </div>
+                  <h3 className="text-[20px]">Secretarias</h3>
+                  {/* Separador 15px */}
+                  <div className="min-h-[15px]"></div>
+                  <div className="flex justify-center gap-3">
+                    <CardNosotros
+                      name={"Mariana Ruiz Perovsky"}
+                      status={"Secretaria"}
+                      image={"./nosotros/image-2.png"}
+                      className="bg-white shadow-avatar-shadow text-black"
+                    />
+                    <CardNosotros
+                      name={"Mariana Ruiz Perovsky"}
+                      status={"Secretaria"}
+                      image={"./nosotros/image-2.png"}
+                      className="bg-white shadow-avatar-shadow text-black"
+                    />
+                  </div>
                 </div>
 
                 {/* Separador 48px */}
@@ -249,13 +324,25 @@ export default function Nosotros() {
 
                 {/* Seccion Ejecutivos */}
                 <div className="px-[16px]  md:hidden">
-                    <h3 className="text-[20px]">Ejecutivos en Gestión Previsional</h3>
-                    {/* Separador 15px */}
-                    <div className="min-h-[15px]"></div>
-                    <div className="flex justify-center gap-3">
-                    <CardNosotros name={"Susan Guaragna"} status={"Ejecutivo"} image={"./nosotros/image-3.png"} className="bg-white shadow-avatar-shadow text-black" />
-                    <CardNosotros name={"Susan Guaragna"} status={"Ejecutivo"} image={"./nosotros/image-3.png"} className="bg-white shadow-avatar-shadow text-black" />
-                    </div>
+                  <h3 className="text-[20px]">
+                    Ejecutivos en Gestión Previsional
+                  </h3>
+                  {/* Separador 15px */}
+                  <div className="min-h-[15px]"></div>
+                  <div className="flex justify-center gap-3">
+                    <CardNosotros
+                      name={"Susan Guaragna"}
+                      status={"Ejecutivo"}
+                      image={"./nosotros/image-3.png"}
+                      className="bg-white shadow-avatar-shadow text-black"
+                    />
+                    <CardNosotros
+                      name={"Susan Guaragna"}
+                      status={"Ejecutivo"}
+                      image={"./nosotros/image-3.png"}
+                      className="bg-white shadow-avatar-shadow text-black"
+                    />
+                  </div>
                 </div>
 
                 {/* Separador 48px */}
@@ -263,13 +350,23 @@ export default function Nosotros() {
 
                 {/* Seccion Asistentes */}
                 <div className="px-[16px] md:hidden">
-                    <h3  className="text-[20px]">Asistentes legales</h3>
-                    {/* Separador 15px */}
-                    <div className="min-h-[15px]"></div>
-                    <div className="flex justify-center gap-3">
-                    <CardNosotros name={"Susan Guaragna"} status={"Asistente legal"} image={"./nosotros/image-3.png"} className="bg-white shadow-avatar-shadow text-black" />
-                    <CardNosotros name={"Susan Guaragna"} status={"Asistente legal"} image={"./nosotros/image-3.png"} className="bg-white shadow-avatar-shadow text-black" />
-                    </div>
+                  <h3 className="text-[20px]">Asistentes legales</h3>
+                  {/* Separador 15px */}
+                  <div className="min-h-[15px]"></div>
+                  <div className="flex justify-center gap-3">
+                    <CardNosotros
+                      name={"Susan Guaragna"}
+                      status={"Asistente legal"}
+                      image={"./nosotros/image-3.png"}
+                      className="bg-white shadow-avatar-shadow text-black"
+                    />
+                    <CardNosotros
+                      name={"Susan Guaragna"}
+                      status={"Asistente legal"}
+                      image={"./nosotros/image-3.png"}
+                      className="bg-white shadow-avatar-shadow text-black"
+                    />
+                  </div>
                 </div>
 
                 {/* Separador 48px */}
@@ -277,12 +374,18 @@ export default function Nosotros() {
 
                 {/* Seccion Mision */}
                 <div className="px-[16px] md:px-[41px]">
-                    <h1 className="font-semibold text-[25px] md:hidden">Misión</h1>
-                    {/* Separador 15px */}
-                    <div className="min-h-[15px]"></div>
-                    <div>
-                        <CardInfo info={mision} classTitle="Misión" url="./nosotros/mision.png"/>
-                    </div>
+                  <h1 className="font-semibold text-[25px] md:hidden">
+                    Misión
+                  </h1>
+                  {/* Separador 15px */}
+                  <div className="min-h-[15px]"></div>
+                  <div>
+                    <CardInfo
+                      info={mision}
+                      classTitle="Misión"
+                      url="./nosotros/mision.png"
+                    />
+                  </div>
                 </div>
 
                 {/* Separador 48px */}
@@ -290,12 +393,19 @@ export default function Nosotros() {
 
                 {/* Seccion Vision */}
                 <div className="px-[16px] md:px-[41px]">
-                    <h1 className="font-semibold text-[25px] md:hidden" >Visión</h1>
-                    {/* Separador 15px */}
-                    <div className="min-h-[15px]"></div>
-                    <div>
-                        <CardInfo info={vision} classTitle="Visión" url="./nosotros/vision.png" classOptions="md:flex-row-reverse" />
-                    </div>
+                  <h1 className="font-semibold text-[25px] md:hidden">
+                    Visión
+                  </h1>
+                  {/* Separador 15px */}
+                  <div className="min-h-[15px]"></div>
+                  <div>
+                    <CardInfo
+                      info={vision}
+                      classTitle="Visión"
+                      url="./nosotros/vision.png"
+                      classOptions="md:flex-row-reverse"
+                    />
+                  </div>
                 </div>
 
                 {/* Separador 48px */}
