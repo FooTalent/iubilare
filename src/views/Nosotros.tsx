@@ -32,8 +32,6 @@ export default function Nosotros () {
       iconAnchor: [12, 41], 
       popupAnchor: [1, -34], 
     });
-    
-    
 
     return (
         <div className="md:mt-[140px]">
@@ -41,9 +39,8 @@ export default function Nosotros () {
             <div className="min-h-[48px]"></div>
 
             {/* Seccion Clientes Satisfechos */}
-            
-            <div className="hidden 2xl:block 2xl:justify-center">
-        <div className="2xl:flex 2xl:justify-center 2xl:px-[115px] 2xl:flex-row 2xl:gap-[92px]">
+          <div className="hidden 2xl:block 2xl:justify-center">
+          <div className="2xl:flex 2xl:justify-center 2xl:px-[115px] 2xl:flex-row 2xl:gap-[92px]">
           <div className="w-[526px] h-[600px] rounded-lg px-[70px] py-[40px]">
             {/* Leaflet Map */}
             <MapContainer
@@ -316,7 +313,6 @@ export default function Nosotros () {
                         </div>
                     {/* Separador 15px */}
                     <div className="min-h-[15px] 2xl:h-[105px]"></div>
-
                 </div>
                 
             </div>
