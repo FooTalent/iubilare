@@ -162,8 +162,13 @@ export default function Home(    ) {
         <Form ></Form>
       </div>
       
+      {/* Imagen Separador */}
+      <div className="hidden 2xl:flex  2xl:justify-center">
+        <img src="./home/iubilare.png" alt="" />
+      </div>
+      
       {/* Separador */}
-      <div className="min-h-[106.08px]"></div>
+      <div className="min-h-[106.08px] 2xl:none"></div>
     </div>
   );
 }
