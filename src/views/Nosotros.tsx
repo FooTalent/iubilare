@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import CardInfo from "../components/cardNosotros/CardInfo"
 import CardNosotros from "../components/cardNosotros/CardNosotros"
+import "leaflet/dist/leaflet.css"; // Make sure to import Leaflet's CSS
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from 'leaflet';
 
 export default function Nosotros () {
-  // Desplazar la página hacia arriba cuando el componente se monta
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -24,7 +26,6 @@ export default function Nosotros () {
         {name: "Susan Guaragna", status:"Asistente legal", className: "bg-white shadow-avatar-shadow text-black", textClassName:"text-black",  textClassTitle: "text-background-violet", image: "./nosotros/image-3.png"},
         {name: "Susan Guaragna", status:"Asistente legal", className: "bg-white shadow-avatar-shadow text-black", textClassName:"text-black",  textClassTitle: "text-background-violet", image: "./nosotros/image-3.png"},
     ]
-
     const customRedPinIcon = new L.Icon({
       iconUrl: '/red-pin.png',
       iconSize: [25, 41], 
