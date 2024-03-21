@@ -36,24 +36,110 @@ export default function Nosotros () {
 
             {/* Seccion Clientes Satisfechos */}
             
-            
             <div className="hidden 2xl:block 2xl:justify-center">
-            <div className="2xl:flex 2xl:justify-center 2xl:px-[115px] 2xl:flex-row 2xl:gap-[92px]">
-                <div className="w-[526px] h-[600px] bg-background-violet-light rounded-lg px-[111px] py-[44px]">
-                    {/* mapa Argentina */}
-                    <img className="" src="./nosotros/map-arg.png" alt="" />
-                </div>
-                <div className="flex flex-col w-[454px]">
-                    <h1 className="text-[30px] font-semibold text-left">Nuestros Clientes Satisfechos</h1>
-                    <div className="h-[100px]"></div>
-                    <p className="text-justify">{clientes}</p>
-                    <div className="h-[55px]"></div>
-                    <div>
-                        <button className="md:active:text-background-violet md:hover:text-current md:inline-block md:py-2 md:px-4 md:bg-background-violet md:text-white rounded md:hover:bg-background-violet md:hover:text-white md:active:bg-background-violet md:outline-none md:focus:border md:focus:outline-none md:text-[14.14px]">Contactarme con un cliente</button>
-                    </div>
-                </div>
+        <div className="2xl:flex 2xl:justify-center 2xl:px-[115px] 2xl:flex-row 2xl:gap-[92px]">
+          <div className="w-[526px] h-[600px] rounded-lg px-[70px] py-[40px]">
+            {/* Leaflet Map */}
+            <MapContainer
+              center={[-34.609, -58.383]}
+              zoom={3.5}
+              scrollWheelZoom={true}
+              className="h-full w-full rounded-lg"
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={[-34.609, -58.383]} icon={customRedPinIcon}>
+                <Popup>
+                  Nuestra officina: Av. de Mayo 881 - 4to D - CABA - CP:1084
+                  Argentina
+                </Popup>
+              </Marker>
+              <Marker position={[-31.401, -64.196]}>
+                <Popup>Quier hablar con un cliente de Cordoba</Popup>
+              </Marker>
+              <Marker position={[-31.5375, -68.5364]}>
+                <Popup>Quier hablar con un cliente de San Juan</Popup>
+              </Marker>
+              <Marker position={[-28.4696, -65.7852 ]}>
+                <Popup>Quier hablar con un cliente de Catamarca</Popup>
+              </Marker>
+              <Marker position={[-26.3333, -60.5000]}>
+                <Popup>Quier hablar con un cliente de Chaco</Popup>
+              </Marker>
+              <Marker position={[-43.6846 , -69.2746]}>
+                <Popup>Quier hablar con un cliente de Chubut</Popup>
+              </Marker>
+              <Marker position={[-27.4684, -58.8344]}>
+                <Popup>Quier hablar con un cliente de Corrientes</Popup>
+              </Marker>
+              <Marker position={[-32.0589, -59.2014]}>
+                <Popup>Quier hablar con un cliente de Entre Ríos</Popup>
+              </Marker>
+              <Marker position={[-26.1775, -58.1781]}>
+                <Popup>Quier hablar con un cliente de Formosa</Popup>
+              </Marker>
+              <Marker position={[-24.1858, -65.2995]}>
+                <Popup>Quier hablar con un cliente de Jujuy</Popup>
+              </Marker>
+              <Marker position={[-36.61475730, -64.28392090]}>
+                <Popup>Quier hablar con un cliente de La Pampa</Popup>
+              </Marker>
+              <Marker position={[-29.4135, -66.8558]}>
+                <Popup>Quier hablar con un cliente de La Rioja</Popup>
+              </Marker>
+              <Marker position={[-32.8895, -68.8458]}>
+                <Popup>Quier hablar con un cliente de Mendoza</Popup>
+              </Marker>
+              <Marker position={[-26.9377, -54.4342]}>
+                <Popup>Quier hablar con un cliente de Misiones</Popup>
+              </Marker>
+              <Marker position={[-38.9516, -68.0591]}>
+                <Popup>Quier hablar con un cliente de Neuquén</Popup>
+              </Marker>
+              <Marker position={[-40.7344, -66.6176]}>
+                <Popup>Quier hablar con un cliente de Río Negro</Popup>
+              </Marker>
+              <Marker position={[-24.7859, -65.4117]}>
+                <Popup>Quier hablar con un cliente de Salta</Popup>
+              </Marker>
+              <Marker position={[-33.2950, -66.3356]}>
+                <Popup>Quier hablar con un cliente de San Luis </Popup>
+              </Marker>
+              <Marker position={[-48.7514, -69.2493]}>
+                <Popup>Quier hablar con un cliente de Santa Cruz </Popup>
+              </Marker>
+              <Marker position={[-31.6324, -60.6995]}>
+                <Popup>Quier hablar con un cliente de Santa Fe </Popup>
+              </Marker>
+              <Marker position={[-27.7951, -64.2615]}>
+                <Popup>Quier hablar con un cliente de Santiago del Estero </Popup>
+              </Marker>
+              <Marker position={[-54.3084, -67.7452]}>
+                <Popup>Quier hablar con un cliente de Tierra del Fuego </Popup>
+              </Marker>
+              <Marker position={[-26.8083, -65.2176]}>
+                <Popup>Quier hablar con un cliente de Tucumán </Popup>
+              </Marker>
+              {/* Add more markers as needed */}
+            </MapContainer>
+          </div>
+          <div className="flex flex-col w-[454px]">
+            <h1 className="text-[30px] font-semibold text-left">
+              Nuestros Clientes Satisfechos
+            </h1>
+            <div className="h-[100px]"></div>
+            <p className="text-justify">{clientes}</p>
+            <div className="h-[55px]"></div>
+            <div>
+              <button className="md:active:text-background-violet md:hover:text-current md:inline-block md:py-2 md:px-4 md:bg-background-violet md:text-white rounded md:hover:bg-background-violet md:hover:text-white md:active:bg-background-violet md:outline-none md:focus:border md:focus:outline-none md:text-[14.14px]">
+                Contactarme con un cliente
+              </button>
             </div>
-            </div>
+          </div>
+        </div>
+      </div>
 
             {/* Separador 48px */}
             <div className="min-h-[48px] md:hidden 2xl:block"></div>
