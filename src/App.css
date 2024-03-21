@@ -65,9 +65,7 @@ body {
       transform: translateX(calc(-233.92px * 3));
     }
   }
-
   .animate-scroll {
     animation: scroll 25s linear infinite;
   }
-  
 }
