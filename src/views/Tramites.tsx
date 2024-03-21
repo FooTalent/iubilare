@@ -79,8 +79,11 @@ export default function Tramites() {
       </div>
 
 
+
+
       {/* Separador */}
       <div className="min-h-[72px] md:min-h-[90px]"></div>
+
 
       {/* Tercera Sección */}
       <div className="flex flex-col justify-center bg-transparent">
