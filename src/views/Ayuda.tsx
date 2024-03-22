@@ -1,4 +1,4 @@
-
+import FAQ from '../components/FAQ/FAQ';
 
 export default function Ayuda (){
 
@@ -23,11 +23,8 @@ export default function Ayuda (){
         </div>
 
         {/* Preguntas Frecuentes */}
-        <div>
-                    <h2 className="text-black text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 ">
-                        Tercera sección
-                    </h2>
-        </div>
+        
+        <FAQ></FAQ>
 
         </>
     )
