@@ -7,6 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
+        slate: {
+
+          '500': '#439373',
+
+        },
         'button-green': '#439373',
         'button-hover-green': '#2db27d',
         'active-green': '#29ca8a',
@@ -15,6 +20,9 @@ export default {
         'background-violet': '#747dd6',
         'background-violet-light': '#DADEFF',
         '747DD6': '#747DD6',
+        indigo: {
+          '400': '#667EEA', // Add your color value here if it's not already defined by Tailwind CSS by default
+        },
       },
       borderRadius: {
         'sm': '3.23px',
@@ -35,12 +43,20 @@ export default {
         "nav-bar": "var(--nav-bar-font-family)",
         "p-rrafo": "var(--p-rrafo-font-family)",
         "parrafos-p-rrafo": "var(--parrafos-p-rrafo-font-family)",
+        'raleway': ['Raleway', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
       },
       boxShadow: {
         "avatar-shadow": "var(--avatar-shadow)",
         "button-shadow": "var(--button-shadow)",
         "card-shadow": "var(--card-shadow)",
         'light-top-heavy-bottom-light-sides': '0px 1px 1px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25)',
+        },
+        fontSize: {
+          // Extending fontSize for the custom sizes you need
+          '64px': ['64px', '1.25em'], // The second value is the line-height, which you can adjust
+          '31px': ['31px', '1.25em'],
+          // ... existing fontSize extensions
         },
         backgroundImage: {
           'hero': "url('/quehacemos/background.png')",
