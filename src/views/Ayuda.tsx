@@ -182,6 +182,14 @@ export default function Ayuda() {
       <div>
         <FAQ></FAQ>
       </div>
+      {/* Separador */}
+      <div className="min-h-[71px] md:min-h-[88px] xl:min-h-[159px]"></div>
+      {/* Imagen Separador */}
+      <div className="flex justify-center">
+        <img src="./home/iubilare.png" alt="" />
+      </div>
+      {/* Separador */}
+      <div className="min-h-[71px] md:min-h-[88px] xl:min-h-[60px]"></div>
     </>
   );
 }
