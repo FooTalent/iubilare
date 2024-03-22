@@ -1,5 +1,4 @@
-
-import FAQ from '../components/FAQ/FAQ';
+import FAQ from "../components/FAQ/FAQ";
 import "leaflet/dist/leaflet.css";
 
 export default function Ayuda() {
@@ -73,8 +72,8 @@ export default function Ayuda() {
               Porque elegirnos
             </h2>
           </div>
-          
-        {/* Iconos con Informacion */}
+
+          {/* Iconos con Informacion */}
           <div className="text-left flex-col justify-center gap-5 md:flex-row md:h-full md:flex md:w-full lg:gap-x-32 2xl:w-[1115px] 2xl:h-[500px] ">
             <div className="flex flex-col justify-start items-center h-[205px] p-4 gap-[22px] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
               <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse md:h-full  2xl:justify-end">
