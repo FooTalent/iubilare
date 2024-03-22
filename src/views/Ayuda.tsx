@@ -23,7 +23,7 @@ export default function Ayuda (){
         </div>
 
         {/* Preguntas Frecuentes */}
-        
+
         <FAQ></FAQ>
 
         </>
