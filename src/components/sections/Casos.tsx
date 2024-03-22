@@ -39,37 +39,9 @@ export default function Casos (){
     return(
                 <div className="flex-1 mt-16 px-[16px] md:px-[40px] 2xl:px-[116px]">
                 <div className="flex flex-col">
-                <h2 className=" text-2xl font-semibold mt-10">Rentas vitalicias previsionales</h2>
-                <p className="text-2xl mb-4 mt-3">¿Cuál es tu caso?</p>
-
-
-                {/* Primera Card */}
-{/*                 <div className={`flex flex-col my-2 rounded justify-between items-center shadow-card-shadow ${isExpanded ? 'bg-747DD6 text-white' : ''}`}>
-                    <div className="flex flex-row justify align-middle py-5 w-full md:w-[687px] md:h-[146px] 2xl:w-full 2xl:px-[53px]">
-                        <div className="flex w-2/3 items-center">
-                            <div className="md:w-[213px] md:h-[62px]">
-                                <p className="ml-2 pl-2 text-left font-semibold text-base md:text-[20px]">Cobra menos que la jubilación mínima</p>
-                            </div>
-                        </div>
-                        <div className="flex w-1/3 items-center 2xl:justify-end">
-                            <button onClick={() => setIsExpanded(!isExpanded)} className={`${isExpanded ? 'md:w-[165px] bg-white text-747DD6' : 'bg-747DD6 text-white'} font-semibold flex flex-row py-0.5 px-[4px] items-center text-sm rounded shadow-card-shadow focus:outline-none md:w-[151px] md:h-[37px] md:pl-[22px] md:py-[6px] md:text-[20px]`}>{isExpanded ? 'Ver menos' : 'Ver más'}
-                            <KeyboardArrowDownOutlined/>
-                            </button>
-                        </div>
-                    </div>
-                    {isExpanded && 
-                    <div className="flex flex-col justify-start px-5 py-5">
-                        <p className="ml-2 pl-2 text-left font-semibold text-base 2xl:text-lg">Un nuevo fallo ordena pagar la jubilación mínima a las Rentas Previsionales que no llegan a ese monto.</p>
-                        <ul>
-                        <li className="ml-2 pl-2 text-left text-base 2xl:text-lg">Todas las personas jubiladas o pensionadas por una Compañía de Seguro de Retiro –ex AFJP- pueden mejorar su haber mensual.</li>
-                        <li className="ml-2 pl-2 text-left text-base 2xl:text-lg">Si Usted cobra de una Compañía de Seguro de Retiro una Renta Vitalicia Previsional inferior a la jubilación mínima -conforme fallo de la CORTE SUPREMA DE JUSTICIA DE LA NACIÓN, ¨Etchart, Fernando Martín c/ANSES s/Amparos y Sumarísimos¨ -CSJN- 27/10/2015. está en condiciones de iniciar un reclamo.</li>
-                        <li className="ml-2 pl-2 text-left text-base 2xl:text-lg">Este nuevo fallo habilita nuevos derechos.</li>
-                        <li className="ml-2 pl-2 text-left text-base 2xl:text-lg">Quienes viven en la Patagonia disponen de una bonificación por Zona Austral.</li>
-                        </ul>
-                    </div>
-                    }
-                </div> */}
-
+                <h2 className=" text-2xl font-semibold mt-10 text-[20px] md:text-[25px] 2xl:text-[49px]">Rentas vitalicias previsionales</h2>
+                <p className="text-xl 2xl:font-semibold md:text-[21px] 2xl:text-[31px]">¿Cuál es tu caso?</p>
+                <div className="min-h-[68px] md:min-h-[33px] 2xl:min-h-[114px]"></div>
                 {data.map((item, index) => (
                     <CardTramites
                     key={index}

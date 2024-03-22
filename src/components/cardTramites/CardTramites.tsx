@@ -17,7 +17,7 @@ const CardTramites: React.FC<CardTramitesProps> = ({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className={`flex flex-col my-2 rounded justify-between items-center shadow-card-shadow ${isExpanded ? 'bg-747DD6 text-white' : ''}`}>
+    <div className={`flex flex-col my-2 rounded justify-between items-center shadow-card-shadow transition-all duration-300 ease-in-out ${isExpanded ? 'bg-747DD6 text-white' : ''}`}>
       <div className="flex flex-row justify align-middle py-5 w-full md:w-[687px] md:h-[146px] 2xl:w-full 2xl:px-[53px]">
         <div className="flex w-2/3 items-center">
           <div className="md:w-[213px] md:h-[62px]">
@@ -30,17 +30,15 @@ const CardTramites: React.FC<CardTramitesProps> = ({
           </button>
         </div>
       </div>
-      {isExpanded && 
-        <div className="flex flex-col justify-start px-5 py-5">
-          <p className="ml-2 pl-2 text-left font-semibold text-base 2xl:text-lg">{description}</p>
-          {subtitle && <p className="ml-2 pl-2 text-left font-semibold text-base 2xl:text-lg">{subtitle}</p>} {/* Renderiza el párrafo si se proporciona la propiedad 'subtitle' */}
-          <ul>
-            {items.map((item, index) => (
-              <li key={index} className="ml-2 pl-2 text-left text-base 2xl:text-lg">{item}</li>
-            ))}
-          </ul>
-        </div>
-      }
+      <div className={`flex flex-col justify-start transition-all delay-100 duration-700 ease-in-out ${isExpanded ? 'h-auto ' : 'h-0 overflow-hidden'}`}>
+        <p className="text-left font-semibold text-base 2xl:text-lg text-white mx-5 my-5">{description}</p>
+        {subtitle && <p className="mx-5 my-5 text-left font-semibold text-base 2xl:text-lg text-white">{subtitle}</p>}
+        <ul>
+          {items.map((item, index) => (
+            <li key={index} className="mx-5 my-5 text-left text-base 2xl:text-lg text-white">{item}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
