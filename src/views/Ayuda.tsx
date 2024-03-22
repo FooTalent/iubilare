@@ -7,7 +7,6 @@ export default function Ayuda() {
     <>
       {/* Separador */}
       <div className="mt-[150px] md:mt-[250px]"></div>
-
       {/* Sección Guía */}
       <div>
         <div className="flex flex-col justify-start items-center gap-6 w-full max-w-lg mx-auto">
@@ -41,7 +40,6 @@ export default function Ayuda() {
           </div>
         </div>
       </div>
-
       <div
         className="hidden lg:flex justify-center items-center flex-wrap mx-auto mt-20"
         style={{ maxWidth: "1440px" }}
@@ -57,7 +55,6 @@ export default function Ayuda() {
           alt="grupojubilacion"
         />
       </div>
-
       {/* Carta de ayuda - Tablet */}
       <div className="flex lg:hidden justify-center items-center w-full h-auto">
         <div className="">
@@ -68,7 +65,6 @@ export default function Ayuda() {
           />
         </div>
       </div>
-
       {/* Sección Por qué elegirnos */}
       <div>
         <div className="px-[16px] flex flex-col justify-center 2xl:px-[120px] 2xl:p-[36px] mt-40">
@@ -182,8 +178,6 @@ export default function Ayuda() {
           <div className="h-[36px]"></div>
         </div>
       </div>
-
-
       {/* Preguntas Frecuentes */}
       <div>
         <FAQ></FAQ>
