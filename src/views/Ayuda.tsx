@@ -74,7 +74,7 @@ export default function Ayuda() {
         <div className="px-[16px] flex flex-col justify-center 2xl:px-[120px] 2xl:p-[36px] mt-40">
           <div>
             <h2 className="text-xl font-semibold md:text-[32px] 2xl:text-[49px] md:mb-8 ">
-              Porque elegirnos
+              ¿Por qué elegirnos?
             </h2>
           </div>
 
