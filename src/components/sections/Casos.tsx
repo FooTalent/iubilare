@@ -51,7 +51,6 @@ export default function Casos (){
                     items={item.items}
                     />
                 ))}
-
                 </div>
                 </div>
 

@@ -60,70 +60,70 @@ export default function Nosotros () {
                 </Popup>
               </Marker>
               <Marker position={[-31.401, -64.196]}>
-                <Popup>Quier hablar con un cliente de Cordoba</Popup>
+                <Popup>Quiero hablar con un cliente de Cordoba</Popup>
               </Marker>
               <Marker position={[-31.5375, -68.5364]}>
-                <Popup>Quier hablar con un cliente de San Juan</Popup>
+                <Popup>Quiero hablar con un cliente de San Juan</Popup>
               </Marker>
               <Marker position={[-28.4696, -65.7852 ]}>
-                <Popup>Quier hablar con un cliente de Catamarca</Popup>
+                <Popup>Quiero hablar con un cliente de Catamarca</Popup>
               </Marker>
               <Marker position={[-26.3333, -60.5000]}>
-                <Popup>Quier hablar con un cliente de Chaco</Popup>
+                <Popup>Quiero hablar con un cliente de Chaco</Popup>
               </Marker>
               <Marker position={[-43.6846 , -69.2746]}>
-                <Popup>Quier hablar con un cliente de Chubut</Popup>
+                <Popup>Quiero hablar con un cliente de Chubut</Popup>
               </Marker>
               <Marker position={[-27.4684, -58.8344]}>
-                <Popup>Quier hablar con un cliente de Corrientes</Popup>
+                <Popup>Quiero hablar con un cliente de Corrientes</Popup>
               </Marker>
               <Marker position={[-32.0589, -59.2014]}>
-                <Popup>Quier hablar con un cliente de Entre Ríos</Popup>
+                <Popup>Quiero hablar con un cliente de Entre Ríos</Popup>
               </Marker>
               <Marker position={[-26.1775, -58.1781]}>
-                <Popup>Quier hablar con un cliente de Formosa</Popup>
+                <Popup>Quiero hablar con un cliente de Formosa</Popup>
               </Marker>
               <Marker position={[-24.1858, -65.2995]}>
-                <Popup>Quier hablar con un cliente de Jujuy</Popup>
+                <Popup>Quiero hablar con un cliente de Jujuy</Popup>
               </Marker>
               <Marker position={[-36.61475730, -64.28392090]}>
-                <Popup>Quier hablar con un cliente de La Pampa</Popup>
+                <Popup>Quiero hablar con un cliente de La Pampa</Popup>
               </Marker>
               <Marker position={[-29.4135, -66.8558]}>
-                <Popup>Quier hablar con un cliente de La Rioja</Popup>
+                <Popup>Quiero hablar con un cliente de La Rioja</Popup>
               </Marker>
               <Marker position={[-32.8895, -68.8458]}>
-                <Popup>Quier hablar con un cliente de Mendoza</Popup>
+                <Popup>Quiero hablar con un cliente de Mendoza</Popup>
               </Marker>
               <Marker position={[-26.9377, -54.4342]}>
-                <Popup>Quier hablar con un cliente de Misiones</Popup>
+                <Popup>Quiero hablar con un cliente de Misiones</Popup>
               </Marker>
               <Marker position={[-38.9516, -68.0591]}>
-                <Popup>Quier hablar con un cliente de Neuquén</Popup>
+                <Popup>Quiero hablar con un cliente de Neuquén</Popup>
               </Marker>
               <Marker position={[-40.7344, -66.6176]}>
-                <Popup>Quier hablar con un cliente de Río Negro</Popup>
+                <Popup>Quiero hablar con un cliente de Río Negro</Popup>
               </Marker>
               <Marker position={[-24.7859, -65.4117]}>
-                <Popup>Quier hablar con un cliente de Salta</Popup>
+                <Popup>Quiero hablar con un cliente de Salta</Popup>
               </Marker>
               <Marker position={[-33.2950, -66.3356]}>
-                <Popup>Quier hablar con un cliente de San Luis </Popup>
+                <Popup>Quiero hablar con un cliente de San Luis </Popup>
               </Marker>
               <Marker position={[-48.7514, -69.2493]}>
-                <Popup>Quier hablar con un cliente de Santa Cruz </Popup>
+                <Popup>Quiero hablar con un cliente de Santa Cruz </Popup>
               </Marker>
               <Marker position={[-31.6324, -60.6995]}>
-                <Popup>Quier hablar con un cliente de Santa Fe </Popup>
+                <Popup>Quiero hablar con un cliente de Santa Fe </Popup>
               </Marker>
               <Marker position={[-27.7951, -64.2615]}>
-                <Popup>Quier hablar con un cliente de Santiago del Estero </Popup>
+                <Popup>Quiero hablar con un cliente de Santiago del Estero </Popup>
               </Marker>
               <Marker position={[-54.3084, -67.7452]}>
-                <Popup>Quier hablar con un cliente de Tierra del Fuego </Popup>
+                <Popup>Quiero hablar con un cliente de Tierra del Fuego </Popup>
               </Marker>
               <Marker position={[-26.8083, -65.2176]}>
-                <Popup>Quier hablar con un cliente de Tucumán </Popup>
+                <Popup>Quiero hablar con un cliente de Tucumán </Popup>
               </Marker>
               {/* Add more markers as needed */}
             </MapContainer>
