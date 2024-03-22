@@ -174,10 +174,11 @@ export default function Ayuda() {
             </div>
           </div>
 
-          {/* Separador */}
-          <div className="h-[36px]"></div>
+
         </div>
       </div>
+      {/* Separador */}
+      <div className="h-[36px]"></div>
       {/* Preguntas Frecuentes */}
       <div>
         <FAQ></FAQ>

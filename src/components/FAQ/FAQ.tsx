@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Arrow from '@mui/icons-material/ExpandMore';
 
-interface Props {
-  isActive: boolean;
-}
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -39,10 +36,10 @@ const FAQ = () => {
   ];
 
   return (
-    <div>
-      <h1 className='font-semibold text-center text-2xl mb-14'>Preguntas Frecuentes</h1>
+    <div className='lg:px-[80px]'>
+      <h1 className='font-semibold text-center text-2xl mb-14 xl:px-[80px]'>Preguntas Frecuentes</h1>
       {preguntas.map((pregunta, index) => (
-        <div key={index} className=' mx-5 my-3 rounded-lg py-4 px-6 shadow-card-shadow md:mx-7 lg:mx-10' onClick={() => handleClick(index)}>
+        <div key={index} className=' mx-5 my-3 rounded-lg py-4 px-6 shadow-card-shadow md:mx-7 cursor-pointer' onClick={() => handleClick(index)}>
           <div className='flex justify-between'>
           <p className={`font-semibold text-md text-left ${openIndex === index ? 'text-blue-500' : ''}`}>{pregunta}</p>
           <Arrow className={openIndex === index ? 'text-blue-500 transform rotate-180 ' : ''} />
