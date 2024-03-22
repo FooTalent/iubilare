@@ -4,49 +4,35 @@ export default function Ayuda() {
   return (
     <>
       {/* Separador */}
-      <div className="mt-[150px] md:mt-[317px]"></div>
+      <div className="mt-[150px] md:mt-[250px]"></div>
 
       {/* Sección Guía */}
       <div>
-        <div className="w-[737px] h-[185px] flex-col justify-start items-center gap-[34px] inline-flex">
+        <div className="flex flex-col justify-start items-center gap-6 w-full max-w-lg mx-auto">
           <div className="text-center">
-            <span
-              style={{
-                color: "#2D3748",
-                fontSize: "64px",
-                fontWeight: "600",
-                fontFamily: "Raleway",
-              }}
-            >
+            <span className="text-[45px] text-neutral-900 font-semibold font-['Raleway']">
               Guía{" "}
             </span>
-            <span
-              style={{
-                color: "#667EEA",
-                fontSize: "64px",
-                fontWeight: "600",
-                fontFamily: "Raleway",
-              }}
-            >
+            <span className="text-[45px] text-indigo-400 font-semibold font-['Raleway']">
               paso a paso{" "}
             </span>
           </div>
-          <div className="w-[737px] text-center text-neutral-900 text-[31px] font-normal font-['Inter']">
+          <div className="text-[27px] text-center text-neutral-900 text-lg md:text-lg lg:text-xl font-normal font-['Inter']">
             Le ofrecemos una guía informativa sobre cada uno de los procesos{" "}
           </div>
         </div>
 
         {/* Separador */}
         <div className="mt-[70px] md:mt-[140px]"></div>
-        {/* Titulos de cartas*/}
-        <div className="flex mb-24">
-          <div className="flex-1 flex justify-center items-center">
+        {/* Titulos de cartas */}
+        <div className="flex justify-center items-center mb-24">
+          <div className="flex justify-center items-center w-1/3">
             <div className="text-center text-slate-500 text-[31px] font-semibold font-['Source Sans Pro'] underline">
               Rentas Vitalicias
             </div>
           </div>
 
-          <div className="flex-1 flex justify-center items-center">
+          <div className="flex justify-center items-center w-1/3">
             <div className="text-center text-indigo-400 text-[31px] font-semibold font-sans underline">
               Jubilación
             </div>
@@ -54,21 +40,29 @@ export default function Ayuda() {
         </div>
       </div>
 
-      {/* Cartas de ayuda*/}
-      <div className="w-[1280px] h-[905px] justify-start items-center inline-flex gap-x-40">
-        <div className="mt-20">
-          <img
-            className="hidden md:block 2xl:w-[650px]"
-            src="/gruporentas.png"
-            alt="gruporentas"
-          />
-        </div>
+      <div
+        className="hidden lg:flex justify-center items-center flex-wrap mx-auto mt-20"
+        style={{ maxWidth: "1440px" }}
+      >
+        <img
+          className="w-[650px] mx-14"
+          src="/gruporentas.png"
+          alt="gruporentas"
+        />
+        <img
+          className="w-[500px] mx-14"
+          src="/grupojubilacion.png"
+          alt="grupojubilacion"
+        />
+      </div>
 
-        <div className="mt-20">
+      {/* Carta de ayuda - Tablet */}
+      <div className="flex lg:hidden justify-center items-center w-full h-auto">
+        <div className="">
           <img
-            className="hidden md:block 2xl:w-[500px]"
-            src="/grupojubilacion.png"
-            alt="gruporentas"
+            className="max-w-[650px] w-full h-auto"
+            src="/cartasmobile.png"
+            alt="cartasmobile"
           />
         </div>
       </div>
@@ -81,19 +75,24 @@ export default function Ayuda() {
               Porque elegirnos
             </h2>
           </div>
-          <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full 2xl:w-[1115px] 2xl:h-[500px] ">
-            <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
+          
+        {/* Iconos con Informacion */}
+          <div className="text-left flex-col justify-center gap-5 md:flex-row md:h-full md:flex md:w-full lg:gap-x-32 2xl:w-[1115px] 2xl:h-[500px] ">
+            <div className="flex flex-col justify-start items-center h-[205px] p-4 gap-[22px] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
               <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse md:h-full  2xl:justify-end">
                 <div className="">
-                  <div className="w-[300px] h-7 text-indigo-400 text-lg font-normal font-['Source Sans Pro'] md:w-[250px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold">
+                  <div className="w-[300px] h-7 text-lg font-normal font-['Source Sans Pro']  md:w-[250px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold">
                     Experiencia y trayectoria{" "}
                   </div>
-                  <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] 2xl:hidden">
+                  <div
+                    className="hidden md:block lg:hidden w-[301.66px] text-neutral-900 font-normal font-['Source Sans Pro'] md:w-[245px] md:text-center md:pt-[16px] ml-5"
+                    style={{ fontSize: "13px" }}
+                  >
                     Con más de 27 años de experiencia en el mercado, nuestro
                     equipo cuenta con el conocimiento y la habilidad necesarios
                     para guiarlo a través del proceso de jubilación.
                   </div>
-                  <div className=" w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[px] md:text-center md:pt-[16px] hidden 2xl:block">
+                  <div className="hidden xl:block w-[301.66px] text-neutral-900 font-normal font-['Source Sans Pro'] xl:w-[270px] xl:text-center xl:pt-[16px]">
                     Con más de 27 años de experiencia en el mercado, nuestro
                     equipo cuenta con el conocimiento y la habilidad necesarios
                     para guiarlo a través del proceso de jubilación.
@@ -111,19 +110,22 @@ export default function Ayuda() {
             </div>
 
             <div className="h-[40px] md:hidden"></div>
-            <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
+            <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] gap-[22px] md:w-[217px] ml-5 md:h-full 2xl:h-full 2xl:w-full">
               <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full 2xl:justify-end">
                 <div>
-                  <div className="w-[300px] h-7 text-indigo-400 text-lg font-normal font-['Source Sans Pro'] md:w-[200px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold">
+                  <div className="w-[300px] h-7  text-lg font-normal font-['Source Sans Pro'] md:w-[200px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold">
                     Enfoque personalizado
                   </div>
 
-                  <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] 2xl:hidden">
+                  <div
+                    className="hidden md:block lg:hidden w-[301.66px] text-neutral-900 font-normal font-['Source Sans Pro'] md:w-[245px] md:text-center md:pt-[16px] ml-5"
+                    style={{ fontSize: "13px" }}
+                  >
                     Valoramos las necesidades individuales de cada cliente y nos
                     esforzamos por ofrecer un servicio personalizado y adaptado
                     a sus circunstancias particulares.
                   </div>
-                  <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[250px] md:text-center md:pt-[16px] hidden 2xl:block">
+                  <div className="hidden xl:block w-[301.66px] text-neutral-900 font-normal font-['Source Sans Pro'] xl:w-[270px] xl:text-center xl:pt-[16px]">
                     Valoramos las necesidades individuales de cada cliente y nos
                     esforzamos por ofrecer un servicio personalizado y adaptado
                     a sus circunstancias particulares.
@@ -140,17 +142,20 @@ export default function Ayuda() {
               </div>
             </div>
             <div className="h-[40px] md:hidden"></div>
-            <div className="flex flex-col justify-start items-center h-[235px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
-              <div className="flex h-[111px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full  2xl:justify-end">
-                <div>
-                  <div className="w-[300px] h-7 text-indigo-400 text-lg font-normal font-['Source Sans Pro'] md:w-[250px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold">
+            <div className="flex flex-col md:flex-row justify-start items-center w-full h-auto py-4  md:w-[217px] md:h-full gap-4 ">
+              <div className="flex h-[111px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full 2xl:justify-end">
+                <div className="">
+                  <div className="w-[300px] h-7 text-lg font-normal font-['Source Sans Pro'] md:w-[250px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold">
                     Transparencia y confianza
                   </div>
-                  <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] 2xl:hidden">
+                  <div
+                    className="hidden md:block lg:hidden w-[301.66px] text-neutral-900 font-normal font-['Source Sans Pro'] md:w-[240px] md:text-center md:pt-[16px]"
+                    style={{ fontSize: "13px" }}
+                  >
                     Nos comprometemos a brindarle información clara,
                     transparente y confiable en cada paso del proceso.
                   </div>
-                  <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[275px] md:text-center md:pt-[16px] hidden 2xl:block">
+                  <div className="hidden xl:block w-[301.66px] text-neutral-900 font-normal font-['Source Sans Pro'] xl:w-[270px] xl:text-center xl:pt-[16px]">
                     Nos comprometemos a brindarle información clara,
                     transparente y confiable en cada paso del proceso.
                   </div>
