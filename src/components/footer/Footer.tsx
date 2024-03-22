@@ -14,7 +14,7 @@ const Footer = (): JSX.Element => {
     return (
         <div>
         {/* Contenedor Secciones Logo/Redes/Datos/Servicios */}
-        <div className="flex flex-wrap items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3] md:h-full md:w-full md:px-[40px] 2xl:px-[121px] 2xl:justify-between">
+        <div className="flex flex-wrap items-start gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3] md:h-full md:w-full md:px-[40px] 2xl:px-[121px] justify-between">
 
         {/* Seccion Logo y Redes / Datos y Logos */}
         <div className='w-full md:flex md:flex-col md:w-1/4'>
@@ -83,7 +83,7 @@ const Footer = (): JSX.Element => {
         {/* Separador */}
         <div className="hidden 2xl:block 2xl:min-w-[10px]"></div>
         {/* Seccion Desplegables Servicios */}
-            <div className="w-full flex flex-col justify-start md:w-2/3 md:mt-[65px]">
+            <div className="w-full flex flex-col justify-start md:w-1/2 md:mt-[65px]">
             <div className="w-full md:flex md:w-full">
             <div className='w-full flex flex-col mb-4 md:w-1/2'>
                     <div className="flex" onClick={()=> {setContacto(!contacto)} }>
