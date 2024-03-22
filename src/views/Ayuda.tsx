@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import FAQ from "../components/FAQ/FAQ";
 import "leaflet/dist/leaflet.css";
 
 export default function Ayuda() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       {/* Separador */}
@@ -78,7 +83,7 @@ export default function Ayuda() {
             <div className="flex flex-col justify-start items-center h-[205px] p-4 gap-[22px] md:w-[217px] md:h-full 2xl:h-full 2xl:w-full">
               <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse md:h-full  2xl:justify-end">
                 <div className="">
-                  <div className="w-[300px] h-7 text-lg font-normal font-['Source Sans Pro']  md:w-[250px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold">
+                  <div className="w-[300px] h-7 text-lg font-normal font-['Source Sans Pro']  md:w-[250px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold text-center">
                     Experiencia y trayectoria{" "}
                   </div>
                   <div
@@ -110,7 +115,7 @@ export default function Ayuda() {
             <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] gap-[22px] md:w-[217px] ml-5 md:h-full 2xl:h-full 2xl:w-full">
               <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full 2xl:justify-end">
                 <div>
-                  <div className="w-[300px] h-7  text-lg font-normal font-['Source Sans Pro'] md:w-[200px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold">
+                  <div className="w-[300px] h-7  text-lg font-normal font-['Source Sans Pro'] md:w-[200px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold  text-center">
                     Enfoque personalizado
                   </div>
 
@@ -142,7 +147,7 @@ export default function Ayuda() {
             <div className="flex flex-col md:flex-row justify-start items-center w-full h-auto py-4  md:w-[217px] md:h-full gap-4 ">
               <div className="flex h-[111px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full 2xl:justify-end">
                 <div className="">
-                  <div className="w-[300px] h-7 text-lg font-normal font-['Source Sans Pro'] md:w-[250px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold">
+                  <div className="w-[300px] h-7 text-lg font-normal font-['Source Sans Pro'] md:w-[250px] md:text-black md:h-full md:text-center mx-auto 2xl:h-auto 2xl:mb-[10px] md:font-bold text-center">
                     Transparencia y confianza
                   </div>
                   <div
