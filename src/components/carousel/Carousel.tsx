@@ -10,7 +10,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // Cambio de imagen cada 5 segundos
+    }, 3000); // Cambio de imagen cada 5 segundos
 
     return () => clearInterval(interval);
   }, [current]); // El efecto se ejecuta cuando current cambia
@@ -20,15 +20,15 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   };
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative ">
       <div
-        className={`flex transition ease-out duration-1000`}
+        className={`md:h-[396px] flex transition ease-out duration-1000`}
         style={{
           transform: `translateX(-${current * 100}%)`,
         }}
       >
         {slides.map((s, index) => (
-          <img key={index} src={s} alt={`slide-${index}`}/>
+          <img key={index} src={s} alt={`slide-${index}`} />
         ))}
       </div>
 
