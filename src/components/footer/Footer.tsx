@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Footer = (): JSX.Element => {
   const navigate = useNavigate();
-  const [contacto, setContacto] = useState(false);
   const [nosotros, setNosotros] = useState(false);
   const [tramites, setTramites] = useState(false);
   const [ayuda, setAyuda] = useState(false);
@@ -13,15 +12,15 @@ const Footer = (): JSX.Element => {
   return (
     <div>
       {/* Contenedor Secciones Logo/Redes/Datos/Servicios */}
-      <div className="flex flex-wrap items-center gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#a3bdb3] md:h-full md:w-full md:px-[40px] 2xl:px-[121px] justify-between">
+      <div className="flex flex-wrap items-center gap-[32px_32px] pt-[32px] pb-[36px] px-[16px] relative bg-[#49508D] md:h-full md:w-full md:px-[40px] xl:px-[121px] justify-between">
         {/* Seccion Logo y Redes / Datos y Logos */}
         <div className="w-full md:flex md:flex-col md:w-1/4">
           <div className="w-full flex flex-row  md:flex-col justify-between">
-            <div className="relative w-[194px] h-[88px]">
+            <div className="relative w-[194px] h-[88px] mr-9 md:mr-0">
               <div className="relative w-[174px] h-[78px] -top-px">
                 <div className="absolute w-[174px] h-[78px] top-0 left-0">
                   <a href="/">
-                    <img src="./iubilare_logo.png" alt="Logo" />
+                    <img src="./logoWhite.svg" alt="Logo" />
                   </a>
                 </div>
               </div>
@@ -56,23 +55,26 @@ const Footer = (): JSX.Element => {
           <div className="flex flex-col w-[300px] gap-3 ">
             <div className="flex flex-row items-center">
               <div className="min-w-[24px] w-[24px] h-[24px] flex justify-center">
-                <img className="" src="./call.png" alt="Telefono" />
+                <img className="" src="./call.svg" alt="Telefono" />
               </div>
               <div className="pl-[8px] w-full flex flex-col self-end">
-                <a href="tel:1143421817" className="text-base  text-left">
+                <a
+                  href="tel:1143421817"
+                  className="text-base text-white  text-left"
+                >
                   (011) 4342-1817
                 </a>
               </div>
             </div>
             <div className="flex flex-row">
               <div className="min-w-[24px] w-[24px] h-[24px] flex justify-center">
-                <img className="" src="./email.png" alt="Email" />
+                <img className="" src="./email.svg" alt="Email" />
               </div>
               <div className="pl-[8px] flex self-end">
                 <a
                   href="mailto:contacto@iubilare.com"
                   target="_blank"
-                  className="text-base"
+                  className="text-base text-white"
                 >
                   contacto@iubilare.com
                 </a>
@@ -80,16 +82,16 @@ const Footer = (): JSX.Element => {
             </div>
             <div className="flex flex-row">
               <div className="min-w-[24px] w-[24px] h-[24px] flex justify-center">
-                <img className="" src="location.png" alt="Ubicacion" />
+                <img className="" src="location.svg" alt="Ubicacion" />
               </div>
               <div className="pl-[8px] flex self-end">
                 <a
                   href="https://maps.app.goo.gl/twy1BwmQ5x33qVzLA"
                   target="_blank"
-                  className="text-base text-left w-[300px]"
+                  className="text-base text-left w-[300px] text-white"
                 >
                   Av. de Mayo 881 - 4to D <br className="hidden sm:flex" />
-                  CABA - CP:1084
+                  CABA | CP:1084
                 </a>
               </div>
             </div>
@@ -101,9 +103,9 @@ const Footer = (): JSX.Element => {
         </div>
 
         {/* Separador */}
-        <div className="hidden 2xl:block 2xl:min-w-[10px]"></div>
+        {/* <div className="hidden xl:block xl:min-w-[10px]"></div> */}
         {/* Seccion Desplegables Servicios */}
-        <div className="flex flex-wrap justify-start md:w-[60%] gap-12">
+        <div className="flex flex-wrap justify-start text-white md:w-[60%] gap-12">
           <div className="flex flex-wrap-reverse lg:flex-nowrap  lg:gap-16 ">
             <div className="w-56 md:flex ">
               <div className="w-full flex flex-col mb-4 md:w-1/2">
@@ -193,8 +195,8 @@ const Footer = (): JSX.Element => {
 
       {/* Contendero Seccion Politicas */}
       {/* Seccion  Politicas  */}
-      <div className="flex w-full flex-col items-center gap-[4px] relative flex-[0_0_auto] bg-[#a3bdb3] md:bg-white md:flex-row md:items-center md:justify-center md:h-[65px] 2xl:[74px] px-[16px]">
-        <div>
+      <div className="flex w-full flex-col items-center gap-[4px] relative flex-[0_0_auto] bg-[#3A4076]  md:flex-row md:items-center md:justify-center md:h-[65px] xl:[74px]">
+        {/* <div>
           <p className="[font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px]">
             Política de Privacidad&nbsp;&nbsp;&nbsp;&nbsp;Términos del Servicio.
           </p>
@@ -203,7 +205,10 @@ const Footer = (): JSX.Element => {
           <p className="[font-family:'Source_Sans_Pro-Regular',Helvetica] font-normal text-black text-[14px]">
             Copyright 2023 - Todos los derechos reservados
           </p>
-        </div>
+        </div> */}
+        <p className="text-white text-[14px] py-6 px-[2px]">
+          Horario de atención de Lunes a Jueves de 10 a 17 hs
+        </p>
       </div>
     </div>
   );

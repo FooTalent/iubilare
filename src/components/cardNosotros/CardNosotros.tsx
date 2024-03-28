@@ -25,7 +25,7 @@ const CardNosotros: React.FC<CardNosotrosProps> = ({
       <img
         src={image}
         alt=""
-        className="md:w-[117px] md:h-[117px] xl:w-[210px] xl:h-[210px] my-2 md:mb-5 lg:mb-9"
+        className="w-[117px] h-[117px] xl:w-[210px] xl:h-[210px] my-2 md:mb-5 lg:mb-9"
       />
       <p
         className={`${textClassTitle} font-semibold text-[16px] lg:text-[25px]`}
