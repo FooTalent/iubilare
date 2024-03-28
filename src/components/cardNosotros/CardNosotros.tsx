@@ -9,15 +9,34 @@ interface CardNosotrosProps {
   textClassTitle?: string;
 }
 
-const CardNosotros: React.FC<CardNosotrosProps> = ({ name, status, image, className, textClassName, textClassTitle }) => {
-  const combinedClassName = `w-[160px] h-[200px] rounded-md pt-[16px] px-[16px] 2xl:w-[308px] 2xl:h-[376px] 2xl:px-[40px] ${className}`;
+const CardNosotros: React.FC<CardNosotrosProps> = ({
+  name,
+  status,
+  image,
+  className,
+  textClassName,
+  textClassTitle,
+}) => {
+  const combinedClassName = `w-[160px] h-[200px] rounded-md xl:w-[16.688rem] xl:h-[22.438rem] flex flex-col justify-center items-center  ${className}`;
   const combinedTextClassName = `${textClassName}`;
 
   return (
     <div className={combinedClassName}>
-      <img src={image} alt="" className="2xl:w-[227px]" />
-      <p className={`${textClassTitle} text-[13px] 2xl:text-[24px]`}>{name}</p>
-      <p className={`${combinedTextClassName} text-[11px] 2xl:text-[18px]`}>{status}</p>
+      <img
+        src={image}
+        alt=""
+        className="md:w-[117px] md:h-[117px] xl:w-[210px] xl:h-[210px] my-2 md:mb-5 lg:mb-9"
+      />
+      <p
+        className={`${textClassTitle} font-semibold text-[16px] lg:text-[25px]`}
+      >
+        {name}
+      </p>
+      <p
+        className={`${combinedTextClassName} text-[13px] h-[60px] lg:text-[20px]`}
+      >
+        {status}
+      </p>
     </div>
   );
 };

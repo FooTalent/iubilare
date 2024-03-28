@@ -29,7 +29,7 @@ const Footer = (): JSX.Element => {
             <div className="flex flex-row mr-12 md:mr-0">
               <div className="w-[33px] h-[33px] rounded-[16px/16.5px]">
                 <a
-                  href="https://www.facebook.com/profile.php?id=100063465785183"
+                  href="https://www.facebook.com/share/CPEU7bY1CAH44KNK/?mibextid=qi2Omg"
                   target="_blank"
                 >
                   <img className="" alt="Vector" src="./footer/facebook.png" />
@@ -37,7 +37,10 @@ const Footer = (): JSX.Element => {
               </div>
               <div className="min-w-[30px]"></div>
               <div className="w-[33px] h-[33px] rounded-[16px/16.5px]">
-                <a href="https://www.instagram.com/" target="_blank">
+                <a
+                  href="https://www.instagram.com/iubilare.ok?igsh=MWRjcnVybzdvdnozZw=="
+                  target="_blank"
+                >
                   <img
                     className=""
                     alt="Icomoon free"
@@ -59,9 +62,6 @@ const Footer = (): JSX.Element => {
                 <a href="tel:1143421817" className="text-base  text-left">
                   (011) 4342-1817
                 </a>
-                <a href="tel:1143424783" className="text-base  text-left">
-                  (011) 4342-4783
-                </a>
               </div>
             </div>
             <div className="flex flex-row">
@@ -70,11 +70,11 @@ const Footer = (): JSX.Element => {
               </div>
               <div className="pl-[8px] flex self-end">
                 <a
-                  href="mailto:info@iubilare.com"
+                  href="mailto:contacto@iubilare.com"
                   target="_blank"
                   className="text-base"
                 >
-                  info@iubilare.com
+                  contacto@iubilare.com
                 </a>
               </div>
             </div>
