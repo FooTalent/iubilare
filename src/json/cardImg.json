@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "img": "./copaicono.png",
+      "title": "Experiencia y trayectoria",
+      "descripcion": "Valoramos las necesidades individuales de cada cliente y nos esforzamos por ofrecer un servicio personalizado y adaptado a sus circunstancias particulares."
+    },
+    {
+      "img": "./personamas.png",
+      "title": "Enfoque personalizado",
+      "descripcion": "Con más de 27 años de experiencia en el mercado, nuestro equipo cuenta con el conocimiento y la habilidad necesarios para guiarlo a través del proceso de jubilación."
+    },
+    {
+      "img": "./escudoicono.png",
+      "title": "Transparencia y confianza",
+      "descripcion": "Nos comprometemos a brindarle información clara, transparente y confiable en cada paso del proceso."
+    }
+  ]
+}
