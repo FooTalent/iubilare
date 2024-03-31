@@ -137,14 +137,14 @@ export default function Nosotros() {
 
       {/* Seccion Clientes Satisfechos */}
       <div className="block justify-center mb-14  md:mb-24 lg:mb-48">
-        <div className=" flex flex-col-reverse justify-center md:px-8 lg:px-[115px] md:flex-row md:gap-7 lg:gap-[92px]">
-          <div className=" flex w-[22.313rem] md:w-[526px] h-[600px] px-4 md:h-[470px] lg:h-[600px] rounded-lg z-0">
+        <div className=" flex flex-col-reverse justify-center md:px-8 lg:px-[115px] md:flex-row md:gap-7 ">
+          <div className=" flex  w-[22.313rem] h-[600px] px-4 md:h-[470px] lg:w-1/2 lg:h-[600px] rounded-lg z-0">
             {/* Leaflet Map */}
             <MapContainer
               center={[-34.609, -58.383]}
               zoom={3.5}
               scrollWheelZoom={true}
-              className="md:h-[470px] lg:h-[600px] w-[333px] rounded-lg"
+              className="md:h-[470px] lg:h-[600px] md:w-[551px] w-[333px] rounded-lg"
             >
               <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -824,7 +824,7 @@ export default function Nosotros() {
                       fontWeight: "bolder",
                     }}
                   >
-                    Clientes en Santiago Del Estero
+                    Clientes en Stgo. Del Estero
                   </p>{" "}
                   <br />{" "}
                   <a
@@ -890,7 +890,7 @@ export default function Nosotros() {
                       fontWeight: "bolder",
                     }}
                   >
-                    Clientes en Tucuman
+                    Clientes en Tucumán
                   </p>{" "}
                   <br />{" "}
                   <a
@@ -914,11 +914,11 @@ export default function Nosotros() {
               </Marker>
             </MapContainer>
           </div>
-          <div className="flex flex-col md:w-[500px] ">
+          <div className="flex flex-col w-full items-center md:w-[500px] lg:w-1/2 ">
             <h2 className="text-[20px] px-16 md:px-0 text-center md:text-[25px] lg:text-[30px] font-semibold md:text-left mb-12">
               Bienvenidos al mapa interactivo de Iubilare
             </h2>
-            <div className="flex flex-col px-4 text-pretty">
+            <div className="flex flex-col  text-pretty w-[327px] lg:w-full">
               <p className="text-justify mb-4 text-[16px] font-medium md:text-[18px] lg:text-[22px]">
                 {clientes}
               </p>
@@ -1007,7 +1007,7 @@ export default function Nosotros() {
         )}
         {/* Separador 16px */}
         <button
-          className="hidden mt-16 font-semibold md:active:text-background-violet md:hover:text-current md:inline-block md:pt-[10px] md:pb-[49px] md:px-6 md:bg-background-violet md:text-white rounded md:hover:text-white  md:w-[363px] md:h-11 md:text-[20px] lg:text-[25px] "
+          className="hidden mt-16 font-semibold md:active:text-background-violet md:hover:text-current md:inline-block md:pt-[10px] md:pb-[49px] md:px-6 md:bg-background-violet md:text-white rounded md:hover:text-white  md:w-[27.563rem] md:h-11 md:text-[20px] lg:text-[25px] "
           onClick={() => setView(!view)}
         >
           {!view ? "Quiero conocer al resto del equipo" : "Ver menos"}

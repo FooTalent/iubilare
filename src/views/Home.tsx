@@ -94,7 +94,10 @@ export default function Home() {
       <div className="h-[84px] md:h-[172px]"></div>
 
       {/* Seccion tipo de Trámites */}
-      <div className="px-[16px] flex flex-col justify-center xl:px-[120px] xl:p-[36px]">
+      <div
+        id="tipodetramite"
+        className="px-[16px] flex flex-col justify-center xl:px-[120px] xl:p-[36px]"
+      >
         <div>
           <h2 className="text-xl font-semibold md:text-[32px] xl:text-[49px] md:mb-8 ">
             Tipos de trámites
