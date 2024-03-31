@@ -1,4 +1,11 @@
-export const CardAyuda = ({ number, title, desc, color }) => {
+interface Card {
+  number: string
+  title: string
+  desc: string
+  color: string
+}
+
+ const CardAyuda = ({ number, title, desc, color }: Card) => {
   return (
     <div className='flex   rounded-md bg-slate-200  mb-[36px]'>
       {color === 'green' ? (
@@ -22,8 +29,4 @@ export const CardAyuda = ({ number, title, desc, color }) => {
     </div>
   )
 }
-{
-  /* <h4 className='text-center text-indigo-400 text-[20px] font-semibold font-[Source Sans Pro] md:hidden'>
-        Jubilación
-      </h4> */
-}
+export default CardAyuda

@@ -1,10 +1,9 @@
-import { CardAyuda } from '../components/cardAyuda/CardAyuda.jsx'
-import { CardImg } from '../components/cardImg/CardImg.jsx'
-
 import FAQ from '../components/FAQ/FAQ'
 import 'leaflet/dist/leaflet.css'
 import cardAyuda from '../json/cardAyuda.json'
 import cardImg from '../json/cardImg.json'
+import CardImg from '../components/cardImg/CardImg'
+import CardAyuda from '../components/cardAyuda/CardAyuda'
 
 export default function Ayuda() {
   return (
@@ -17,7 +16,6 @@ export default function Ayuda() {
         <p className="text-[20px] mx-[48px] mt-[24px] px-8 text-center text-neutral-900 font-['Inter'] md:mx-[197px] xl:px-16 xl:text-[31px] xl:mx-[270px]">
           Le ofrecemos una guía informativa sobre cada uno de los procesos{' '}
         </p>
-        {/* grid md:flex mt-[54px] md:mt-[32px] mx-[1px] md:mx-[40px] xl:mx-[120px] */}
         <div className='grid md:flex mt-[54px] md:mt-[32px] mx-[16px] md:mx-[40px] xl:mx-[120px] gap-[36px] xl:gap-[71px]'>
           <div className=''>
             <h4 className='text-center text-slate-500 text-[20px] font-semibold font-[Source Sans Pro] xl:text-[31px] mb-7'>

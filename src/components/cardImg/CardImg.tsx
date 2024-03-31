@@ -1,4 +1,10 @@
-export const CardImg = ({ img, title, desc }) => {
+interface Card {
+  title: string
+  img: string
+  desc: string
+}
+
+const CardImg = ({ img, title, desc }: Card) => {
   return (
     <div className='md:w-1/3 font-["source sans pro"]'>
       <div className='grid justify-center justify-items-center'>
@@ -17,3 +23,4 @@ export const CardImg = ({ img, title, desc }) => {
     </div>
   )
 }
+export default CardImg
