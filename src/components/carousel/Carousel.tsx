@@ -22,7 +22,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   return (
     <div className="overflow-hidden relative ">
       <div
-        className={`md:h-[396px] flex transition ease-out duration-1000`}
+        className={`md:h-[396px] xl:h-[579px] flex transition ease-out duration-1000`}
         style={{
           transform: `translateX(-${current * 100}%)`,
         }}

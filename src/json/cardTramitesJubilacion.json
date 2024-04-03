@@ -1,0 +1,23 @@
+{
+    "tramite": [
+      {
+        "img": "./jo.svg",
+        "title": "Jubilación Ordinaria",
+        "style": ""
+      },
+      {
+        "img": "./puam.svg",
+        "title": "Pensión Universal para Adultos Mayores",
+        "style": ""
+
+      },
+      {
+        "img": "./pf.svg",
+        "title": "Pensión por Fallecimiento",
+        "style": ""
+
+      }
+      
+    ]
+  }
+  

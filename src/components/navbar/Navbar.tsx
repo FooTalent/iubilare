@@ -51,7 +51,7 @@ export default function Navbar() {
               : "transition-height duration-2000 h-0 overflow-hidden"
           }`}
         >
-          <ul className="flex flex-col justify-around bg-white items-start pl-5 shadow-md h-[178px] md:flex md:flex-row md:h-auto md:shadow-none md:space-x-0.5 md:justify-around  md:items-center ">
+          <ul className="flex flex-col justify-around bg-white items-start pl-5 shadow-md h-[178px] md:flex md:flex-row md:h-full md:shadow-none md:space-x-0.5 md:justify-around  md:items-center ">
             <li className="md:pt-[3px]">
               <span>
                 {/* se agregaron las clases active:text-active-green para el color cuando activas el link en version mobile*/}

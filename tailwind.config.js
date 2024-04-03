@@ -65,9 +65,6 @@ export default {
       "31px": ["31px", "1.25em"],
       // ... existing fontSize extensions
     },
-    backgroundImage: {
-      hero: "url('/quehacemos/background.png')",
-    },
     typography: {
       DEFAULT: {
         css: {

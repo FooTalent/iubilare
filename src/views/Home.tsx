@@ -2,7 +2,14 @@ import Form from "../components/form/Form";
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import QueHacemos from "../components/sections/QueHacemos";
-import Testimonios from "../components/sections/Testimonios";
+// import Testimonios from "../components/sections/Testimonios";
+import cardTramitesRVP from "../json/cardTramitesRVP.json";
+import cardTramitesJubilacion from "../json/cardTramitesJubilacion.json";
+import TestimoniosTramites from "../components/sections/TestimoniosTramites";
+import CardTramite from "../components/cardTramite/CardTramite";
+import CardQueHacemos from "../components/cardQueHacemos/cardQueHacemos";
+// import VideoComponent from "../components/videoHome/VideoComponent";
+// import VideoPlayer from "../components/videoPlayer/VideoPlayer";
 
 export default function Home() {
   const formSection: any = useRef(null);
@@ -29,16 +36,15 @@ export default function Home() {
   return (
     <div className="md:mt-[140px]">
       {/* Separador */}
-      <div className="min-h-[69px] md:hidden"></div>
 
       {/* Seccion Inicio */}
-      <div className="flex flex-col px-[16px] md:px-[40px] 2xl:px-[120px]">
-        <div className="flex flex-col md:flex-col-reverse xl:flex-row- xl:flex-row-reverse xl:gap-[132px]  xl:mt-[100px]">
-          <div className="xl:w-[50%] xl:flex">
-            <div className="hidden md:block text-left md:m-[10px] xl:flex xl:flex-col xl:justify-around xl:w-[70%]">
-              <h1 className="md:text-[20px] md:mb-[9px] md:font-semibold xl:text-[40px]">
-                Iubilare consultora previsional
-              </h1>
+      <h1 className="md:text-[20px] md:mb-[9px] md:font-semibold lg:h-16 w-full lg:text-[40px]">
+        Iubilare consultora previsional
+      </h1>
+      <div className="flex px-[16px] justify-center ">
+        <div className="flex flex-col w-[1073px] lg:gap-8 md:flex-col-reverse xl:flex-row-reverse lg:mt-16">
+          <div className="xl:w-[402px] xl:flex xl:flex-row-reverse ">
+            <div className="hidden md:block text-left lg:gap-[8.25rem] xl:flex xl:flex-col xl:justify-around">
               <p className="text-left hidden xl:block xl:text-[28px]">
                 27 años de experiencia. Asesoramiento personalizado. Soluciones
                 previsionales confiables en{" "}
@@ -50,9 +56,9 @@ export default function Home() {
                 país. Asesoramiento personalizado para tranquilidad y solución
                 de problemas previsionales.
               </p>
-              <div className="hidden xl:block xl:mt-5">
+              <div className="hidden xl:block ">
                 <button
-                  className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] xl:w-[100%] font-bold"
+                  className="w-full active:text-active-green hover:text-inherit  py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] lg:h-14 lg:text-[32px] lg:w-72 font-semibold flex justify-center items-center"
                   onClick={() => scrollToSection(formSection)}
                 >
                   Contactate
@@ -68,16 +74,20 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <img
-              className="w-full mx-auto mb-5 mt-5 md:w-[688px] md:h-auto"
-              src="/Youtubeplayer.png"
-              alt="Hero"
-            />
+            {/* <VideoPlayer
+              url={"https://youtu.be/bv5vMJKBAbo?si=Ey5lj7XzSBUsIYLt"}
+            /> */}
+            {/* <video
+              src="./IUBILAREFINALYT.mp4"
+              controls
+              className="max-w-[637px]"
+            ></video> */}
+            {/* <VideoComponent /> */}
           </div>
         </div>
         <div className="xl:hidden mt-8 md:mx-[10px] flex justify-start">
           <button
-            className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] font-bold"
+            className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-[#439373] text-white rounded hover:bg-button-hover-[#2DB27D] hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] font-bold"
             onClick={() => scrollToSection(formSection)}
           >
             Contactate
@@ -85,13 +95,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Separador */}
-      <div className="h-[78px] xl:h-[100px]"></div>
       {/* Seccion Que Hacemos */}
-      <QueHacemos></QueHacemos>
-
-      {/* Separador */}
-      <div className="h-[84px] md:h-[172px]"></div>
+      <QueHacemos />
 
       {/* Seccion tipo de Trámites */}
       <div
@@ -99,12 +104,23 @@ export default function Home() {
         className="px-[16px] flex flex-col justify-center xl:px-[120px] xl:p-[36px]"
       >
         <div>
-          <h2 className="text-xl font-semibold md:text-[32px] xl:text-[49px] md:mb-8 ">
+          <h2 className="text-xl text-left font-semibold md:text-[31px] xl:text-[31px] md:mb-8 ">
             Tipos de trámites
           </h2>
         </div>
         <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full xl:w-[1115px] xl:h-[500px] ">
-          <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full xl:h-full xl:w-full">
+          <div className="grid grid-cols-2 items-center gap-14 md:gap-8 xl:gap-[75px] mb-[188px] md:mb-[128px]">
+            {cardTramitesRVP.tramite.map((tramite) => (
+              <CardTramite
+                img={tramite.img}
+                title={tramite.title}
+                style={
+                  " text-[17px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
+                }
+              />
+            ))}
+          </div>
+          {/* <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full xl:h-full xl:w-full">
             <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse md:h-full  xl:justify-end">
               <div className="">
                 <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-black md:h-full  md:text-center xl:h-auto  xl:mb-[10px] md:font-bold">
@@ -191,24 +207,53 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
-        {/* Separador */}
-        <div className="h-[36px]"></div>
+        <div className="flex flex-col justify-center items-center">
+          <h2 className="lg:text-[31px] text-[#747DD6] py-16">Jubilaciones</h2>
+          <CardQueHacemos
+            src="./QueHacemos2.jpeg"
+            description="Le ofrecemos un primer diagnóstico previsional completamente gratuito que incluye un análisis detallado de sus años de servicio aportados y contribuciones, tanto como dependiente, autónomo o monotributista. De esta manera podemos determinar los pasos a seguir para comenzar el trámite lo antes posible meses antes de que cumpla la edad jubilatoria. Nuestra prioridad es que usted pueda realizar su jubilación de forma rápida y efectiva. "
+            classStyle="md:flex-row-reverse"
+          />
+        </div>
+        <div>
+          <h2 className="text-xl text-left font-semibold md:text-[31px] xl:text-[31px] md:mb-8 ">
+            Tipos de trámites
+          </h2>
+        </div>
+        <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex  md:w-full xl:w-[1115px] xl:h-[500px] ">
+          <div className="grid grid-cols-2 items-center gap-14 md:gap-8 xl:gap-[75px] mb-[188px] md:mb-[128px]">
+            {cardTramitesJubilacion.tramite.map((tramite) => (
+              <CardTramite
+                img={tramite.img}
+                title={tramite.title}
+                style={
+                  " text-[17px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
+                }
+              />
+            ))}
+            <CardTramite
+              img={"./exito.svg"}
+              title={
+                "El éxito de nuestro servicio está 100% garantizado. Con Iubilare puede tener la certeza de que está en buenas manos."
+              }
+              style={
+                " text-[17px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:leading-5 xl:text-[16px] font-normal"
+              }
+            />
+          </div>
+        </div>
       </div>
 
-      {/* Separador */}
-      <div className="min-h-[110px]"></div>
-
       {/* Seccion Testimonios */}
-      <Testimonios />
+      <TestimoniosTramites />
 
       {/* Separador */}
-      <div className="min-h-[106.08px]"></div>
 
       {/* Seccion Formulario */}
-      <div id="formulario" ref={formSection}>
+      <div className="mt-32" id="formulario" ref={formSection}>
         <Form />
       </div>
 

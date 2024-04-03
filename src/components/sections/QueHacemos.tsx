@@ -3,9 +3,9 @@ import CardQueHacemos from "../cardQueHacemos/cardQueHacemos";
 export default function QueHacemos() {
   return (
     <div className="flex flex-col justify-center items-center px-[16px] xl:p-[36px] md:bg-hero  md:bg-no-repeat md:bg-center md:bg-[length:690px] xl:bg-bottom xl:bg-[length:1290px] ">
-      <h2 className="text-xl font-semibold md:text-[32px] xl:text-[49px] md:mb-8">
+      <h1 className="text-xl font-semibold md:text-[32px] xl:text-[49px] md:mb-8">
         ¿Qué hacemos?
-      </h2>
+      </h1>
       <div className="xl:flex xl:justify-center xl:w-[1076px]">
         <p className="mt-5 text-justify leading-tight md:text-center xl:text-[31px]">
           Gestionamos todos los trámites relacionados con su renta vitalicia
@@ -13,26 +13,15 @@ export default function QueHacemos() {
           oficinas.
         </p>
       </div>
+      <h2 className="lg:text-[31px] text-[#747DD6] py-16">
+        Rentas Vitalicias Previsionales
+      </h2>
 
-      <div className="h-[32px]"></div>
       <div className="flex flex-col justify-center items-center">
         <CardQueHacemos
           src="./QueHacemos1.jpeg"
-          title="No queremos que pierda su tiempo ni dinero"
-          description="Ofrecemos un primer diagnóstico previsional completamente gratuito que incluye un análisis detallado de sus años de servicio y contribuciones tanto como dependiente, autónomo o monotributista. De esta manera podemos determinar los pasos a seguir y evaluar si está en condiciones de iniciar su trámite."
-        />
-        <div className="h-[32px] md:[63px]"></div>
-        <CardQueHacemos
-          src="./QueHacemos2.jpeg"
-          title="Seguimiento del beneficio previsional"
-          description="En una segunda etapa, realizamos la gestión del beneficio previsional y hacemos el seguimiento del caso desde que el expediente es caratulado hasta el momento del primer cobro de haberes."
-          classStyle="md:flex-row-reverse"
-        />
-        <div className="h-[32px] md:[63px]"></div>
-        <CardQueHacemos
-          src="./QueHacemos3.jpeg"
-          title="Amplia experiencia"
-          description="Contamos con una amplia experiencia y las mejores herramientas para brindarle un servicio de calidad que garantice que su Beneficio Previsional sea otorgado en el menor tiempo posible."
+          description="A través de una conversación telefónica (interior del país) o una entrevista personalizada (CABA y GBA) realizamos un análisis gratuito de su Renta Vitalicia para determinar si usted tiene derecho a a iniciar un reclamo ante ANSES o su Compañía de Seguros de Retiro. 
+          Proporcionamos un informe detallado con el monto estimado de su beneficio, el retroactivo aproximado y la duración estimada del proceso legal. También ofrecemos servicios de gestión completa de trámites previsionales y actualizaciones regulares sobre el progreso."
         />
       </div>
     </div>

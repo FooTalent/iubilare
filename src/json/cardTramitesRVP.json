@@ -1,0 +1,22 @@
+{
+    "tramite": [
+      {
+        "img": "./cmg.svg",
+        "title": "Complemento al haber mínimo garantizado"
+      },
+      {
+        "img": "./arv.svg",
+        "title": "Actualización de su Renta Vitalicia"
+      },
+      {
+        "img": "./cza.svg",
+        "title": "Complemento por Zona Austral"
+      }
+      ,
+      {
+        "img": "./dolarizacion.svg",
+        "title": "Dolarización"
+      }
+    ]
+  }
+  
