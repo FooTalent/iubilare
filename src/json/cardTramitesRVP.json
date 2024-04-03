@@ -6,11 +6,13 @@
       },
       {
         "img": "./arv.svg",
-        "title": "Actualización de su Renta Vitalicia"
+        "title": "Actualización",
+        "title2": "de su Renta Vitalicia"
       },
       {
         "img": "./cza.svg",
-        "title": "Complemento por Zona Austral"
+        "title": "Complemento",
+        "title2": "por Zona Austral"
       }
       ,
       {

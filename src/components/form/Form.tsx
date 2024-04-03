@@ -21,11 +21,11 @@ export default function Form() {
           Contactanos, estamos para ayudarte.
         </h3>
 
-        <h3 className="hidden font-semibold xl:block xl:text-[39px]">
-          Si tiene alguna duda o consulta, no dude en contactarnos
+        <h3 className="hidden font-semibold xl:block xl:text-[49px]">
+          ¿Tenés alguna duda o consulta?
         </h3>
-        <h3 className="hidden font-semibold xl:block xl:text-[39px]">
-          Estamos para ayudarlo.
+        <h3 className="hidden font-semibold xl:block xl:text-[49px]">
+          Contactanos, estamos para ayudarte.
         </h3>
       </div>
       <div className="min-h-[53px]"></div>

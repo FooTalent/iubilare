@@ -8,6 +8,7 @@ import cardTramitesJubilacion from "../json/cardTramitesJubilacion.json";
 import TestimoniosTramites from "../components/sections/TestimoniosTramites";
 import CardTramite from "../components/cardTramite/CardTramite";
 import CardQueHacemos from "../components/cardQueHacemos/cardQueHacemos";
+import YouTubePlayer from "../components/youTubePlayer/YouTubePlayer";
 // import VideoComponent from "../components/videoHome/VideoComponent";
 // import VideoPlayer from "../components/videoPlayer/VideoPlayer";
 
@@ -44,11 +45,11 @@ export default function Home() {
       <div className="flex px-[16px] justify-center ">
         <div className="flex flex-col w-[1073px] lg:gap-8 md:flex-col-reverse xl:flex-row-reverse lg:mt-16">
           <div className="xl:w-[402px] xl:flex xl:flex-row-reverse ">
-            <div className="hidden md:block text-left lg:gap-[8.25rem] xl:flex xl:flex-col xl:justify-around">
+            <div className="hidden md:block text-left  xl:flex xl:flex-col xl:justify-between">
               <p className="text-left hidden xl:block xl:text-[28px]">
-                27 años de experiencia. Asesoramiento personalizado. Soluciones
-                previsionales confiables en{" "}
-                <span className="xl:font-bold">todo el país.</span>
+                Desde hace más de 27 años nos dedicamos a realizar todo tipo de
+                trámites previsionales, brindando un asesoramiento
+                personalizado. Nuestra experiencia nos avala.
               </p>
               <p className="md:w-2/3 xl:hidden">
                 Somos un equipo de abogados y ejecutivos en gestión previsional
@@ -74,15 +75,7 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            {/* <VideoPlayer
-              url={"https://youtu.be/bv5vMJKBAbo?si=Ey5lj7XzSBUsIYLt"}
-            /> */}
-            {/* <video
-              src="./IUBILAREFINALYT.mp4"
-              controls
-              className="max-w-[637px]"
-            ></video> */}
-            {/* <VideoComponent /> */}
+            <YouTubePlayer />
           </div>
         </div>
         <div className="xl:hidden mt-8 md:mx-[10px] flex justify-start">
@@ -114,9 +107,11 @@ export default function Home() {
               <CardTramite
                 img={tramite.img}
                 title={tramite.title}
+                title2={tramite.title2}
                 style={
                   " text-[17px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
                 }
+                borde=""
               />
             ))}
           </div>
@@ -229,19 +224,23 @@ export default function Home() {
               <CardTramite
                 img={tramite.img}
                 title={tramite.title}
+                title2={tramite.title2}
                 style={
                   " text-[17px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
                 }
+                borde=""
               />
             ))}
             <CardTramite
               img={"./exito.svg"}
+              title2=""
               title={
                 "El éxito de nuestro servicio está 100% garantizado. Con Iubilare puede tener la certeza de que está en buenas manos."
               }
               style={
-                " text-[17px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:leading-5 xl:text-[16px] font-normal"
+                "text-[17px]   w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:leading-5 xl:text-[16px] font-normal"
               }
+              borde={"border-2 border-[#439373]"}
             />
           </div>
         </div>

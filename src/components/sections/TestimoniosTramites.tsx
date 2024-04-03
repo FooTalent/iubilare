@@ -59,17 +59,16 @@ export default function TestimoniosTramites() {
   return (
     <>
       {/* Contenedor de Cards */}
+      <div className="flex flex-col justify-center mt-12 mb-7">
+        <h2 className="text-black text-xl font-semibold md:text-[32px] xl:text-[49px]  ">
+          Testimonios
+        </h2>
+        <h3 className="text-black text-xl xl:font-semibold md:text-[21px] xl:text-[31px] ">
+          Ellos son algunos de nuestros clientes
+        </h3>
+      </div>
+      <div className="flex justify-center"></div>
       <div className="overflow-auto min-w-full h-full 2xl:flex md:bg-background-violet md:overflow-hidden md:relative 2xl:gap-[80px]">
-        <div className="flex justify-center mt-12">
-          <h2 className="text-white text-xl font-semibold md:text-[32px] xl:text-[49px] md:mb-8 ">
-            Testimonios
-          </h2>
-        </div>
-        <div className="flex justify-center">
-          <h3 className="text-white text-xl xl:font-semibold md:text-[21px] xl:text-[31px] ">
-            Ellos son algunos de nuestros clientes
-          </h3>
-        </div>
         {/* Mapeo para vista Tablet y Desktop */}
         <div
           className="hidden md:flex md:whitespace-nowrap md:gap-0 md:margin-auto"

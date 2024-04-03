@@ -8,9 +8,8 @@ export default function QueHacemos() {
       </h1>
       <div className="xl:flex xl:justify-center xl:w-[1076px]">
         <p className="mt-5 text-justify leading-tight md:text-center xl:text-[31px]">
-          Gestionamos todos los trámites relacionados con su renta vitalicia
-          previsional o jubilación sin que sea necesario que visite nuestras
-          oficinas.
+          Gestionamos todos los trámites relacionados  con su Renta Vitalicia
+          Previsional o Jubilación.
         </p>
       </div>
       <h2 className="lg:text-[31px] text-[#747DD6] py-16">

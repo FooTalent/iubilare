@@ -2,6 +2,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 interface FormValues {
   name: string;
@@ -40,10 +41,27 @@ const FormularioYup: React.FC = () => {
         "https://formsubmit.co/ajax/gonzalo-ezequiel@hotmail.com",
         values
       );
-
+      Swal.fire({
+        icon: "success",
+        title: `¡Buen Trabajo!`,
+        text: "¡Su consulta fue enviada con éxito!",
+        showConfirmButton: false,
+        /*  onBeforeOpen: () => {
+          Swal.showLoading()
+        } */
+      });
       console.log(response);
     } catch (error) {
       console.error("Error al enviar el formulario:", error);
+      Swal.fire({
+        icon: "error",
+        title: `Error`,
+        text: "Su consulta no pudo ser enviada. Intente más tarde",
+        showConfirmButton: false,
+        /*  onBeforeOpen: () => {
+          Swal.showLoading()
+        } */
+      });
     }
   };
 
@@ -182,7 +200,7 @@ const FormularioYup: React.FC = () => {
           <div className="w-full flex justify-center items-center pl-[7.5px] pr-[7.5px]">
             <button
               type="submit"
-              className="w-full flex justify-center items-center active:text-active-green hover:text-inherit  py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-[#29CA8A] outline-none focus:border focus:outline-none md:w-[145.13px] md:text-[25px] font-semibold lg:h-12 lg:w-52 "
+              className="w-full flex justify-center items-center active:text-active-green hover:text-inherit  py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-[#29CA8A] outline-none focus:border focus:outline-none md:w-[145.13px] md:text-[25px] font-semibold lg:h-12 lg:w-52"
             >
               Enviar consulta
             </button>
