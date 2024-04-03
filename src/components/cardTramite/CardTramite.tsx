@@ -1,6 +1,6 @@
 interface Card {
   title: string;
-  title2: string;
+  title2?: string;
   img: string;
   style: string;
   borde: string | undefined;
