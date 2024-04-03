@@ -88,6 +88,10 @@ body {
 
 }
 
+.filter-custom {
+  filter: sepia(100%) hue-rotate(240deg) brightness(100%) saturate(100%) contrast(100%);
+}
+
 
 
 @media (max-width: 767px) {

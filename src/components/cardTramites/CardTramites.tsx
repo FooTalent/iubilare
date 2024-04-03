@@ -17,6 +17,7 @@ const CardTramites: React.FC<CardTramitesProps> = ({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
+    
     <div className={`flex flex-col my-2 rounded justify-between items-center shadow-card-shadow transition-all duration-300 ease-in-out ${isExpanded ? 'bg-747DD6 text-white' : ''}`}>
       <div className="flex flex-row justify align-middle py-5 w-full md:w-[687px] md:h-[146px] xl:w-full xl:px-[53px]">
         <div className="flex w-2/3 items-center">

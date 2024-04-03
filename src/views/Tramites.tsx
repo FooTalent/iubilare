@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import TestimoniosTramites from "../components/sections/TestimoniosTramites";
 import Casos from "../components/sections/Casos";
 import { useEffect } from "react";
+import Jubilaciones from "../components/sections/Jubilaciones";
+import CualEsTuCaso from "../components/sections/CualEsTuCaso";
+import TipoDeTramites from "../components/sections/TipoDeTramites";
 
 export default function Tramites() {
   useEffect(() => {
@@ -39,7 +42,7 @@ export default function Tramites() {
                 </div>
                 <div className="text-center text-neutral-900 text-base font-normal font-source-sans-pro w-[360px] md:w-[240px] lg:w-[262px]">
                   No tiene ningún gasto de inicio. El pago se realiza una vez
-                  que se haya resulto el caso.
+                  que se haya resuelto el caso.
                 </div>
               </div>
             </div>
@@ -73,7 +76,9 @@ export default function Tramites() {
 
       {/* Separador */}
       <div className="min-h-[72px] md:min-h-[90px]"></div>
-
+      <Jubilaciones />
+      <CualEsTuCaso />
+      <TipoDeTramites />
       {/* Tercera Sección */}
       <div
         id="testimonios"

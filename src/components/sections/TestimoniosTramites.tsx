@@ -7,31 +7,31 @@ export default function TestimoniosTramites () {
     const data = [
         {
           id: 1,
-          name: "Walter Albornoz",
-          age: "62 años",
-          city: "La Matanza",
+          name: "Viviana Duarte",
+          age: "51 años",
+          city: "Buenos Aires",
           description:
-            "Lorem ipsum dolor sit amet consectetur. Tortor pulvinar justo nulla scelerisque diam. Nunc velit porta commodo a massa purus. Pretium porttitor risus nisi malesuada. Varius lorem tincidunt amet dis aenean lacinia mi tortor ornare..",
-          imageUrl: "./testimonios/test01.png",
+            "Estuve cobrando por años una Renta Vitalicia que era muy baja, no me alcanzaba ni para dos días. Gracias al estudio Iubilare, que me contactó pude iniciar un juicio contra Anses y así logré cobrar lo que merezco. El proceso fue largo, pero valió la pena. Ahora estoy más tranquila y al fin se hizo justicia. ¡Muchas gracias! ¡Recomiendo a estos profesionales!",
+          imageUrl: "./testimonios/vivianaDuarte.png",
           numberStars: 5,
         },
         {
           id: 2,
-          name: "Hortencia Campos",
+          name: "Sonia Raquel Bellos",
           age: "53 años",
-          city: "Río Negro",
+          city: "Córdoba",
           description:
-          "Lorem ipsum dolor sit amet consectetur. Tortor pulvinar justo nulla scelerisque diam. Nunc velit porta commodo a massa purus. Pretium porttitor risus nisi malesuada. Varius lorem tincidunt amet dis aenean lacinia mi tortor ornare..",
+          "Hace veintidós años mi esposo se jubiló y yo quedé con una pensión ínfima. Recientemente, el estudio me contactó ofreciéndome la posibilidad de reclamar una jubilación mínima. Al principio, desconfié, pero decidí probar. Desde el inicio, me pidieron paciencia, ya que los trámites son largos. Hace unos meses, el doctor Pavlovsky me informó que podía percibir mi pensión mínima. Les digo que confíen, estoy agradecida y sorprendida de haber logrado algo que pensé imposible. Confíen en la honestidad y el respeto de este estudio.",
           imageUrl: "./testimonios/test02.png",
           numberStars: 4,
         },
         {
           id: 3,
-          name: "Lorena Ontivero",
+          name: "Sandra Ambrosio",
           age: "47 años",
-          city: "San Juan",
+          city: "Santa Fe",
           description:
-          "Lorem ipsum dolor sit amet consectetur. Tortor pulvinar justo nulla scelerisque diam. Nunc velit porta commodo a massa purus. Pretium porttitor risus nisi malesuada. Varius lorem tincidunt amet dis aenean lacinia mi tortor ornare..",
+          "Me contacté con el estudio en 2019. Gracias a ellos, finalmente pude actualizar la pensión que percibo por fallecimiento, la cual había ido perdiendo valor con los años. El equipo analizó mi caso y me guiaron a través del proceso legal con claridad y apoyo constante. Junto a un escribano de confianza iniciamos el juicio y gracias al estudio hoy mi pensión está completamente actualizada. Los recomiendo sin dudarlo; me demostraron ser profesionales comprometidos y confiables.",
           imageUrl: "./testimonios/test03.png",
           numberStars: 5,
         },
@@ -106,7 +106,7 @@ export default function TestimoniosTramites () {
                               icon="md:block mr-[8px]"
                         className="bg-background-violet"
                         textColor="text-white"
-                        textDescription="text-[0.6rem] truncate leading-3 font-light italic whitespace-normal text-white md:w-[285px] md:not-italic md:leading-[1.5rem] md:text-[16px] text-background-white"
+                        textDescription="text-[0.6rem] truncate leading-3 font-light italic whitespace-normal text-white md:w-[520px] md:not-italic md:leading-[1.5rem] md:text-[16px] text-background-white"
                     />
                     ))}
 
