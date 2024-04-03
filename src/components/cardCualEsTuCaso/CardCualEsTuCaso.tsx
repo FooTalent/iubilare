@@ -34,16 +34,21 @@ const CardCualEsTuCaso = () => {
             moratorias para ayudarte a alcanzar los años requeridos.
           </p>
         )}
+        <div>
+          
+        </div>
         <button
           onClick={() => setExpanded(!expanded)}
           className={`${
             !expanded
               ? "bg-background-violet text-white"
               : "bg-white text-747DD6"
-          } w-[150px] rounded-md py-1`}
+          } w-[150px] rounded-md py-1 flex justify-center items-center`}
         >
           {!expanded ? `Ver más` : "Ver menos"}
-          <KeyboardArrowDownOutlined />
+          <div className={`${!expanded ? null : "transform -rotate-180 flex justify-center items-center"}`}>
+            <KeyboardArrowDownOutlined />
+          </div>
         </button>
       </div>
 
@@ -80,10 +85,12 @@ const CardCualEsTuCaso = () => {
             !expanded2
               ? "bg-background-violet text-white"
               : "bg-white text-747DD6"
-          } w-[150px] rounded-md py-1`}
+          } w-[150px] rounded-md py-1 flex justify-center items-center`}
         >
           {!expanded2 ? `Ver más` : "Ver menos"}
-          <KeyboardArrowDownOutlined />
+          <div className={`${!expanded2 ? null : "transform -rotate-180 flex justify-center items-center"}`}>
+            <KeyboardArrowDownOutlined />
+          </div>
         </button>
       </div>
 
@@ -121,10 +128,12 @@ const CardCualEsTuCaso = () => {
             !expanded3
               ? "bg-background-violet text-white"
               : "bg-white text-747DD6"
-          } w-[150px] rounded-md py-1`}
+          } w-[150px] rounded-md py-1 flex justify-center items-center`}
         >
           {!expanded3 ? `Ver más` : "Ver menos"}
-          <KeyboardArrowDownOutlined />
+          <div className={`${!expanded3 ? null : "transform -rotate-180 flex justify-center items-center"}`}>
+            <KeyboardArrowDownOutlined />
+          </div>
         </button>
       </div>
     </div>
