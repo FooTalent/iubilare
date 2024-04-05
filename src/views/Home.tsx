@@ -95,7 +95,7 @@ export default function Home() {
                 title={tramite.title}
                 title2={tramite.title2}
                 style={
-                  " text-[16px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
+                  " text-[16px] w-60 md:w-[8rem] lg:w-60 leading-5 font-semibold md:leading-3 text-center md:text-[15px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
                 }
                 borde=""
               />
@@ -213,7 +213,7 @@ export default function Home() {
                 title={tramite.title}
                 title2={tramite.title2}
                 style={
-                  " text-[16px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
+                  " text-[16px] w-60 md:w-[8rem] xl:w-[13rem] leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
                 }
                 borde=""
               />

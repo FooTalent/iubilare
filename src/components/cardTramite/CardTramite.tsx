@@ -9,11 +9,11 @@ interface Card {
 const CardTramite = ({ title, img, style, borde, title2 }: Card) => {
   return (
     <div
-      className={`lg:w-[28.438rem] flex justify-center h-32 font-["source sans pro"] shadow-card-shadow  ${borde}`}
+      className={`md:w-[13.438rem] lg:w-[22.563rem] flex justify-center h-32 font-["source sans pro"] shadow-card-shadow  ${borde}`}
     >
-      <div className="lg:w-[24.563rem] flex flex-row-reverse items-center justify-between">
+      <div className="lg:w-[24.563rem] flex flex-row-reverse items-center justify-between md:justify-center">
         <img
-          className="w-[79px] h-[79px] md:w-[83px] md:h-[82px] xl:w-[87px] xl:h-[87px]"
+          className="w-[79px] h-[79px] md:w-[49px] md:h-[49px] xl:w-[87px] xl:h-[87px]"
           src={img}
           alt={title}
         />
