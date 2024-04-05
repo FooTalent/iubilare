@@ -29,9 +29,9 @@ export default function Form() {
         </h3>
       </div>
       <div className="min-h-[53px]"></div>
-      <div className="flex justify-center flex-row md:bg-background-grey md:justify-center md:w-[686px] md:h-[438px] md:m-auto md:pt-[20px] xl:w-[1057px] xl:gap-6 xl:h-[675px] xl:pt-[48px] xl:pb-[48px] xl:pl-[60px] xl:pr-[60px]">
-        <div className="hidden  md:block md:h-[396px] ">
-          <div className="md:h-[396px] md:w-[265.4px] bg-white xl:w-[411px] xl:h-[576px]">
+      <div className="flex justify-center flex-row md:bg-background-grey md:justify-center md:w-[686px] md:h-[446px] md:m-auto  xl:w-[1057px] xl:gap-6 xl:h-[675px] xl:pt-[48px] xl:pb-[48px] xl:pl-[60px] xl:pr-[60px]">
+        <div className="hidden  md:block md:h-[446px] ">
+          <div className="md:h-[446px] md:w-[265.4px] bg-white xl:w-[411px] xl:h-[576px]">
             <Carousel slides={slides} />
           </div>
         </div>

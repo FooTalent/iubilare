@@ -66,10 +66,10 @@ const FormularioYup: React.FC = () => {
   };
 
   const normalStyleField =
-    "w-full rounded-md border-solid border-slate-300 border focus:outline-none focus:border-active-green pl-4  md:w-[265.4px] md:rounded-sm  xl:w-full bg-background-grey";
+    "w-full rounded-md border-solid border-slate-300 border focus:outline-none focus:border-active-green pl-4   md:rounded-sm bg-background-grey";
 
   const errorStyleField =
-    "w-full rounded-md border-solid border-slate-300 border focus:outline-none border-red-600 pl-4  md:w-[265.4px] md:rounded-sm  xl:w-full bg-background-grey";
+    "w-full rounded-md border-solid border-slate-300 border focus:outline-none border-red-600 pl-4   md:rounded-sm   bg-background-grey";
 
   const textLabelError = "text-red-500 font-normal";
 
@@ -89,7 +89,7 @@ const FormularioYup: React.FC = () => {
       {({ errors, touched, handleSubmit }) => (
         <Form
           onSubmit={handleSubmit}
-          className="w-[328px] h-[576px]  bg-background-grey flex flex-col items-start justify-around  xl:w-[484px] xl:h[572px]"
+          className="w-[328px] h-[396px] xl:h-[576px]  bg-background-grey flex flex-col items-start justify-around  xl:w-[484px] xl:h[572px]"
         >
           <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px] ">
             <label
@@ -101,7 +101,7 @@ const FormularioYup: React.FC = () => {
               Nombre y Apellido
             </label>
             <Field
-              className={`h-[48px] ${
+              className={`h-[38px] xl:h-[48px] ${
                 touched.name && errors.name ? errorStyleField : normalStyleField
               }`}
               placeholder="Juan Pérez"
@@ -116,7 +116,7 @@ const FormularioYup: React.FC = () => {
               className="text-red-500"
             />
           </div>
-          <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px] pt-[8px]">
+          <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px] pt-[10px] xl:pt-[8px]">
             <label
               className={`pl-3 text-sm ${
                 touched.phone && errors.phone ? textLabelError : textLabelNormal
@@ -126,7 +126,7 @@ const FormularioYup: React.FC = () => {
               Teléfono
             </label>
             <Field
-              className={`h-[48px] ${
+              className={`h-[38px] xl:h-[48px] ${
                 touched.phone && errors.phone
                   ? errorStyleField
                   : normalStyleField
@@ -142,7 +142,7 @@ const FormularioYup: React.FC = () => {
               className="text-red-500"
             />
           </div>
-          <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px] pt-[8px]">
+          <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px] pt-[10px] xl:pt-[8px]">
             <label
               className={`pl-3 text-sm ${
                 touched.email && errors.email ? textLabelError : textLabelNormal
@@ -152,7 +152,7 @@ const FormularioYup: React.FC = () => {
               Email
             </label>
             <Field
-              className={`h-[48px] ${
+              className={`h-[38px] xl:h-[48px] ${
                 touched.email && errors.email
                   ? errorStyleField
                   : normalStyleField
@@ -168,7 +168,7 @@ const FormularioYup: React.FC = () => {
               className="text-red-500"
             />
           </div>
-          <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px] pt-[8px]">
+          <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px] pt-[10px] xl:pt-[8px]">
             <label
               className={`pl-3 text-sm ${
                 touched.consulta && errors.consulta
@@ -181,7 +181,7 @@ const FormularioYup: React.FC = () => {
             </label>
             <Field
               as="textarea"
-              className={`h-[200px] ${
+              className={`h-[133px] w-[311px] xl:h-[200px]${
                 touched.consulta && errors.consulta
                   ? errorStyleField
                   : normalStyleField
@@ -197,10 +197,10 @@ const FormularioYup: React.FC = () => {
             />
           </div>
 
-          <div className="w-full flex justify-center items-center pl-[7.5px] pr-[7.5px]">
+          <div className="w-full pt-6 xl:pt-0 flex justify-center items-center pl-[7.5px] pr-[7.5px]">
             <button
               type="submit"
-              className="w-full flex justify-center items-center active:text-active-green hover:text-inherit  py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-[#29CA8A] outline-none focus:border focus:outline-none md:w-[145.13px] md:text-[25px] font-semibold lg:h-12 lg:w-52"
+              className="h-11 w-[163px] flex justify-center items-center active:text-active-green hover:text-inherit  xl:py-2 xl:px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-[#29CA8A] outline-none focus:border focus:outline-none  md:text-[20px] font-semibold lg:h-12 lg:w-52"
             >
               Enviar consulta
             </button>

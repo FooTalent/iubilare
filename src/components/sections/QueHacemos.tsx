@@ -2,12 +2,12 @@ import CardQueHacemos from "../cardQueHacemos/cardQueHacemos";
 
 export default function QueHacemos() {
   return (
-    <div className="flex flex-col justify-center items-center px-[16px] xl:p-[36px] md:bg-hero  md:bg-no-repeat md:bg-center md:bg-[length:690px] xl:bg-bottom xl:bg-[length:1290px] ">
+    <div className="flex flex-col mt-20 xl:mt-0 justify-center items-center px-[16px] xl:p-[36px] md:bg-hero  md:bg-no-repeat md:bg-center md:bg-[length:690px] xl:bg-bottom xl:bg-[length:1290px] ">
       <h1 className="text-xl font-semibold md:text-[32px] xl:text-[49px] md:mb-8">
         ¿Qué hacemos?
       </h1>
-      <div className="xl:flex xl:justify-center xl:w-[1076px]">
-        <p className="mt-5 text-justify leading-tight md:text-center xl:text-[31px]">
+      <div className="w-[21.75rem] xl:flex xl:justify-center xl:w-[1076px]">
+        <p className="text-justify leading-tight md:text-center xl:text-[31px]">
           Gestionamos todos los trámites relacionados  con su Renta Vitalicia
           Previsional o Jubilación.
         </p>
@@ -16,11 +16,14 @@ export default function QueHacemos() {
         Rentas Vitalicias Previsionales
       </h2>
 
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center w-full">
         <CardQueHacemos
           src="./QueHacemos1.jpeg"
-          description="A través de una conversación telefónica (interior del país) o una entrevista personalizada (CABA y GBA) realizamos un análisis gratuito de su Renta Vitalicia para determinar si usted tiene derecho a a iniciar un reclamo ante ANSES o su Compañía de Seguros de Retiro. 
-          Proporcionamos un informe detallado con el monto estimado de su beneficio, el retroactivo aproximado y la duración estimada del proceso legal. También ofrecemos servicios de gestión completa de trámites previsionales y actualizaciones regulares sobre el progreso."
+          description="Brindamos un asesoramiento gratuito sobre su Renta Vitalicia para definir si usted tiene
+          derecho a un reclamo ante ANSES o su Compañía de Seguros de Retiro
+          Le ofrecemos un informe detallado de a cuanto ascendería su Haber, el monto del
+          Retroactivo aproximado y duración del juicio
+          Garantizamos 100% de efectividad en la gestión."
         />
       </div>
     </div>

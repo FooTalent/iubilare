@@ -7,7 +7,7 @@ export default function TestimoniosTramites() {
     {
       id: 1,
       name: "Sandra Ambrosio",
-      age: "47 años",
+      age: "52 años",
       city: "Arequito, Santa Fe",
       description:
         "Me contacté con el estudio en 2019. Gracias a ellos, finalmente pude actualizar la pensión que percibo por fallecimiento, la cual había ido perdiendo valor con los años. El equipo analizó mi caso y me guiaron a través del proceso legal con claridad y apoyo constante. Junto a un escribano de confianza iniciamos el juicio y gracias al estudio hoy mi pensión está completamente actualizada. Los recomiendo sin dudarlo; me demostraron ser profesionales comprometidos y confiables.",
@@ -27,7 +27,7 @@ export default function TestimoniosTramites() {
     {
       id: 3,
       name: "Mónica Vicario",
-      age: "62 años",
+      age: "59 años",
       city: "Hurlingam, Buenos Aires",
       description:
         "Al principio, me costó confiar. Cuando me dijeron que iba a cobrar mucho más, no lo creía, pero cuando sucedió, fue una felicidad inmensa. Son excelentes profesionales y estoy muy contenta.",
@@ -37,7 +37,7 @@ export default function TestimoniosTramites() {
     {
       id: 3,
       name: "Andrea Viviana Duarte",
-      age: "51 años",
+      age: "52 años",
       city: "Mariano Acosta, Buenos Aires",
       description:
         "Estuve cobrando por años una Renta Vitalicia que era muy baja, no me alcanzaba ni para dos días. Gracias al estudio Iubilare, que me contactó pude iniciar un juicio contra Anses y así logré cobrar lo que merezco. El proceso fue largo, pero valió la pena. Ahora estoy más tranquila y al fin se hizo justicia. ¡Muchas gracias! ¡Recomiendo a estos profesionales!",

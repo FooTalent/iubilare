@@ -36,28 +36,23 @@ export default function Home() {
 
   return (
     <div className="md:mt-[140px]">
-      {/* Separador */}
-
       {/* Seccion Inicio */}
-      <h1 className="md:text-[20px] md:mb-[9px] md:font-semibold lg:h-16 w-full lg:text-[40px]">
+      <h1 className="hidden xl:flex xl:mb-[9px] xl:font-semibold xl:h-16 xl:w-full xl:text-[40px]">
         Iubilare consultora previsional
       </h1>
       <div className="flex px-[16px] justify-center ">
         <div className="flex flex-col w-[1073px] lg:gap-8 md:flex-col-reverse xl:flex-row-reverse lg:mt-16">
           <div className="xl:w-[402px] xl:flex xl:flex-row-reverse ">
-            <div className="hidden md:block text-left  xl:flex xl:flex-col xl:justify-between">
-              <p className="text-left hidden xl:block xl:text-[28px]">
-                Desde hace más de 27 años nos dedicamos a realizar todo tipo de
-                trámites previsionales, brindando un asesoramiento
-                personalizado. Nuestra experiencia nos avala.
+            <div className=" text-left  flex flex-col items-center  xl:justify-between">
+              <h1 className="md:text-[39px] md:mb-[9px] md:font-semibold xl:hidden">
+                Iubilare consultora previsional
+              </h1>
+              <p className="text-center xl:text-left flex flex-col text-[20px]  xl:text-[28px]">
+                Especialistas en Rentas Vitalicias Previsionales{" "}
+                <span>30 años de trayectoria en el Mercado</span>{" "}
+                <span>Asesoramos a Clientes de todo el país</span>
               </p>
-              <p className="md:w-2/3 xl:hidden">
-                Somos un equipo de abogados y ejecutivos en gestión previsional
-                con 27+ años de experiencia. Más de 4500 clientes en todo el
-                país. Asesoramiento personalizado para tranquilidad y solución
-                de problemas previsionales.
-              </p>
-              <div className="hidden xl:block ">
+              <div className="block mt-8">
                 <button
                   className="w-full active:text-active-green hover:text-inherit  py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] lg:h-14 lg:text-[32px] lg:w-72 font-semibold flex justify-center items-center"
                   onClick={() => scrollToSection(formSection)}
@@ -66,25 +61,10 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="text-left text-[20px] md:hidden">
-              <p>
-                27 años de experiencia. Asesoramiento personalizado. Soluciones
-                previsionales confiables en{" "}
-                <span className="font-bold">todo el país.</span>
-              </p>
-            </div>
           </div>
-          <div className="">
+          <div className="flex justify-center">
             <YouTubePlayer />
           </div>
-        </div>
-        <div className="xl:hidden mt-8 md:mx-[10px] flex justify-start">
-          <button
-            className="w-full active:text-active-green hover:text-inherit md:inline-block py-2 px-4 bg-button-[#439373] text-white rounded hover:bg-button-hover-[#2DB27D] hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] font-bold"
-            onClick={() => scrollToSection(formSection)}
-          >
-            Contactate
-          </button>
         </div>
       </div>
 
@@ -94,15 +74,13 @@ export default function Home() {
       {/* Seccion tipo de Trámites */}
       <div
         id="tipodetramite"
-        className="px-[16px] flex flex-col justify-center xl:px-[120px] xl:p-[36px]"
+        className="px-[16px] flex flex-col justify-center lg:items-center xl:px-[120px] xl:p-[36px]"
       >
-        <div>
-          <h2 className="text-xl text-left font-semibold md:text-[31px] xl:text-[31px] md:mb-8 ">
-            Tipos de trámites
-          </h2>
-        </div>
+        <h2 className="text-xl text-left font-semibold mt-11 md:text-[31px] xl:text-[31px]  md:mb-8 lg:w-[59.875rem] ">
+          Tipos de trámites
+        </h2>
         <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full xl:w-[1115px] xl:h-[500px] ">
-          <div className="grid grid-cols-2 items-center gap-14 md:gap-8 xl:gap-[75px] mb-[188px] md:mb-[128px]">
+          <div className="grid grid-cols-2 md:w-full  items-center gap-14 md:gap-8 xl:gap-[75px]">
             {cardTramitesRVP.tramite.map((tramite) => (
               <CardTramite
                 img={tramite.img}
@@ -209,17 +187,18 @@ export default function Home() {
           <h2 className="lg:text-[31px] text-[#747DD6] py-16">Jubilaciones</h2>
           <CardQueHacemos
             src="./QueHacemos2.jpeg"
-            description="Le ofrecemos un primer diagnóstico previsional completamente gratuito que incluye un análisis detallado de sus años de servicio aportados y contribuciones, tanto como dependiente, autónomo o monotributista. De esta manera podemos determinar los pasos a seguir para comenzar el trámite lo antes posible meses antes de que cumpla la edad jubilatoria. Nuestra prioridad es que usted pueda realizar su jubilación de forma rápida y efectiva. "
+            description="Le ofrecemos un diagnóstico de su situación previsional con los años registrados de aportes
+            que usted tiene en el ANSES
+            En caso de ser necesario le armamos la nueva moratoria previsional
+            Obtenemos su mejor jubilación en tiempo y monto. "
             classStyle="md:flex-row-reverse"
           />
         </div>
-        <div>
-          <h2 className="text-xl text-left font-semibold md:text-[31px] xl:text-[31px] md:mb-8 ">
-            Tipos de trámites
-          </h2>
-        </div>
+        <h2 className="text-xl mt-11 xl:mt-0 text-left font-semibold md:text-[31px] xl:text-[31px] md:mb-8 lg:w-[59.875rem] ">
+          Tipos de trámites
+        </h2>
         <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex  md:w-full xl:w-[1115px] xl:h-[500px] ">
-          <div className="grid grid-cols-2 items-center gap-14 md:gap-8 xl:gap-[75px] mb-[188px] md:mb-[128px]">
+          <div className="grid grid-cols-2 md:w-full  items-center gap-14 md:gap-8 xl:gap-[75px] mb-[188px] md:mb-[128px]">
             {cardTramitesJubilacion.tramite.map((tramite) => (
               <CardTramite
                 img={tramite.img}
@@ -252,17 +231,9 @@ export default function Home() {
       {/* Separador */}
 
       {/* Seccion Formulario */}
-      <div className="mt-32" id="formulario" ref={formSection}>
+      <div className="mt-32 mb-28" id="formulario" ref={formSection}>
         <Form />
       </div>
-
-      {/* Imagen Separador */}
-      <div className="hidden xl:flex  xl:justify-center">
-        <img src="./home/iubilare.png" alt="" />
-      </div>
-
-      {/* Separador */}
-      <div className="min-h-[106.08px] xl:none"></div>
     </div>
   );
 }
