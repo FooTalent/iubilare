@@ -181,7 +181,7 @@ const FormularioYup: React.FC = () => {
             </label>
             <Field
               as="textarea"
-              className={`h-[133px] w-[311px] xl:h-[200px]${
+              className={`h-[133px] w-[311px] xl:w-[484px] xl:h-[200px]${
                 touched.consulta && errors.consulta
                   ? errorStyleField
                   : normalStyleField

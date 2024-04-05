@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <div className="md:mt-[140px]">
       {/* Seccion Inicio */}
-      <h1 className="hidden xl:flex xl:mb-[9px] xl:font-semibold xl:h-16 xl:w-full xl:text-[40px]">
+      <h1 className="hidden xl:flex xl:justify-center xl:mb-[9px] xl:font-semibold xl:h-16 xl:w-full xl:text-[40px]">
         Iubilare consultora previsional
       </h1>
       <div className="flex px-[16px] justify-center ">
@@ -74,9 +74,9 @@ export default function Home() {
       {/* Seccion tipo de Trámites */}
       <div
         id="tipodetramite"
-        className="px-[16px] flex flex-col justify-center lg:items-center xl:px-[120px] xl:p-[36px]"
+        className="px-[16px] flex flex-col justify-center lg:items-center xl:p-[36px]"
       >
-        <h2 className="text-xl text-left font-semibold mt-11 md:text-[31px] xl:text-[31px]  md:mb-8 lg:w-[59.875rem] ">
+        <h2 className="text-xl text-left font-semibold mt-11 md:text-[31px] xl:text-[31px]  md:mb-8 lg:w-[69.688rem] ">
           Tipos de trámites
         </h2>
         <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full xl:w-[1115px] xl:h-[500px] ">
@@ -194,7 +194,7 @@ export default function Home() {
             classStyle="md:flex-row-reverse"
           />
         </div>
-        <h2 className="text-xl mt-11 xl:mt-0 text-left font-semibold md:text-[31px] xl:text-[31px] md:mb-8 lg:w-[59.875rem] ">
+        <h2 className="text-xl mt-11 xl:mt-0 text-left font-semibold md:text-[31px] xl:text-[31px] md:mb-8 lg:w-[69.688rem] ">
           Tipos de trámites
         </h2>
         <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex  md:w-full xl:w-[1115px] xl:h-[500px] ">
