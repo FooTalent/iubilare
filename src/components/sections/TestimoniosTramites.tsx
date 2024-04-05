@@ -20,7 +20,7 @@ export default function TestimoniosTramites() {
       age: "53 años",
       city: "Corral de Bustos, Córdoba",
       description:
-        "Hace veintidós años mi esposo se jubiló y yo quedé con una pensión ínfima. Recientemente, el estudio me contactó ofreciéndome la posibilidad de reclamar una jubilación mínima. Al principio, desconfié, pero decidí probar. Desde el inicio, me pidieron paciencia, ya que los trámites son largos. Hace unos meses, el doctor Pavlovsky me informó que podía percibir mi pensión mínima. Les digo que confíen, estoy agradecida y sorprendida de haber logrado algo que pensé imposible. Confíen en la honestidad y el respeto de este estudio.",
+        "Hace veintidós años mi esposo se jubiló y yo quedé con una pensión ínfima. Recientemente, el estudio me contactó ofreciéndome la posibilidad de reclamar una jubilación mínima. Al principio, desconfié, pero decidí probar. Desde el inicio, me pidieron paciencia, ya que los trámites son largos. Hace unos meses, el doctor Pavlovsky me informó que podía percibir mi pensión mínima. Les digo que confíen, estoy agradecida y sorprendida de haber logrado algo que pensé imposible. ",
       imageUrl: "./testimonios/sonia.svg",
       numberStars: 4,
     },
@@ -68,10 +68,10 @@ export default function TestimoniosTramites() {
         </h3>
       </div>
       <div className="flex justify-center"></div>
-      <div className="overflow-auto min-w-full h-full 2xl:flex md:bg-background-violet md:overflow-hidden md:relative 2xl:gap-[80px]">
+      <div className=" min-w-full h-full 2xl:flex bg-background-violet overflow-hidden relative ">
         {/* Mapeo para vista Tablet y Desktop */}
         <div
-          className="hidden md:flex md:whitespace-nowrap md:gap-0 md:margin-auto"
+          className="flex whitespace-nowrap gap-0 margin-auto"
           style={{
             transform: `translateX(-${current * 100}%)`,
           }}
@@ -87,27 +87,27 @@ export default function TestimoniosTramites() {
               description={card.description}
               imageUrl={card.imageUrl}
               numberStars={card.numberStars}
-              cardClass="flex flex-col justify-between items-center scroll-none shadow-light-top-heavy-bottom-light-sides w-[169px] h-[223px] pt-[8px]  px-[8px] rounded-md md:rounded-none md:h-[368px] md:shadow-none md:border-0 md:border-transparent md:shadow-[0px_0px_0px] md:min-w-full md:h-[230px] xl:w-full xl:min-w-full"
-              cardElementsClass="flex flex-col justify-center items-center w-[192px] md:w-full md:min-h-full md:flex-row overflow-hidden"
-              cardTextImageWrapper="flex flex-col justify-center items-center w-[95px] mb-[13px] md:mb-0 md:w-1/3 md:h-full"
-              cardImageWrapper="w-[60.73px] h-[60.73px] mb-[10px] md:mb-0 md:mb-3 md:w-[141px] md:h-[141px] md:mb-[32px]"
-              cardImageClass="rounded-full"
-              cardTextWrapper="w-[147px] h-auto md:flex md:h-[195px] md:items-center md:justify-center md:w-2/3 overflow-hidden"
-              textTitle="md:text-lg font-medium md:text-[24px] md:font-semibold md:leading-8 md:mb-[12px]"
-              textAge="text-xs text-[#747DD6] md:text-[20px] md:mb-[12px]"
-              textCity="text-xs text-[#747DD6] md:text-[20px]"
-              textSemi="md:block md:font-semibold md:text-white md:text-[100px] md:italic md:font-serif md:leading-[100px]"
-              spanClassFirst="md:h-full flex flex-col justify-start"
-              spanClassEnd="md:h-full flex flex-col justify-end"
-              icon="md:block mr-[8px]"
+              cardClass="flex flex-col justify-between items-center scroll-none shadow-light-top-heavy-bottom-light-sides  h-[31.5rem] pt-[8px]  px-[8px] rounded-md rounded-none md:h-[368px] shadow-none border-0 border-transparent shadow-[0px_0px_0px] min-w-full h-[230px] xl:w-full xl:min-w-full"
+              cardElementsClass="flex flex-col justify-center items-center w-[192px] w-full min-h-full md:flex-row overflow-hidden"
+              cardTextImageWrapper="flex flex-col justify-center items-center w-[95px] mb-[13px] mb-0 w-[18.688rem] md:h-full"
+              cardImageWrapper="w-[5rem] h-[5rem]  md:mb-0 md:mb-3 md:w-[141px] md:h-[141px]"
+              cardImageClass="rounded-full "
+              cardTextWrapper="w-[299px] h-auto flex h-[195px] items-center md:justify-center md:w-2/3 overflow-hidden"
+              textTitle="text-lg font-medium text-[16px] md:text-[24px] font-semibold leading-8 md:mb-[12px]"
+              textAge="text-xs text-[#747DD6] text-[14px] md:text-[20px] mb-[12px]"
+              textCity="text-xs text-[#747DD6] text-[14px] md:text-[20px]"
+              textSemi="block font-semibold text-white text-[100px] italic font-serif leading-[100px]"
+              spanClassFirst="h-full flex flex-col justify-start"
+              spanClassEnd="h-full flex flex-col justify-end"
+              icon="block w-[0.521rem] h-[0.729rem] mr-[8px]"
               className="bg-background-violet"
               textColor="text-white"
-              textDescription="text-[0.6rem] truncate leading-3 font-light italic whitespace-normal text-white md:w-[41.938rem] md:not-italic md:leading-[1.5rem] md:text-[16px] text-background-white"
+              textDescription="text-[0.875rem] truncate leading-3 font-light italic whitespace-normal text-white w-[41.938rem] not-italic leading-[1.5rem] text-background-white"
             />
           ))}
         </div>
         {/* Mapeo para vista Mobile */}
-        <div className="overflow-auto w-full h-full 2xl:flex 2xl:justify-center md:bg-background-violet md:overflow-hidden md:relative ">
+        {/*  <div className="overflow-auto w-full h-full 2xl:flex 2xl:justify-center md:bg-background-violet md:overflow-hidden md:relative ">
           <div className="flex whitespace-nowrap gap-5 md:hidden">
             {data.map((card, index) => (
               <Card
@@ -137,8 +137,8 @@ export default function TestimoniosTramites() {
               />
             ))}
           </div>
-        </div>
-        <div className="hidden md:flex justify-center md:bg-background-violet">
+        </div> */}
+        <div className="flex justify-center bg-background-violet">
           <div className="flex flex-row w-[113px] h-[21px] justify-around">
             {data.map((_, i) => (
               <div
@@ -146,14 +146,13 @@ export default function TestimoniosTramites() {
                 onClick={() => {
                   setCurrent(i);
                 }}
-                className={`hiddenmd:block rounded-full w-[11px] h-[11px] cursor-pointer ${
+                className={`block rounded-full w-[11px] h-[11px] cursor-pointer ${
                   i === current ? "bg-white" : "bg-gray-500"
                 }`}
               ></div>
             ))}
           </div>
           {/* Separador */}
-          <div className="hidden md:block md:min-h-[26px] 2xl:min-h-[56px]"></div>
         </div>
       </div>
     </>

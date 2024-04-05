@@ -13,7 +13,7 @@ const CardTramite = ({ title, img, style, borde, title2 }: Card) => {
     >
       <div className="lg:w-[24.563rem] flex flex-row-reverse items-center justify-between">
         <img
-          className="w-[110px] h-[107px] md:w-[83px] md:h-[82px] xl:w-[87px] xl:h-[87px]"
+          className="w-[79px] h-[79px] md:w-[83px] md:h-[82px] xl:w-[87px] xl:h-[87px]"
           src={img}
           alt={title}
         />

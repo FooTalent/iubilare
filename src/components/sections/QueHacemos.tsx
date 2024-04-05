@@ -7,7 +7,10 @@ export default function QueHacemos() {
         ¿Qué hacemos?
       </h1>
       <div className="w-[21.75rem] xl:flex xl:justify-center xl:w-[1076px]">
-        <p className="text-justify leading-tight md:text-center xl:text-[31px]">
+        <p
+          style={{ wordSpacing: "4px" }}
+          className="text-justify leading-tight md:text-center xl:text-[31px]"
+        >
           Gestionamos todos los trámites relacionados  con su Renta Vitalicia
           Previsional o Jubilación.
         </p>

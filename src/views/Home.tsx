@@ -35,7 +35,7 @@ export default function Home() {
   }, [state]);
 
   return (
-    <div className="md:mt-[140px]">
+    <div className="mt-[140px]">
       {/* Seccion Inicio */}
       <h1 className="hidden xl:flex xl:justify-center xl:mb-[9px] xl:font-semibold xl:h-16 xl:w-full xl:text-[40px]">
         Iubilare consultora previsional
@@ -44,7 +44,7 @@ export default function Home() {
         <div className="flex flex-col w-[1073px] lg:gap-8 md:flex-col-reverse xl:flex-row-reverse lg:mt-16">
           <div className="xl:w-[402px] xl:flex xl:flex-row-reverse ">
             <div className=" text-left  flex flex-col items-center  xl:justify-between">
-              <h1 className="md:text-[39px] md:mb-[9px] md:font-semibold xl:hidden">
+              <h1 className="hidden md:flex md:text-[39px] md:mb-[9px] md:font-semibold xl:hidden">
                 Iubilare consultora previsional
               </h1>
               <p className="text-center xl:text-left flex flex-col text-[20px]  xl:text-[28px]">
@@ -52,7 +52,7 @@ export default function Home() {
                 <span>30 años de trayectoria en el Mercado</span>{" "}
                 <span>Asesoramos a Clientes de todo el país</span>
               </p>
-              <div className="block mt-8">
+              <div className="hidden md:block mt-8">
                 <button
                   className="w-full active:text-active-green hover:text-inherit  py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] lg:h-14 lg:text-[32px] lg:w-72 font-semibold flex justify-center items-center"
                   onClick={() => scrollToSection(formSection)}
@@ -64,6 +64,14 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <YouTubePlayer />
+          </div>
+          <div className="block md:hidden mt-8">
+            <button
+              className="w-full active:text-active-green hover:text-inherit  py-2 px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-green outline-none focus:border focus:outline-none md:w-[140.13px] md:text-[14.14px] lg:h-14 lg:text-[32px] lg:w-72 font-semibold flex justify-center items-center"
+              onClick={() => scrollToSection(formSection)}
+            >
+              Contactate
+            </button>
           </div>
         </div>
       </div>
@@ -79,15 +87,15 @@ export default function Home() {
         <h2 className="text-xl text-left font-semibold mt-11 md:text-[31px] xl:text-[31px]  md:mb-8 lg:w-[69.688rem] ">
           Tipos de trámites
         </h2>
-        <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full xl:w-[1115px] xl:h-[500px] ">
-          <div className="grid grid-cols-2 md:w-full  items-center gap-14 md:gap-8 xl:gap-[75px]">
+        <div className="text-left w-[328px]  flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full xl:w-[1115px] xl:h-[500px] ">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:w-full  items-center  md:gap-8 xl:gap-[75px]">
             {cardTramitesRVP.tramite.map((tramite) => (
               <CardTramite
                 img={tramite.img}
                 title={tramite.title}
                 title2={tramite.title2}
                 style={
-                  " text-[17px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
+                  " text-[16px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
                 }
                 borde=""
               />
@@ -197,30 +205,19 @@ export default function Home() {
         <h2 className="text-xl mt-11 xl:mt-0 text-left font-semibold md:text-[31px] xl:text-[31px] md:mb-8 lg:w-[69.688rem] ">
           Tipos de trámites
         </h2>
-        <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex  md:w-full xl:w-[1115px] xl:h-[500px] ">
-          <div className="grid grid-cols-2 md:w-full  items-center gap-14 md:gap-8 xl:gap-[75px] mb-[188px] md:mb-[128px]">
+        <div className="text-left w-[328px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex  md:w-full xl:w-[1115px] xl:h-[500px] ">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:w-full  items-center gap-14 md:gap-8 xl:gap-[75px] md:mb-[128px]">
             {cardTramitesJubilacion.tramite.map((tramite) => (
               <CardTramite
                 img={tramite.img}
                 title={tramite.title}
                 title2={tramite.title2}
                 style={
-                  " text-[17px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
+                  " text-[16px] w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:text-[20px] xl:leading-5"
                 }
                 borde=""
               />
             ))}
-            <CardTramite
-              img={"./exito.svg"}
-              title2=""
-              title={
-                "El éxito de nuestro servicio está 100% garantizado. Con Iubilare puede tener la certeza de que está en buenas manos."
-              }
-              style={
-                "text-[17px]   w-60 leading-5 font-semibold md:leading-3 text-center md:text-[13px] md:text-left md:mt-[10px] xl:leading-5 xl:text-[16px] font-normal"
-              }
-              borde={"border-2 border-[#439373]"}
-            />
           </div>
         </div>
       </div>

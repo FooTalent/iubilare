@@ -200,7 +200,7 @@ const FormularioYup: React.FC = () => {
           <div className="w-full pt-6 xl:pt-0 flex justify-center items-center pl-[7.5px] pr-[7.5px]">
             <button
               type="submit"
-              className="h-11 w-[163px] flex justify-center items-center active:text-active-green hover:text-inherit  xl:py-2 xl:px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-[#29CA8A] outline-none focus:border focus:outline-none  md:text-[20px] font-semibold lg:h-12 lg:w-52"
+              className="h-11 w-full md:w-[163px] flex justify-center items-center active:text-active-green hover:text-inherit  xl:py-2 xl:px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-[#29CA8A] outline-none focus:border focus:outline-none  md:text-[20px] font-semibold lg:h-12 lg:w-52"
             >
               Enviar consulta
             </button>

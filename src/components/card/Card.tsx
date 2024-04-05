@@ -17,20 +17,34 @@ interface CardProps {
   cardImageClass?: string;
   cardTextWrapper?: string;
 
-  textTitle?: string,
-  textAge?: string,
-  textCity?: string,
-  textSemi?: string,
-  spanClassFirst?: string,
-  spanClassEnd?: string,
+  textTitle?: string;
+  textAge?: string;
+  textCity?: string;
+  textSemi?: string;
+  spanClassFirst?: string;
+  spanClassEnd?: string;
 
-  icon?: string,
+  icon?: string;
   className?: string;
   textColor?: string;
   textDescription?: string;
 }
 
-const Card: React.FC<CardProps> = ({ index, current, name, age, city, description, imageUrl, numberStars, cardClass, cardElementsClass, cardTextImageWrapper, cardImageWrapper, cardImageClass, cardTextWrapper, 
+const Card: React.FC<CardProps> = ({
+  index,
+  current,
+  name,
+  age,
+  city,
+  description,
+  imageUrl,
+  numberStars,
+  cardClass,
+  cardElementsClass,
+  cardTextImageWrapper,
+  cardImageWrapper,
+  cardImageClass,
+  cardTextWrapper,
   textTitle,
   textAge,
   textCity,
@@ -38,11 +52,18 @@ const Card: React.FC<CardProps> = ({ index, current, name, age, city, descriptio
   spanClassFirst,
   spanClassEnd,
   icon,
-  className, textColor, textDescription }) => {
+  className,
+  textColor,
+  textDescription,
+}) => {
   const starsArray = Array.from({ length: numberStars || 0 });
   return (
-<div className={`${cardClass} ${className} ${index === current ? 'opacity-1' : 'opacity-0'} transition-opacity ease-in-out delay-150 duration-1000`} > 
-      <div className={`${cardElementsClass}`}> 
+    <div
+      className={`${cardClass} ${className} ${
+        index === current ? "opacity-1" : "opacity-0"
+      } transition-opacity ease-in-out delay-150 duration-1000`}
+    >
+      <div className={`${cardElementsClass}`}>
         <div className={`${cardTextImageWrapper}`}>
           <div className={`${cardImageWrapper}`}>
             <img className={`${cardImageClass}`} src={imageUrl} alt="" />
@@ -50,8 +71,10 @@ const Card: React.FC<CardProps> = ({ index, current, name, age, city, descriptio
           <div>
             <p className={`${textTitle} ${textColor}`}>{name}</p>
             <p className={`${textAge} ${textColor}`}>{age}</p>
-            <div className="flex flex-row justify-center items-center">
-              <span className={`hidden ${icon}`}><img src="./tramites/location.png" alt="" /></span>
+            <div className="flex flex-row justify-center items-center mb-[1.438rem] md:mb-0 ">
+              <span className={` ${icon}`}>
+                <img src="./tramites/location.png" alt="" />
+              </span>
               <p className={`${textCity} ${textColor}`}>{city}</p>
             </div>
           </div>
@@ -59,19 +82,18 @@ const Card: React.FC<CardProps> = ({ index, current, name, age, city, descriptio
 
         <div className={`${cardTextWrapper}`}>
           <div className={`${spanClassFirst}`}>
-            <img className={`hidden ${textSemi}`} src="./tramites/comOpen.png" />
+            <img className={` ${textSemi}`} src="./tramites/comOpen.png" />
           </div>
           <p className={`${textDescription} `}>{description}</p>
           <div className={`${spanClassEnd}`}>
-            <img className={`hidden ${textSemi}`} src="./tramites/comClose.png" />
+            <img className={` ${textSemi}`} src="./tramites/comClose.png" />
           </div>
         </div>
-
       </div>
       <div className="hidden">
-      {starsArray.map((_, index) => (
-        <StarSharp key={index} />
-      ))}
+        {starsArray.map((_, index) => (
+          <StarSharp key={index} />
+        ))}
       </div>
     </div>
   );
