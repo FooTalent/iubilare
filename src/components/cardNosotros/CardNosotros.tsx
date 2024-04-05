@@ -33,7 +33,7 @@ const CardNosotros: React.FC<CardNosotrosProps> = ({
         {name}
       </p>
       <p
-        className={`${combinedTextClassName} text-[13px] h-[60px] lg:text-[20px]`}
+        className={`${combinedTextClassName}  text-[13px] h-[60px] lg:text-[20px]`}
       >
         {status}
       </p>

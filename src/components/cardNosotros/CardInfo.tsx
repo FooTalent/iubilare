@@ -15,7 +15,7 @@ const CardInfo: React.FC<CardInfoProps> = ({
 }) => {
   return (
     <div
-      className={`border border-inherit rounded shadow-[0_15px_10px_-13px_rgba(0,0,0,0.3)] md:flex md:flex-row md:gap-5 md:w-full md:items-center xl:gap-[65px] md:border-none md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] xl:border-none  ${classOptions}`}
+      className={`border border-inherit rounded shadow-[0_15px_10px_-13px_rgba(0,0,0,0.3)] flex flex-col md:flex-row md:gap-5 md:w-full items-center xl:gap-[65px] md:border-none md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] xl:border-none  ${classOptions}`}
     >
       <img
         src={url}

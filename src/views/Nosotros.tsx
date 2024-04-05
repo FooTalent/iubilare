@@ -23,63 +23,84 @@ export default function Nosotros() {
   const personal = [
     {
       index: 1,
-      name: "Carolina Dodds",
-      status: "Gestión previsional",
+      name: "Cristina Fernández",
+      status: "Coordinadora",
       className:
-        "flex px-5 flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black  ",
+        "flex  flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black  ",
       textClassName: "text-black",
       textClassTitle: "font-semibold text-[13px] xl:text-[25px] text-[#747DD6]",
-      image: "./nosotros/carolina.png",
+      image: "./nosotros/cristina.svg",
     },
     {
       index: 2,
-      name: "Susana Guaragna",
+      name: "Susana R. Olivieri",
       status: "Gestión previsional",
       className:
-        "flex px-5 flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black ",
+        "flex  flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black ",
       textClassName: "text-black",
       textClassTitle: "font-semibold text-[13px] xl:text-[25px] text-[#747DD6]",
-      image: "./nosotros/susana.png",
+      image: "./nosotros/susana.svg",
     },
     {
       index: 3,
-      name: "Silvia Di Nanno",
+      name: "Carolina Dodds",
       status: "Gestión previsional",
       className:
-        "flex px-5 flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black ",
+        "flex  flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black  ",
       textClassName: "text-black",
       textClassTitle: "font-semibold text-[13px] xl:text-[25px] text-[#747DD6]",
-      image: "./nosotros/silvia.png",
+      image: "./nosotros/carolina.svg",
     },
     {
       index: 4,
-      name: "Josefina Prerovsky",
+      name: "Silvia Di Nanno",
       status: "Gestión previsional",
       className:
-        "flex px-5 flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black ",
+        "flex  flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black ",
       textClassName: "text-black",
       textClassTitle: "font-semibold text-[13px] xl:text-[25px] text-[#747DD6]",
-      image: "./nosotros/josefina.png",
+      image: "./nosotros/silvia.svg",
     },
+
     {
       index: 5,
-      name: "Monica Montrasi",
-      status: "Secretaria",
+      name: "Susana Guaragna",
+      status: "Gestión previsional",
       className:
-        "flex px-5 flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black ",
+        "flex  flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black ",
       textClassName: "text-black",
       textClassTitle: "font-semibold text-[13px] xl:text-[25px] text-[#747DD6]",
-      image: "./nosotros/monica.png",
+      image: "./nosotros/guaragna.svg",
     },
     {
       index: 6,
+      name: "Josefina Prerovsky",
+      status: "Gestión previsional",
+      className:
+        "flex  flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black ",
+      textClassName: "text-black",
+      textClassTitle: "font-semibold text-[13px] xl:text-[25px] text-[#747DD6]",
+      image: "./nosotros/josefina.svg",
+    },
+    {
+      index: 7,
+      name: "Monica Montrasi",
+      status: "Secretaria",
+      className:
+        "flex  flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black ",
+      textClassName: "text-black",
+      textClassTitle: "font-semibold text-[13px] xl:text-[25px] text-[#747DD6]",
+      image: "./nosotros/monica.svg",
+    },
+    {
+      index: 8,
       name: "Eliana R. Prerovsky",
       status: "Secretaria",
       className:
-        "flex px-5 flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black ",
+        "flex  flex-col items-center text-center min-w-fit bg-white shadow-avatar-shadow text-black ",
       textClassName: "text-black",
       textClassTitle: "font-semibold text-[13px] xl:text-[25px] text-[#747DD6]",
-      image: "./nosotros/eliana.png",
+      image: "./nosotros/eliana.svg",
     },
   ];
   /* const asistentes = [
@@ -138,13 +159,13 @@ export default function Nosotros() {
       {/* Seccion Clientes Satisfechos */}
       <div className="block justify-center mb-14  md:mb-24 lg:mb-48">
         <div className=" flex flex-col-reverse justify-center md:px-8 lg:px-[115px] md:flex-row md:gap-7 ">
-          <div className=" flex  w-[22.313rem] h-[600px] px-4 md:h-[470px] lg:w-1/2 lg:h-[600px] rounded-lg z-0">
+          <div className=" flex  w-[22.313rem] h-[600px] px-8 md:h-[470px] lg:w-1/2 lg:h-[600px] rounded-lg z-0">
             {/* Leaflet Map */}
             <MapContainer
               center={[-34.609, -58.383]}
               zoom={3.5}
               scrollWheelZoom={true}
-              className="md:h-[470px] lg:h-[600px] md:w-[551px] w-[333px] rounded-lg"
+              className="md:h-[470px] lg:h-[600px] md:w-[551px] w-full rounded-lg"
             >
               <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -919,13 +940,13 @@ export default function Nosotros() {
               Bienvenidos al mapa interactivo de Iubilare
             </h2>
             <div className="flex flex-col  text-pretty w-[327px] lg:w-full">
-              <p className="text-justify mb-4 text-[16px] font-medium md:text-[18px] lg:text-[22px]">
+              <p className="text-justify tracking-tighter mb-4 text-[16px]  md:text-[18px] lg:text-[22px]">
                 {clientes}
               </p>
-              <p className="text-justify mb-4 text-[16px] font-medium md:text-[18px]  lg:text-[22px]">
+              <p className="text-justify tracking-tighter mb-4 text-[16px]  md:text-[18px]  lg:text-[22px]">
                 {clientes1}
               </p>
-              <p className="text-justify mb-4 text-[16px] font-medium md:text-[18px]  lg:text-[22px]">
+              <p className="text-justify tracking-tighter mb-4 text-[16px]  md:text-[18px]  lg:text-[22px]">
                 {clientes2}
               </p>
             </div>
@@ -947,28 +968,28 @@ export default function Nosotros() {
           <CardNosotros
             name={"Marcelo Visceglie"}
             status={"Fundador"}
-            image={"./nosotros/marcelo.png"}
+            image={"./nosotros/marcelo.svg"}
             className="border-2 border-[#747DD6] shadow-avatar-shado"
             textClassTitle="text-[#747DD6] "
           />
           <CardNosotros
             name={"Cristian Pavlovsky"}
             status={"Fundador"}
-            image={"./nosotros/cristian.png"}
+            image={"./nosotros/cristian.svg"}
             className="border-2 border-[#747DD6] shadow-avatar-shadow "
             textClassTitle="text-[#747DD6] "
           />
           <CardNosotros
             name={"Federico Sallustio"}
             status={"Abogado"}
-            image={"./nosotros/federico.png"}
+            image={"./nosotros/federico.svg"}
             className="bg-white shadow-avatar-shadow text-black "
             textClassTitle="text-background-violet "
           />
           <CardNosotros
-            name={"Cristina Fernandez"}
-            status={"Coord. Gestión Previsional"}
-            image={"./nosotros/cristina.png"}
+            name={"Lucio Picasso"}
+            status={"Abogado"}
+            image={"./nosotros/lucio.svg"}
             className="bg-white shadow-avatar-shadow text-black"
             textClassTitle="text-[#747DD6] "
           />
@@ -976,7 +997,7 @@ export default function Nosotros() {
 
         {view && (
           <div>
-            <div className="hidden md:flex md:flex-wrap md:justify-center md:gap-3 md:px-[41px] xl:gap-5 mt-5 ">
+            <div className="hidden md:grid md:grid-cols-4 md:gap-3  xl:gap-5 mt-5 ">
               {personal.map((ele, index) => (
                 <CardNosotros
                   key={index}
@@ -1023,14 +1044,14 @@ export default function Nosotros() {
             <CardNosotros
               name={"Marcelo Visceglie"}
               status={"Fundador"}
-              image={"./nosotros/marcelo.png"}
+              image={"./nosotros/marcelo.svg"}
               className="border-2 border-[#747DD6] shadow-avatar-shadow"
               textClassTitle="text-[#747DD6] "
             />
             <CardNosotros
               name={"Cristian Pavlovsky"}
               status={"Fundador"}
-              image={"./nosotros/cristian.png"}
+              image={"./nosotros/cristian.svg"}
               className="border-2 border-[#747DD6] shadow-avatar-shadow "
               textClassTitle="text-[#747DD6] text-[16px] "
             />
@@ -1050,14 +1071,14 @@ export default function Nosotros() {
             <CardNosotros
               name={"Federico Sallustio"}
               status={"Abogado"}
-              image={"./nosotros/federico.png"}
+              image={"./nosotros/federico.svg"}
               className="bg-white shadow-avatar-shadow text-black "
               textClassTitle="text-background-violet "
             />
             <CardNosotros
-              name={"Cristina Fernandez"}
-              status={"Coordinadora"}
-              image={"./nosotros/cristina.png"}
+              name={"Lucio Picasso"}
+              status={"Abogado"}
+              image={"./nosotros/lucio.svg"}
               className="bg-white shadow-avatar-shadow text-black"
               textClassTitle="text-background-violet "
             />
@@ -1073,30 +1094,44 @@ export default function Nosotros() {
 
           <div className="grid grid-cols-2 justify-center gap-3">
             <CardNosotros
-              name={"Susan Guaragna"}
+              name={"Cristina Fernandez"}
+              status={"Coordinadora"}
+              image={"./nosotros/cristina.svg"}
+              className="bg-white shadow-avatar-shadow text-black"
+              textClassTitle="text-background-violet "
+            />
+            <CardNosotros
+              name={"Susana R. Olivieri"}
               status={"Gestión previsional"}
-              image={"./nosotros/susana.png"}
+              image={"./nosotros/susana.svg"}
               className="bg-white shadow-avatar-shadow text-black"
               textClassTitle="text-background-violet "
             />
             <CardNosotros
               name={"Silvia Di Nanno"}
               status={"Gestión previsional"}
-              image={"./nosotros/silvia.png"}
+              image={"./nosotros/silvia.svg"}
+              className="bg-white shadow-avatar-shadow text-black"
+              textClassTitle="text-background-violet "
+            />
+            <CardNosotros
+              name={"Susana Guaragna"}
+              status={"Gestión previsional"}
+              image={"./nosotros/guaragna.svg"}
               className="bg-white shadow-avatar-shadow text-black"
               textClassTitle="text-background-violet "
             />
             <CardNosotros
               name={"Carolina Dodds"}
               status={"Gestión previsional"}
-              image={"./nosotros/carolina.png"}
+              image={"./nosotros/carolina.svg"}
               className="bg-white shadow-avatar-shadow text-black"
               textClassTitle="text-background-violet "
             />
             <CardNosotros
               name={"Josefina Prerovsky"}
               status={"Gestión previsional"}
-              image={"./nosotros/josefina.png"}
+              image={"./nosotros/josefina.svg"}
               className="bg-white shadow-avatar-shadow text-black  "
               textClassTitle="text-background-violet "
             />
@@ -1121,22 +1156,19 @@ export default function Nosotros() {
             <CardNosotros
               name={"Monica Montrasi"}
               status={"Secretaria"}
-              image={"./nosotros/monica.png"}
+              image={"./nosotros/monica.svg"}
               className="bg-white shadow-avatar-shadow text-black"
               textClassTitle="text-background-violet "
             />
             <CardNosotros
               name={"Eliana R. Prerovsky"}
               status={"Secretaria"}
-              image={"./nosotros/eliana.png"}
+              image={"./nosotros/eliana.svg"}
               className="bg-white shadow-avatar-shadow text-black"
               textClassTitle="text-background-violet "
             />
           </div>
         </div>
-
-        {/* Separador 48px */}
-        <div className="min-h-[48px] md:hidden"></div>
 
         {/* Seccion Asistentes */}
         {/*         <div className="px-[16px] md:hidden">
