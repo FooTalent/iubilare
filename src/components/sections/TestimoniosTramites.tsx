@@ -71,7 +71,7 @@ export default function TestimoniosTramites() {
       <div className=" min-w-full h-full 2xl:flex bg-background-violet overflow-hidden relative ">
         {/* Mapeo para vista Tablet y Desktop */}
         <div
-          className="flex whitespace-nowrap gap-0 margin-auto"
+          className="flex whitespace-nowrap gap-0  margin-auto"
           style={{
             transform: `translateX(-${current * 100}%)`,
           }}
@@ -87,12 +87,12 @@ export default function TestimoniosTramites() {
               description={card.description}
               imageUrl={card.imageUrl}
               numberStars={card.numberStars}
-              cardClass="flex flex-col justify-between items-center scroll-none shadow-light-top-heavy-bottom-light-sides  h-[31.5rem] pt-[8px]  px-[8px] rounded-md rounded-none md:h-[368px] shadow-none border-0 border-transparent shadow-[0px_0px_0px] min-w-full h-[230px] xl:w-full xl:min-w-full"
+              cardClass="flex flex-col justify-between items-center scroll-none   h-[31.5rem] pt-[8px]  px-[8px] rounded-md rounded-none md:h-[368px]  border-0 border-transparent  min-w-full h-[230px] xl:w-full xl:min-w-full"
               cardElementsClass="flex flex-col justify-center items-center w-[192px] w-full min-h-full md:flex-row overflow-hidden"
-              cardTextImageWrapper="flex flex-col justify-center items-center w-[95px] mb-[13px] mb-0 w-[18.688rem] md:h-full"
+              cardTextImageWrapper="flex flex-col justify-center items-center  mb-[13px] mb-0 w-[18.688rem] md:h-full"
               cardImageWrapper="w-[5rem] h-[5rem]  md:mb-0 md:mb-3 md:w-[141px] md:h-[141px]"
               cardImageClass="rounded-full "
-              cardTextWrapper="w-[299px] h-auto flex h-[195px] items-center md:justify-center md:w-2/3 overflow-hidden"
+              cardTextWrapper="w-[299px] h-auto  flex md:h-[195px] items-center md:justify-center md:w-2/3 overflow-hidden"
               textTitle="text-lg font-medium text-[16px] md:text-[24px] font-semibold leading-8 md:mb-[12px]"
               textAge="text-xs text-[#747DD6] text-[14px] md:text-[20px] mb-[12px]"
               textCity="text-xs text-[#747DD6] text-[14px] md:text-[20px]"
