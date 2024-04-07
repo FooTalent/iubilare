@@ -12,12 +12,11 @@ export default function Tramites() {
   }, []);
 
   return (
-    <div className="md:mt-[140px]">
+    <div className="mt-[5.2rem] md:mt-[140px]">
       {/* Primera Sección */}
       <div className="">
         <Casos></Casos>
       </div>
-
       {/* Segunda Sección */}
       <div className="flex-1 flex justify-center items-center overflow-auto">
         {/* Seccion tipo de Trámites */}
@@ -36,7 +35,7 @@ export default function Tramites() {
                   alt="check con signo de mas"
                 />
               </div>
-              <div className="flex flex-col justify-center items-center gap-[3px] w-full">
+              <div className="flex flex-col justify-center items-center gap-[3px] w-full px-5">
                 <div className="text-center text-neutral-900 text-lg font-bold font-source-sans-pro md:w-[329px] md:text-black md:h-full md:text-center 2xl:h-auto 2xl:mb-[10px]">
                   Sin gastos anticipados
                 </div>
@@ -60,7 +59,7 @@ export default function Tramites() {
                   alt="icono azul con personas"
                 />
               </div>
-              <div className="flex flex-col justify-center items-center gap-[3px] w-full">
+              <div className="flex flex-col justify-center items-center gap-[3px] w-full px-10">
                 <div className="text-center w-[300px] h-7 text-neutral-900 text-lg font-bold font-source-sans-pro md:w-[175px] md:text-black md:h-full md:text-center 2xl:h-auto 2xl:mb-[10px]">
                   Garantía
                 </div>
@@ -79,7 +78,7 @@ export default function Tramites() {
       <Jubilaciones />
       <CualEsTuCaso />
       <TipoDeTramites />
-      
+
       {/* Tercera Sección */}
       <div
         id="testimonios"

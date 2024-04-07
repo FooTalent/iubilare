@@ -36,28 +36,30 @@ export default function Casos() {
       ],
     },
     {
-        title: "Complemento por zona Austral",
-        description:
-          "Puede cobrar la bonificación por Zona Austral si vive en las Provincias de La Pampa, Río Negro, Chubut, Santa Cruz, Ushuaia. La Ley le otorga un Plus adicional a su Renta Vitalicia.",
-        items: [
-          "Cobra menos que la Jubilación Mínima o no recibe los ajustes que otorga ANSES.",
-          "Si además vive en Zona Austral hay una diferencia a su favor.",
-          "En la Argentina, los fallos sólo tienen efecto sobre los jubilados que inician reclamo judicial. No pierda más tiempo y dinero. Reclame hoy mismo."
-        ],
-      }
+      title: "Complemento por zona Austral",
+      description:
+        "Puede cobrar la bonificación por Zona Austral si vive en las Provincias de La Pampa, Río Negro, Chubut, Santa Cruz, Ushuaia. La Ley le otorga un Plus adicional a su Renta Vitalicia.",
+      items: [
+        "Cobra menos que la Jubilación Mínima o no recibe los ajustes que otorga ANSES.",
+        "Si además vive en Zona Austral hay una diferencia a su favor.",
+        "En la Argentina, los fallos sólo tienen efecto sobre los jubilados que inician reclamo judicial. No pierda más tiempo y dinero. Reclame hoy mismo.",
+      ],
+    },
   ];
 
   return (
     <div className="flex-1 mt-16 px-[16px] md:px-[40px] 2xl:px-[116px]">
       <div className="flex flex-col">
-        <h1 className=" text-[31px] md:text-[64px] ">Los trámites que <span className= " text-747DD6">realizamos</span> </h1>
-        <h2 className=" text-2xl font-semibold mt-10 text-[20px] md:text-[49px] 2xl:text-[49px]">
+        <h1 className=" text-[31px] md:text-[64px] p-2">
+          Los trámites que <span className=" text-747DD6">realizamos</span>{" "}
+        </h1>
+        <h2 className="font-semibold mt-10 text-[25px] md:text-[49px] 2xl:text-[49px]">
           Rentas vitalicias previsionales
         </h2>
-        <p className="text-xl 2xl:font-semibold md:text-[31px] 2xl:text-[31px]">
+        <p className="text-[20px] 2xl:font-semibold md:text-[31px] 2xl:text-[31px] mb-5">
           ¿Cuál es tu caso?
         </p>
-        <div className="min-h-[68px] md:min-h-[33px] 2xl:min-h-[114px]"></div>
+
         {data.map((item, index) => (
           <CardTramites
             key={index}

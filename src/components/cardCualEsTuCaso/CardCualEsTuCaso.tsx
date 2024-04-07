@@ -7,7 +7,7 @@ const CardCualEsTuCaso = () => {
   const [expanded3, setExpanded3] = useState<boolean>(false);
 
   return (
-    <div className=" w-10/12 m-auto flex gap-7">
+    <div className=" flex flex-col items-center md:flex-row md:flex md:justify-center md:items-center gap-7">
       <div
         className={`${
           !expanded ? "bg-slate-50 h-[171px]" : "bg-background-violet h-[302px]"
@@ -34,9 +34,7 @@ const CardCualEsTuCaso = () => {
             moratorias para ayudarte a alcanzar los años requeridos.
           </p>
         )}
-        <div>
-          
-        </div>
+        <div></div>
         <button
           onClick={() => setExpanded(!expanded)}
           className={`${
@@ -46,7 +44,13 @@ const CardCualEsTuCaso = () => {
           } w-[150px] rounded-md py-1 flex justify-center items-center`}
         >
           {!expanded ? `Ver más` : "Ver menos"}
-          <div className={`${!expanded ? null : "transform -rotate-180 flex justify-center items-center"}`}>
+          <div
+            className={`${
+              !expanded
+                ? null
+                : "transform -rotate-180 flex justify-center items-center"
+            }`}
+          >
             <KeyboardArrowDownOutlined />
           </div>
         </button>
@@ -88,7 +92,13 @@ const CardCualEsTuCaso = () => {
           } w-[150px] rounded-md py-1 flex justify-center items-center`}
         >
           {!expanded2 ? `Ver más` : "Ver menos"}
-          <div className={`${!expanded2 ? null : "transform -rotate-180 flex justify-center items-center"}`}>
+          <div
+            className={`${
+              !expanded2
+                ? null
+                : "transform -rotate-180 flex justify-center items-center"
+            }`}
+          >
             <KeyboardArrowDownOutlined />
           </div>
         </button>
@@ -131,7 +141,13 @@ const CardCualEsTuCaso = () => {
           } w-[150px] rounded-md py-1 flex justify-center items-center`}
         >
           {!expanded3 ? `Ver más` : "Ver menos"}
-          <div className={`${!expanded3 ? null : "transform -rotate-180 flex justify-center items-center"}`}>
+          <div
+            className={`${
+              !expanded3
+                ? null
+                : "transform -rotate-180 flex justify-center items-center"
+            }`}
+          >
             <KeyboardArrowDownOutlined />
           </div>
         </button>

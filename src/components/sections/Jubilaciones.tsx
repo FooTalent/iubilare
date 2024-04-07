@@ -1,12 +1,36 @@
+import { useState, useEffect } from "react";
 
 const Jubilaciones = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <section className=" mb-[135px]">
+    <section className=" mb-[135px] px-2 md:px-0">
       <h3 className="text-[49px]">Jubilaciones</h3>
       <p className=" text-[31px] ">¿Cómo trabajamos?</p>
 
-      <div className="bg-background-violet w-full h-[451px] mt-[117px] py-10 flex justify-center items-center">
-        <div className="w-[370px] text-left">
+      <div className="bg-background-violet w-full md:h-[451px] mt-[40px] py-6 flex flex-col md:flex md:flex-row md:items-center justify-center items-center rounded-md md:rounded-none">
+        {isMobile && (
+          <img
+            className="filter-custom md:ml-20 w-[528px] px-5 mb-5"
+            src="./tramites/jubilaciones.webp"
+            alt="jubilaciones"
+          />
+        )}
+        <div className="w-[370px] text-left px-10 md:px-0">
           <p className=" text-white mb-4">
             Realizamos todos los trámites de su jubilación sin necesidad de que
             se acerque a nuestras oficinas.
@@ -27,7 +51,13 @@ const Jubilaciones = () => {
             Previsional sea otorgado en el menor tiempo posible.
           </p>
         </div>
-        <img className="filter-custom ml-20 w-[528px] " src="./tramites/jubilaciones.webp" alt="jubilaciones" />
+        {!isMobile && (
+          <img
+            className="filter-custom md:ml-20 w-[528px] px-5 mb-5 md:mb-0"
+            src="./tramites/jubilaciones.webp"
+            alt="jubilaciones"
+          />
+        )}
       </div>
     </section>
   );
