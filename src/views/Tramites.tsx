@@ -74,7 +74,7 @@ export default function Tramites() {
       </div>
 
       {/* Separador */}
-      <div className="min-h-[72px] md:min-h-[90px]"></div>
+
       <Jubilaciones />
       <CualEsTuCaso />
       <TipoDeTramites />

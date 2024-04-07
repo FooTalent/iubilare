@@ -10,13 +10,15 @@ const CardCualEsTuCaso = () => {
     <div className=" flex flex-col items-center md:flex-row md:flex md:justify-center md:items-center gap-7">
       <div
         className={`${
-          !expanded ? "bg-slate-50 h-[171px]" : "bg-background-violet h-[302px]"
+          !expanded
+            ? "bg-slate-50 h-[171px] w-[213px]"
+            : "bg-background-violet h-[302px]"
         } flex flex-col items-center justify-center w-[341px] rounded-lg shadow-card-shadow`}
       >
         <p
           className={`${
-            !expanded ? "text-black" : "text-white"
-          } text-[21px] font-semibold mb-5`}
+            !expanded ? "text-black w-20 text-[16px]" : "text-white"
+          } text-[16px] font-semibold mb-5`}
         >
           Jubilacion Ordinaria
         </p>
@@ -59,14 +61,14 @@ const CardCualEsTuCaso = () => {
       <div
         className={`${
           !expanded2
-            ? "bg-slate-50 h-[171px]"
+            ? "bg-slate-50 h-[171px] w-[213px] "
             : "bg-background-violet h-[302px]"
         } flex flex-col items-center justify-center w-[341px] rounded-lg shadow-card-shadow`}
       >
         <p
           className={`${
-            !expanded2 ? "text-black" : "text-white"
-          } text-[21px] font-semibold mb-5`}
+            !expanded2 ? "text-black  w-28 text-[16px]" : "text-white"
+          } text-[16px] font-semibold mb-5`}
         >
           Pensiones por fallecimiento
         </p>
@@ -107,14 +109,14 @@ const CardCualEsTuCaso = () => {
       <div
         className={`${
           !expanded3
-            ? "bg-slate-50 h-[171px]"
+            ? "bg-slate-50 h-[171px] w-[213px]"
             : "bg-background-violet h-[330px]"
         } flex flex-col items-center justify-center w-[341px] rounded-lg shadow-card-shadow`}
       >
         <p
           className={`${
-            !expanded3 ? "text-black" : "text-white"
-          } text-[21px] font-semibold mb-5`}
+            !expanded3 ? "text-black text-[16px]" : "text-white"
+          } text-[16px] font-semibold mb-5`}
         >
           Pension Universal para Adultos Mayores (PUAM)
         </p>
