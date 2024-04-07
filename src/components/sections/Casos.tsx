@@ -35,28 +35,18 @@ export default function Casos() {
         "Quienes viven en la Patagonia disponen de una bonificación por Zona Austral.",
       ],
     },
-    {
-      title: "Complemento por zona Austral",
-      description:
-        "Puede cobrar la bonificación por Zona Austral si vive en las Provincias de La Pampa, Río Negro, Chubut, Santa Cruz, Ushuaia. La Ley le otorga un Plus adicional a su Renta Vitalicia.",
-      items: [
-        "Cobra menos que la Jubilación Mínima o no recibe los ajustes que otorga ANSES.",
-        "Si además vive en Zona Austral hay una diferencia a su favor.",
-        "En la Argentina, los fallos sólo tienen efecto sobre los jubilados que inician reclamo judicial. No pierda más tiempo y dinero. Reclame hoy mismo.",
-      ],
-    },
   ];
 
   return (
-    <div className="flex-1 mt-16 px-[16px] md:px-[40px] 2xl:px-[116px]">
+    <div className="flex-1 mt-16 px-[16px] md:px-[40px] xl:px-[116px]">
       <div className="flex flex-col">
         <h1 className=" text-[31px] md:text-[64px] p-2">
           Los trámites que <span className=" text-747DD6">realizamos</span>{" "}
         </h1>
-        <h2 className="font-semibold mt-10 text-[25px] md:text-[49px] 2xl:text-[49px]">
+        <h2 className="font-semibold mt-10 text-[25px] md:text-[49px] xl:text-[49px]">
           Rentas vitalicias previsionales
         </h2>
-        <p className="text-[20px] 2xl:font-semibold md:text-[31px] 2xl:text-[31px] mb-5">
+        <p className="text-[20px] xl:font-semibold md:text-[31px] xl:text-[31px] mb-5">
           ¿Cuál es tu caso?
         </p>
 

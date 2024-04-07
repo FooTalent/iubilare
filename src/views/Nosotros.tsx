@@ -11,9 +11,13 @@ export default function Nosotros() {
   }, []);
   const [view, setView] = useState(false);
   const vision =
-    "Ser reconocidos como líderes en el ámbito de las Rentas Vitalicias  Previsionales, siendo la opción preferida de las personas y familias que buscan seguridad y tranquilidad en el reclamo a realizar. Buscamos ser pioneros en defender sus derechos, ofreciendo soluciones integrales y personalizadas, que superen las expectativas de nuestros clientes.";
+    "Ser reconocidos como líderes en el ámbito de las Rentas Vitalicias  Previsionales, siendo la opción preferida de las personas y familias que buscan seguridad y tranquilidad en el reclamo a realizar. ";
+  const vision2 =
+    "Buscamos ser pioneros en defender sus derechos, ofreciendo soluciones integrales y personalizadas, que superen las expectativas de nuestros clientes.";
   const mision =
-    "Nos comprometemos a brindar un asesoramiento experto y personalizado en todo lo referente a Rentas Vitalicias Previsionales y Jubilaciones. Buscamos proporcionar tranquilidad y confianza, para que nuestros clientes puedan resolver sus problemáticas previsionales de manera eficiente y garantizarles que reciban el pago de su Beneficio Previsional con todos los derechos que lo amparan.";
+    "Nos comprometemos a brindar un asesoramiento experto y personalizado en todo lo referente a Rentas Vitalicias Previsionales y Jubilaciones. ";
+  const mision2 =
+    "Buscamos proporcionar tranquilidad y confianza, para que nuestros clientes puedan resolver sus problemáticas previsionales de manera eficiente y garantizarles que reciban el pago de su Beneficio Previsional con todos los derechos que lo amparan.";
   const clientes =
     "En este espacio, encontrará testimonios directos de nuestros clientes satisfechos en cada provincia. Lo invitamos a contactarse con ellos y conocer por qué somos la elección confiable para satisfacer tus necesidades previsionales. ";
   const clientes1 =
@@ -103,40 +107,7 @@ export default function Nosotros() {
       image: "./nosotros/eliana.svg",
     },
   ];
-  /* const asistentes = [
-    {
-      name: "Susan Guaragna",
-      status: "Ejecutivo",
-      className: "bg-white shadow-avatar-shadow text-black",
-      textClassName: "text-black",
-      textClassTitle: "text-background-violet",
-      image: "./nosotros/image-3.png",
-    },
-    {
-      name: "Susan Guaragna",
-      status: "Ejecutivo",
-      className: "bg-white shadow-avatar-shadow text-black",
-      textClassName: "text-black",
-      textClassTitle: "text-background-violet",
-      image: "./nosotros/image-3.png",
-    },
-    {
-      name: "Susan Guaragna",
-      status: "Asistente legal",
-      className: "bg-white shadow-avatar-shadow text-black",
-      textClassName: "text-black",
-      textClassTitle: "text-background-violet",
-      image: "./nosotros/image-3.png",
-    },
-    {
-      name: "Susan Guaragna",
-      status: "Asistente legal",
-      className: "bg-white shadow-avatar-shadow text-black",
-      textClassName: "text-black",
-      textClassTitle: "text-background-violet",
-      image: "./nosotros/image-3.png",
-    },
-  ]; */
+
   const customRedPinIcon = new L.Icon({
     iconUrl: "/ubiIubilare.svg",
     iconSize: [25, 41],
@@ -146,7 +117,6 @@ export default function Nosotros() {
 
   return (
     <div className="mt-[140px]">
-      {/* Separador 48px */}
       <div className="min-h-[48px] px-16 md:px-0 mb-16 md:mb-20">
         <h1 className="text-[25px] md:text-[31px] lg:text-[64px] font-semibold">
           Acerca de <span className="text-[#747DD6]">nosotros</span>
@@ -940,13 +910,13 @@ export default function Nosotros() {
               Bienvenidos al mapa interactivo de Iubilare
             </h2>
             <div className="flex flex-col  text-pretty w-[327px] lg:w-full">
-              <p className="text-justify tracking-tighter mb-4 text-[16px]  md:text-[18px] lg:text-[22px]">
+              <p className="text-justify tracking-[-.06em]  mb-4 text-[16px]  md:text-[18px] lg:text-[22px]">
                 {clientes}
               </p>
-              <p className="text-justify tracking-tighter mb-4 text-[16px]  md:text-[18px]  lg:text-[22px]">
+              <p className="text-justify tracking-[-.06em] mb-4 text-[16px]  md:text-[18px]  lg:text-[22px]">
                 {clientes1}
               </p>
-              <p className="text-justify tracking-tighter mb-4 text-[16px]  md:text-[18px]  lg:text-[22px]">
+              <p className="text-justify tracking-[-.06em] mb-4 text-[16px]  md:text-[18px]  lg:text-[22px]">
                 {clientes2}
               </p>
             </div>
@@ -960,9 +930,6 @@ export default function Nosotros() {
             Equipo de Trabajo
           </h1>
         </div>
-
-        {/* Separador 16px Para Seccion Tablet min height 768px*/}
-        {/* <div className="md:min-h-[16px] 2xl:min-h-[72px]"></div> */}
         {/* Seccion Equipo de Tabajo para Tablet min height 768px */}
         <div className="hidden md:flex md:flex-row md:justify-center md:gap-3 xl:gap-5">
           <CardNosotros
@@ -1010,20 +977,6 @@ export default function Nosotros() {
                 ></CardNosotros>
               ))}
             </div>
-            {/* <div className="min-h-[20px]"></div> */}
-            {/*   <div className="hidden md:flex md:flex-row md:justify-center md:gap-3 md:px-[41px] 2xl:gap-5">
-              {asistentes.map((ele, index) => (
-                <CardNosotros
-                  key={index}
-                  name={ele.name}
-                  status={ele.status}
-                  className={ele.className}
-                  image={ele.image}
-                  textClassName={ele.textClassName}
-                  textClassTitle={ele.textClassTitle}
-                ></CardNosotros>
-              ))}
-            </div> */}
           </div>
         )}
         {/* Separador 16px */}
@@ -1136,15 +1089,6 @@ export default function Nosotros() {
               textClassTitle="text-background-violet "
             />
           </div>
-          {/* <div className="w-full flex justify-center mt-2">
-            <CardNosotros
-              name={"Josefina Prerovsky"}
-              status={"Gestión previsional"}
-              image={"./nosotros/josefina.png"}
-              className="bg-white shadow-avatar-shadow text-black"
-              textClassTitle="text-background-violet "
-            />
-          </div> */}
         </div>
 
         {/* Seccion Secretarias */}
@@ -1170,27 +1114,6 @@ export default function Nosotros() {
           </div>
         </div>
 
-        {/* Seccion Asistentes */}
-        {/*         <div className="px-[16px] md:hidden">
-          <h3 className="text-[20px]">Asistentes legales</h3> */}
-        {/* Separador 15px */}
-        {/*  <div className="min-h-[15px]"></div>
-          <div className="flex justify-center gap-3">
-            <CardNosotros
-              name={"Susan Guaragna"}
-              status={"Asistente legal"}
-              image={"./nosotros/image-3.png"}
-              className="bg-white shadow-avatar-shadow text-black"
-            />
-            <CardNosotros
-              name={"Susan Guaragna"}
-              status={"Asistente legal"}
-              image={"./nosotros/image-3.png"}
-              className="bg-white shadow-avatar-shadow text-black"
-            />
-          </div>
-        </div> */}
-
         {/* Seccion Mision */}
         <div id="mision" className="mb-14 md:mt-24 lg:mt-44 md:mb-20 lg:mb-40 ">
           <div>
@@ -1199,8 +1122,9 @@ export default function Nosotros() {
             <div>
               <CardInfo
                 info={mision}
+                info2={mision2}
                 classTitle="Misión"
-                url="./nosotros/mision.png"
+                url="./nosotros/mision.svg"
               />
             </div>
             <h1 className="font-semibold text-[25px] mt-7 mb-3 md:hidden">
@@ -1209,26 +1133,14 @@ export default function Nosotros() {
             <div className=" md:mt-[7.5rem]">
               <CardInfo
                 info={vision}
+                info2={vision2}
                 classTitle="Visión"
-                url="./nosotros/vision.png"
+                url="./nosotros/vision.svg"
                 classOptions="md:flex-row-reverse"
               />
             </div>
           </div>
         </div>
-
-        {/* Seccion Vision */}
-        {/* <div id="vision" className="px-[16px] md:px-[41px]">
-          <h1 className="font-semibold text-[25px] md:hidden">Visión</h1>
-          <div>
-            <CardInfo
-              info={vision}
-              classTitle="Visión"
-              url="./nosotros/vision.png"
-              classOptions="md:flex-row-reverse"
-            />
-          </div>
-        </div> */}
 
         {/* Seccion Mapa */}
         <div id="mapa" className="mb-28">

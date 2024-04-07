@@ -2,15 +2,12 @@ import Form from "../components/form/Form";
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import QueHacemos from "../components/sections/QueHacemos";
-// import Testimonios from "../components/sections/Testimonios";
 import cardTramitesRVP from "../json/cardTramitesRVP.json";
 import cardTramitesJubilacion from "../json/cardTramitesJubilacion.json";
 import TestimoniosTramites from "../components/sections/TestimoniosTramites";
 import CardTramite from "../components/cardTramite/CardTramite";
 import CardQueHacemos from "../components/cardQueHacemos/cardQueHacemos";
 import YouTubePlayer from "../components/youTubePlayer/YouTubePlayer";
-// import VideoComponent from "../components/videoHome/VideoComponent";
-// import VideoPlayer from "../components/videoPlayer/VideoPlayer";
 
 export default function Home() {
   const formSection: any = useRef(null);
@@ -101,100 +98,12 @@ export default function Home() {
               />
             ))}
           </div>
-          {/* <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full xl:h-full xl:w-full">
-            <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse md:h-full  xl:justify-end">
-              <div className="">
-                <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-black md:h-full  md:text-center xl:h-auto  xl:mb-[10px] md:font-bold">
-                  Renta Vitalicia Previsional{" "}
-                  <span className="hidden xl:block">pactada</span> en Dólares
-                </div>
-                <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] xl:hidden">
-                  Le ofrecemos realizar una entrevista o conversación telefónica
-                  para brindarle un diagnóstico completo.
-                </div>
-                <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] hidden xl:block">
-                  Luego de una entrevista o charla telefónica podemos brindarle
-                  un diagnóstico completo.
-                </div>
-              </div>
-              <div className="flex justify-center w-full">
-                <img
-                  className="md:hidden"
-                  src="/actualizacionIcono.png"
-                  alt="Hero"
-                />
-                <img
-                  className="hidden md:block xl:w-[197px]"
-                  src="./tramites/actualizacionFill.png"
-                  alt="Hero"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="h-[40px] md:hidden"></div>
-          <div className="flex flex-col justify-start items-center h-[205px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full xl:h-full xl:w-full">
-            <div className="flex h-[91px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full xl:justify-end">
-              <div>
-                <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center  xl:h-auto xl:mb-[10px] md:font-bold">
-                  Complemento al Haber Mínimo{" "}
-                  <span className="hidden xl:block">Garantizado</span>
-                </div>
-                <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] xl:hidden">
-                  Es un pago que realiza ANSES a quienes reciben una Renta
-                  Vitalicia y no alcanzan el Haber Mínimo Garantizado.
-                </div>
-                <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro']  md:w-[175px] md:text-center md:pt-[16px] hidden xl:block">
-                  Es un pago que abona ANSES a aquellas personas que cobran una
-                  Renta Vitalicia y no llegan al Haber Mínimo Garantizado. Este
-                  monto, que se obtiene luego de la Sentencia Judicial.
-                </div>
-              </div>
-              <div className="flex justify-center w-full">
-                <img
-                  className="md:hidden"
-                  src="/complenebtoIcono.png"
-                  alt="Hero"
-                />
-                <img
-                  className="hidden md:block xl:w-[197px]"
-                  src="./tramites/complementoFill.png"
-                  alt="Hero"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="h-[40px] md:hidden"></div>
-          <div className="flex flex-col justify-start items-center h-[235px] p-4 bg-white rounded-[5px] shadow-light-top-heavy-bottom-light-sides  gap-[22px]  md:shadow-[0_35px_60px_-15px_rgba(255,255,255)] md:w-[217px] md:h-full xl:h-full xl:w-full">
-            <div className="flex h-[111px] flex-col justify-start items-start gap-[3px] md:flex-col-reverse  md:h-full  xl:justify-end">
-              <div>
-                <div className="w-[300px] h-7 text-indigo-400 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-black md:h-full md:text-center xl:h-auto xl:mb-[10px] md:font-bold">
-                  Actualización de su Renta Previsional
-                </div>
-                <div className="w-[301.66px] text-neutral-900 text-base font-normal font-['Source Sans Pro'] md:w-[175px] md:text-center md:pt-[16px]">
-                  La Compañía de Seguros de Retiro otorga aumentos menores a su
-                  Renta. <span className="xl:hidden">Sin embargo,</span>
-                  <span className="hidden xl:inline">Usted</span> debería
-                  recibir los aumentos que ANSES ha otorgado desde enero de
-                  2002.
-                </div>
-              </div>
-              <div className="flex justify-center w-full">
-                <img className="md:hidden" src="/rentaIcono.png" alt="Hero" />
-                <img
-                  className="hidden md:block xl:w-[197px]"
-                  src="./tramites/rentasFill.png"
-                  alt="Hero"
-                />
-              </div>
-            </div>
-          </div> */}
         </div>
 
         <div className="flex flex-col justify-center items-center">
           <h2 className="lg:text-[31px] text-[#747DD6] py-16">Jubilaciones</h2>
           <CardQueHacemos
-            src="./QueHacemos2.jpeg"
+            src="./QueHacemos2.svg"
             description="Le ofrecemos un diagnóstico de su situación previsional con los años registrados de aportes
             que usted tiene en el ANSES
             En caso de ser necesario le armamos la nueva moratoria previsional
@@ -224,8 +133,6 @@ export default function Home() {
 
       {/* Seccion Testimonios */}
       <TestimoniosTramites />
-
-      {/* Separador */}
 
       {/* Seccion Formulario */}
       <div className="mt-32 mb-28" id="formulario" ref={formSection}>

@@ -15,14 +15,14 @@ export default function Tramites() {
     <div className="mt-[5.2rem] md:mt-[140px]">
       {/* Primera Sección */}
       <div className="">
-        <Casos></Casos>
+        <Casos />
       </div>
       {/* Segunda Sección */}
       <div className="flex-1 flex justify-center items-center overflow-auto">
         {/* Seccion tipo de Trámites */}
-        <div className="px-[16px] flex flex-col justify-center 2xl:px-[120px] 2xl:p-[36px]">
-          <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full 2xl:w-[1115px] 2xl:h-[500px] ">
-            <div className="flex flex-col justify-start items-center h-[235px] p-4 bg-white rounded-[5px]  gap-[22px] md:mr-24 md:w-[217px] md:h-full 2xl:h-full 2xl:w-full mr-">
+        <div className=" flex flex-col justify-center ">
+          <div className="text-left w-[328px] h-[708px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full xl:w-[1115px] xl:h-[500px] ">
+            <div className="flex flex-col justify-start items-center h-[235px] p-4 bg-white rounded-[5px]  gap-[22px]  md:w-[217px] md:h-full xl:h-full xl:w-full">
               <div className="flex justify-center w-full">
                 <img
                   className="md:hidden"
@@ -30,13 +30,13 @@ export default function Tramites() {
                   alt="Hero"
                 />
                 <img
-                  className="hidden md:block 2xl:w-[197px]"
+                  className="hidden md:block xl:w-[197px]"
                   src="./checkplus.png"
                   alt="check con signo de mas"
                 />
               </div>
               <div className="flex flex-col justify-center items-center gap-[3px] w-full px-5">
-                <div className="text-center text-neutral-900 text-lg font-bold font-source-sans-pro md:w-[329px] md:text-black md:h-full md:text-center 2xl:h-auto 2xl:mb-[10px]">
+                <div className="text-center text-neutral-900 text-lg font-bold font-source-sans-pro md:w-[329px] md:text-black md:h-full md:text-center xl:h-auto xl:mb-[10px]">
                   Sin gastos anticipados
                 </div>
                 <div className="text-center text-neutral-900 text-base font-normal font-source-sans-pro w-[360px] md:w-[240px] lg:w-[262px]">
@@ -46,7 +46,7 @@ export default function Tramites() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-start items-center h-[235px] p-4 bg-white rounded-[5px]  gap-[22px]  md:w-[217px] md:h-full 2xl:h-full 2xl:w-full ">
+            <div className="flex flex-col justify-start items-center h-[235px] p-4 bg-white rounded-[5px]  gap-[22px]  md:w-[217px] md:h-full xl:h-full xl:w-full ">
               <div className="flex justify-center w-full">
                 <img
                   className="md:hidden mt-32"
@@ -54,13 +54,13 @@ export default function Tramites() {
                   alt="Icono blanco con personas"
                 />
                 <img
-                  className="hidden md:block 2xl:w-[197px]"
+                  className="hidden md:block xl:w-[197px]"
                   src="./people.png"
                   alt="icono azul con personas"
                 />
               </div>
               <div className="flex flex-col justify-center items-center gap-[3px] w-full px-10">
-                <div className="text-center w-[300px] h-7 text-neutral-900 text-lg font-bold font-source-sans-pro md:w-[175px] md:text-black md:h-full md:text-center 2xl:h-auto 2xl:mb-[10px]">
+                <div className="text-center w-[300px] h-7 text-neutral-900 text-lg font-bold font-source-sans-pro md:w-[175px] md:text-black md:h-full md:text-center xl:h-auto xl:mb-[10px]">
                   Garantía
                 </div>
                 <div className="text-center text-neutral-900 text-base font-normal font-source-sans-pro w-[340px] md:w-[275px] lg:w-[275px]">
@@ -93,10 +93,10 @@ export default function Tramites() {
       {/* Cuarta Sección */}
       <div className="flex flex-col justify-center bg-transparent px-[16px]">
         <div>
-          <h3 className="text-[20px] font-semibold md:text-[25px] 2xl:text-[49px]">
+          <h3 className="text-[20px] font-semibold md:text-[25px] xl:text-[49px]">
             Si tiene alguna duda o consulta, no dude en contactarnos.
           </h3>
-          <p className="md:hidden 2xl:font-semibold  2xl:block 2xl:text-[49px]">
+          <p className="md:hidden xl:font-semibold  xl:block xl:text-[49px]">
             Estamos para ayudarlo.
           </p>
         </div>

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { KeyboardArrowDownOutlined } from "@mui/icons-material";
+import {
+  KeyboardArrowDownOutlined,
+  KeyboardArrowUpOutlined,
+} from "@mui/icons-material";
 
 interface CardTramitesProps {
   title: string;
@@ -19,14 +22,14 @@ const CardTramites: React.FC<CardTramitesProps> = ({
   return (
     /* ------------------------------agregando padding */
     <div
-      className={`flex flex-col my-3 px-5 rounded justify-between items-center shadow-card-shadow transition-all duration-300 ease-in-out ${
+      className={`flex flex-col my-3 px-5 rounded justify-between items-center shadow-card-shadow transition-all duration-500 ease-in-out w-[1120px] ${
         isExpanded ? "bg-747DD6 text-white" : ""
       }`}
     >
       <div className="flex flex-row items-center justify-between py-5 w-full md:w-[687px] md:h-[146px] xl:w-full xl:px-[53px]">
-        <div className="flex w-2/3 items-center">
-          <div className="md:w-[280px] flex items-center md:h-[62px]">
-            <h2 className="text-left font-semibold text-base text-[.8rem] md:text-[20px]">
+        <div className="flex w-2/3 justify-start items-center">
+          <div className="md:w-[300px] flex items-center md:h-[62px]">
+            <h2 className="text-left font-semibold text-base text-[.8rem] md:text-[28px]">
               {title}
             </h2>
           </div>
@@ -38,10 +41,17 @@ const CardTramites: React.FC<CardTramitesProps> = ({
               isExpanded
                 ? "w-full md:w-[165px] bg-white text-747DD6"
                 : "bg-747DD6 text-white"
-            } font-semibold flex flex-row py-0.5 px-[4px] items-center text-sm rounded shadow-card-shadow focus:outline-none md:w-[151px] md:h-[37px] md:pl-[22px] md:py-[6px] md:text-[20px]`}
+            } justify-center font-semibold flex flex-row py-0.5 px-[4px] items-center text-sm rounded shadow-card-shadow focus:outline-none md:w-[151px] md:h-[37px] md:pl-[22px] md:py-[6px] md:text-[20px]`}
           >
-            {isExpanded ? "Ver menos" : "Ver más"}
-            <KeyboardArrowDownOutlined />
+            {isExpanded ? (
+              <>
+                Ver menos <KeyboardArrowUpOutlined />
+              </>
+            ) : (
+              <>
+                Ver más <KeyboardArrowDownOutlined />
+              </>
+            )}
           </button>
         </div>
       </div>

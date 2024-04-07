@@ -101,7 +101,7 @@ const Footer = (): JSX.Element => {
                     <img
                       className=""
                       alt="Vector"
-                      src="./footer/facebook.png"
+                      src="./footer/facebook.svg"
                     />
                   </a>
                 </div>
@@ -114,7 +114,7 @@ const Footer = (): JSX.Element => {
                     <img
                       className=""
                       alt="Icomoon free"
-                      src="./footer/instagram.png"
+                      src="./footer/instagram.svg"
                     />
                   </a>
                 </div>

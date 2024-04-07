@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
@@ -31,12 +31,11 @@ const validationSchema = Yup.object({
 });
 
 const FormularioYup: React.FC = () => {
-  /*  const handleSubmit = (values: FormValues) => {
-    console.log(values);
-    // Aquí podrías enviar los datos del formulario a tu servidor
-  }; */
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleSubmit = async (values: FormValues) => {
     try {
+      setIsLoading(true);
       const response = await axios.post(
         "https://formsubmit.co/ajax/gonzalo-ezequiel@hotmail.com",
         values
@@ -46,21 +45,19 @@ const FormularioYup: React.FC = () => {
         title: `¡Buen Trabajo!`,
         text: "¡Su consulta fue enviada con éxito!",
         showConfirmButton: false,
-        /*  onBeforeOpen: () => {
-          Swal.showLoading()
-        } */
       });
+      setIsLoading(false);
+
       console.log(response);
     } catch (error) {
+      setIsLoading(false);
+
       console.error("Error al enviar el formulario:", error);
       Swal.fire({
         icon: "error",
         title: `Error`,
         text: "Su consulta no pudo ser enviada. Intente más tarde",
         showConfirmButton: false,
-        /*  onBeforeOpen: () => {
-          Swal.showLoading()
-        } */
       });
     }
   };
@@ -200,9 +197,13 @@ const FormularioYup: React.FC = () => {
           <div className="w-full pt-6 xl:pt-0 flex justify-center items-center pl-[7.5px] pr-[7.5px]">
             <button
               type="submit"
-              className="h-11 w-full md:w-[163px] flex justify-center items-center active:text-active-green hover:text-inherit  xl:py-2 xl:px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-[#29CA8A] outline-none focus:border focus:outline-none  md:text-[20px] font-semibold lg:h-12 lg:w-52"
+              className=" h-11 w-full md:w-[163px] flex justify-center items-center active:text-active-green hover:text-inherit  xl:py-2 xl:px-4 bg-button-green text-white rounded hover:bg-button-hover-green hover:text-white active:bg-active-[#29CA8A] outline-none focus:border focus:outline-none  md:text-[20px] font-semibold lg:h-12 lg:w-52"
             >
-              Enviar consulta
+              {isLoading ? (
+                <img className="" src="./tail-spin.svg" />
+              ) : (
+                <p className="">Enviar consulta</p>
+              )}
             </button>
           </div>
         </Form>

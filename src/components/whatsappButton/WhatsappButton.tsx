@@ -2,7 +2,7 @@ const WhatsappButton = () => {
   const containerStyle = "fixed bottom-20 md:bottom-4 right-4 z-10"; // Adjust as needed
   const buttonStyle =
     "p-2 bg-[#439373] rounded-full cursor-pointer hover:bg-green-500";
-  const imageStyle = "w-6 h-6";
+  const imageStyle = "w-6 h-6 xl:w-16 xl:h-16";
   const handleButtonClick = () => {
     window.open(
       "https://api.whatsapp.com/send/?phone=5491161943088&text&type=phone_number&app_absent=0",
@@ -14,7 +14,7 @@ const WhatsappButton = () => {
     <div className={containerStyle}>
       <button className={buttonStyle} onClick={handleButtonClick}>
         <img
-          src="./whatsappbutton.png"
+          src="./whatsappBtn.svg"
           alt="WhatsApp Icon"
           className={imageStyle}
         />

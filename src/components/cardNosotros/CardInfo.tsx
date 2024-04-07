@@ -3,12 +3,14 @@ import React from "react";
 interface CardInfoProps {
   url: string;
   info: string;
+  info2: string;
   classOptions?: string;
   classTitle?: string;
 }
 
 const CardInfo: React.FC<CardInfoProps> = ({
   info,
+  info2,
   url,
   classOptions,
   classTitle,
@@ -27,7 +29,8 @@ const CardInfo: React.FC<CardInfoProps> = ({
           {classTitle}
         </h1>
         <p className="text-left w-[18.6rem] md:w-auto md:text-[16px] lg:text-[25px] text-pretty">
-          {info}{" "}
+          {info} <br />
+          {info2}
         </p>
       </div>
     </div>

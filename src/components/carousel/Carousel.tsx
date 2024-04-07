@@ -32,7 +32,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
         ))}
       </div>
 
-      <div className="absolute bottom-0 py-4 flex justify-center gap-3 w-full">
+      <div className="absolute md:bottom-8 xl:bottom-0 py-4 flex justify-center gap-3 w-full">
         {slides.map((_, i) => (
           <div
             key={`circle-${i}`}
