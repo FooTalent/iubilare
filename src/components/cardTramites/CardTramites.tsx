@@ -22,19 +22,19 @@ const CardTramites: React.FC<CardTramitesProps> = ({
   return (
     /* ------------------------------agregando padding */
     <div
-      className={`flex flex-col my-3 px-5 rounded justify-between items-center shadow-card-shadow transition-all duration-500 ease-in-out w-[1120px] ${
+      className={`flex flex-col my-3 px-5 rounded justify-between items-center shadow-card-shadow transition-all duration-500 ease-in-out  ${
         isExpanded ? "bg-747DD6 text-white" : ""
       }`}
     >
       <div className="flex flex-row items-center justify-between py-5 w-full md:w-[687px] md:h-[146px] xl:w-full xl:px-[53px]">
         <div className="flex w-2/3 justify-start items-center">
-          <div className="md:w-[300px] flex items-center md:h-[62px]">
-            <h2 className="text-left font-semibold text-base text-[.8rem] md:text-[28px]">
+          <div className="md:w-[258px] ml-8  flex items-center md:h-[62px]">
+            <h2 className="text-left  font-semibold text-base text-[.8rem] md:text-[20px] xl:text-[28px]">
               {title}
             </h2>
           </div>
         </div>
-        <div className="flex w-32 md:w-1/3 items-center xl:justify-end">
+        <div className="flex w-32 md:w-1/3 items-center justify-center xl:justify-end">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
             className={`${

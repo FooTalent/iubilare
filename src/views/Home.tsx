@@ -81,10 +81,10 @@ export default function Home() {
         id="tipodetramite"
         className="px-[16px] flex flex-col justify-center lg:items-center xl:p-[36px]"
       >
-        <h2 className="text-xl text-left font-semibold mt-11 md:text-[31px] xl:text-[31px]  md:mb-8 lg:w-[69.688rem] ">
+        <h2 className="text-xl text-center font-semibold mt-11 md:text-[31px] xl:text-[31px]  md:mb-8 lg:w-[69.688rem] ">
           Tipos de trámites
         </h2>
-        <div className="text-left w-[328px]  flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full xl:w-[1115px] xl:h-[500px] ">
+        <div className="text-left w-[328px]  flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex md:w-full xl:w-[1115px]  ">
           <div className="grid grid-cols-1 md:grid-cols-3 md:w-full  items-center  md:gap-8 xl:gap-[75px]">
             {cardTramitesRVP.tramite.map((tramite) => (
               <CardTramite
@@ -111,10 +111,10 @@ export default function Home() {
             classStyle="md:flex-row-reverse"
           />
         </div>
-        <h2 className="text-xl mt-11 xl:mt-0 text-left font-semibold md:text-[31px] xl:text-[31px] md:mb-8 lg:w-[69.688rem] ">
+        <h2 className="text-xl mt-11 xl:mt-0 text-center font-semibold md:text-[31px] xl:text-[31px] md:mb-8 lg:w-[69.688rem] ">
           Tipos de trámites
         </h2>
-        <div className="text-left w-[328px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex  md:w-full xl:w-[1115px] xl:h-[500px] ">
+        <div className="text-left w-[328px] flex-col justify-center self-center gap-10 mt-8 md:flex-row md:h-full md:flex  md:w-full xl:w-[1115px]  ">
           <div className="grid grid-cols-1 md:grid-cols-3 md:w-full  items-center gap-14 md:gap-8 xl:gap-[75px] md:mb-[128px]">
             {cardTramitesJubilacion.tramite.map((tramite) => (
               <CardTramite

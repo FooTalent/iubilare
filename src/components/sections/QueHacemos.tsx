@@ -3,7 +3,7 @@ import CardQueHacemos from "../cardQueHacemos/cardQueHacemos";
 export default function QueHacemos() {
   return (
     <div className="flex flex-col mt-20 xl:mt-0 justify-center items-center px-[16px] xl:p-[36px] md:bg-hero  md:bg-no-repeat md:bg-center md:bg-[length:690px] xl:bg-bottom xl:bg-[length:1290px] ">
-      <h1 className="text-xl font-semibold md:text-[32px] xl:text-[49px] md:mb-8">
+      <h1 className="text-[25px] font-semibold md:text-[32px] xl:text-[49px] md:mb-8">
         ¿Qué hacemos?
       </h1>
       <div className="w-[21.75rem] xl:flex xl:justify-center xl:w-[1076px]">

@@ -1,6 +1,6 @@
 const TipoDeTramites = () => {
   return (
-    <section className=" mb-[152px] flex flex-col items-center md:flex-row md:justify-center md:sitems-center gap-10 md:gap-40">
+    <section className=" mb-[70px] flex flex-col items-center md:flex-row md:justify-center md:sitems-center gap-10 md:gap-40">
       <div className=" flex flex-col justify-center items-center w-full px-5 md:w-[280px] h-full ">
         <img
           className="w-[141px] h-[141px]"
