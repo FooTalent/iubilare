@@ -50,7 +50,7 @@ const FAQ = () => {
 
   return (
     <div className="lg:px-[80px]">
-      <h1 className="font-semibold text-center text-2xl xl:text-[49px] mb-14 xl:px-[80px]">
+      <h1 className="font-semibold text-center text-[25px] xl:text-[49px] mb-14 xl:px-[80px]">
         Preguntas Frecuentes
       </h1>
       <h4 className="text-center text-slate-500 text-[20px] font-semibold font-[Source Sans Pro] xl:text-[31px] mb-7">

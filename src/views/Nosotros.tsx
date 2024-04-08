@@ -1115,7 +1115,7 @@ export default function Nosotros() {
         </div>
 
         {/* Seccion Mision */}
-        <div id="mision" className="mb-14 md:mt-24 lg:mt-44 md:mb-20 lg:mb-40 ">
+        <div id="mision" className="mb-14 mt-24 lg:mt-44 md:mb-20 lg:mb-40 ">
           <div>
             {" "}
             <h1 className="font-semibold text-[25px] mb-3 md:hidden">Misión</h1>
