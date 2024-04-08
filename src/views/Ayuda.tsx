@@ -62,7 +62,7 @@ export default function Ayuda() {
       <FAQ />
       <div className="flex justify-center mb-16 mt-[67px] ">
         <img
-          src="./home/iubilare.png"
+          src="./logoayuda.svg"
           alt=""
           className="w-[71px] h-[47px] xl:w-[172px] xl:h-[113px]"
         />
