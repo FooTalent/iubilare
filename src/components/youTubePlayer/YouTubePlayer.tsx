@@ -1,7 +1,7 @@
 const YouTubePlayer: React.FC = () => {
   return (
     <iframe
-      src="https://www.youtube.com/embed/t2xk5Is3jAM?si=jd70sWiGBEltS-ZX"
+      src="https://www.youtube.com/embed/DdzcAr6vCEI?si=BNDtgZGitVHDMWp8"
       title="YouTube video player"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerPolicy="strict-origin-when-cross-origin"

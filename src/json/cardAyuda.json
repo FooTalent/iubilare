@@ -2,40 +2,40 @@
   "pasos": [
     {
       "number": "1",
-      "title": "Documentación",
-      "desc": "Para iniciar el trámite es necesario recopilar los documentos necesarios, como identificación oficial y comprobantes de ingresos. Luego se completan los formularios requeridos y finalmente se entrega toda la documentación recopilada en la entidad previsional (ANSES)"
+      "title": "Análisis",
+      "desc": "Para brindarle un correcto asesoramiento, con solo ver la póliza y un recibo de su pensión,    estamos en condiciones de informarle el haber mensual que usted debería cobrar y un      retroactivo aproximado."
     },
     {
       "number": "2",
-      "title": "Evaluación y aprobación",
-      "desc": "La entidad previsional evalúa la documentación y verifica la elegibilidad del solicitante."
+      "title": "Documentación",
+      "desc": "Es muy simple. Para iniciar su trámite es necesario su Póliza, un Recibo, Acta de Matrimonio      o Certificado de Convivencia, Partida de Defunción y un Poder Judicial."
     },
     {
       "number": "3",
-      "title": "Aprobación",
-      "desc": "Notificamos al solicitante si el trámite ha sido aprobado o rechazado. En caso de aprobación, el beneficiario puede comenzar a percibir la renta previsional."
+      "title": "Gestión",
+      "desc": "Una vez reunida dicha documentación, podemos iniciar su reclamo. Desde Iubilare le iremos informando sobre todas las novedades a medida que avanza el juicio."
     },
     {
       "number": "4",
-      "title": "Seguimiento y actualización",
-      "desc": "Realizamos el seguimiento del estado del trámite y mantenemos actualizada toda la información relevante con la entidad previsional."
+      "title": "Cobro y actualización de su haber",
+      "desc": "Una vez finalizada la etapa judicial, usted cobrará un pago retroactivo (se toman dos años   para atrás desde el inicio de la demanda hasta la fecha de cobro de manera      actualizada) y la actualización de su haber."
     }
   ],
   "paso2": [
     {
       "number": "1",
       "title": "Análisis",
-      "desc": "Nuestro equipo realizará un análisis de sus años de servicio aportados y contribuciones, ya sea como dependiente, autónomo o monotributista. Este análisis nos permitirá obtener una visión clara de su situación previsional actual."
+      "desc": "Nuestro equipo realizará un primer análisis de su situación, tomando sus      años aportados bajo relación de dependencia, su pago de autónomo/monotributo y sus      hijos. En base a este análisis, y en caso que no reúna los 30 años de aporte, se lo      asesorará sobre la moratoria previsional."
     },
     {
       "number": "2",
-      "title": "Determinación",
-      "desc": "Basándonos en los resultados de nuestro análisis, le proporcionaremos una guía personalizada sobre los pasos que debe seguir para iniciar el trámite de jubilación. Nuestro objetivo es ayudarlo a tomar decisiones informadas y planificar su jubilación de manera óptima."
+      "title": "Gestión",
+      "desc": "Basándonos en su situación personal previsional, juntos armaremos su carpeta jubilatoria      con toda la documentación necesaria para presentar su expediente jubilatorio de manera      correcta, buscando el mayor beneficio en el menor tiempo posible."
     },
     {
       "number": "3",
-      "title": "Prioridad",
-      "desc": "Entendemos que su tiempo es valioso, por lo que nos comprometemos a brindarle un servicio rápido y efectivo. Nuestra prioridad es que pueda realizar su jubilación de manera rápida y sin complicaciones innecesarias."
+      "title": "Cobro de su jubilación",
+      "desc": "Le iremos informando sobre las etapas que tiene ANSES para pagar su jubilación. Llegado el momento, revisamos su jubilación y le informaremos el monto de su haber y el retroactivo  correspondiente."
     }
   ]
 }

@@ -68,7 +68,7 @@ export default function TestimoniosTramites() {
         </h3>
       </div>
       <div className="flex justify-center"></div>
-      <div className=" min-w-full h-full 2xl:flex bg-background-violet overflow-hidden relative ">
+      <div className=" min-w-full h-full  bg-background-violet overflow-hidden relative ">
         {/* Mapeo para vista Tablet y Desktop */}
         <div
           className="flex whitespace-nowrap gap-0  margin-auto"
@@ -102,7 +102,7 @@ export default function TestimoniosTramites() {
               icon="block w-[0.521rem] h-[0.729rem] mr-[8px]"
               className="bg-background-violet"
               textColor="text-white"
-              textDescription="text-[0.875rem] truncate leading-3 font-light italic whitespace-normal text-white w-[41.938rem] not-italic leading-[1.5rem] text-background-white"
+              textDescription="text-[0.875rem] xl:text-[1.5rem] truncate leading-3 font-light italic whitespace-normal text-white w-[41.938rem] not-italic leading-[1.5rem] text-background-white"
             />
           ))}
         </div>

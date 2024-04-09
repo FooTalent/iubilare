@@ -16,7 +16,7 @@ export default function Ayuda() {
         <p className="text-[20px] mx-[48px] mt-[24px] px-8 text-center text-neutral-900 font-['Inter'] md:mx-[197px] xl:px-16 xl:text-[31px] xl:mx-[270px]">
           Le ofrecemos una guía informativa sobre cada uno de los procesos{" "}
         </p>
-        <div className="grid md:flex mt-[54px] md:mt-[32px] mx-[16px] md:mx-[40px] xl:mx-[120px] gap-[36px] xl:gap-[71px]">
+        <div className="grid md:flex mt-[54px] md:mt-[32px] mx-[16px] md:mx-[40px]  gap-[36px] xl:gap-[71px]">
           <div className="">
             <h4 className="text-center text-slate-500 text-[20px] font-semibold font-[Source Sans Pro] xl:text-[31px] mb-7">
               Rentas Vitalicias

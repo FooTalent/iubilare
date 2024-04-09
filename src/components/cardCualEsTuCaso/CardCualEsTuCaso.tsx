@@ -7,7 +7,7 @@ const CardCualEsTuCaso = () => {
   const [expanded3, setExpanded3] = useState<boolean>(false);
 
   return (
-    <div className=" flex flex-col mx-4 items-center md:flex-row md:flex md:justify-center md:items-center gap-6">
+    <div className=" flex flex-col sm:flex-row mx-4 items-center md:flex-row md:flex md:justify-center md:items-center gap-6">
       <div
         className={`${
           !expanded

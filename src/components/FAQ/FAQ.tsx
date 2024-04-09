@@ -35,7 +35,7 @@ const FAQ = () => {
     "Hace unos años, existieron casos en los que la justicia falló en favor de los beneficiarios de rentas vitalicias previsionales. Esto sentó un precedente y les otorgó la posibilidad de reclamar para actualizar y mejorar el valor de su haber.",
     "Por supuesto. Usted tiene el derecho de pedir una copia digital de su póliza a la compañia aseguradora. Este trámite se realiza por correo electrónico o por Whatsapp.",
     "El tiempo estimado de duración del juicio es de 3 años. Sin embargo, cada juicio es diferente y los tiempos pueden variar en cada caso.",
-    "Una vez finalizado el proceso, usted recibirá un ajuste de su haber y un retroactivo desde hasta 2 años antes de comenzado el reclamo hasta el momento del cobro.",
+    "Una vez finalizado el proceso, usted recibirá un ajuste de su haber y un retroactivo desde 2 años antes de comenzado el reclamo hasta el momento del cobro.",
     "En caso de fallecimiento del beneficiario, los herederos pueden cobrar el retroactivo correspondiente una vez finalizado el trámite.",
     "Una vez que usted haya cobrado el retroactivo, deberá abonar a la consultora un porcentaje estipulado previamente en nuestro convenio. Nos comunicaremos con usted para informarle cómo debe hacer para cobrar y también para realizar el pago.",
     "Nuestras oficinas en la Ciudad de Buenos Aires están disponibles para recibir a aquellas personas que deseen realizar una consulta o asesorarse personalmente.",

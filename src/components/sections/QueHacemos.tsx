@@ -23,10 +23,12 @@ export default function QueHacemos() {
         <CardQueHacemos
           src="./QueHacemos1.svg"
           description="Brindamos un asesoramiento gratuito sobre su Renta Vitalicia para definir si usted tiene
-          derecho a un reclamo ante ANSES o su Compañía de Seguros de Retiro
-          Le ofrecemos un informe detallado de a cuanto ascendería su Haber, el monto del
-          Retroactivo aproximado y duración del juicio
-          Garantizamos 100% de efectividad en la gestión."
+          derecho a un reclamo ante ANSES o su Compañía de Seguros de Retiro.
+          
+          "
+          description1="Le ofrecemos un informe detallado de a cuanto ascendería su Haber, el monto del
+          Retroactivo aproximado y duración del juicio."
+          description2="Garantizamos 100% de efectividad en la gestión."
         />
       </div>
     </div>
