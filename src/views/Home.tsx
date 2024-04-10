@@ -38,7 +38,7 @@ export default function Home() {
         Iubilare consultora previsional
       </h1>
       <div className="flex px-[16px] justify-center ">
-        <div className="flex flex-col w-[1073px] lg:gap-16 md:flex-col-reverse xl:flex-row-reverse lg:mt-16">
+        <div className="flex flex-col w-[271px] md:w-[1073px] lg:gap-16 md:flex-col-reverse xl:flex-row-reverse lg:mt-16">
           <div className="xl:w-[402px] xl:flex xl:flex-row-reverse ">
             <div className=" text-left  flex flex-col items-center  xl:justify-between">
               <h1 className="hidden md:flex md:text-[39px] md:mb-[9px] md:font-semibold xl:hidden">
