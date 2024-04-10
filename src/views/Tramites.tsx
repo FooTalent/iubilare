@@ -21,7 +21,7 @@ export default function Tramites() {
       <div className="flex-1 flex justify-center mb-20 items-center overflow-auto">
         {/* Seccion tipo de Trámites */}
         <div className=" flex flex-col  justify-center ">
-          <div className="text-left flex w-[328px] h-[708px] sm:w-[609px] sm:h-[350px]  flex-col justify-center sm:flex-row self-center gap-10 mt-8 md:flex-row md:h-full  md:w-full xl:w-[1115px] xl:h-[500px] ">
+          <div className="text-left flex w-[328px] h-[708px] sm:w-[609px] sm:h-[350px]  flex-col justify-center sm:flex-row self-center gap-10 mt-8 md:flex-row md:h-full  md:w-full xl:w-[1115px] xl:h-[400px] ">
             <div className="flex flex-col justify-start items-center h-[235px] p-4 sm:p-0 md:p-4 bg-white rounded-[5px]  gap-[22px]  md:w-[217px] md:h-full xl:h-full xl:w-full">
               <div className="flex justify-center w-full">
                 <img

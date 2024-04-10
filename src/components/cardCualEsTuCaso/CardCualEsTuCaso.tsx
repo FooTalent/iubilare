@@ -12,7 +12,7 @@ const CardCualEsTuCaso = () => {
         className={`${
           !expanded
             ? "bg-slate-50 h-[171px] w-[213px]"
-            : "bg-background-violet h-[299px] transform transition-all delay-100 duration-500 ease-out  "
+            : "bg-background-violet h-[299px] xl:h-[350px] transform transition-all delay-100 duration-500 ease-out  "
         } flex flex-col items-center justify-center w-[341px] rounded-lg shadow-card-shadow`}
       >
         <p
@@ -64,7 +64,7 @@ const CardCualEsTuCaso = () => {
         className={`${
           !expanded2
             ? "bg-slate-50 h-[171px] w-[213px] "
-            : "bg-background-violet h-[299px] transform transition-all delay-100 duration-500 ease-out"
+            : "bg-background-violet h-[299px] xl:h-[350px] transform transition-all delay-100 duration-500 ease-out"
         } flex flex-col items-center justify-center w-[341px] rounded-lg shadow-card-shadow`}
       >
         <p
@@ -84,7 +84,7 @@ const CardCualEsTuCaso = () => {
           } w-[154px]`}
         ></div>
         {!expanded2 ? null : (
-          <p className=" text-white text-[14px] xl:text-[18px] px-2 mb-14">
+          <p className=" text-white text-[14px] xl:text-[18px] px-2 mb-14 xl:mb-[6rem]">
             Tramitamos pensiones por fallecimiento a favor del
             cónyuge/conviviente o hijos menores o con discapacidad.
           </p>
@@ -114,7 +114,7 @@ const CardCualEsTuCaso = () => {
         className={`${
           !expanded3
             ? "bg-slate-50 h-[171px] w-[213px]"
-            : "bg-background-violet h-[299px] transform transition-all delay-100 duration-500 ease-out"
+            : "bg-background-violet h-[299px] xl:h-[350px] transform transition-all delay-100 duration-500 ease-out"
         } flex flex-col items-center justify-center w-[341px] rounded-lg shadow-card-shadow`}
       >
         <p
@@ -132,7 +132,7 @@ const CardCualEsTuCaso = () => {
           } w-[154px]`}
         ></div>
         {!expanded3 ? null : (
-          <p className=" text-white text-[14px] xl:text-[18px] px-2 mb-4">
+          <p className=" text-white text-[14px] xl:text-[18px] px-2 mb-4 xl:mb-[2.25rem]">
             A partir de los 65 años de edad,podes jubilarte sin aportes,
             obteniendo un 80% de la jubilación mínima. Además Te ayudamos a
             transformar tu PUAM en una jubilación ordinaria

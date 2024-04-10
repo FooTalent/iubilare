@@ -28,7 +28,7 @@ const CardTramites: React.FC<CardTramitesProps> = ({
     >
       <div className="flex flex-row items-center justify-between py-5 w-full md:w-[687px] md:h-[146px] xl:w-full xl:px-[53px]">
         <div className="flex w-2/3 justify-start items-center">
-          <div className="md:w-[258px] ml-8  flex items-center md:h-[62px]">
+          <div className="md:w-[258px] xl:w-[296px] ml-8  flex items-center md:h-[62px]">
             <h2 className="text-left  font-semibold text-base text-[.8rem] md:text-[20px] xl:text-[28px]">
               {title}
             </h2>
@@ -64,7 +64,7 @@ const CardTramites: React.FC<CardTramitesProps> = ({
           {description}
         </p>
         {subtitle && (
-          <p className="mx-5 my-5 text-left font-semibold text-base xl:text-lg text-white">
+          <p className=" my-5 text-left font-semibold text-base xl:text-lg text-white">
             {subtitle}
           </p>
         )}
