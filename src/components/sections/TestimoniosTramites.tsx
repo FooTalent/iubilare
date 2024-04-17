@@ -16,7 +16,7 @@ export default function TestimoniosTramites() {
     },
     {
       id: 2,
-      name: "Sonia Raquel Bellos",
+      name: "Sonia Raquel Bello",
       age: "53 años",
       city: "Corral de Bustos, Córdoba",
       description:
