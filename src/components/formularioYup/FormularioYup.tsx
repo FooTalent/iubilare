@@ -37,7 +37,7 @@ const FormularioYup: React.FC = () => {
     try {
       setIsLoading(true);
       const response = await axios.post(
-        "https://formsubmit.co/ajax/gonzalo-ezequiel@hotmail.com",
+        "https://formsubmit.co/ajax/contacto@iubilare.com",
         values
       );
       Swal.fire({
