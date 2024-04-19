@@ -86,7 +86,7 @@ const FormularioYup: React.FC = () => {
       {({ errors, touched, handleSubmit }) => (
         <Form
           onSubmit={handleSubmit}
-          className="w-[328px] h-[396px] xl:h-[576px]  bg-background-grey flex flex-col items-start justify-around  xl:w-[484px] xl:h[572px]"
+          className="w-[328px] h-[396px] xl:h-[576px]   flex flex-col items-start justify-around  xl:w-[484px] xl:h[572px]"
         >
           <div className="flex flex-col items-start w-full pl-[8.5px] pr-[8.5px] ">
             <label
